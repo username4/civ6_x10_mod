@@ -1,4 +1,4 @@
-<?xml version="0.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="0.3">
 	<Properties>
 		<Name>Civs x10</Name>
@@ -6,8 +6,6 @@
 		<Description>All traits multiplied times 10.</Description>
 		<Authors>username4</Authors>
 		<ShowInBrowser>Show</ShowInBrowser>
-		<EnabledByDefault>1</EnabledByDefault>
-		<EnabledAtStartup>1</EnabledAtStartup>
 	</Properties>
 	<Components>
 		<UpdateDatabase id="civs_x10">
