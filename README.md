@@ -6,10 +6,9 @@ Similar to the x10 mods for TF2.
 INSTALL:
 Unpack Archive into your mod Folder, e.g:
 
-linux:
-"~/.local/share/aspyr-media/Sid Meier's Civilization VI/Mods/"
-Win:
-"C:\Users\(USER)\Documents\My Games\Sid Meier's Civilization VI\DLC"
+linux: "~/.local/share/aspyr-media/Sid Meier's Civilization VI/Mods/"
+
+Win: "C:\Users\(USER)\Documents\My Games\Sid Meier's Civilization VI\DLC"
 
 UNISTALL:
 Delete the folder
