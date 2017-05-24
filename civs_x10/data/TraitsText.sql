@@ -141,7 +141,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Has 1 level of [ICON_VisLimited] Diplomatic Visibility greater than normal with every civilization that she''s met. Receives capacity to build an extra Spy with the Castles technology.'
+SET Text = 'Has 10 level of [ICON_VisLimited] Diplomatic Visibility greater than normal with every civilization that she''s met. Receives capacity to build 10 extra Spies with the Castles technology.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION';
 
