@@ -4,10 +4,41 @@ UPDATE ModifierArguments SET Value=1000 WHERE (Name='Amount' AND ModifierId='TRA
 UPDATE ModifierArguments SET Value=1000 WHERE (Name='Amount' AND ModifierId='TRAIT_DOUBLE_MUSICIAN_POINTS');
 UPDATE ModifierArguments SET Value=1000 WHERE (Name='Amount' AND ModifierId='TRAIT_DOUBLE_MERCHANT_POINTS');
 
-UPDATE ModifierArguments SET Value=20 WHERE (Name='Amount' AND ModifierId='TRAIT_GREAT_WORK_FOOD_SCULPTURE');
-UPDATE ModifierArguments SET Value=20 WHERE (Name='Amount' AND ModifierId='TRAIT_GREAT_WORK_PRODUCTION_SCULPTURE');
-UPDATE ModifierArguments SET Value=20 WHERE (Name='Amount' AND ModifierId='TRAIT_GREAT_WORK_GOLD_SCULPTURE');
-UPDATE ModifierArguments SET Value=20 WHERE (Name='Amount' AND ModifierId='TRAIT_GREAT_WORK_FOOD_ARTIFACT');
+UPDATE 
+        ModifierArguments 
+SET    
+        Value=20 
+WHERE  
+        Name='Amount' 
+AND 
+        ModifierId='TRAIT_GREAT_WORK_FOOD_SCULPTURE';
+
+
+UPDATE 
+        ModifierArguments 
+SET 
+        Value=20 
+WHERE 
+        Name='Amount' 
+AND 
+        ModifierId='TRAIT_GREAT_WORK_PRODUCTION_SCULPTURE';
+
+UPDATE 
+ModifierArguments 
+SET Value=40 
+WHERE 
+Name='Amount' 
+AND 
+ModifierId='TRAIT_GREAT_WORK_GOLD_SCULPTURE';
+
+UPDATE 
+ModifierArguments 
+SET 
+    Value=20 
+WHERE 
+Name='Amount' 
+AND ModifierId='TRAIT_GREAT_WORK_FOOD_ARTIFACT');
+
 UPDATE ModifierArguments SET Value=20 WHERE (Name='Amount' AND ModifierId='TRAIT_GREAT_WORK_PRODUCTION_ARTIFACT');
 UPDATE ModifierArguments SET Value=20 WHERE (Name='Amount' AND ModifierId='TRAIT_GREAT_WORK_FOOD_RELIC');
 

@@ -19,4 +19,4 @@ UPDATE Units SET Cost=330 Where UnitType='UNIT_RUSSIAN_COSSACK';
 UPDATE ModifierArguments Set Value=50 WHERE ModifierId='COSSACK_LOCAL_COMBAT';
 
 --peter
-UPDATE ModifierArguments Set Value=30 WHERE ModifierId='TRAIT_ADJUST_PROGRESS_DIFF_TRADE_BONUS';
+UPDATE ModifierArguments Set Value=0 WHERE ModifierId='TRAIT_ADJUST_PROGRESS_DIFF_TRADE_BONUS';

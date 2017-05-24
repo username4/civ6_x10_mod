@@ -265,14 +265,246 @@ WHERE
     AND
     Tag='LOC_ABILITY_VARU_DESCRIPTION';
 
+--Japan
 UPDATE LocalizedText 
 SET     
-    Text='' 
+    Text='A building unique to Japan. +13 [ICON_Production] Production to all cities within 6 tiles. After researching the Electricity technology this building provides an additional +40 [ICON_Culture] Culture to its city.' 
 WHERE
     Language = 'en_US'  
     AND
-    Tag='';
+    Tag='LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Land units receive +50 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +5 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='All districts receive an additional +10 adjacency bonus for being adjacent to another district.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION';
+
+--Kongo
+UPDATE LocalizedText 
+SET     
+    Text='+20 [ICON_Food] Food, +20 [ICON_Production] Production, and +40 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 20x [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. Palace has slots for 5 Great Works.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='A district unique to Kongo that can only be constructed in Rainforest or Woods. Replaces the Neighborhood district but is available earlier. Provides +5 [ICON_Housing] Housing , +20 [ICON_Food] Food, and +40 [ICON_Gold] Gold, regardless of Appeal.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_DISTRICT_MBANZA_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='+100 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_NAGAO_DESCRIPTION';
+
+--Norway
+UPDATE LocalizedText 
+SET     
+    Text='LOC_ABILITY_NAGAO_DESCRIPTION' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_NAGAO_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get 10 additional adjacency bonus from Woods.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='+70 [ICON_Strength]Combat Strength when attacking, and -70 [ICON_Strength] Combat Strength when defending.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='+9 [ICON_Movement] Movement if this unit starts in enemy territory.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_BERSERKER_MOVEMENT_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Norwegian unique Medieval era unit. 10 [ICON_Movement] Movement if this unit starts in enemy territory. +70 [ICON_Strength] Combat Strength when attacking and -70 [ICON_Strength] Combat Strength when defending.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 10 [ICON_Movement] Movement while in coastal waters.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='+10 [ICON_Movement] Movement while in coastal waters.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_LONGSHIP_MOVEMENT_DESCRIPTION';
+
+--Rome
+UPDATE LocalizedText 
+SET     
+    Text='A district unique to Rome for city growth. Replaces the Aqueduct district.[NEWLINE][NEWLINE]It provides this city with a source of fresh water from an adjacent River, Lake, Oasis, or Mountain. Cities that do not yet have existing fresh water receive up to 6 [ICON_Housing] Housing. Cities that already have existing fresh water will instead get +2 [ICON_Housing] Housing. Must be built adjacent to the City Center. In either case, the Bath provides an additional bonus of +20 [ICON_Housing] Housing and +10 [ICON_Amenities] Amenity. Must be built adjacent to the City Center.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_DISTRICT_BATH_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Roman unique Classical era melee unit that replaces the Swordsman. Can build 10 Roman Forts.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_UNIT_ROMAN_LEGION_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='All cities you found or conquer start with a Trading Post. If in [ICON_TradeRoute] Trade Route range of your [ICON_Capital] Capital, they also start with a road to it. Your [ICON_TradeRoute] Trade Routes earn +10 [ICON_Gold] Gold for passing through Trading Posts in your own cities.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION';
 
 
+UPDATE LocalizedText 
+SET     
+    Text='All cities start with 10 additional City Center buildings. (Starts with a Monument building in the Ancient era).' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION';
 
-    
+--RUSSIA
+UPDATE LocalizedText 
+SET     
+    Text='Extra territory upon founding cities. +10 [ICON_Faith] Faith and +10 [ICON_Production] Production from Tundra.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
+
+
+UPDATE LocalizedText 
+SET     
+    Text='Can move after attacking. +50 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_COSSACK_DESCRIPTION';
+
+
+UPDATE LocalizedText 
+SET     
+    Text='Receives [ICON_Science] Science or [ICON_Culture] Culture from [ICON_TradeRoute] Trade Routes to civilizations that are more advanced than Russia (+1 per 0 technologies or civics ahead).' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION';
+
+--Scythia
+UPDATE LocalizedText 
+SET     
+    Text='Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith. +10 [ICON_Gold] Gold. +10 [ICON_Faith] Faith for each adjacent Pasture. Cannot be built on Hills.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_IMPROVEMENT_KURGAN_DESCRIPTION';
+
+
+UPDATE LocalizedText 
+SET     
+    Text='Receive 10 cavalry units or Saka Horse Archers each time you train a light cavalry unit or Saka Horse Archer.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION';
+
+
+UPDATE LocalizedText 
+SET     
+    Text='All units receive +5  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
+
+--SPAIN
+UPDATE LocalizedText 
+SET     
+    Text='Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +20 [ICON_Science] Science if built next to a Campus district.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_IMPROVEMENT_MISSION_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Spanish unique Renaissance era unit that replaces the Musketman. +100 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='+100 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_ABILITY_CONQUISTADOR_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='May form Fleets and Armadas earlier than usual (Mercantilism). [ICON_TradeRoute] Trade Routes between multiple continents receiv0 bonus +40 [ICON_Gold] Gold for routes to other civilizations, and bonus +10 [ICON_Food] Food and [ICON_Production] Production for routes between your own cities.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +40 [ICON_Strength] Combat Strength against players following other Religions.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
+
+UPDATE LocalizedText 
+SET     
+    Text='Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+20 [ICON_Science] Science. +10 [ICON_Culture] Culture if next to River. Cannot be built on Hills.' 
+WHERE
+    Language = 'en_US'  
+    AND
+    Tag='LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION';
