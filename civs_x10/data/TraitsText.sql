@@ -410,7 +410,7 @@ AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+2 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +20 [ICON_Science] Science if built next to a Campus district.'
+SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+20 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +20 [ICON_Science] Science if built next to a Campus district.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_MISSION_DESCRIPTION';
 
