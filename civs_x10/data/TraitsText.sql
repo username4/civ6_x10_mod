@@ -64,7 +64,7 @@ AND Tag = 'LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Rainforest tiles provide +1 adjacency bonus for Campus, Commercial Hub, Holy Site, and Theater Square districts. Rainforest tiles provide +1 [ICON_Housing] Housing for Neighborhoods built adjacent to them.'
+SET Text = 'Rainforest tiles provide +10 adjacency bonus for Campus, Commercial Hub, Holy Site, and Theater Square districts. Rainforest tiles provide +10 [ICON_Housing] Housing for Neighborhoods built adjacent to them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION';
 
@@ -145,6 +145,11 @@ UPDATE LocalizedText
 SET Text = 'Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+20 [ICON_Culture] Culture. +10 Appeal. +20 [ICON_Culture] Culture if next to a wonder. +10 [ICON_Gold] Gold if next to a Luxury resource. Can only be built adjacent to Rivers.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CHATEAU_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'French unique Industrial era melee unit. +100  [ICON_Strength] Combat Strength when fighting on your capital''s continent. [ICON_GreatGeneral] Great General points for killing units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = '+100 [ICON_Strength] Combat Strength when on the same continent as the [ICON_Capital] Capital. +10 Great General points for kills.'
@@ -444,3 +449,9 @@ UPDATE LocalizedText
 SET Text = 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+20 [ICON_Science] Science. +10 [ICON_Culture] Culture if next to River. Cannot be built on Hills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION';
+
+--Gilgamesh
+UPDATE LocalizedText
+SET Text = 'May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 50 tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION';

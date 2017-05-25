@@ -32,6 +32,12 @@ WHERE UnitType = 'UNIT_AMERICAN_P51';
 UPDATE ModifierArguments
 SET Value = 500
 WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = 500
+WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
+
+
 --LEADER Teddy
 --Corollary
 UPDATE ModifierArguments
@@ -1007,3 +1013,9 @@ UPDATE ModifierArguments
 SET Value = 100
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_LEVY_DISCOUNT');
+
+UPDATE ModifierArguments
+SET Value = 50
+WHERE (Name = 'Amount'
+AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE');
+
