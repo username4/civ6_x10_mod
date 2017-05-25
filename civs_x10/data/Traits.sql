@@ -424,10 +424,6 @@ WHERE ID = 'Commerical_Hub_Production';
 
 UPDATE Adjacency_YieldChanges
 SET YieldChange = 10
-WHERE ID = 'District_Production';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
 WHERE ID = 'Resource_Production';
 
 --scale cost exponetially (430/480)^10*480
@@ -550,6 +546,13 @@ SET Value = 50
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_FAITH_PEACEFUL_FOUNDERS');
 
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Japan
+---------------------------------------------------------
+---------------------------------------------------------
+
 --"TRAIT_CIVILIZATION_ADJACENT_DISTRICTS"
 UPDATE ModifierArguments
 SET Value = 10
@@ -580,12 +583,6 @@ UPDATE ModifierArguments
 SET Value = 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_INDUSTRIALZONE_ADJACENCYPRODUCTION');
-
----------------------------------------------------------
----------------------------------------------------------
---Japan
----------------------------------------------------------
----------------------------------------------------------
 
 --FACTORY
 UPDATE Building_YieldChanges

@@ -235,7 +235,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_VARU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Indian unique Classical era unit that replaces the Horseman.  Adjacent enemy units receive -5 [ICON_STRENGTH] Combat Strength.'
+SET Text = 'Indian unique Classical era unit that replaces the Horseman.  Adjacent enemy units receive -50 [ICON_STRENGTH] Combat Strength.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_INDIAN_VARU_DESCRIPTION';
 
