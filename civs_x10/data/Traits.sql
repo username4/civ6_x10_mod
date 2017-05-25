@@ -539,6 +539,11 @@ SET Value = 1000
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASE_ENEMY_WAR_WEARINESS');
 
+UPDATE ModifierArguments
+SET Value = 50
+WHERE (Name = 'Amount'
+AND ModifierId = 'TRAIT_FAITH_PEACEFUL_FOUNDERS');
+
 --"TRAIT_CIVILIZATION_ADJACENT_DISTRICTS"
 UPDATE ModifierArguments
 SET Value = 10

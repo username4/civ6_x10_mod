@@ -29,6 +29,12 @@ SET Text = 'When defeating an enemy unit, gain [ICON_Culture] Culture equal to 5
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_ROUGH_RIDER_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'Units receive a +50 [ICON_Strength] Combat Strength on their home continent. +10 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Rifling technology.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION';
+
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --ARABIA    
@@ -119,6 +125,16 @@ SET Text = 'Each Archaeological Museum holds 30 [ICON_GreatWork_Artifact] Artifa
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_DOUBLE_ARCHAEOLOGY_SLOTS_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'English unique Industrial era unit when Victoria is their leader. +100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your [ICON_Capital] Capital''s. No disembark cost.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_REDCOAT_DESCRIPTION';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --France
@@ -162,6 +178,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +10 Sight, and +100 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = 'Additional Military policy slot. +70 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
@@ -183,6 +204,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +100 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_GREEK_HOPLITE_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = '+50% [ICON_Culture] Culture per city-state you are the Suzerain of.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION';
@@ -194,7 +220,7 @@ AND Tag = 'LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]1 [ICON_Food] Food and +10 [ICON_Housing] Housing. +10 [ICON_Faith] Faith if adjacent to a Holy Site district. +10 [ICON_Food] Food if adjacent to a Farm. Cannot be built on Hills or adjacent to another Stepwell.'
+SET Text = 'Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]10 [ICON_Food] Food and +10 [ICON_Housing] Housing. +10 [ICON_Faith] Faith if adjacent to a Holy Site district. +10 [ICON_Food] Food if adjacent to a Farm. Cannot be built on Hills or adjacent to another Stepwell.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_STEPWELL_DESCRIPTION';
 
@@ -202,6 +228,16 @@ UPDATE LocalizedText
 SET Text = '-50 [ICON_Strength] Combat Strength to adjacent enemy units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_VARU_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Indian unique Classical era unit that replaces the Horseman.  Adjacent enemy units receive -5 [ICON_STRENGTH] Combat Strength.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_INDIAN_VARU_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+50 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive tonfold the war weariness for fighting against Gandhi.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -215,7 +251,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Land units receive +50 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +5 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
+SET Text = 'Land units receive +50 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +50 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
 
@@ -324,12 +360,15 @@ SET Text = 'Extra territory upon founding cities. +10 [ICON_Faith] Faith and +10
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
 
-
 UPDATE LocalizedText
 SET Text = 'Can move after attacking. +50 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_COSSACK_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +50 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'Receives [ICON_Science] Science or [ICON_Culture] Culture from [ICON_TradeRoute] Trade Routes to civilizations that are more advanced than Russia (+1 per 0 technologies or civics ahead).'
@@ -350,9 +389,14 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = 'All units receive +5  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
+SET Text = 'All units receive +50  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
