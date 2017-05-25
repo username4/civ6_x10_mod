@@ -455,3 +455,34 @@ UPDATE LocalizedText
 SET Text = 'May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 50 tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Aztec
+---------------------------------------------------------
+---------------------------------------------------------
+
+--five suns
+UPDATE LocalizedText
+SET Text = 'Spend Builder charges to complete 90% of the original district cost.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
+
+--Eagle Warrior
+UPDATE LocalizedText
+SET Text = 'Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
+
+--Tlachtli
+UPDATE LocalizedText
+SET Text = 'A building unique to the Aztecs. Provides 10 [ICON_Amenities] Amenity, +20 [ICON_Faith] Faith, and 10 [ICON_GreatGeneral] Great General Point.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_TLACHTLI_DESCRIPTION';
+
+--Montezuma
+UPDATE LocalizedText
+SET Text = 'Luxury resources in his territory provide 10 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +10 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';

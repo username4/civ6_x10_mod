@@ -1016,3 +1016,42 @@ SET Value = 50
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE');
 
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Aztec
+---------------------------------------------------------
+---------------------------------------------------------
+
+--five suns
+UPDATE ModifierArguments
+SET Value = 90
+WHERE ModifierId = 'TRAIT_BUILDER_DISTRICT_PERCENT';
+
+--Tlachtli
+UPDATE Building_YieldChanges 
+SET YieldChange=20
+WHERE BuildingType='BUILDING_TLACHTLI';
+
+UPDATE Buildings 
+SET Entertainment=10 
+WHERE BuildingType='BUILDING_TLACHTLI';
+
+UPDATE Building_GreatPersonPoints
+SET PointsPerTurn=10
+WHERE BuildingType='BUILDING_TLACHTLIF';
+
+--Eagle Warrior
+UPDATE Units 
+SET Combat=100
+WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
+
+--Montezuma
+UPDATE ModifierArguments
+SET Value = 20
+WHERE ModifierId = 'TRAIT_OWNED_LUXURY_EXTRA_AMENITIES';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
+
