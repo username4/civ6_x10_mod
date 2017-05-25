@@ -277,6 +277,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_MBANZA_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +100 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = '+100 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
