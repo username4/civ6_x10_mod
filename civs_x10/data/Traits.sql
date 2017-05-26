@@ -31,10 +31,6 @@ WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE ModifierArguments
 SET Value = 500
-WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 500
 WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 
 
