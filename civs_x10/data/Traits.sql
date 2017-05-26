@@ -93,18 +93,19 @@ AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH');
 UPDATE ModifierArguments
 SET Value = 100
 WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');--"CIVILIZATION_BRAZIL"  "TRAIT_CIVILIZATION_AMAZON"
-
-UPDATE ModifierArguments
-SET Value = Value * 10
-WHERE (Name = 'Amount'
-AND ModifierId LIKE '%AMAZON%');
+AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_BRAZIL
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+--TRAIT_CIVILIZATION_AMAZON
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE (Name = 'Amount'
+AND ModifierId LIKE '%AMAZON%');
 
 --MINAS_GERAES
 UPDATE Units
