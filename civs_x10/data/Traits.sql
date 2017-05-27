@@ -1188,6 +1188,27 @@ AND ModifierId = 'TRAIT_LITHUANIANUNION_GOLD_RELIC';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--Hellinistic Fusion
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_ENCAMPMENT_EUREKA_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_CAMPUS_EUREKA_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_HOLY_SITE_INSPIRATION_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_HELLENISTIC_FUSION_THEATER_INSPIRATION_MODIFIER';
+
 --Hypapist siege bunus and support bonus 
 UPDATE ModifierArguments
 SET Value = 500
@@ -1209,13 +1230,6 @@ UPDATE ModifierArguments
 SET Value = 50
 WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
-
-
-
-UPDATE ModifierArguments
-SET Value = 10
-WHERE Name = 'ImprovedRouteLevel'
-AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
 
 --Basilikoi, 250% science
 UPDATE ModifierArguments
@@ -1247,8 +1261,36 @@ SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SATRAPIES_POLITICAL_PHILOSOPHY_TRADE_ROUTE';
 
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'ImprovedRouteLevel'
+AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
+
 --Immortal
+
+UPDATE Units 
+SET Combat = 165
+WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 --Paridaeza
 
+UPDATE Improvements 
+SET Appeal = 20 
+WHERE ImprovementType = 'IMPROVEMENT_PAIRIDAEZA';
+
+UPDATE Improvement_YieldChanges 
+SET YieldChange = 20 
+WHERE YieldType = 'YIELD_GOLD'
+AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
+
+UPDATE Improvement_YieldChanges 
+SET YieldChange = 10 
+WHERE YieldType = 'YIELD_CULTURE'
+AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
+
 --Cyrus
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
