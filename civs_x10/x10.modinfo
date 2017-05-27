@@ -13,13 +13,19 @@
             </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x10_text">
+            <Properties>
+                <LoadOrder>100</LoadOrder>
+            </Properties>                        
             <Items>
                 <File>data/TraitsText.sql</File>
             </Items>
-        </LocalizedText>        
+        </LocalizedText>   
     </Components>
     <Settings>
         <LocalizedText id="civs_x10_text_menu">
+            <Properties>
+                <LoadOrder>100</LoadOrder>
+            </Properties>
             <Items>
                 <File>data/TraitsText.sql</File>
             </Items>

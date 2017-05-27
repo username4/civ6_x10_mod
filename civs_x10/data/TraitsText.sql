@@ -510,10 +510,17 @@ SET Text = 'Unlocks the Builder ability to construct an Outback Station, unique 
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION';
 
+--Down Under
 UPDATE LocalizedText
 SET Text = '+30 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +10 in tiles with Charming Appeal, +30 in Breathtaking.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
+
+--John Curtin
+UPDATE LocalizedText
+SET Text = '+1000% [ICON_Production] Production if either they have received a declaration of war in the past 10 turns or if they have liberated a city in the past 20 turns.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -521,7 +528,29 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--Hussar
+UPDATE LocalizedText
+SET Text = 'Polish unique Medieval era unit. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
+--Golden Liberty
+UPDATE LocalizedText
+SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to a Wildcard slot.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +20 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +40 [ICON_Gold] Gold.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_SUKIENNICE_DESCRIPTION';
+
+
+--Jadwigna
+UPDATE LocalizedText
+SET Text = 'The religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Holy Sites gain 10 Faith adjacency bonus from adjacent districts. All Relics provide bonus Faith (+20), Culture (+20) and Gold (+40).'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -541,5 +570,6 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
 /*
 UPDATE LocalizedText
 SET Text = ''
+WHERE Language = 'en_US'
 AND Tag = '';
 */
