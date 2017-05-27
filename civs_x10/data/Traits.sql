@@ -1052,3 +1052,108 @@ UPDATE ModifierArguments
 SET Value = 10
 WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--Australia
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Digger: +20 STR, +100 on coat, +50 abroad
+UPDATE Units 
+SET Combat = 90
+WHERE UnitType = 'UNIT_DIGGER';
+
+UPDATE ModifierArguments
+SET Value = 100
+WHERE ModifierId = 'DIGGER_BONUS_ON_COAST';
+
+UPDATE ModifierArguments
+SET Value = 50
+WHERE ModifierId = 'DIGGER_NON_DOMESTIC_BONUS';
+
+--Outback Station: 10 food, 10 production, 5 housing, 10 food per pasture, 10 food and production per adj. station
+UPDATE Improvement_YieldChanges
+SET YieldChange = 10
+WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Outback_Pasture_Food';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Pasture_Outback_Production';
+
+UPDATE Improvements
+SET Housing = 5
+WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
+
+--Down Under: 30 Housing on Coast, +10 district bonus for Charming, +30 for breathtaking
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'TRAIT_CHARMING_COMMERCIAL_HUB';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'TRAIT_CHARMING_CAMPUS';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'TRAIT_CHARMING_HOLY_SITE';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'TRAIT_CHARMING_THEATER_DISTRICT';
+
+UPDATE ModifierArguments
+SET Value = 30
+WHERE ModifierId = 'TRAIT_BREATHTAKING_CAMPUS';
+
+UPDATE ModifierArguments
+SET Value = 30
+WHERE ModifierId = 'TRAIT_BREATHTAKING_COMMERCIAL_HUB';
+
+UPDATE ModifierArguments
+SET Value = 30
+WHERE ModifierId = 'TRAIT_BREATHTAKING_HOLY_SITE';
+
+UPDATE ModifierArguments
+SET Value = 30
+WHERE ModifierId = 'TRAIT_BREATHTAKING_THEATER_DISTRICT';
+
+UPDATE ModifierArguments
+SET Value = 30
+WHERE ModifierId = 'TRAIT_COASTAL_HOUSING';
+
+--Citadel of Civ +1000% Production
+UPDATE ModifierArguments
+SET Value = 1000
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION';
+
+UPDATE ModifierArguments
+SET Value = 1000
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Poland
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Macedonia
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Persia
+---------------------------------------------------------
+---------------------------------------------------------
