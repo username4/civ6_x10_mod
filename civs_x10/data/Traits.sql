@@ -1150,7 +1150,37 @@ AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--Hussar, compare STR to Knight
+UPDATE Units 
+SET Combat = 118
+WHERE UnitType = 'UNIT_POLISH_HUSSAR';
 
+--Sukiennice
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount'
+AND ModifierId = 'SUKIENNICE_INTERNATIONALPRODUCTION';
+
+UPDATE ModifierArguments
+SET Value = 40
+WHERE Name = 'YieldChange'
+AND ModifierId = 'SUKIENNICE_DOMESTICGOLD';
+
+--Lithuanian Union
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_LITHUANIANUNION_FAITH_RELIC';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_LITHUANIANUNION_CULTURE_RELIC';
+
+UPDATE ModifierArguments
+SET Value = 40
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_LITHUANIANUNION_GOLD_RELIC';
 
 ---------------------------------------------------------
 ---------------------------------------------------------

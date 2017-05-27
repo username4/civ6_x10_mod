@@ -530,7 +530,7 @@ AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
 --Hussar
 UPDATE LocalizedText
-SET Text = 'Polish unique Medieval era unit. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
+SET Text = 'Polish unique Medieval era unit, 118 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
@@ -540,6 +540,7 @@ SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort in
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
 
+--Sukiennice
 UPDATE LocalizedText
 SET Text = 'A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +20 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +40 [ICON_Gold] Gold.'
 WHERE Language = 'en_US'
