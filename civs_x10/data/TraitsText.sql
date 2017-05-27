@@ -559,7 +559,38 @@ AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--Hypaspist
+UPDATE LocalizedText
+SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +50 [ICON_Strength] Combat Strength when besieging districts. 500% Additional Support Bonus.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION';
 
+
+UPDATE LocalizedText
+SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +50 [ICON_Strength] Combat Strength when adjacent to a Great General. +50 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+10 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +20 [ICON_Gold] Gold and +10 [ICON_Culture] Culture for routes between your own cities. Roads built in your territory are one level more advanced than usual.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A building unique to Macedon.+250% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 250% of the unit''s cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION';
+
+--Alexander
+UPDATE LocalizedText
+SET Text = 'Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -567,6 +598,29 @@ AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--Satrapies
+UPDATE LocalizedText
+SET Text = '+10 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +20 [ICON_Gold] Gold and +10 [ICON_Culture] Culture for routes between your own cities. Roads built in your territory are one level more advanced than usual.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION';
+
+--Immortal essentially an archer with stromnger melee, so 10 times stronger melee
+UPDATE LocalizedText
+SET Text = 'Persian unique melee unit that replaces the Swordsman. Melee class (165 [ICON_STRENGTH])  unit with a ranged attack, [ICON_Range] Range 2. Strong defense strength.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_PERSIAN_IMMORTAL_DESCRIPTION';
+
+--Parideaza
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct a Pairidaeza, unique to Persia.[NEWLINE][NEWLINE]+10 [ICON_CULTURE] Culture and +20 [ICON_GOLD] Gold. +20 Appeal. +10 [ICON_CULTURE] Culture for each adjacent Holy Site and Theater Square. +10 [ICON_GOLD] Gold for each adjacent Commercial Hub and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION';
+
+--Cyrus
+UPDATE LocalizedText
+SET Text = '+2 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
 
 /*
 UPDATE LocalizedText
