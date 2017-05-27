@@ -565,24 +565,19 @@ SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +50 [ICON_
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION';
 
-
+--Hetaroy
 UPDATE LocalizedText
 SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +50 [ICON_Strength] Combat Strength when adjacent to a Great General. +50 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = ''
-WHERE Language = 'en_US'
-AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+10 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +20 [ICON_Gold] Gold and +10 [ICON_Culture] Culture for routes between your own cities. Roads built in your territory are one level more advanced than usual.'
+SET Text = '+10 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +20 [ICON_Gold] Gold and +10 [ICON_Culture] Culture for routes between your own cities. Roads built in your territory are ten level more advanced than usual.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Macedon.+250% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 250% of the unit''s cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.'
+SET Text = 'A building unique to Macedon.+25% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 250% of the unit''s cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION';
 

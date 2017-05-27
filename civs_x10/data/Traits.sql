@@ -1188,10 +1188,67 @@ AND ModifierId = 'TRAIT_LITHUANIANUNION_GOLD_RELIC';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--Hypapist siege bunus and support bonus 
+UPDATE ModifierArguments
+SET Value = 500
+WHERE Name = 'Percent'
+AND ModifierId = 'HYPASPIST_SUPPORT_BONUS';
 
+UPDATE ModifierArguments
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'HYPASPIST_SIEGE_BONUS';
+
+--Hetaroy 50 bnus with gerneral, 50 general points
+UPDATE ModifierArguments
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'HETAIROI_GREAT_GENERAL_POINTS';
+
+UPDATE ModifierArguments
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
+
+
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'ImprovedRouteLevel'
+AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
+
+--Basilikoi, 250% science
+UPDATE ModifierArguments
+SET Value = 250
+WHERE Name = 'UnitProductionPercent'
+AND ModifierId = 'BASILIKOI_PAIDES_SCIENCE_TRAINED_UNIT';
+
+--Alexander worlds end, nothing really to x10
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Persia
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+--Satrapies
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_GOLD';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_CULTURE';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SATRAPIES_POLITICAL_PHILOSOPHY_TRADE_ROUTE';
+
+--Immortal
+
+--Paridaeza
+
+--Cyrus
