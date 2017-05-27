@@ -1091,35 +1091,43 @@ WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
 --Down Under: 30 Housing on Coast, +10 district bonus for Charming, +30 for breathtaking
 UPDATE ModifierArguments
 SET Value = 10
-WHERE ModifierId = 'TRAIT_CHARMING_COMMERCIAL_HUB';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_CHARMING_COMMERCIAL_HUB';
 
 UPDATE ModifierArguments
 SET Value = 10
-WHERE ModifierId = 'TRAIT_CHARMING_CAMPUS';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_CHARMING_CAMPUS';
 
 UPDATE ModifierArguments
 SET Value = 10
-WHERE ModifierId = 'TRAIT_CHARMING_HOLY_SITE';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_CHARMING_HOLY_SITE';
 
 UPDATE ModifierArguments
 SET Value = 10
-WHERE ModifierId = 'TRAIT_CHARMING_THEATER_DISTRICT';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_CHARMING_THEATER_DISTRICT';
 
 UPDATE ModifierArguments
 SET Value = 30
-WHERE ModifierId = 'TRAIT_BREATHTAKING_CAMPUS';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_BREATHTAKING_CAMPUS';
 
 UPDATE ModifierArguments
 SET Value = 30
-WHERE ModifierId = 'TRAIT_BREATHTAKING_COMMERCIAL_HUB';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_BREATHTAKING_COMMERCIAL_HUB';
 
 UPDATE ModifierArguments
 SET Value = 30
-WHERE ModifierId = 'TRAIT_BREATHTAKING_HOLY_SITE';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_BREATHTAKING_HOLY_SITE';
 
 UPDATE ModifierArguments
 SET Value = 30
-WHERE ModifierId = 'TRAIT_BREATHTAKING_THEATER_DISTRICT';
+WHERE Name = 'YieldChange'
+AND ModifierId = 'TRAIT_BREATHTAKING_THEATER_DISTRICT';
 
 UPDATE ModifierArguments
 SET Value = 30
