@@ -20,11 +20,6 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_FILM_STUDIO_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Units receive a +50 [ICON_Strength] Combat Strength on their home continent. +10 Appeal to all tiles in a city with a National Park. Gain the Rough Rider unique unit when they research the Rifling technology.'
-WHERE Language = 'en_US'
-AND Tag = 'LOC_BUILDING_FILM_STUDIO_DESCRIPTION';
-
-UPDATE LocalizedText
 SET Text = 'When defeating an enemy unit, gain [ICON_Culture] Culture equal to 500% that unit''s base [ICON_Strength] Combat Strength when fighting on your [ICON_Capital] Capital''s continent. +100 [ICON_Strength] Combat Strength when fighting on Hills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_ROUGH_RIDER_DESCRIPTION';
