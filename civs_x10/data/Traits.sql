@@ -53,6 +53,11 @@ UPDATE ModifierArguments
 SET Value = 100
 WHERE ModifierId = 'ROUGH_RIDER_BONUS_ON_HILLS';
 
+UPDATE ModifierArguments
+SET Value = 500
+WHERE Name = 'PercentDefeatedStrength'
+AND ModifierId = 'ROUGH_RIDER_POST_COMBAT_CULTURE';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --ARABIA
