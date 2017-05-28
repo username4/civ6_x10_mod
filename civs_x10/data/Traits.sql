@@ -437,6 +437,10 @@ UPDATE Units
 SET BaseSightRange = 12
 WHERE UnitType = 'UNIT_GERMAN_UBOAT';
 
+UPDATE ModifierArguments
+SET Value = 100
+WHERE ModifierId = 'UBOAT_OCEAN_COMBAT';
+
 --LEADER BABAROSSA
 UPDATE ModifierArguments
 SET Value = 70
@@ -1252,7 +1256,7 @@ AND ModifierId = 'BASILIKOI_PAIDES_SCIENCE_TRAINED_UNIT';
 
 --Satrapies
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 20
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SATRAPIES_INTERNAL_TRADE_GOLD';
 
