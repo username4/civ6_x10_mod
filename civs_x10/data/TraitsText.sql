@@ -56,6 +56,18 @@ SET Text = 'A building unique to Arabia. Bonus [ICON_Faith] Faith equal to the a
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_MADRASA_DESCRIPTION';
 
+--Mamluk
+UPDATE LocalizedText
+SET Text = 'Arabian unique Medieval era unit that replaces the Knight. Heals at the end of every turn, even after moving or attacking and gets the medic healing bonus.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_ARABIAN_MAMLUK_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'This unit heals every turn, even after moving or combat with medic bonus.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_MAMLUK_DESCRIPTION';
+
+--Saladin
 UPDATE LocalizedText
 SET Text = 'The worship building for their Religion can be purchased by any player for just one-hundreth of the usual  [ICON_Faith] Faith cost.  This worship building is enhanced to add 100% to the [ICON_Science] Science, [ICON_Faith] Faith, and [ICON_Culture] Culture output of Arabian cities.'
 WHERE Language = 'en_US'
