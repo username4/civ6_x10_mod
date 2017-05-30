@@ -375,10 +375,16 @@ SET Text = 'A district unique to Rome for city growth. Replaces the Aqueduct dis
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_BATH_DESCRIPTION';
 
+--Legion
 UPDATE LocalizedText
 SET Text = 'Roman unique Classical era melee unit that replaces the Swordsman. Can build 10 Roman Forts.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ROMAN_LEGION_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +40 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_ROMAN_FORT_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'All cities you found or conquer start with a Trading Post. If in [ICON_TradeRoute] Trade Route range of your [ICON_Capital] Capital, they also start with a road to it. Your [ICON_TradeRoute] Trade Routes earn +10 [ICON_Gold] Gold for passing through Trading Posts in your own cities.'
