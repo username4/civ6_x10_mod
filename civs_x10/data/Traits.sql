@@ -263,13 +263,13 @@ AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
 --Museum
 UPDATE ModifierArguments
 SET Value = 30
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_DOUBLE_ARCHAEOLOGY_SLOTS');
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_DOUBLE_ARCHAEOLOGY_SLOTS';
 
 UPDATE ModifierArguments
 SET Value = 9
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_SUPPORT_TWO_ARCHAEOLOGISTS');
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SUPPORT_TWO_ARCHAEOLOGISTS';
 
 --SEADOG, but more moves for now, prize ship chance=100% maybe?
 UPDATE Units
@@ -279,8 +279,8 @@ WHERE UnitType = 'UNIT_ENGLISH_SEADOG';
 --TRAIT_CIVILIZATION_ROYAL_NAVY_DOCKYARD"
 UPDATE ModifierArguments
 SET Value = 20
-WHERE (Name = 'Amount'
-AND ModifierId = 'ROYAL_NAVY_DOCKYARD_GOLD_FROM_FOREIGN_CONTINENT');
+WHERE Name = 'Amount'
+AND ModifierId = 'ROYAL_NAVY_DOCKYARD_GOLD_FROM_FOREIGN_CONTINENT';
 
 UPDATE ModifierArguments
 SET Value = 10
