@@ -134,7 +134,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY');
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 11
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL');
 
