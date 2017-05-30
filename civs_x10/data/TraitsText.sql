@@ -220,7 +220,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Additional Military policy slot. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = 'Five additional Military policy slots. +70 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
@@ -229,6 +229,11 @@ AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 --Greece
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Five extra Wildcard policy slots in any government.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'Adjacency: +10 [ICON_Culture] Culture bonus for adjacent City Center. +10 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.'
