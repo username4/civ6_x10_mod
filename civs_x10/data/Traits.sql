@@ -1312,7 +1312,10 @@ SET Value = 10
 WHERE Name = 'ImprovedRouteLevel'
 AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
 
---Immortal
+--Immortal essentially an archer with stromnger melee, so 10 times stronger melee
+UPDATE Units 
+SET Cost = 190
+WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 UPDATE Units 
 SET Combat = 165
