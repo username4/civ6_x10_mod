@@ -253,6 +253,13 @@ SET Value = 20
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
 
+
+---------------------------------------------------------
+---------------------------------------------------------
+--England
+---------------------------------------------------------
+---------------------------------------------------------
+
 --Museum
 UPDATE ModifierArguments
 SET Value = 30
@@ -263,12 +270,6 @@ UPDATE ModifierArguments
 SET Value = 9
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_SUPPORT_TWO_ARCHAEOLOGISTS');
-
----------------------------------------------------------
----------------------------------------------------------
---England
----------------------------------------------------------
----------------------------------------------------------
 
 --SEADOG, but more moves for now, prize ship chance=100% maybe?
 UPDATE Units
@@ -694,7 +695,7 @@ AND ModifierId = 'TRAIT_GREAT_WORK_GOLD_ARTIFACT');
 UPDATE ModifierArguments
 SET Value = 20
 WHERE (Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_ARTIFACT');
+AND ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_RELIC');
 
 UPDATE ModifierArguments
 SET Value = 20
@@ -702,7 +703,7 @@ WHERE (Name = 'YieldChange'
 AND ModifierId = 'TRAIT_GREAT_WORK_FOOD_RELIC');
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 40
 WHERE (Name = 'YieldChange'
 AND ModifierId = 'TRAIT_GREAT_WORK_GOLD_RELIC');
 
@@ -961,6 +962,10 @@ SET Value = 20
 WHERE (Name = 'Amount'
 AND ModifierId = 'MISSION_NEWCONTINENT_FAITH');
 
+UPDATE ModifierArguments
+SET Value = 10
+WHERE (Name = 'Amount'
+AND ModifierId = 'MISSION_CAMPUSADJACENCY_SCIENCE');
 
 --CONQUISTADOR
 UPDATE ModifierArguments
@@ -997,6 +1002,13 @@ WHERE ModifierId = 'COMBAT_BONUS_OTHER_RELIGION_MODIFIER';--first civ More Goody
 --Sumeria
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+--First Civilization
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_LEVY_DISCOUNT';
+
 --ZIGGURAT
 UPDATE Improvement_YieldChanges
 SET YieldChange = 20
@@ -1009,8 +1021,8 @@ WHERE ImprovementType = 'IMPROVEMENT_ZIGGURAT';
 
 UPDATE ModifierArguments
 SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'ZIGGURAT_RIVERADJACENCY_CULTURE');
+WHERE Name = 'Amount'
+AND ModifierId = 'ZIGGURAT_RIVERADJACENCY_CULTURE';
 
 --TRAIT_CIVILIZATION_UNIT_SUMERIAN_WAR_CART Rush early, so reduced cost for 10x the early rush
 UPDATE Units
@@ -1019,14 +1031,9 @@ WHERE UnitType = 'UNIT_SUMERIAN_WAR_CART';
 
 --LEADER Gilgamesh
 UPDATE ModifierArguments
-SET Value = 100
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_LEVY_DISCOUNT');
-
-UPDATE ModifierArguments
 SET Value = 50
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE');
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_ADJUST_JOINTWAR_EXPERIENCE';
 
 
 ---------------------------------------------------------
@@ -1045,13 +1052,9 @@ UPDATE Building_YieldChanges
 SET YieldChange=20
 WHERE BuildingType='BUILDING_TLACHTLI';
 
-UPDATE Buildings 
-SET Entertainment=10 
-WHERE BuildingType='BUILDING_TLACHTLI';
-
 UPDATE Building_GreatPersonPoints
 SET PointsPerTurn=10
-WHERE BuildingType='BUILDING_TLACHTLIF';
+WHERE BuildingType='BUILDING_TLACHTLI';
 
 --Eagle Warrior
 UPDATE Units 

@@ -115,7 +115,12 @@ SET Text = 'When building Ancient and Classical wonders you may spend Builder ch
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
 --Egypt
+---------------------------------------------------------
+---------------------------------------------------------
+
 UPDATE LocalizedText
 SET Text = '+150% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.'
 WHERE Language = 'en_US'
@@ -131,8 +136,14 @@ SET Text = 'Your [ICON_TradeRoute] Trade Routes to other civilizations provide +
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--England
+---------------------------------------------------------
+---------------------------------------------------------
+
 UPDATE LocalizedText
-SET Text = 'A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+1 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+20 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+10 [ICON_TradeRoute] Trade Route capacity.'
+SET Text = 'A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+10 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+20 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+10 [ICON_TradeRoute] Trade Route capacity.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION';
 
@@ -182,7 +193,12 @@ SET Text = 'Has 10 level of [ICON_VisLimited] Diplomatic Visibility greater than
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
 --Germany
+---------------------------------------------------------
+---------------------------------------------------------
+
 UPDATE LocalizedText
 SET Text = 'Each city can build 10 districts more than usual (exceeding the normal limit based on [ICON_Citizen] Population).'
 WHERE Language = 'en_US'
@@ -431,7 +447,7 @@ AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+20 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +20 [ICON_Science] Science if built next to a Campus district.'
+SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+20 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +10 [ICON_Science] Science if built next to a Campus district.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_MISSION_DESCRIPTION';
 
@@ -461,6 +477,13 @@ AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+--First Civilization
+UPDATE LocalizedText
+SET Text = 'When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay 1% the usual cost to levy city-state units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION';
+
+--Ziggurat
 UPDATE LocalizedText
 SET Text = 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+20 [ICON_Science] Science. +10 [ICON_Culture] Culture if next to River. Cannot be built on Hills.'
 WHERE Language = 'en_US'
@@ -493,7 +516,7 @@ AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
 --Tlachtli
 UPDATE LocalizedText
-SET Text = 'A building unique to the Aztecs. Provides 10 [ICON_Amenities] Amenity, +20 [ICON_Faith] Faith, and 10 [ICON_GreatGeneral] Great General Point.'
+SET Text = 'A building unique to the Aztecs. Provides 1 [ICON_Amenities] Amenity, +20 [ICON_Faith] Faith, and 10 [ICON_GreatGeneral] Great General Point.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_TLACHTLI_DESCRIPTION';
 
