@@ -950,7 +950,15 @@ WHERE ID = 'Kurgan_Faith';
 
 --TRAIT_CIVILIZATION_UNIT_SCYTHIAN_HORSE_ARCHER Cost reduced for even more rushing
 UPDATE Units
-SET Cost = 10
+SET Cost = 280
+WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
+
+UPDATE Units
+SET Combat = 1
+WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
+
+UPDATE Units
+SET Range = 10
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 --Killer of Cyros

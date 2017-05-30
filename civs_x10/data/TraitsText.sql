@@ -428,12 +428,15 @@ SET Text = 'Unlocks the Builder ability to construct a Kurgan, unique to Scythia
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_KURGAN_DESCRIPTION';
 
-
 UPDATE LocalizedText
 SET Text = 'Receive 10 cavalry units or Saka Horse Archers each time you train a light cavalry unit or Saka Horse Archer.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'Expensive Scythian unique Classical era unit. Ranged unit with 4 [ICON_Movement] Movement with a [ICON_Range] Range of 10.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'All units receive +50  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
