@@ -1323,6 +1323,25 @@ SET Combat = 165
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 --Paridaeza
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10 
+WHERE ID = 'Pairidaeza_CityCenterAdjacency';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10 
+WHERE ID = 'Pairidaeza_CommercialHubAdjacency';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10 
+WHERE ID = 'Pairidaeza_HolySiteAdjacency';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10 
+WHERE ID = 'Pairidaeza_TheaterAdjacency';
+
+UPDATE Improvement_BonusYieldChanges
+SET BonusYieldChange = 10
+WHERE ImprovementType = 'IMPROVEMENT_PAIRIDAEZA';
 
 UPDATE Improvements 
 SET Appeal = 20 
