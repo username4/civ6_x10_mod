@@ -287,7 +287,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_DOUBLE_ARCHAEOLOGY_SLOTS';
 
 UPDATE ModifierArguments
-SET Value = 9
+SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SUPPORT_TWO_ARCHAEOLOGISTS';
 
