@@ -860,7 +860,7 @@ SET Cost = 1
 WHERE DistrictType = 'DISTRICT_LAVRA';
 
 UPDATE District_GreatPersonPoints
-SET PointsPerTurn = 20
+SET PointsPerTurn = 11
 WHERE (DistrictType = 'DISTRICT_LAVRA'
 AND GreatPersonClassType = 'GREAT_PERSON_CLASS_PROPHET');
 
@@ -893,11 +893,16 @@ UPDATE ModifierArguments
 SET Value = 50
 WHERE ModifierId = 'COSSACK_LOCAL_COMBAT';
 
-
 --peter
 UPDATE ModifierArguments
 SET Value = 0
 WHERE ModifierId = 'TRAIT_ADJUST_PROGRESS_DIFF_TRADE_BONUS';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Scythia
+---------------------------------------------------------
+---------------------------------------------------------
 
 --TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY 
 UPDATE ModifierArguments
@@ -909,12 +914,6 @@ UPDATE ModifierArguments
 SET Value = 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_EXTRASAKAHORSEARCHER');
-
----------------------------------------------------------
----------------------------------------------------------
---Scythia
----------------------------------------------------------
----------------------------------------------------------
 
 --Kurgan
 UPDATE Improvement_YieldChanges

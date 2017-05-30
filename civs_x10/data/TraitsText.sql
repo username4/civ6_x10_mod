@@ -417,7 +417,12 @@ SET Text = 'Receives [ICON_Science] Science or [ICON_Culture] Culture from [ICON
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
 --Scythia
+---------------------------------------------------------
+---------------------------------------------------------
+
 UPDATE LocalizedText
 SET Text = 'Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith. +10 [ICON_Gold] Gold. +10 [ICON_Faith] Faith for each adjacent Pasture. Cannot be built on Hills.'
 WHERE Language = 'en_US'
