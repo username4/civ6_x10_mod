@@ -114,9 +114,29 @@ AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
 
 --TRAIT_CIVILIZATION_AMAZON
 UPDATE ModifierArguments
-SET Value = Value * 10
-WHERE (Name = 'Amount'
-AND ModifierId LIKE '%AMAZON%');
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_COMMERCIALHUB_ADJACENCY');
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_HOLYSITE_ADJACENCY');
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_THEATER_ADJACENCY');
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY');
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL');
 
 --MINAS_GERAES
 UPDATE Units
