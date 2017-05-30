@@ -122,7 +122,7 @@ AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+150% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.'
+SET Text = '+405% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION';
 
