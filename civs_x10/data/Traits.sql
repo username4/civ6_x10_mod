@@ -489,12 +489,8 @@ SET Cost = 1
 WHERE DistrictType = 'DISTRICT_ACROPOLIS';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 20
 WHERE ID = 'District_Culture_City_Center';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = 10
-WHERE ID = 'Wonder_Culture';
 
 --HOPLITE
 UPDATE ModifierArguments
