@@ -116,27 +116,27 @@ AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
 UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_COMMERCIALHUB_ADJACENCY');
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_COMMERCIALHUB_ADJACENCY';
 
 UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_HOLYSITE_ADJACENCY');
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_HOLYSITE_ADJACENCY';
 
 UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_THEATER_ADJACENCY');
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_THEATER_ADJACENCY';
 
 UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY');
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY';
 
 UPDATE ModifierArguments
 SET Value = 11
 WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL');
+AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
@@ -318,6 +318,14 @@ UPDATE ModifierArguments
 SET Value = 100
 WHERE ModifierId = 'REDCOAT_FOREIGN_COMBAT';
 
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--France
+---------------------------------------------------------
+---------------------------------------------------------
+
 --TRAIT_CIVILIZATION_IMPROVEMENT_CHATEAU
 UPDATE Improvements
 SET Appeal = 10
@@ -336,12 +344,6 @@ UPDATE ModifierArguments
 SET Value = 20
 WHERE (Name = 'Amount'
 AND ModifierId = 'CHATEAU_WONDERADJACENCY_CULTURE');
-
----------------------------------------------------------
----------------------------------------------------------
---France
----------------------------------------------------------
----------------------------------------------------------
 
 --10x tourism
 UPDATE ModifierArguments
