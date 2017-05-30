@@ -148,7 +148,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Each Archaeological Museum holds 30 [ICON_GreatWork_Artifact] Artifacts instead of 3, and can support 10 Archaeologists at once. Archaeological Museums are automatically themed when they have 6 [ICON_GreatWork_Artifact] Artifacts.'
+SET Text = 'Each Archaeological Museum holds 9 [ICON_GreatWork_Artifact] Artifacts instead of 3, and can support 3 Archaeologists at once. Archaeological Museums are automatically themed when they have 6 [ICON_GreatWork_Artifact] Artifacts.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_DOUBLE_ARCHAEOLOGY_SLOTS_DESCRIPTION';
 

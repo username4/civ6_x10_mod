@@ -280,12 +280,12 @@ AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
 
 --Museum
 UPDATE ModifierArguments
-SET Value = 30
+SET Value = 6
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_DOUBLE_ARCHAEOLOGY_SLOTS';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 2
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SUPPORT_TWO_ARCHAEOLOGISTS';
 
