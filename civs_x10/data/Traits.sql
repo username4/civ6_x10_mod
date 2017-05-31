@@ -519,7 +519,7 @@ VALUES ('TRAIT_MILITARY_GOVERNMENT_SLOT_5', 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVE
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES ('TRAIT_MILITARY_GOVERNMENT_SLOT_5', 'GovernmentSlotType', 'SLOT_MILITARY');
-/*
+
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES ('TRAIT_LEADER_HOLY_ROMAN_EMPEROR', 'TRAIT_MILITARY_GOVERNMENT_SLOT_6');
 
@@ -555,7 +555,7 @@ VALUES ('TRAIT_MILITARY_GOVERNMENT_SLOT_9', 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVE
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES ('TRAIT_MILITARY_GOVERNMENT_SLOT_9', 'GovernmentSlotType', 'SLOT_MILITARY');
-*/
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Greece
@@ -610,7 +610,7 @@ VALUES ('TRAIT_WILDCARD_GOVERNMENT_SLOT_5', 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVE
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES ('TRAIT_WILDCARD_GOVERNMENT_SLOT_5', 'GovernmentSlotType', 'SLOT_WILDCARD');
-/*
+
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES ('TRAIT_CIVILIZATION_PLATOS_REPUBLIC', 'TRAIT_WILDCARD_GOVERNMENT_SLOT_6');
 
@@ -646,7 +646,7 @@ VALUES ('TRAIT_WILDCARD_GOVERNMENT_SLOT_9', 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVE
 
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES ('TRAIT_WILDCARD_GOVERNMENT_SLOT_9', 'GovernmentSlotType', 'SLOT_WILDCARD');
-*/
+
 --acropolis
 UPDATE Districts
 SET Cost = 1
