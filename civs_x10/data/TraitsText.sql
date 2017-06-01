@@ -52,7 +52,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Arabia. Bonus [ICON_Faith] Faith equal to the adjacency bonus of the Campus district.'
+SET Text = 'A building unique to Arabia. Bonus [ICON_Faith] Faith equal to the adjacency bonus of the Campus district. Produces 14 [ICON_SCIENCE].'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_MADRASA_DESCRIPTION';
 
@@ -63,7 +63,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ARABIAN_MAMLUK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'This unit heals every turn, even after moving or combat with medic bonus.'
+SET Text = 'This unit heals every turn, even after moving or combat and provides the medic healing bonus.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_MAMLUK_DESCRIPTION';
 
