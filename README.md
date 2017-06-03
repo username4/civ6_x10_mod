@@ -15,3 +15,9 @@ Delete the folder
 
 On github:
 https://github.com/username4/civ6_x10_mod
+
+On Nexus:
+http://www.nexusmods.com/civilisationvi/mods/66/?
+
+On Steam Workshop:
+https://steamcommunity.com/sharedfiles/filedetails/?id=931616985
