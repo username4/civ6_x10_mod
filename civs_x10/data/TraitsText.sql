@@ -78,7 +78,7 @@ AND Tag = 'LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION';
 --Brazil
 ---------------------------------------------------------
 ---------------------------------------------------------
-
+-- 
 UPDATE LocalizedText
 SET Text = 'Rainforest tiles provide +10 adjacency bonus for Campus, Commercial Hub, Holy Site, and Theater Square districts. Rainforest tiles provide +10 [ICON_Housing] Housing for Neighborhoods built adjacent to them.'
 WHERE Language = 'en_US'
@@ -220,7 +220,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Ten additional Military policy slots, you have to wait, until you have 10 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = '3 additional Military policy slots, you have to wait, until you have 10 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
@@ -231,7 +231,7 @@ AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Ten extra Wildcard policy slots in any government, you have to wait, until you have 10 policies to fill them.'
+SET Text = '6 extra Wildcard policy slots in any government, you have to wait, until you have 10 policies to fill them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
