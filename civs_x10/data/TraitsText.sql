@@ -594,7 +594,7 @@ AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
 --Golden Liberty
 UPDATE LocalizedText
-SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to a Wildcard slot.'
+SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. Up to Ten Military policy slot in the current government are converted to Wildcard slots.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
 
