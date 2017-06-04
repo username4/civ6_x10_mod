@@ -220,7 +220,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '3 additional Military policy slots, you have to wait, until you have 10 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = '2 additional Military policy slots, you have to wait, until you have 3 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
