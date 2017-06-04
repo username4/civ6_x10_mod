@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameInfo>
+    <TraitModifiers>
+	<Row>
+			<TraitType>TRAIT_CIVILIZATION_GOLDEN_LIBERTY</TraitType>
+			<ModifierId>TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1</ModifierId>
+	</Row>
+    </TraitModifiers>
+</GameInfo>

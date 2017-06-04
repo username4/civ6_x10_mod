@@ -11,6 +11,9 @@
             <Items>
                 <File>data/Traits.sql</File>
             </Items>
+            <Items>
+                <File>data/golden_liberty.xml</File>
+            </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x10_text">
             <Properties>
@@ -34,5 +37,6 @@
     <Files>
         <File>data/Traits.sql</File>
         <File>data/TraitsText.sql</File>
+        <File>data/golden_liberty.xml</File>
     </Files>
 </Mod>
