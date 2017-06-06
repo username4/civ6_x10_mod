@@ -1359,8 +1359,11 @@ AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
 ---------------------------------------------------------
 
 --golden Liberty: 10 Military to wildcard, stronger culture bomb
-INSERT INTO Traits (TraitType, Name, Description) 
-VALUES ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'LOC_PLACEHOLDER', 'LOC_PLACEHOLDER');
+/*
+INSERT INTO Traits (TraitType, Name, Description)
+VALUES ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'LOC_PLACEHOLDER', 'LOC_PLACEHOLDER')
+WHERE NOT EXISTS 
+    (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
 
 INSERT INTO Types (Type, Kind) 
 VALUES ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'KIND_TRAIT');
@@ -1410,6 +1413,7 @@ VALUES
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_8','AddedGovernmentSlotType','SLOT_WILDCARD'),
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_9','ReplacedGovernmentSlotType','SLOT_MILITARY'),
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_9','AddedGovernmentSlotType','SLOT_WILDCARD');
+*/
     
 --Hussar, compare STR to Knight
 UPDATE Units 

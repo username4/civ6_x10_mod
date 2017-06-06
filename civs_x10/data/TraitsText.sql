@@ -220,7 +220,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '10 additional Military policy slots, you have to wait, until you have 3 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = '10 additional Military policy slots. +70 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
@@ -231,7 +231,7 @@ AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '10 extra Wildcard policy slots in any government, you have to wait, until you have 10 policies to fill them.'
+SET Text = '10 extra Wildcard policy slots in any government.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
@@ -594,7 +594,7 @@ AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
 --Golden Liberty
 UPDATE LocalizedText
-SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. Up to Ten Military policy slot in the current government are converted to Wildcard slots.'
+SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. One Military policy slot in the current government is converted to Wildcard slot.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
 
