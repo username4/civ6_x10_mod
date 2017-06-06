@@ -220,7 +220,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '2 additional Military policy slots, you have to wait, until you have 3 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = '10 additional Military policy slots, you have to wait, until you have 3 policies, so you can fill them. +70 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
@@ -231,7 +231,7 @@ AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '6 extra Wildcard policy slots in any government, you have to wait, until you have 10 policies to fill them.'
+SET Text = '10 extra Wildcard policy slots in any government, you have to wait, until you have 10 policies to fill them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
@@ -675,6 +675,20 @@ UPDATE LocalizedText
 SET Text = '+20 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Other modifications
+---------------------------------------------------------
+---------------------------------------------------------
+
+--10 blank civics for germany and greece
+INSERT INTO LocalizedText (Language, Tag, Text)
+VALUES ('en_US', 'LOC_POLICY_BLANK_NAME', 'Blank Policy');
+
+INSERT INTO LocalizedText (Language, Tag, Text)
+VALUES ('en_US', 'LOC_POLICY_BLANK_DESCRIPTION', 'Policy without effect, so the game does not softlock with germany and greece (by civsx10 mod).');
+
 
 /*
 UPDATE LocalizedText
