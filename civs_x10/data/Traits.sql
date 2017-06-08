@@ -257,10 +257,11 @@ SET Value = 20
 WHERE (Name = 'Amount'
 AND ModifierId = 'SPHINX_WONDERADJACENCY_FAITH');
 
---TRAIT_CIVILIZATION_UNIT_EGYPTIAN_CHARIOT_ARCHER, kinda hard to x10, so I conmpare to normal archer
-UPDATE Units
-SET RangedCombat = 105
-WHERE UnitType = 'UNIT_EGYPTIAN_CHARIOT_ARCHER';
+--TRAIT_CIVILIZATION_UNIT_EGYPTIAN_CHARIOT_ARCHER, Movement Bonus x10 and 
+UPDATE ModifierArguments
+SET Value = 12
+WHERE (Name = 'Amount'
+AND ModifierId = 'LIGHTCHARIOT_FASTER_CLEAR_TERRAIN');
 
 --TRAIT_LEADER_MEDITERRANEAN
 UPDATE ModifierArguments

@@ -115,6 +115,18 @@ SET Text = 'When building Ancient and Classical wonders you may spend Builder ch
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an +40 increase to [ICON_Strength] Defense. 10 Bonus to [ICON_Gold] Gold if adjacent to other segments. 10 additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Chinese unique Medieval era unit. Ranged unit with a [ICON_Range] Range of 1 and 140 [ICON_RANGED].'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
+
+
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Egypt
@@ -130,6 +142,11 @@ UPDATE LocalizedText
 SET Text = 'Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith and +10 [ICON_Culture] Culture. +10 Appeal. +20 [ICON_Faith] Faith if next to a wonder. Cannot be built next to another Sphinx. Can be built on Floodplains.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_SPHINX_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Egyptian unique Ancient era ranged unit that replaces the Heavy Chariot. 12 [ICON_Movement] Movement when starting in open terrain.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'Your [ICON_TradeRoute] Trade Routes to other civilizations provide +40 [ICON_Gold] Gold for Egypt. Other civilizations'' [ICON_TradeRoute] Trade Routes to Egypt provide +20 [ICON_Food] Food for them and +20 [ICON_Gold] Gold for Egypt.'
