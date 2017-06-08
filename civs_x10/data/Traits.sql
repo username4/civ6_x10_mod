@@ -166,6 +166,13 @@ WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
 UPDATE ModifierArguments
 SET Value = 90
 WHERE ModifierId = 'TRAIT_GREAT_PERSON_REFUND';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CHINA
+---------------------------------------------------------
+---------------------------------------------------------
+
 --DYNASTIC_CYCLE"
 --10% extra eureka -> 150% eureka nonsense, therefore  decrease leftover exponential 1−0,5×0,8^10=~95% , makes a 'bit' of sense, but very OP
 UPDATE ModifierArguments
@@ -175,12 +182,6 @@ WHERE ModifierId = 'TRAIT_CIVIC_BOOST';
 UPDATE ModifierArguments
 SET Value = 45
 WHERE ModifierId = 'TRAIT_TECHNOLOGY_BOOST';
-
----------------------------------------------------------
----------------------------------------------------------
---CHINA
----------------------------------------------------------
----------------------------------------------------------
 
 --TRAIT_CIVILIZATION_IMPROVEMENT_GREAT_WALL
 --40 Def
@@ -216,6 +217,12 @@ WHERE ModifierId = 'TRAIT_ADJUST_BUILDER_CHARGES';
 UPDATE ModifierArguments
 SET Value = 80
 WHERE ModifierId = 'TRAIT_BUILDER_WONDER_PERCENT';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Egypt
+---------------------------------------------------------
+---------------------------------------------------------
 
 --Iteru
 UPDATE ModifierArguments
@@ -1358,27 +1365,35 @@ AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
---golden Liberty: 10 Military to wildcard, stronger culture bomb
-/*
-INSERT INTO Traits (TraitType, Name, Description)
-VALUES ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'LOC_PLACEHOLDER', 'LOC_PLACEHOLDER')
-WHERE NOT EXISTS 
-    (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
-
-INSERT INTO Types (Type, Kind) 
-VALUES ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'KIND_TRAIT');
-
+--golden Liberty: 10 Military to wildcard
 INSERT INTO TraitModifiers (TraitType, ModifierId)
-VALUES 
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_3'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_4'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_5'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_6'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_7'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_8'),
-    ('TRAIT_CIVILIZATION_GOLDEN_LIBERTY', 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_9'); 
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_1'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_2'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_3'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_4'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_5'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_6'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_7'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_8'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY' , 'TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_9'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_CIVILIZATION_GOLDEN_LIBERTY');
+
 
 
 INSERT INTO Modifiers (ModifierId, ModifierType)
@@ -1413,7 +1428,6 @@ VALUES
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_8','AddedGovernmentSlotType','SLOT_WILDCARD'),
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_9','ReplacedGovernmentSlotType','SLOT_MILITARY'),
     ('TRAIT_REPLACE_MILITARY_SLOT_WITH_WILDCARD_9','AddedGovernmentSlotType','SLOT_WILDCARD');
-*/
     
 --Hussar, compare STR to Knight
 UPDATE Units 
