@@ -632,6 +632,10 @@ SET BaseMoves = 1
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
 UPDATE Units
+SET Cost = 480
+WHERE UnitType = 'UNIT_INDIAN_VARU';
+
+UPDATE Units
 SET Combat = 85
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
