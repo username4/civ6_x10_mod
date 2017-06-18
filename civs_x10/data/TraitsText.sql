@@ -415,7 +415,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = 'All cities start with 10 additional City Center buildings. (Starts with a Monument building in the Ancient era).'
+SET Text = 'All cities start with up to 10 additional City Center buildings. (Starts with a Monument building in the Ancient era).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION';
 
@@ -546,7 +546,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
 
 --Eagle Warrior
 UPDATE LocalizedText
-SET Text = 'Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
+SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
