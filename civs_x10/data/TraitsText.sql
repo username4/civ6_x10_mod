@@ -345,6 +345,12 @@ SET Text = '+100 [ICON_Strength] Combat Strength when defending against ranged u
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'May not build Holy Site districts, gain Great Prophets, or found Religions. Gains all Beliefs of any Religion that has established itself in a majority of his cities. Receives ten Apostles each time he finishes a M''banza or Theater Square district (of that city''s majority Religion).'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
+
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Norway
