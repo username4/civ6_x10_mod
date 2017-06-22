@@ -807,6 +807,12 @@ SET Value = 40
 WHERE (Name = 'YieldChange'
 AND ModifierId = 'TRAIT_GREAT_WORK_GOLD_RELIC');
 
+--palace slots, 9 max, or UI is fucked
+UPDATE ModifierArguments
+SET Value = 8
+WHERE (Name = 'Amount'
+AND ModifierId = 'TRAIT_EXTRA_PALACE_SLOTS');
+
 --MBANZA
 UPDATE Districts
 SET Cost = 1
