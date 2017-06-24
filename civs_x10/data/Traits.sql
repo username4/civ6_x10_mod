@@ -1332,7 +1332,20 @@ VALUES
 	('TRAIT_BARBARIAN_CAMP_GOODY_7' , 'KIND_TRAIT'),
 	('TRAIT_BARBARIAN_CAMP_GOODY_8' , 'KIND_TRAIT'),
 	('TRAIT_BARBARIAN_CAMP_GOODY_9' , 'KIND_TRAIT');
+
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+VALUES
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_1'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_2'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_3'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_4'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_5'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_6'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_7'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_8'),
+	('TRAIT_CIVILIZATION_FIRST_CIVILIZATION' , 'TRAIT_BARBARIAN_CAMP_GOODY_9');
 */
+
 --ZIGGURAT
 UPDATE Improvement_YieldChanges
 SET YieldChange = 20
@@ -1757,3 +1770,83 @@ VALUES
     ('POLICY_BLANK_7', 'KIND_POLICY'),
     ('POLICY_BLANK_8', 'KIND_POLICY'),
     ('POLICY_BLANK_9', 'KIND_POLICY');
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--MOD CIVS
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Campus Metropolitan
+---------------------------------------------------------
+---------------------------------------------------------
+
+--science and gold bonus
+UPDATE ModifierArguments
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_SCIENCE_BONUS';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_CITY_GOLD';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_CIVILIZATION_GAKUINTOSHI_CITY_SCIENCE';
+
+--KENKYUJO
+UPDATE Districts
+SET Cost = 1
+WHERE DistrictType = 'DISTRICT_KENKYUJO';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Mountains_Production1'
+OR ID = 'Mountains_Production2'
+OR ID = 'Mountains_Production3'
+OR ID = 'Mountains_Production4'
+OR ID = 'Mountains_Production5';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Mountains_Gold1'
+OR ID = 'Mountains_Gold2'
+OR ID = 'Mountains_Gold3'
+OR ID = 'Mountains_Gold4'
+OR ID = 'Mountains_Gold5';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Mountains_Science1'
+OR ID = 'Mountains_Science2'
+OR ID = 'Mountains_Science3'
+OR ID = 'Mountains_Science4'
+OR ID = 'Mountains_Science5';
+
+UPDATE District_CitizenYieldChanges
+SET YieldChange = 10
+WHERE YieldType = 'YIELD_PRODUCTION'
+AND DistrictType = 'DISTRICT_KENKYUJO'; 
+
+--Lv 5 Judgement
+UPDATE Units 
+SET BaseSighRange = 12 , BaseMoves = 13
+WHERE UnitType = 'UNIT_LV5_JUDGEMENT';
+
+--Imouto
+UPDATE Units 
+SET Maintainance = 1 , Cost = 210
+WHERE UnitType = 'UNIT_MIKASA_SISTERS'
+
+
+--Misaka
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'MIKASA_LONG_RANGE';

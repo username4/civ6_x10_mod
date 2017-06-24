@@ -170,6 +170,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_DOUBLE_ARCHAEOLOGY_SLOTS_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'Very fast English unique Renaissance era naval unit that replaces the Privateer. Can capture enemy ships. Cannot be seen unless adjacent to it.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_ENGLISH_SEADOG_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = 'English unique Industrial era unit when Victoria is their leader. +100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION';
@@ -711,6 +716,39 @@ VALUES ('en_US', 'LOC_POLICY_BLANK_NAME', 'Blank Policy');
 
 INSERT INTO LocalizedText (Language, Tag, Text)
 VALUES ('en_US', 'LOC_POLICY_BLANK_DESCRIPTION', 'Policy without effect, so the game does not softlock with germany and greece (by civsx10 mod).');
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+--MOD CIVS
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Campus Metropolitan
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Replaces campus. Gain [ICON_Gold] gold and [ICON_Production] production adjacenry bonus equal to [ICON_Science] science bonus. Each working citizen provides 10 extra [ICON_Production] production.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_DISTRICT_KENKYUJO_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Special recon unit which replaces rangers. Have much better [ICON_Movement] movement and sight range than rangers.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_UNIT_LV5_JUDGEMENT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Replica of Misaka Mikoto, clone units. Replaces Infantry, but much cheaper to build and maintain.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_MIKASA_UNIT_MIKASA_SISTERS_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Range units earn +10 [ICON_Range] range bonus.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
 
 
 /*
