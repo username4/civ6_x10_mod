@@ -1948,14 +1948,14 @@ UPDATE ModifierArguments
 SET Value = 250
 WHERE ModifierId = 'TRAIT_DISTRICT_CONS_CMC_VILLAGE_UNIT_XP_BONUS';
 
-UPDATE AdJacency_YieldChanges
+UPDATE Adjacency_YieldChanges
 SET YieldChange = 10
-WHERE ID = 'Cons_CMC_Village_District_Gold'
+WHERE ID = 'Cons_CMC_Village_District_Gold';
 
 --Make Magic Stuff
 UPDATE Project_YieldConversions
 SET PercentOfProductionRate = 300
-WHERE DistrictType = 'PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE';
+WHERE ProjectType = 'PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE';
 
 --Cast Explosion Magic
 UPDATE ModifierArguments
