@@ -1805,6 +1805,26 @@ UPDATE Districts
 SET Cost = 1
 WHERE DistrictType = 'DISTRICT_KENKYUJO';
 
+INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature)
+SELECT 'KENKYUJO_JUNGLE_GOLD' , 'LOC_DISTRICT_JUNGLE_GOLD' , 'YIELD_GOLD' , 9 , 2 , 'FEATURE_JUNGLE'
+WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
+INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, AdjacentFeature)
+SELECT 'KENKYUJO_JUNGLE_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 9 , 2 , 'FEATURE_JUNGLE'
+WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
+INSERT INTO AdJacency_YieldChanges (ID, Description, YieldType, YieldChange, TilesRequired, OtherDistrictAdjacent)
+SELECT 'KENKYUJO_DISTRICT_PRODUCTION' , 'LOC_DISTRICT_JUNGLE_PRODUCTION' , 'YIELD_PRODUCTION' , 9 , 2 , 1
+WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
+
+INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)
+SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_JUNGLE_GOLD'
+WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
+INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)	
+SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_JUNGLE_PRODUCTION'
+WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');
+INSERT INTO District_Adjacencies (DistrictType, YieldChangeId)	
+SELECT 'DISTRICT_KENKYUJO', 'KENKYUJO_DISTRICT_PRODUCTION'
+WHERE EXISTS  (SELECT * FROM Civilizations WHERE CivilizationType = 'CIVILIZATION_GAKUINTOSHI');	
+
 UPDATE AdJacency_YieldChanges
 SET YieldChange = 10
 WHERE ID = 'Mountains_Production1'
@@ -1820,7 +1840,7 @@ OR ID = 'Mountains_Gold2'
 OR ID = 'Mountains_Gold3'
 OR ID = 'Mountains_Gold4'
 OR ID = 'Mountains_Gold5';
-
+/*
 UPDATE AdJacency_YieldChanges
 SET YieldChange = 10
 WHERE ID = 'Mountains_Science1'
@@ -1828,7 +1848,7 @@ OR ID = 'Mountains_Science2'
 OR ID = 'Mountains_Science3'
 OR ID = 'Mountains_Science4'
 OR ID = 'Mountains_Science5';
-
+*/
 UPDATE District_CitizenYieldChanges
 SET YieldChange = 10
 WHERE YieldType = 'YIELD_PRODUCTION'
@@ -1836,13 +1856,13 @@ AND DistrictType = 'DISTRICT_KENKYUJO';
 
 --Lv 5 Judgement
 UPDATE Units 
-SET BaseSighRange = 12 , BaseMoves = 13
+SET BaseSightRange = 12 , BaseMoves = 13
 WHERE UnitType = 'UNIT_LV5_JUDGEMENT';
 
 --Imouto
 UPDATE Units 
-SET Maintainance = 1 , Cost = 210
-WHERE UnitType = 'UNIT_MIKASA_SISTERS'
+SET Maintenance = 1 , Cost = 210
+WHERE UnitType = 'UNIT_MIKASA_SISTERS';
 
 
 --Misaka

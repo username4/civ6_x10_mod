@@ -8,6 +8,9 @@
     </Properties>
     <Components>
         <UpdateDatabase id="civs_x10">
+            <Properties>
+                <LoadOrder>100</LoadOrder>
+            </Properties> 			
             <Items>
                 <File>data/Traits.sql</File>
             </Items>
