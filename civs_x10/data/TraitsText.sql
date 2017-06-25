@@ -736,6 +736,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_DISTRICT_KENKYUJO_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'Replaces campus. Gain 10 [ICON_Gold] gold and 10 [ICON_Production] production adjacenry bonus equal to 10 times [ICON_Science] science bonus. Each working citizen provides 10 extra [ICON_Production] production.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_KENKYUJO_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = 'Special recon unit which replaces rangers. Have much better [ICON_Movement] movement and sight range than rangers.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_UNIT_LV5_JUDGEMENT_DESCRIPTION';
@@ -755,7 +760,87 @@ SET Text = 'Range units earn +10 [ICON_Range] range bonus.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--Konosuba Aqua
+---------------------------------------------------------
+---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = 'Missionary and Apostles are +80 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +40 and +80 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_AXIS_CULT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+8 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_MODIFIER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+40 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+80 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct a Kachoufuugetsu, unique to Axis Cult.[NEWLINE][NEWLINE]+10 [ICON_Gold] Gold, [ICON_Faith] Faith and Appeal. +10 [ICON_Food] Food to adjacent farm. Additional +10 [ICON_Food] Food to adjacent farm when researched Sanitation. Cannot be built adjacent to another Kachoufuugetsu.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_CONS_KACHOUFUUGETSU_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +110 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_CONS_AXIS_CULT_PRIEST_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Cities have full [ICON_Housing] Housing from water, as if they were all next to a River. +20 [ICON_Housing] Housing to cities if they adjacent to a River, Lake, Oasis.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_AQUA_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Konosuba Megumin
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = '+50 [ICON_Strength] Combat Strength for ranged unit. +500% combat experience for all ranged land units trained in city.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_STRENGTH_PER_ERA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Crimson Magic Clan unique district that replace Neighborhood. Can be built from the beginning of the game. However, but provides +3 [ICON_Housing] Housing regardless of Appeal. +250% combat experience for all units trained in this city. Unlocks the Cast Explosion Magic and Make Magic Item project.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+{10_num} [ICON_Gold] Gold from the adjacent {1_Num : plural 1?district; other?districts;}.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_CONS_CMC_VILLAGE_GOLD';
+
+UPDATE LocalizedText
+SET Text = 'Crimson Magic Clan unique project which provides a large amount of [ICON_Gold] Gold and [ICON_Science] Science every turn.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
 
 
 /*

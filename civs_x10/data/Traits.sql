@@ -1870,3 +1870,101 @@ UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'MIKASA_LONG_RANGE';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Konosuba Aqua
+---------------------------------------------------------
+---------------------------------------------------------
+
+--combat buffs
+UPDATE ModifierArguments
+SET Value = 80
+WHERE ModifierId = 'CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF';
+
+UPDATE ModifierArguments
+SET Value = 80
+WHERE ModifierId = 'CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT';
+
+UPDATE ModifierArguments
+SET Value = 40
+WHERE ModifierId = 'CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT';
+
+--Arch Priest
+UPDATE ModifierArguments
+SET Value = 110
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'CONS_AXIS_CULT_PRIEST_STRENGTH_%';
+
+--Kachoufuugetsu
+UPDATE Improvements
+SET Appeal = 10 
+WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = 10
+WHERE ImprovementType = 'IMPROVEMENT_CONS_KACHOUFUUGETSU';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Farms_Cons_Kachoufuugetsu1Adjacency';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 20
+WHERE ID = 'Farms_Cons_Kachoufuugetsu2Adjacency';
+
+--Aqua
+UPDATE ModifierArguments
+SET Value = 20
+WHERE ModifierId = 'TRAIT_LEADER_CONS_AQUA_ADJACENT_RIVER_HOUSING_BONUS_MODIFIER';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Konosuba Megumin
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Crimson Magic Clan's Magic Talent
+UPDATE ModifierArguments
+SET Value = 500
+WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_XP_BONUS_MOD';
+
+UPDATE ModifierArguments
+SET Value = 50
+WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_INCREASE_STRENGTH_MOD';
+
+--Arch Wizard
+UPDATE ModifierArguments
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'CONS_CMC_WIZARD_STRENGTH_%';
+
+--Crimson Magic Village
+UPDATE Districts
+SET Cost = 1
+WHERE DistrictType = 'DISTRICT_CONS_CMC_VILLAGE';
+
+UPDATE ModifierArguments
+SET Value = 250
+WHERE ModifierId = 'TRAIT_DISTRICT_CONS_CMC_VILLAGE_UNIT_XP_BONUS';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Cons_CMC_Village_District_Gold'
+
+--Make Magic Stuff
+UPDATE Project_YieldConversions
+SET PercentOfProductionRate = 300
+WHERE DistrictType = 'PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE';
+
+--Cast Explosion Magic
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'PROJECT_COMPLETION_MODIFIER_CREATE_CONS_EXPLOSION_MAGIC';
+
+--Megumin
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'TRAIT_LEADER_CONS_MEGUMIN_CREATE_EXPLOSION_MAGIC_AT_%';
