@@ -368,11 +368,6 @@ AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'LOC_ABILITY_NAGAO_DESCRIPTION'
-WHERE Language = 'en_US'
-AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
-
-UPDATE LocalizedText
 SET Text = 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get 10 additional adjacency bonus from Woods.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
