@@ -1036,6 +1036,10 @@ SET Combat = 76
 WHERE UnitType = 'UNIT_ROMAN_LEGION';
 
 UPDATE Units
+SET Cost = 290
+WHERE UnitType = 'UNIT_ROMAN_LEGION';
+
+UPDATE Units
 SET BuildCharges = 10
 WHERE UnitType = 'UNIT_ROMAN_LEGION';
 
@@ -1121,7 +1125,7 @@ SET Combat = 112
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
 
 UPDATE Units
-SET Cost = 330
+SET Cost = 430
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
 
 UPDATE ModifierArguments
