@@ -1458,7 +1458,7 @@ WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
 
 --Digger: +20 STR, +100 on coat, +50 abroad
 UPDATE Units 
-SET Combat = 90
+SET Combat = 100
 WHERE UnitType = 'UNIT_DIGGER';
 
 UPDATE ModifierArguments
