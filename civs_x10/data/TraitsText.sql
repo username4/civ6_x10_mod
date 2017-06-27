@@ -772,7 +772,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_AXIS_CULT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+8 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
+SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_MODIFIER_DESCRIPTION';
 
