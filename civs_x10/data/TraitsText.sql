@@ -842,6 +842,11 @@ SET Text = 'Crimson Magic Clan unique project which provides a large amount of [
 WHERE Language = 'en_US'
 AND Tag = 'LOC_PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'When you enter a new era, receive 10 Explosion Magic.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_MEGUMIN_DESCRIPTION';
+
 
 /*
 UPDATE LocalizedText
