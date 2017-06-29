@@ -4,6 +4,8 @@ Because this mod alters almost every trait/unit/building in the game, it is most
 
 For other 10x mods, check out HaruhiBot's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=937361571]Wondersx10[/url] and HaoJun0823's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=938733933]10xPantheon[/url].
 
+I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164931]x3-version[/url], which scales everything by a factor of 3.
+
 [u]America[/u]
 -legacy bonuses ten times faster
 -P51: +50 ATK, +20 Range, +500% experience
@@ -137,7 +139,7 @@ For other 10x mods, check out HaruhiBot's [url=https://steamcommunity.com/shared
 -20 housing on freshwater 
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=951144129]Konosuba Megumin[/url][/u]
 -+50 ranged STR, +500% XP 
--Arch Wizard: +100 STR per Era
+-Arch Wizard: +100 STR per Era (Up to Modern, because otherwise Overflow error)
 -Crimson Magic Village: Cost 1 
 -Explosion Magic: 10 Nukes
 -Magic Stuff: 10x more science and Gold
