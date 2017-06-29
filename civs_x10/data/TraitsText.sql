@@ -847,6 +847,44 @@ SET Text = 'When you enter a new era, receive 10 Explosion Magic.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_CONS_MEGUMIN_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--No Game No Live Imanity
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = '+500% [ICON_Production] Production toward Settlers and Recon units. Settler and Recon unit gain Sentry and Camouflage promotion effect.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_IMANITY_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Imanity unique building that replace Library. Triggers the [ICON_TechBoosted] Eureka moment for 10 random technologies from the Ancient to Renaissance era.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_CONS_ELCHEA_LIBRARY_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Imanity unique Ancient era unit that replace Scout. 13 Movement. +10 sight range. Even without Open Borders, this unit can enter foreign territory.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_CONS_IMANITY_SCOUT_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Each of 10 Military policy and Diplomatic policy slots in the current government are converted to  Wildcard slots. Opposing civilizations receive +250% the war weariness for fighting against Sora. Accumulate 94% less war weariness than usual.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_SORA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Receive 15 [ICON_GreatScientist] Great Scientist points. [ICON_TechBoosted] Eurekas provide 95% of technologies instead of 50%.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_SHIRO_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '10 extra Diplomatic policy and +10 Influence points per turn toward earning city-state [ICON_Envoy] Envoys with Political Philosophy and +1 [ICON_Envoy] with Diplomatic Service civic'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CONS_STEPHANIE_DESCRIPTION';
+
+
+
 
 /*
 UPDATE LocalizedText
