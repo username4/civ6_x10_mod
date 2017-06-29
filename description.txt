@@ -134,7 +134,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -misaka: +10 range
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=891438514]Konosuba Aqua[/url][/u]
 -Missionary and Apostle +80 religious str, +40/+80 STR to units
--Arch Priest: +110 STR per era after medieval
+-Arch Priest: +110 STR per era after medieval (Up to Modern, because otherwise Overflow error)
 -Kachoufuugetsu: +10 gold, faith, food adjecency
 -20 housing on freshwater 
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=951144129]Konosuba Megumin[/url][/u]
