@@ -1996,6 +1996,12 @@ SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'CONS_ELCHEA_LIBRARY_GRANT_RANDOM_TECHNOLOGY_BOOST';
 
+UPDATE ModifierArguments 
+SET Value = 'ERA_INFORMATION'
+WHERE Name = 'EndEraType'
+AND ModifierId = 'CONS_ELCHEA_LIBRARY_GRANT_RANDOM_TECHNOLOGY_BOOST';
+
+
 --Sora
 
 UPDATE ModifierArguments 

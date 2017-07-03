@@ -859,7 +859,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_IMANITY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Imanity unique building that replace Library. Triggers the [ICON_TechBoosted] Eureka moment for 10 random technologies from the Ancient to Renaissance era.'
+SET Text = 'Imanity unique building that replace Library. Triggers the [ICON_TechBoosted] Eureka moment for 10 random technologies from the Ancient to Future era.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_CONS_ELCHEA_LIBRARY_DESCRIPTION';
 
