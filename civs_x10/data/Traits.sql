@@ -257,7 +257,7 @@ SET Value = 20
 WHERE (Name = 'Amount'
 AND ModifierId = 'SPHINX_WONDERADJACENCY_FAITH');
 
---TRAIT_CIVILIZATION_UNIT_EGYPTIAN_CHARIOT_ARCHER, Movement Bonus x10 and 
+--TRAIT_CIVILIZATION_UNIT_EGYPTIAN_CHARIOT_ARCHER, Movement Bonus x10 
 UPDATE ModifierArguments
 SET Value = 12
 WHERE (Name = 'Amount'
@@ -302,7 +302,7 @@ UPDATE Units
 SET BaseMoves = 10
 WHERE UnitType = 'UNIT_ENGLISH_SEADOG';
 
---TRAIT_CIVILIZATION_ROYAL_NAVY_DOCKYARD"
+--NAVY_DOCKYARD"
 UPDATE ModifierArguments
 SET Value = 20
 WHERE Name = 'Amount'
@@ -316,8 +316,7 @@ UPDATE Districts
 SET Cost = 1
 WHERE DistrictType = 'DISTRICT_ROYAL_NAVY_DOCKYARD';
 
---TRAIT_LEADER_PAX_BRITANNICA"
---10 units maybe?
+--PAX_BRITANNICA"
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES 
     ('TRAIT_LEADER_PAX_BRITANNICA', 'TRAIT_FREE_MELEE_UNIT_NON_HOME_CONTINENT_1'),
@@ -516,8 +515,8 @@ UPDATE ModifierArguments
 SET Value = 70
 WHERE (Name = 'Amount'
 AND ModifierId = 'COMBAT_BONUS_VS_CITY_STATES_MODIFIER');
---Militatry slots
 
+--Militatry slots
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES 
     ('TRAIT_LEADER_HOLY_ROMAN_EMPEROR', 'TRAIT_MILITARY_GOVERNMENT_SLOT_1'),
@@ -561,7 +560,6 @@ VALUES
 ---------------------------------------------------------
 
 --PLATOS_REPUBLIC
---TODO 10 extra wildcart, maybe add more each epoch, so they can actually be used
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES 
     ('TRAIT_CIVILIZATION_PLATOS_REPUBLIC', 'TRAIT_WILDCARD_GOVERNMENT_SLOT_1'),
@@ -622,14 +620,16 @@ AND ModifierId = 'UNIQUE_LEADER_CULTURE_KILLS');
 UPDATE ModifierArguments
 SET Value = 50
 WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_CULTURE_PER_CITY_STATE_TRIBUTARY');--"TRAIT_CIVILIZATION_DHARMA"
--- TRAIT_GAINS_ALL_FOLLOWER_BELIEFS bool, so no x10
+AND ModifierId = 'TRAIT_CULTURE_PER_CITY_STATE_TRIBUTARY');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 --india
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+--"TRAIT_CIVILIZATION_DHARMA"
+-- TRAIT_GAINS_ALL_FOLLOWER_BELIEFS bool, so no x10
 
 --STEPWELL"
 UPDATE Improvements
@@ -661,7 +661,7 @@ WHERE (Name = 'Amount'
 AND ModifierId = 'STEPWELL_HOUSING_WITHTECH');
 
 
---"TRAIT_CIVILIZATION_UNIT_INDIAN_VARU"
+--Varu
 UPDATE Units
 SET BaseMoves = 1
 WHERE UnitType = 'UNIT_INDIAN_VARU';
@@ -683,7 +683,7 @@ SET Value = -50
 WHERE (Name = 'Amount'
 AND ModifierId = 'VARU_NEGATIVE_COMBAT_MODIFIER');
 
---TRAIT_LEADER_SATYAGRAHA 
+--Ghandi SATYAGRAHA 
 UPDATE ModifierArguments
 SET Value = 1000
 WHERE (Name = 'Amount'
@@ -732,7 +732,7 @@ SET Value = 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_INDUSTRIALZONE_ADJACENCYPRODUCTION');
 
---FACTORY
+--Electronics FACTORY
 UPDATE Building_YieldChanges
 SET YieldChange = 13
 WHERE BuildingType = 'BUILDING_ELECTRONICS_FACTORY';
@@ -878,9 +878,6 @@ SET Value = 100
 WHERE ModifierId = 'NAGAO_RANGED_DEFENSE';
 
 --TRAIT_LEADER_RELIGIOUS_CONVERT
---"TRAIT_FREE_APOSTLE_FINISH_MBANZA" MULTIPLE APOSTES?
---"TRAIT_FREE_APOSTLE_FINISH_THEATER_DISTRICT"
-
 INSERT INTO TraitModifiers (TraitType , ModifierId)
 VALUES
 	('TRAIT_LEADER_RELIGIOUS_CONVERT' , 'TRAIT_FREE_APOSTLE_FINISH_MBANZA_1'),
@@ -1313,7 +1310,7 @@ SET Value = 99
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_LEVY_DISCOUNT';
 
---goody huts not working
+--goody huts not working, effect is only applied once, at beginning of game
 /*
 INSERT INTO DynamicModifiers (ModifierType, CollectionType, EffectType)
 VALUES

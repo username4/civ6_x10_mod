@@ -149,11 +149,11 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Ghost: +13 movement, +10 sight
 -Elchea Library: eureka for 10 tech 
 -Sora: 10 military and 10 diplomacy slots to wildcard, +250% war weariness for enemies and -94% for self
--Shiro: 15 great scientist, 95% on eureka
+-Shiro: 15 great scientist pts, 95% on eureka
 -Stephanie: +10 diplomacy slots (only on political philosophy), +10 envoys points
 
 Please tell, if something is wrong or was not implemented correctly.
 
 Can also be found on [url=https://github.com/username4/civ6_x10_mod]github[/url] and on [url=http://www.nexusmods.com/civilisationvi/mods/66/?]Nexus[/url].
 
-Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=363117420]JFD's BalanceGoldPrime++[/url]  and the x10 mods for TF2.
+Inspired by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=363117420]JFD's BalanceGoldPrime++[/url] and the x10 mods for TF2.
