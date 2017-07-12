@@ -106,22 +106,22 @@ AND Tag = 'LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '[ICON_TechBoosted] Eurekas and [ICON_CivicBoosted] Inspirations provide 95% of civics and technologies instead of 50%.'
+SET Text = '[ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Eingebungen bieten 95% der Ausrichtungen und Technologien statt 50%.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'When building Ancient and Classical wonders you may spend Builder charges to complete 80% of the original wonder cost. Builders receive ten additional charges.'
+SET Text = 'Beim Bau von Wundern der Antike und Klassik könnt Ihr Handwerker-Ladungen verwenden, um 80 % der ursprünglichen Baukosten für das Wunder abzuschließen. Handwerker erhalten 10 zusätzliche Ladungen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an +40 increase to [ICON_Strength] Defense. 10 Bonus to [ICON_Gold] Gold if adjacent to other segments. 10 additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]Steigert die [ICON_Strength] Verteidigung um 40. 10 Bonus auf [ICON_Gold] Gold, wenn sie sich neben weiteren Segmenten befindet. Zusätzliche 10 [ICON_Culture] Kultur und [ICON_Tourism] Tourismus, wenn Ihr Fortschritte beim Technologiebaum für angrenzende Segmente erzielt. Muss in einer Linie entlang der Grenzen Eures Reichs gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Chinese unique Medieval era unit. Ranged unit with a [ICON_Range] Range of 1 and 140 [ICON_RANGED].'
+SET Text = 'Chinesische Spezialeinheit des Mittelalters. Fernkampfeinheit mit [ICON_Range] Reichweite 1 und 140 [ICON_RANGED] Kampfstärke.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
 
@@ -134,22 +134,22 @@ AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+405% [ICON_Production] Production towards districts and wonders if placed next to a River. Floodplains do not block placement of districts and wonders.'
+SET Text = '+405% [ICON_Production] Produktion für Bezirke und Wunder, wenn sie neben einem Fluss platziert werden. Schwemmland blockiert die Platzierung von Bezirken und Wundern nicht.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ITERU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Sphinx, unique to Egypt.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith and +10 [ICON_Culture] Culture. +10 Appeal. +20 [ICON_Faith] Faith if next to a wonder. Cannot be built next to another Sphinx. Can be built on Floodplains.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, eine Sphinx, die einzigartige Modernisierung Ägyptens, zu bauen.[NEWLINE][NEWLINE]+10 [ICON_Faith] Glauben und +10 [ICON_Culture] Kultur. +10 Anziehungskraft. +20 [ICON_Faith] Glauben, wenn neben einem Wunder. Kann nicht neben einer weiteren Sphinx gebaut werden. Kann auf Schwemmland gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_SPHINX_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Egyptian unique Ancient era ranged unit that replaces the Heavy Chariot. 12 [ICON_Movement] Movement when starting in open terrain.'
+SET Text = 'Ägyptische Spezialeinheit der Antike, die den Schweren Streitwagen ersetzt. 12 [ICON_Movement] Fortbewegung bei Start in offenem Gelände.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Your [ICON_TradeRoute] Trade Routes to other civilizations provide +40 [ICON_Gold] Gold for Egypt. Other civilizations'' [ICON_TradeRoute] Trade Routes to Egypt provide +20 [ICON_Food] Food for them and +20 [ICON_Gold] Gold for Egypt.'
+SET Text = 'Eure [ICON_TradeRoute] Handelswege zu anderen Zivilisationen bringen Euch +40 [ICON_Gold] Gold. Die [ICON_TradeRoute] Handelswege anderer Zivilisationen zu Euch bringen dem Besitzer +20 [ICON_Food] Nahrung und Euch +20 [ICON_Gold] Gold.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_DESCRIPTION';
 
