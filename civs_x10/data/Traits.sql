@@ -78,8 +78,7 @@ SET YieldChange = 14
 WHERE BuildingType = 'BUILDING_MADRASA';
 
 --Mamluk
---TODO MAMLUK_HEAL_EVERY_MOVE to heal after combat?
---MODIFIER_PLAYER_UNIT_GRANT_HEAL_AFTER_ACTION -> EFFECT_GRANT_HEAL_AFTER_ACTION or MODIFIER_PLAYER_UNITS_ADJUST_HEAL_FROM_COMBAT
+--TODO some better heal, for now give medic trait
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
 VALUES ('ABILITY_MAMLUK', 'MEDIC_INCREASE_HEAL_RATE');
 
@@ -189,7 +188,7 @@ UPDATE Improvements
 SET DefenseModifier = 40
 WHERE ImprovementType = 'IMPROVEMENT_GREAT_WALL';
 
---adjacent
+--adjacencies
 UPDATE Adjacency_YieldChanges
 SET YieldChange = 10
 WHERE ID = 'GreatWall_Gold';
@@ -286,7 +285,8 @@ AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
 ---------------------------------------------------------
 ---------------------------------------------------------
 
---Museum
+--Museum 
+--more than 10 slots break UI, therefore only 9 slots instead of 33.
 UPDATE ModifierArguments
 SET Value = 6
 WHERE Name = 'Amount'
@@ -316,7 +316,7 @@ UPDATE Districts
 SET Cost = 1
 WHERE DistrictType = 'DISTRICT_ROYAL_NAVY_DOCKYARD';
 
---PAX_BRITANNICA"
+--Pax Brittanicy
 INSERT INTO TraitModifiers (TraitType, ModifierId)
 VALUES 
     ('TRAIT_LEADER_PAX_BRITANNICA', 'TRAIT_FREE_MELEE_UNIT_NON_HOME_CONTINENT_1'),
@@ -387,7 +387,7 @@ AND ModifierId = 'CHATEAU_WONDERADJACENCY_CULTURE');
 
 --10x tourism
 UPDATE ModifierArguments
-SET Value = 2000
+SET Value = 1000
 WHERE (Name = 'ScalingFactor'
 AND ModifierId = 'TRAIT_WONDER_DOUBLETOURISM');
 
@@ -629,7 +629,7 @@ AND ModifierId = 'TRAIT_CULTURE_PER_CITY_STATE_TRIBUTARY');
 ---------------------------------------------------------
 
 --"TRAIT_CIVILIZATION_DHARMA"
--- TRAIT_GAINS_ALL_FOLLOWER_BELIEFS bool, so no x10
+-- TRAIT_GAINS_ALL_FOLLOWER_BELIEFS, no x10
 
 --STEPWELL"
 UPDATE Improvements
@@ -1116,7 +1116,7 @@ WHERE (DistrictType = 'DISTRICT_LAVRA'
 AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
 
 
---COSSACK"
+--COSSACK
 UPDATE Units
 SET Combat = 112
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
@@ -1249,6 +1249,7 @@ WHERE ModifierId = 'HEAL_AFTER_DEFEATING_UNIT';
 --Spain
 ---------------------------------------------------------
 ---------------------------------------------------------
+
 --MISSION
 UPDATE Improvement_YieldChanges
 SET YieldChange = 20
@@ -1273,7 +1274,7 @@ UPDATE ModifierArguments
 SET Value = 100
 WHERE ModifierId = 'CONQUISTADOR_SPECIFIC_UNIT_COMBAT';
 
---TRAIT_CIVILIZATION_TREASURE_FLEET"
+--TRAIT_CIVILIZATION_TREASURE_FLEET
 UPDATE ModifierArguments
 SET Value = 10
 WHERE (Name = 'Amount'
@@ -1993,6 +1994,12 @@ SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'CONS_ELCHEA_LIBRARY_GRANT_RANDOM_TECHNOLOGY_BOOST';
 
+UPDATE ModifierArguments 
+SET Value = 'ERA_INFORMATION'
+WHERE Name = 'EndEraType'
+AND ModifierId = 'CONS_ELCHEA_LIBRARY_GRANT_RANDOM_TECHNOLOGY_BOOST';
+
+
 --Sora
 
 UPDATE ModifierArguments 
@@ -2221,7 +2228,8 @@ VALUES
     ('POLICY_BLANK_7', 'KIND_POLICY'),
     ('POLICY_BLANK_8', 'KIND_POLICY'),
     ('POLICY_BLANK_9', 'KIND_POLICY');
-    
+
+--diplomatic civics for imanity and greece   
 INSERT INTO Policies (PolicyType, Name, Description, PrereqCivic, GovernmentSlotType)
 VALUES
     ('POLICY_BLANK_DIPL_1', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_DIPLOMATIC' ),
