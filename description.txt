@@ -2,6 +2,8 @@ This mod scales all traits of leaders and civilisations by 10. So every trait is
 
 Because this mod alters almost every trait/unit/building in the game, it is most likely incompatible with most gameplay changing mods, UI mods and such should be fine.
 
+This mod is only in English. Currently working on German localization.
+
 For other 10x mods, check out HaruhiBot's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=937361571]Wondersx10[/url] and HaoJun0823's [url=https://steamcommunity.com/sharedfiles/filedetails/?id=938733933]10xPantheon[/url].
 
 I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164931]x3-version[/url], which scales everything by a factor of 3.
@@ -169,6 +171,21 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Treehouse: +10 food, +10 culture, +20 faith , more food and culture later
 -Galadriel: forests +10 appeal, all cities start with op walls
 -Thranduil: +50 for ranged
+[u]Isengard[/u]
+-build Industrial Zone, Encampement, Siege, Support 500% faster, corp and, armies very early
+-Ballista: +30 bombard, +50 melee
+-Uruk Pits: +20 Prod
+-Saruman: Spy 10 increase, a lot of faith by babarians
+[u]Mordor[/u]
+-Units no maintenance
+-Mamak: 
+-Nazgul: heals 90 hp on kill
+-Wasteland: Cost=1
+-Sauron: 10 envoys per capture, 10 nazgul per era
+[u]Goblins[/u]
+
+[u]Dwarves[/u]
+
 [/quote]
 
 Please tell, if something is wrong or was not implemented correctly.

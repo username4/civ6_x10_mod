@@ -1007,6 +1007,25 @@ AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = 'All Apostles gain the ''Heathen Conversion'' Ability. [NEWLINE]Receive 10x Faith for clearing a Barbarian Camp (scaling with Era).[NEWLINE]Spy level increased by 10 for offensive operations.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_VOICE_OF_CURUNIR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Units may form Corps and Armies very early.[NEWLINE] Build Industrial Zones and Encampments as well as Siege and Support Units 500% faster.[NEWLINE]+1[ICON_SCIENCE]Science from Strategic Resources.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_ISENGARD_MACHINE_OF_WAR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique isengard replacement for the Catapult. Stronger on defence and slightly stronger at bombarding.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_BALLISTA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique isengard replacement for the Barracks.[NEWLINE]All units trained in this City don''t lose strength when damaged. More Production.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_URUKPITS_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -1014,11 +1033,66 @@ AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = 'Can''t recruit Great Generals, but receives the Nazgûl unique Unit. Number of Nazgûl increases when you advance through Eras.[NEWLINE] Capturing a City grants 10 [ICON_ENVOY]Envoys.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_SLAVES_TO_HIS_WILL_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Units cost no maintenance'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_MORDOR_WHERE_THE_SHADOWS_LIE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique mordor replacement for the Encampment District. [NEWLINE]Does not require Population to be build.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_WASTELAND_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique mordor heavy cavalry unit, unlocked with Siege Tactics. Acts as a Battering Ram, allowing melee units to deal full damage to city walls. +30 [ICON_STRENGTH]'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_OLOG_HAI_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A powerful unit to lead and support your armies. Heals 90hp on kills.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_NAZGUL_DESCRIPTION';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_GOBLINS
 ---------------------------------------------------------
 ---------------------------------------------------------
+/*
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
 
 ---------------------------------------------------------
 ---------------------------------------------------------

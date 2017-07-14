@@ -2383,7 +2383,7 @@ SET YieldChange = 10
 WHERE ID = 'Treehouse_DistrictCulture_early'
 OR ID = 'Treehouse_DistrictCulture_late';
 
---Galadhrim
+--Galadhrim +30 ranged and melee
 UPDATE Units
 SET RangedCombat = 70 , Combat = 60
 WHERE UnitType = 'UNIT_GALADHRIM';
@@ -2417,24 +2417,143 @@ UPDATE ModifierArguments
 SET Value = 50
 WHERE Name = 'Amount'
 AND ModifierId = 'MIRKWOOD_RANGED_UNITS_BONUS';
-/*
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_ISENGARD
 ---------------------------------------------------------
 ---------------------------------------------------------
-"TRAIT_CIVILIZATION_BUILDING_URUKPITS"
-"TRAIT_CIVILIZATION_UNIT_BALLISTA"
-"TRAIT_CIVILIZATION_MACHINE_OF_WAR"
+
+--Machine of War
+UPDATE ModifierArguments 
+SET Value = 500
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SIEGE_UNIT_PRODUCTION'
+OR ModifierId = 'TRAIT_SUPPORT_UNIT_PRODUCTION'
+OR ModifierId = 'MACHINE_OF_WAR_BOOST_INDUSTRIAL_ZONE_PRODUCTION';
+
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'MACHINE_OF_WAR_STRATEGIC_RESOURCE_SCIENCE';
+
+UPDATE ModifierArguments 
+SET Value = 'CIVIC_MILITARY_TRADITION'
+WHERE Name = 'CivicType'
+AND ModifierId = 'TRAIT_LAND_ARMIES_EARLY';
+
+UPDATE ModifierArguments 
+SET Value = 'CIVIC_MILITARY_TRAINING'
+WHERE Name = 'CivicType'
+AND ModifierId = 'TRAIT_LAND_CORPS_EARLY';
+
+--Ballista +50 STR, +30 Bombard
+UPDATE Units
+SET Combat = 73, Bombard = 65
+WHER UnitType = 'UNIT_BALLISTA';
+
+--Pits
+UPDATE Building_YieldChanges
+SET YieldChange = 20
+WHERE BuildingType = 'BUILDING_URUKPITS';
+
+--Saruman
+UPDATE ModifierArguments 
+SET Value = 150
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL';
+
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_CLASSICAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 200
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_MEDIEVAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 250
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_CLASSICAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 300
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_RENAISSANCE_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 300
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_BARBARIAN_FAITH_DISPERSAL_INDUSTRIAL_SCALING';
+
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_SPY_OFFENSE_LEVEL';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_MORDOR
 ---------------------------------------------------------
 ---------------------------------------------------------
-"TRAIT_CIVILIZATION_DISTRICT_WASTELAND"
-"TRAIT_CIVILIZATION_WHERE_THE_SHADOWS_LIE"
-"TRAIT_CIVILIZATION_UNIT_OLOG_HAI"
+
+--Where Shadows lie
+/*
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_MAINTENANCE_DISCOUNT';
+
+UPDATE ModifierArguments 
+SET Value = 250
+WHERE Name = 'Amount'
+AND ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION';
+*/
+--Mumak
+UPDATE Units 
+SET Combat = 85
+WHERE UnitType = 'UNIT_OLOG_HAI';
+--Wasteland
+UPDATE District_CitizenYieldChanges
+SET YieldChange = 10
+WHERE DistrictType = 'DISTRICT_WASTELAND';
+
+--nazgul (1-0,8^10 heal)
+UPDATE ModifierArguments 
+SET Value = Value*10
+WHERE Name = 'Amount'
+AND (ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION'
+OR ModifierId = 'MORGULBLADE_BONUS_VS_DAMAGED'
+OR ModifierId = 'DARK_LIEUTENANT_AOE_BUFF_MODIFIER'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_1'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_2'
+OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_3'
+OR ModifierId = 'NAZGUL_SCALING_CLASSICAL'
+OR ModifierId = 'NAZGUL_SCALING_MEDIEVAL'
+OR ModifierId = 'NAZGUL_SCALING_RENAISSANCE'
+OR ModifierId = 'NAZGUL_SCALING_INDUSTRIAL'
+OR ModifierId = 'NAZGUL_SCALING_ATOMIC'
+OR ModifierId = 'NAZGUL_SCALING_MODERN'
+OR ModifierId = 'NAZGUL_SCALING_INFORMATION');
+
+UPDATE ModifierArguments 
+SET Value = 90
+WHERE Name = 'Amount'
+AND ModifierId = 'NAZGUL_HEAL_ON_KILL';
+
+UPDATE ModifierArguments 
+SET Value = 80
+WHERE Name = 'Amount'
+AND ModifierId = 'MORGUL_SORCERY_AOE_HEAL_ON_KILL_MODIFIER';
+
+--Slaves to his will
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'SAURON_CAPTURED_CITY_GRANT_ENVOY_MODIFIER';
+/*
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_GOBLINS
