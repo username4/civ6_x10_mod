@@ -6,6 +6,7 @@ For other 10x mods, check out HaruhiBot's [url=https://steamcommunity.com/shared
 
 I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164931]x3-version[/url], which scales everything by a factor of 3.
 
+[quote]
 [u]America[/u]
 -legacy bonuses ten times faster
 -P51: +50 ATK, +20 Range, +500% experience
@@ -151,6 +152,18 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Sora: 10 military and 10 diplomacy slots to wildcard, +250% war weariness for enemies and -94% for self
 -Shiro: 15 great scientist pts, 95% on eureka
 -Stephanie: +10 diplomacy slots (only on political philosophy), +10 envoys points
+[u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=894221062]Civ of the Rings[/url][/u]
+[u]Gondor[/u]
+-+250% district build speed, +10 housing for walls
+-Citatel guards: +50 Def, -50 Atk, +80 bonus for districts
+-Stonework: +10 cultere per era, defense=150
+-Aragorn: 10 dipl policies, scout 60 STR
+[u]Rohan[/u]
+-farms +10 adjecencies,  +10 movement for cavalry
+-Rider:
+-Stable: 10 horse, +10 gold per pasture
+-Théoden: food and prod increased by 500% after liberation
+[/quote]
 
 Please tell, if something is wrong or was not implemented correctly.
 

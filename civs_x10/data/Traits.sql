@@ -2236,7 +2236,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'COTR_UNIT_WEAK_WHEN_ATTACKING';
 
 UPDATE ModifierArguments 
-SET Value = 100
+SET Value = 80
 WHERE Name = 'Amount'
 AND ModifierId = 'GARRISON_BONUS_DISTRICTS';
 
@@ -2316,10 +2316,27 @@ VALUES
 --Rohan
 ---------------------------------------------------------
 ---------------------------------------------------------
-/*
-"TRAIT_CIVILIZATION_BUILDING_ROYAL_STABLE"
-"TRAIT_CIVILIZATION_UNIT_ROHAN_ROHIRRIM"
-"TRAIT_CIVILIZATION_ROHAN_HORSE_LORDS"
+
+--Stables
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND (ModifierId = 'ROYAL_STABLE_PROVIDE_HORSES'
+OR ModifierId = 'ROYAL_STABLE_PASTURE_GOLD');
+
+--HouseLords
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND (ModifierId = 'HORSELORD_FARM_PRODUCTION'
+OR ModifierId = 'HORSELORD_FARM_FOOD'
+OR ModifierId = 'THEODEN_CAVALRY_MOVEMENT');
+
+--Rohirrim Rider Cost=180*(150/180)^10, Combat= 48+4*10
+UPDATE Units
+SET Cost = 30 , Combat = 88 , BuildCharges = 20
+WHERE UnitType = 'UNIT_ROHIRRIM';
+
 
 ---------------------------------------------------------
 ---------------------------------------------------------

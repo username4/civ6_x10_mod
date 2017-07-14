@@ -895,11 +895,71 @@ AND Tag = 'LOC_TRAIT_LEADER_CONS_STEPHANIE_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = 'A streong Unique Scout replacement that has a ranged attack and heals at the start of every turn.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_UNIT_ARAGORN_DUNEDAIN_RANGER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Build all Districts 250% faster.[NEWLINE]+10[ICON_HOUSING]Housing for Ancient, Medieval and Renaissance Walls'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_GONDOR_LEGACY_OF_NUMENOR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique gondorian replacement for Ancient Walls. Costs no Maintenance and provides +10ICON_CULTURE]Culture per era passed.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_NUMENORIAN_STONEWORK_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique gondorian replacement for the Pikeman.[NEWLINE]Weak when attacking, strong when defending. [NEWLINE]80 Bonus combat strength when fighting in Districts.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_CITADEL_GUARD_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '-50[ICON_STRENGTH] from being weak when attacking'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CITADEL_GUARD_WEAK_WHEN_ATTACKING';
+
+UPDATE LocalizedText
+SET Text = '+50[ICON_STRENGTH] from being strong when defending'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CITADEL_GUARD_STRONG_WHEN_DEFENDING';
+
+UPDATE LocalizedText
+SET Text = '+80[ICON_STRENGTH] from fighting in or next to a District'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_CITADEL_GUARD_DISTRICT_COMBAT';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Rohan
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'All Cavalry Units push enemies back if they are victorious in combat. Defenders that cannot retreat suffer additional damage.[NEWLINE][ICON_FOOD]Food and [ICON_PRODUCTION]Production Yields increased by 500% for 15 Turns after liberating a City.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_GLORIOUS_CHARGE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Farms provide +10[ICON_PRODUCTION]Production if next to a Pasture and +10[ICON_FOOD]Food if next to a Camp. Pastures trigger a Culture Bomb.[NEWLINE]+10[ICON_MOVEMENT]Movement for Cavalry Units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_ROHAN_HORSE_LORDS_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique rohirric replacement for the Stable. It is build in the City Center instead of the Encampment and provides 10 Copy of [ICON_RESOURCE_HORSES]Horses as well as +10[ICON_GOLD]Gold to all Pastures in this City in addition to the usual benefits of a Stable'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_ROYAL_STABLE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = ''
+WHERE Language = 'en_US'
+AND Tag = '';
+
+UPDATE LocalizedText
+SET Text = 'Unique rohirric replacement for the Knight. Light Cavalry Unit that can build certain improvements and is much stronger than the Knight.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_ROHIRRIM_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
