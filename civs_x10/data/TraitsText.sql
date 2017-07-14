@@ -1100,7 +1100,40 @@ AND Tag = 'LOC_UNIT_MARAUDER_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = 'All units receive tenfold support Bonus. May declare war on anyone at war with their allies without warmonger penalties. [NEWLINE]1 copy of a Strategic resource allows you to produce and purchase units requiring it in any city. Receives the Axe Thrower unique Unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_THE_IRON_HILLS_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'Cities founded on Mountains yield +200%[ICON_GOLD]Gold and recieve an additional Great Work Slot.[NEWLINE]+20[ICON_GOLD]Gold from international Trade Routes.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_KING_UNDER_THE_MOUNTAIN_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Founding a city claims all surrounding Mountain Tiles for that city. Gets 10 free Builders after researching Mining. Builders receive 10 additional charges.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_HALLS_OF_MORIA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique dwarven replacement for the Workshop.[NEWLINE]Cheaper to produce and provides bonus [ICON_GOLD] Gold equal to the adjacency bonus of the Industrial district, 10 [ICON_GreatMerchant] and 12 [ICON_PRODUCTION].'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_DWARVEN_FORGE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique dwarven replacement for the Swordsman.  +40[ICON_STRENGTH] when fighting on Hills or Mountain Tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_GUARDIAN_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+40[ICON_STRENGTH] from fighting on Hills or Mountain Tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_GUARDIAN_MODIFIER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique replacement for the Archer. More expensive and with only a one tile range, but with much higher ranged and melee strength.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_AXETHROWER_DESCRIPTION';
 
 /*
 

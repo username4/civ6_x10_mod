@@ -189,10 +189,11 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Goblin Caves: +10 Prod, 0 housing, 550% unit production to faith and culture
 -Azog: +50 STR near conquered city
 [u]Dwarves[/u]
--Guardian: +40 STR in hill or mountain
--Forge: 10x adjecency gold bonuses
+-Guardian: +40 STR in hill or mountain, +20STR
+-Forge: 10x adjecency gold bonuses, 10 merchant GPP, +12 Prod
 -Durin: 10 free builders, +10 charges
--Dain: 10 fold support, Axe thrower, 
+-Dain: +1000% support, Axe thrower 115 STR 75 ranged
+-Thror: mountains +200% gold, +20 gold form int trade, 9 slots in moountain cities (more breaks UI)
 [/quote]
 
 Please tell, if something is wrong or was not implemented correctly.

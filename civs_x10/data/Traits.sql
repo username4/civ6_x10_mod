@@ -2589,6 +2589,10 @@ WHERE Name = 'Amount'
 AND ModifierId = 'COTR_WARG_ANTI_CAVALRY_BONUS';
 
 --Goblin Caves
+UPDATE Buildings
+SET Housing = 0
+WHERE BuildingType = 'BUILDING_GOBLIN_CAVES';
+
 UPDATE Building_YieldChanges
 SET YieldChange = 10
 WHERE YieldType = 'YIELD_PRODUCTION'
@@ -2611,6 +2615,73 @@ AND ModifierId = 'COTR_AZOG_CITY_CAPTURE_AOE_STRENGTH_MODIFIER';
 --CIVILIZATION_DWARVES
 ---------------------------------------------------------
 ---------------------------------------------------------
+
+--Smithing Quarters
+UPDATE Districts
+SET Cost = 1
+WHERE DistrictType = 'DISTRICT_SMITHING_QUATERS';
+
+--Forge Cost=175*120/175^10, Prod=2+1*10f
+UPDATE Buildings
+SET Cost = 4
+WHERE BuildingType = 'BUILDING_DWARVEN_FORGE';
+
+UPDATE Building_YieldChanges
+SET YieldChange = 12
+WHERE BuildingType = 'BUILDING_DWARVEN_FORGE';
+
+UPDATE Building_GreatPersonPoints
+SET PointsPerTurn = 10
+WHERE BuildingType = 'BUILDING_DWARVEN_FORGE'
+AND GreatPersonClassType = 'GREAT_PERSON_CLASS_MERCHANT';
+
+UPDATE District_CitizenYieldChanges
+SET YieldChange = 20
+WHERE DistrictType = 'DISTRICT_SMITHING_QUATERS'
+AND YieldType = 'YIELD_GOLD';
+
+--Guardian STR=36+2*10
+UPDATE Units
+SET Combat = 56 
+WHERE UnitType = 'UNIT_GUARDIAN';
+
+UPDATE ModifierArguments
+SET Value = 40
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_GUARDIAN_HILL_AND_MOUNTAIN_COMBAT_BONUS';
+
+--Durin
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'DURIN_FREE_BUILDER';
+
+--Dain
+--Axethrower Cost=50+15*10, STR=15+10*10, ranged=25+5*10
+UPDATE Units
+SET Cost = 200, Combat = 115 , RangedCombat = 75
+WHERE UnitType = 'UNIT_AXETHROWER';
+
+UPDATE ModifierArguments
+SET Value = 1000
+WHERE Name = 'Percent'
+AND ModifierId = 'COTR_MODIFIER_PLAYER_UNITS_ADJUST_SUPPORT_BONUS_MODIFIER';
+
+--Thror
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount'
+AND ModifierId = 'THROR_TRADE_ROUTE_INTERNATIONAL_GOLD';
+
+UPDATE ModifierArguments
+SET Value = 200
+WHERE Name = 'Amount'
+AND ModifierId = 'THROR_GOLD_FROM_MOUNTAIN_CITIES';
+
+UPDATE Building_GreatWorks
+SET NumSlots = 9
+WHERE BuildingType = 'BUILDING_THRORRELICSLOT'
+AND GreatWorkSlotType ='GREATWORKSLOT_PALACE';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
