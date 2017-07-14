@@ -163,6 +163,12 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Rider:
 -Stable: 10 horse, +10 gold per pasture
 -Théoden: food and prod increased by 500% after liberation
+[u]Silvan[/u]
+-+10 culture on charming, +20 on breathtaking, +10 faith from Forest
+-Galadrian Archer: +50 in friendy, +30 STR
+-Treehouse: +10 food, +10 culture, +20 faith , more food and culture later
+-Galadriel: forests +10 appeal, all cities start with op walls
+-Thranduil: +50 for ranged
 [/quote]
 
 Please tell, if something is wrong or was not implemented correctly.

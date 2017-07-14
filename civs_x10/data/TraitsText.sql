@@ -967,6 +967,40 @@ AND Tag = 'LOC_UNIT_ROHIRRIM_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = 'Forests provide an additional +10 Appeal to all adjacent Tiles.[NEWLINE]All Cities start with a large amount of Outer Defence'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LADY_OF_THE_GOLDEN_FOREST_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+50[ICON_STRENGTH]for all Ranged Units. Units in Forests and Jungle heal faster[NEWLINE]Elven Treehouses trigger a Culture Bomb'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_MIRKWOOD_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+50[ICON_STRENGTH] for beeing lead by Thranduil<'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_THRADUIL_RANGED_DESCRIPTION';
+
+UPDATE LocalizedText
+SET TextAll Units can see and move through forests and jungle.[NEWLINE]Cities on tiles with charming appeal provide +10[ICON_CULTURE]Culture(+20[ICON_CULTURE] on breathtaking).[NEWLINE]+10[ICON_FAITH]from forests.
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_WOODELVEN_SANCTUARIES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct an Elven Treehouse, unique to the Silvan Elves.[NEWLINE][NEWLINE]+10[ICON_FOOD]Food and +10[ICON_CULTURE]Culture.[NEWLINE]+20[ICON_FAITH]if next to a River and additional Food and Culture as you advance through the Tech and Civiv Tree.[NEWLINE]Can only be build on forests with at least charming Appeal and can''t be adjacent to each other.[NEWLINE]Also acts as a Fort.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_TREEHOUSE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Significantly stronger silvan replacement for the Crossbowman. +50[ICON_STRENGTH]in friendly territory'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_GALADHRIM_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+50[ICON_STRENGTH] from being in friendly territory'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_ISENGARD
@@ -995,6 +1029,7 @@ AND Tag = 'LOC_UNIT_ROHIRRIM_DESCRIPTION';
 
 
 /*
+
 UPDATE LocalizedText
 SET Text = ''
 WHERE Language = 'en_US'

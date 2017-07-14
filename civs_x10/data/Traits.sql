@@ -2343,9 +2343,81 @@ WHERE UnitType = 'UNIT_ROHIRRIM';
 --CIVILIZATION_SILVAN
 ---------------------------------------------------------
 ---------------------------------------------------------
-"TRAIT_CIVILIZATION_ROHAN_HORSE_LORDS"
-"TRAIT_CIVILIZATION_IMPROVEMENT_TREEHOUSE"
-"TRAIT_CIVILIZATION_WOODELVEN_SANCTUARIES"
+
+--Sanctuaries
+UPDATE ModifierArguments 
+SET Value = 20
+WHERE Name = 'Amount'
+AND ModifierId = 'SILVAN_BREATHTAKING_CITY_CULTURE';
+
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'YieldChange'
+AND ModifierId = 'SILVAN_CHARMING_CITY_CULTURE';
+
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'SILVAN_FOREST_FAITH';
+
+--Treehouse
+UPDATE ModifierArguments 
+SET Value = 20
+WHERE Name = 'Amount'
+AND ModifierId = 'TREEHOUSE_RIVERADJACENCY_FAITH';
+
+UPDATE Improvements
+SET DefenseModifier = 40
+WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = 10
+WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
+
+UPDATE Improvement_BonusYieldChanges
+SET YieldChange = 10
+WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Treehouse_DistrictCulture_early'
+OR ID = 'Treehouse_DistrictCulture_late';
+
+--Galadhrim
+UPDATE Units
+SET RangedCombat = 70 , Combat = 60
+WHERE UnitType = 'UNIT_GALADHRIM';
+
+UPDATE Units
+SET RangedCombat = 70 , Combat = 60
+WHERE UnitType = 'UNIT_SENTINEL';
+
+UPDATE ModifierArguments 
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'GALADHRIM_DOMESTIC_BONUS';
+
+--Galadriel
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'GOLDENLADY_FOREST_APPEAL';
+
+UPDATE Buildings
+SET OuterDefenseStrength = 50 , OuterDefenseHitPoints = 150
+WHERE BuildingType = 'BUILDING_LORIENDEFENSE';
+
+--Thranduil
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'MIRKWOOD_UNIT_FOREST_HEAL_MODIFIER';
+
+UPDATE ModifierArguments 
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'MIRKWOOD_RANGED_UNITS_BONUS';
+/*
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_ISENGARD
