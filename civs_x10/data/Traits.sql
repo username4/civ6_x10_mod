@@ -2200,6 +2200,171 @@ VALUES
 	
 ---------------------------------------------------------
 ---------------------------------------------------------
+--CotR
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Gondor
+---------------------------------------------------------
+---------------------------------------------------------
+
+--stoneworks 50 + 10*10 = 150 defense, +10 culture per era
+UPDATE Buildings
+SET OuterDefenseHitPoints = 150
+WHERE  BuildingType = 'BUILDING_NUMENORIAN_STONEWORK';
+
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'NUMENORIANSTONEWORK_%_CULTURE';
+
+--Guard: 10x def bonus, atk lower, cost = 200 + 50*10=750, STR= 41+4*10, garrison bonus
+UPDATE Units 
+SET Cost = 750 , Combat = 81
+WHERE UnitType =  'UNIT_CITADEL_GUARD';
+
+UPDATE ModifierArguments 
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_UNIT_STRONG_WHEN_DEFENDING';
+
+UPDATE ModifierArguments 
+SET Value = -50
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_UNIT_WEAK_WHEN_ATTACKING';
+
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'GARRISON_BONUS_DISTRICTS';
+
+
+--legacy o N: 10 housing for walls, districts 250% faster 
+UPDATE ModifierArguments 
+SET Value = 250
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'NUMENORLEGACY_BOOST_%_PRODUCTION';
+
+
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'NUMENORLEGACY_%_HOUSING';
+
+--aragorn II: 10 dipl slot, dunedain ranger, STR = 10+5*10
+UPDATE Units 
+SET Combat = 60
+WHERE UnitType =  'UNIT_DUNEDAIN_RANGER';
+
+--For some Reasoin the mod author seems to add 10 military slots and then converts them to diplomatic
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_1'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_2'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_3'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_4'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_5'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_6'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_7'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_8'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+INSERT INTO TraitModifiers (TraitType, ModifierId)
+SELECT 'TRAIT_LEADER_REUNITED_KINGDOM' , 'ARAGORN_MILITARY_GOVERNMENT_SLOT_9'
+WHERE EXISTS  (SELECT * FROM Traits WHERE TraitType = 'TRAIT_LEADER_REUNITED_KINGDOM');
+
+INSERT INTO Modifiers (ModifierId, ModifierType)
+VALUES
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_1' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_2' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_3' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_4' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_5' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_6' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_7' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_8' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER'),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_9' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_MODIFIER');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_1' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_2' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_3' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_4' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_5' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_6' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_7' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_8' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' ),
+	('ARAGORN_MILITARY_GOVERNMENT_SLOT_9' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' );
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Rohan
+---------------------------------------------------------
+---------------------------------------------------------
+/*
+"TRAIT_CIVILIZATION_BUILDING_ROYAL_STABLE"
+"TRAIT_CIVILIZATION_UNIT_ROHAN_ROHIRRIM"
+"TRAIT_CIVILIZATION_ROHAN_HORSE_LORDS"
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_SILVAN
+---------------------------------------------------------
+---------------------------------------------------------
+"TRAIT_CIVILIZATION_ROHAN_HORSE_LORDS"
+"TRAIT_CIVILIZATION_IMPROVEMENT_TREEHOUSE"
+"TRAIT_CIVILIZATION_WOODELVEN_SANCTUARIES"
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_ISENGARD
+---------------------------------------------------------
+---------------------------------------------------------
+"TRAIT_CIVILIZATION_BUILDING_URUKPITS"
+"TRAIT_CIVILIZATION_UNIT_BALLISTA"
+"TRAIT_CIVILIZATION_MACHINE_OF_WAR"
+
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_MORDOR
+---------------------------------------------------------
+---------------------------------------------------------
+"TRAIT_CIVILIZATION_DISTRICT_WASTELAND"
+"TRAIT_CIVILIZATION_WHERE_THE_SHADOWS_LIE"
+"TRAIT_CIVILIZATION_UNIT_OLOG_HAI"
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_GOBLINS
+---------------------------------------------------------
+---------------------------------------------------------
+"TRAIT_CIVILIZATION_BUILDING_SCAVENHER_HUT"
+"TRAIT_CIVILIZATION_UNIT_MARAUDER"
+"TRAIT_CIVILIZATION_ENDLESS_HORDES"
+---------------------------------------------------------
+---------------------------------------------------------
+--CIVILIZATION_DWARVES
+---------------------------------------------------------
+---------------------------------------------------------
+"TRAIT_CIVILIZATION_BUILDING_DWARVEN_FORGE"
+"TRAIT_CIVILIZATION_UNIT_GUARDIAN"
+"TRAIT_CIVILIZATION_DURINS_FOLK"
+*/
+---------------------------------------------------------
+---------------------------------------------------------
 --Other modifications
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -2229,7 +2394,7 @@ VALUES
     ('POLICY_BLANK_8', 'KIND_POLICY'),
     ('POLICY_BLANK_9', 'KIND_POLICY');
 
---diplomatic civics for imanity and greece   
+--diplomatic civics for imanity, aragorn, greece   
 INSERT INTO Policies (PolicyType, Name, Description, PrereqCivic, GovernmentSlotType)
 VALUES
     ('POLICY_BLANK_DIPL_1', 'LOC_POLICY_BLANK_NAME', 'LOC_POLICY_BLANK_DESCRIPTION', 'CIVIC_CODE_OF_LAWS', 'SLOT_DIPLOMATIC' ),
