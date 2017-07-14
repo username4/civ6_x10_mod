@@ -983,7 +983,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_THRADUIL_RANGED_DESCRIPTION';
 
 UPDATE LocalizedText
-SET TextAll Units can see and move through forests and jungle.[NEWLINE]Cities on tiles with charming appeal provide +10[ICON_CULTURE]Culture(+20[ICON_CULTURE] on breathtaking).[NEWLINE]+10[ICON_FAITH]from forests.
+SET Text = 'All Units can see and move through forests and jungle.[NEWLINE]Cities on tiles with charming appeal provide +10[ICON_CULTURE]Culture(+20[ICON_CULTURE] on breathtaking).[NEWLINE]+10[ICON_FAITH]from forests.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_WOODELVEN_SANCTUARIES_DESCRIPTION';
 
@@ -1063,36 +1063,36 @@ AND Tag = 'LOC_UNIT_NAZGUL_DESCRIPTION';
 --CIVILIZATION_GOBLINS
 ---------------------------------------------------------
 ---------------------------------------------------------
-/*
-UPDATE LocalizedText
-SET Text = ''
-WHERE Language = 'en_US'
-AND Tag = '';
 
 UPDATE LocalizedText
-SET Text = ''
+SET Text = 'Units in range of 3 tiles of a City you captured get +50[ICON_STRENGTH]Combat Strength.[NEWLINE]All Units only use one movement point to pillage.[NEWLINE]Gain the Warg Pack unique Unit after researching Horseback riding.'
 WHERE Language = 'en_US'
-AND Tag = '';
+AND Tag = 'LOC_TRAIT_LEADER_THE_DEFILER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = ''
+SET Text = '+50[ICON_STRENGTH] from being near a captured City'
 WHERE Language = 'en_US'
-AND Tag = '';
+AND Tag = 'LOC_AZOG_CITY_AOE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = ''
+SET Text = 'Receive 10 Units whenever you train a regular infantry unit (melee or anti-cavalry) or one of your unique Units.'
 WHERE Language = 'en_US'
-AND Tag = '';
+AND Tag = 'LOC_TRAIT_GOBLINS_ENDLESS_HORDES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = ''
+SET Text = 'Unique goblin replacement for the Granary that is unlocked with Mining.[NEWLINE]Grants a small amount of [ICON_CULTURE]Culture and [ICON_FAITH]Faith whenever a Unit is trained in the City.'
 WHERE Language = 'en_US'
-AND Tag = '';
+AND Tag = 'LOC_BUILDING_GOBLIN_CAVES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = ''
+SET Text = 'A Unique Horseman replacement that has a large bonus against other cavalry units and is much cheaper to produce.'
 WHERE Language = 'en_US'
-AND Tag = '';
+AND Tag = 'LOC_UNIT_WARG_PACK_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Unique goblin replacement for the Warrior.[NEWLINE]Yields a lot of [ICON_GOLD]Gold from defeated enemy Units.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_MARAUDER_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------

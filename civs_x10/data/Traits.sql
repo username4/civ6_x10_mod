@@ -2375,7 +2375,7 @@ SET YieldChange = 10
 WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
 
 UPDATE Improvement_BonusYieldChanges
-SET YieldChange = 10
+SET BonusYieldChange = 10
 WHERE ImprovementType = 'IMPROVEMENT_TREEHOUSE';
 
 UPDATE Adjacency_YieldChanges
@@ -2450,7 +2450,7 @@ AND ModifierId = 'TRAIT_LAND_CORPS_EARLY';
 --Ballista +50 STR, +30 Bombard
 UPDATE Units
 SET Combat = 73, Bombard = 65
-WHER UnitType = 'UNIT_BALLISTA';
+WHERE UnitType = 'UNIT_BALLISTA';
 
 --Pits
 UPDATE Building_YieldChanges
@@ -2553,24 +2553,65 @@ UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId = 'SAURON_CAPTURED_CITY_GRANT_ENVOY_MODIFIER';
-/*
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_GOBLINS
 ---------------------------------------------------------
 ---------------------------------------------------------
-"TRAIT_CIVILIZATION_BUILDING_SCAVENHER_HUT"
-"TRAIT_CIVILIZATION_UNIT_MARAUDER"
-"TRAIT_CIVILIZATION_ENDLESS_HORDES"
+
+--Hordes
+UPDATE ModifierArguments 
+SET Value = 10
+WHERE Name = 'Amount'
+AND (ModifierId = 'COTR_GOBLINS_EXTRA_MEELE_UNIT'
+OR ModifierId = 'COTR_GOBLINS_EXTRA_ANTICAV_UNIT'
+OR ModifierId = 'COTR_GOBLINS_EXTRA_WARG_PACK');
+
+--Marauder 20+3*10
+UPDATE Units 
+SET Combat = 50
+WHERE UnitType = 'UNIT_MARAUDER';
+
+UPDATE ModifierArguments 
+SET Value = 1000
+WHERE Name = 'PercentDefeatedStrength'
+AND ModifierId = 'COTR_MARAUDER_GOLD_KILLS_MODIFIER';
+
+--Warg 35+1*10
+UPDATE Units 
+SET Combat = 45
+WHERE UnitType = 'UNIT_WARG_PACK';
+
+UPDATE ModifierArguments 
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_WARG_ANTI_CAVALRY_BONUS';
+
+--Goblin Caves
+UPDATE Building_YieldChanges
+SET YieldChange = 10
+WHERE YieldType = 'YIELD_PRODUCTION'
+AND BuildingType = 'BUILDING_GOBLIN_CAVES';
+
+UPDATE ModifierArguments 
+SET Value = 550
+WHERE Name = 'UnitProductionPercent'
+AND (ModifierId = 'COTR_GOBLIN_CAVES_UNIT_FAITH'
+OR ModifierId = 'COTR_GOBLIN_CAVES_UNIT_CULTURE');
+
+--Azog
+UPDATE ModifierArguments
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'COTR_AZOG_CITY_CAPTURE_AOE_STRENGTH_MODIFIER';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_DWARVES
 ---------------------------------------------------------
 ---------------------------------------------------------
-"TRAIT_CIVILIZATION_BUILDING_DWARVEN_FORGE"
-"TRAIT_CIVILIZATION_UNIT_GUARDIAN"
-"TRAIT_CIVILIZATION_DURINS_FOLK"
-*/
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Other modifications
