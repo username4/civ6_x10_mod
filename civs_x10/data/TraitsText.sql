@@ -906,7 +906,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_GONDOR_LEGACY_OF_NUMENOR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique gondorian replacement for Ancient Walls. Costs no Maintenance and provides +10ICON_CULTURE]Culture per era passed.'
+SET Text = 'Unique gondorian replacement for Ancient Walls. Costs no Maintenance and provides +10[ICON_CULTURE]Culture per era passed.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_NUMENORIAN_STONEWORK_DESCRIPTION';
 
@@ -950,11 +950,6 @@ UPDATE LocalizedText
 SET Text = 'Unique rohirric replacement for the Stable. It is build in the City Center instead of the Encampment and provides 10 Copy of [ICON_RESOURCE_HORSES]Horses as well as +10[ICON_GOLD]Gold to all Pastures in this City in addition to the usual benefits of a Stable'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ROYAL_STABLE_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = ''
-WHERE Language = 'en_US'
-AND Tag = '';
 
 UPDATE LocalizedText
 SET Text = 'Unique rohirric replacement for the Knight. Light Cavalry Unit that can build certain improvements and is much stronger than the Knight.'
@@ -1018,7 +1013,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_ISENGARD_MACHINE_OF_WAR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique isengard replacement for the Catapult. Stronger on defence and slightly stronger at bombarding.'
+SET Text = 'Unique isengard replacement for the Catapult. Much Stronger on defence and much stronger at bombarding.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_BALLISTA_DESCRIPTION';
 
@@ -1101,7 +1096,7 @@ AND Tag = 'LOC_UNIT_MARAUDER_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'All units receive tenfold support Bonus. May declare war on anyone at war with their allies without warmonger penalties. [NEWLINE]1 copy of a Strategic resource allows you to produce and purchase units requiring it in any city. Receives the Axe Thrower unique Unit.'
+SET Text = 'All units receive 1000% support Bonus. May declare war on anyone at war with their allies without warmonger penalties. [NEWLINE]1 copy of a Strategic resource allows you to produce and purchase units requiring it in any city. Receives the Axe Thrower unique Unit.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_THE_IRON_HILLS_DESCRIPTION';
 

@@ -162,7 +162,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Aragorn: 10 dipl policies, scout 60 STR
 [u]Rohan[/u]
 -farms +10 adjecencies,  +10 movement for cavalry
--Rider:
+-Rider: 88STR, 20 charges, 30 cost
 -Stable: 10 horse, +10 gold per pasture
 -Théoden: food and prod increased by 500% after liberation
 [u]Silvan[/u]
@@ -178,7 +178,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Saruman: Spy 10 increase, a lot of faith by babarians
 [u]Mordor[/u]
 -Units no maintenance
--Mamak: 
+-Mamak: +30STR
 -Nazgul: heals 90 hp on kill
 -Wasteland: Cost=1
 -Sauron: 10 envoys per capture, 10 nazgul per era
