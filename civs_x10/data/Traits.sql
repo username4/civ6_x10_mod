@@ -2205,9 +2205,7 @@ VALUES
 ---------------------------------------------------------
 
 ---------------------------------------------------------
----------------------------------------------------------
 --Gondor
----------------------------------------------------------
 ---------------------------------------------------------
 
 --stoneworks 50 + 10*10 = 150 defense, +10 culture per era
@@ -2312,9 +2310,7 @@ VALUES
 	('ARAGORN_MILITARY_GOVERNMENT_SLOT_9' , 'GovernmentSlotType' , 'SLOT_DIPLOMATIC' );
 
 ---------------------------------------------------------
----------------------------------------------------------
 --Rohan
----------------------------------------------------------
 ---------------------------------------------------------
 
 --Stables
@@ -2337,11 +2333,8 @@ UPDATE Units
 SET Cost = 30 , Combat = 88 , BuildCharges = 20
 WHERE UnitType = 'UNIT_ROHIRRIM';
 
-
----------------------------------------------------------
 ---------------------------------------------------------
 --CIVILIZATION_SILVAN
----------------------------------------------------------
 ---------------------------------------------------------
 
 --Sanctuaries
@@ -2419,9 +2412,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'MIRKWOOD_RANGED_UNITS_BONUS';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_ISENGARD
----------------------------------------------------------
 ---------------------------------------------------------
 
 --Machine of War
@@ -2494,9 +2485,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_SPY_OFFENSE_LEVEL';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_MORDOR
----------------------------------------------------------
 ---------------------------------------------------------
 
 --Where Shadows lie
@@ -2555,9 +2544,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'SAURON_CAPTURED_CITY_GRANT_ENVOY_MODIFIER';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_GOBLINS
----------------------------------------------------------
 ---------------------------------------------------------
 
 --Hordes
@@ -2611,9 +2598,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'COTR_AZOG_CITY_CAPTURE_AOE_STRENGTH_MODIFIER';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_DWARVES
----------------------------------------------------------
 ---------------------------------------------------------
 
 --Smithing Quarters
@@ -2682,6 +2667,94 @@ UPDATE Building_GreatWorks
 SET NumSlots = 9
 WHERE BuildingType = 'BUILDING_THRORRELICSLOT'
 AND GreatWorkSlotType ='GREATWORKSLOT_PALACE';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--JFD's Leader Packs
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+--India
+---------------------------------------------------------
+--Ajatasattu: +50 Combat near 
+UPDATE ModifierArguments
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_RELICS_BLESSED_COMBAT_VS_SAME_RELIGION_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = 9
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_RELICS_BLESSED_ONE_SHRINE_SLOTS';
+
+---------------------------------------------------------
+--Germany
+---------------------------------------------------------
+
+UPDATE ModifierArguments
+SET Value = Value*10
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_NOBLE_ACADEMIES_%';
+
+UPDATE ModifierArguments
+SET Value = Value*10
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_LANDWEHR_COMBAT_BONUS';
+
+UPDATE ModifierArguments
+SET Value = 200
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_JFD_BLITZKRIEG_WAR_PRODUCTION';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_JFD_BLITZKRIEG_WAR_UNIT_MOVES';
+
+UPDATE ModifierArguments
+SET Value = 50
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_PANZER_COMBAT_BONUS';
+
+---------------------------------------------------------
+--France
+---------------------------------------------------------
+
+UPDATE ModifierArguments
+SET Value = Value*10
+WHERE Name = 'Amount'
+AND (ModifierId = 'JFD_FREE_FRANCE_GENERAL_MOVES'
+OR ModifierId = 'JFD_FREE_FRANCE_GENERAL_POINTS_FROM_KILLS');
+
+UPDATE ModifierArguments
+SET Value = 70
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_CHAR_B1_DEFENDING_BONUS';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_JFD_SUN_KING_WONDER_CULTURE_MODIFIER';
+
+--seems to be not implemented yet
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND ModifierId = 'TRAIT_JFD_SUN_KING_WONDER_ENVOY';
+
+/*
+UPDATE Units
+SET Maintenance = Maintenance + 20
+WHERE UnitType = 'UNIT_JFD_VIEUX';
+*/
+
+UPDATE ModifierArguments
+SET Value = 70
+WHERE Name = 'Amount'
+AND ModifierId = 'JFD_VIEUX_CITY_CENTRE_COMBAT';
+
+
 
 ---------------------------------------------------------
 ---------------------------------------------------------

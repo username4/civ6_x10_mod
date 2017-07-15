@@ -712,181 +712,113 @@ AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
 
 --10 blank civics for germany and greece
 INSERT INTO LocalizedText (Language, Tag, Text)
-VALUES ('de_DE', 'LOC_POLICY_BLANK_NAME', 'Blank Policy');
+VALUES ('de_DE', 'LOC_POLICY_BLANK_NAME', 'Leerer Kurs');
 
 INSERT INTO LocalizedText (Language, Tag, Text)
-VALUES ('de_DE', 'LOC_POLICY_BLANK_DESCRIPTION', 'Policy without effect, so the game does not softlock with germany and greece (by civsx10 mod).');
+VALUES ('de_DE', 'LOC_POLICY_BLANK_DESCRIPTION', 'Leerer Kurs für Deutschland und Griechernland um Softlock zu verhindern (von civsx10 mod).');
 
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---MOD CIVS
+--MOD CIVS, generally English only
 ---------------------------------------------------------
 ---------------------------------------------------------
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Campus Metropolitan
+--JFD's Leader Packs
 ---------------------------------------------------------
 ---------------------------------------------------------
 
-UPDATE LocalizedText
-SET Text = 'Replaces campus. Gain 10 [ICON_Gold] gold and 10 [ICON_Production] production adjacenry bonus equal to 10 times [ICON_Science] science bonus. Each working citizen provides 10 extra [ICON_Production] production.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_DISTRICT_KENKYUJO_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Replaces campus. Gain 10 [ICON_Gold] gold and 10 [ICON_Production] production adjacenry bonus equal to 10 times [ICON_Science] science bonus. Each working citizen provides 10 extra [ICON_Production] production.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_DISTRICT_KENKYUJO_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Special recon unit which replaces rangers. Have much better [ICON_Movement] movement and sight range than rangers.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_UNIT_LV5_JUDGEMENT_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Replica of Misaka Mikoto, clone units. Replaces Infantry, but much cheaper to build and maintain.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_MIKASA_UNIT_MIKASA_SISTERS_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Cities earn 100% more [ICON_Science] science. Each city earn +10 [ICON_Science] science and +10 [ICON_Gold] gold.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_GAKUINTOSHI_CHONOURYOKU_KAIHATSU_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Range units earn +10 [ICON_Range] range bonus.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
-
 ---------------------------------------------------------
----------------------------------------------------------
---Konosuba Aqua
----------------------------------------------------------
+--India
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Missionary and Apostles are +80 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +40 and +80 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
+SET Text = 'Kampfeinheiten erhalten +50 [ICON_STRENGTH] Kampfstärke in der Nähe fremder Städte, die Eurer Religion folgen, und erhält ein [ICON_GREATWORK_RELIC] Relikt durch die Einnahme einer Stadt, welche einen Heiligen bezirk besitzt. Schreine besitzen 9 Platz [ICON_GREATWORK_RELIC] für Relikte.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_AXIS_CULT_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_MODIFIER_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+40 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+80 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Kachoufuugetsu, unique to Axis Cult.[NEWLINE][NEWLINE]+10 [ICON_Gold] Gold, [ICON_Faith] Faith and Appeal. +10 [ICON_Food] Food to adjacent farm. Additional +10 [ICON_Food] Food to adjacent farm when researched Sanitation. Cannot be built adjacent to another Kachoufuugetsu.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_IMPROVEMENT_CONS_KACHOUFUUGETSU_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +110 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_CONS_AXIS_CULT_PRIEST_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Cities have full [ICON_Housing] Housing from water, as if they were all next to a River. +20 [ICON_Housing] Housing to cities if they adjacent to a River, Lake, Oasis.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_CONS_AQUA_DESCRIPTION';
+AND Tag = 'LOC_TRAIT_LEADER_JFD_RELICS_BLESSED_ONE_DESCRIPTION';
 
 ---------------------------------------------------------
----------------------------------------------------------
---Konosuba Megumin
----------------------------------------------------------
+--Germany
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Combat Strength for ranged unit. +500% combat experience for all ranged land units trained in city.'
+SET Text = '+50 [ICON_Strength] Kampfstärke beim Angriff. Kann sich nach einem Angriff bewegen.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_DESCRIPTION';
+AND Tag = 'LOC_ABILITY_JFD_PANZER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = 'Einzigartige Deutsche Landeinheit der Moderne, die den Panzer ersetzt, wenn Hitler der Anführer ist. Besitzt +50 [ICON_Strength] Kampfstärke beim Angriff und kann sich nach einem Angriff bewegen.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_DESCRIPTION';
+AND Tag = 'LOC_UNIT_JFD_PANZER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+200% [ICON_PRODUCTION] militärische Produktion und +10 [ICON_MOVEMENT] Bewegung für Einheiten während Kriegszeiten mit einer großen Zivilisation. Erhält den Panzerkampfwagen als einzigartige Landeinheit nachdem die Technologie Verbrennungsmotor erforscht wurde.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_STRENGTH_PER_ERA_DESCRIPTION';
+AND Tag = 'LOC_TRAIT_LEADER_JFD_BLITZKRIEG_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Crimson Magic Clan unique district that replace Neighborhood. Can be built from the beginning of the game. However, but provides +3 [ICON_Housing] Housing regardless of Appeal. +250% combat experience for all units trained in this city. Unlocks the Cast Explosion Magic and Make Magic Item project.'
+SET Text = 'Lagergebäude gewähren zehnfach [ICON_GOLD] Gold und [ICON_SCIENCE] Wissenschaft entsprechend ihrem spezifischen Ertrag an [ICON_PRODUCTION] Produktion. Erhält die einzigartige Landwehr Einheit sobald die Drall Technology erforscht wurde.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
+AND Tag = 'LOC_TRAIT_LEADER_JFD_NOBLE_ACADEMIES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+{10_num} [ICON_Gold] Gold from the adjacent {1_Num : plural 1?district; other?districts;}.'
+SET Text = '+50 [ICON_Strength] Kampfstärke wenn benachbart zu einer weiteren Landwehr. Nicht betroffen von Kontrollzonen.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_DISTRICT_CONS_CMC_VILLAGE_GOLD';
+AND Tag = 'LOC_ABILITY_JFD_LANDWEHR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Crimson Magic Clan unique project which provides a large amount of [ICON_Gold] Gold and [ICON_Science] Science every turn.'
+SET Text = 'Einzigartige Deutsche Landeinheit des Industriezeitalters wenn Friedrich der Anführer ist. Ist nicht betroffen von Kontrollzonen. Hat +50 [ICON_Strength] Kampfstärke wenn benachbart zu einer weiteren Landwehr Einheit.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_PROJECT_ENHANCE_DISTRICT_CONS_CMC_VILLAGE_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'When you enter a new era, receive 10 Explosion Magic.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_CONS_MEGUMIN_DESCRIPTION';
+AND Tag = 'LOC_UNIT_JFD_LANDWEHR_DESCRIPTION';
 
 ---------------------------------------------------------
----------------------------------------------------------
---No Game No Live Imanity
----------------------------------------------------------
+--France
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+500% [ICON_Production] Production toward Settlers and Recon units. Settler and Recon unit gain Sentry and Camouflage promotion effect.'
+SET Text = 'Erhält viele [ICON_GREATGENERAL] Großer General Punkte, wenn eine gegnerische Einheit auf eigenem Gebiet geschlagen wurde, und [ICON_GREATGENERAL] Große Generäle haben +20 [ICON_MOVEMENT] Bewegung. Erhält Zugriff auf die einzigartige Landeinheit Char B1 sobald die Technologie Verbrennungsmotor erforscht wurde.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_IMANITY_DESCRIPTION';
+AND Tag = 'LOC_TRAIT_LEADER_JFD_FREE_FRANCE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Imanity unique building that replace Library. Triggers the [ICON_TechBoosted] Eureka moment for 10 random technologies from the Ancient to Information era.'
+SET Text = '+20 [ICON_MOVEMENT] Bewegung für Große Generäle.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_BUILDING_CONS_ELCHEA_LIBRARY_DESCRIPTION';
+AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_MOVES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Imanity unique Ancient era unit that replace Scout. 13 Movement. +10 sight range. Even without Open Borders, this unit can enter foreign territory.'
+SET Text = '+100 [ICON_GREATGENERAL] Großer General Punkte für die Zerstörung von Einheiten in eigenem Territorium.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_CONS_IMANITY_SCOUT_DESCRIPTION';
+AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_POINTS_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Each of 10 Military policy and Diplomatic policy slots in the current government are converted to  Wildcard slots. Opposing civilizations receive +250% the war weariness for fighting against Sora. Accumulate 94% less war weariness than usual.'
+SET Text = '+70 [ICON_Strength] Kampfstärke bei Verteidigung.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_CONS_SORA_DESCRIPTION';
+AND Tag = 'LOC_ABILITY_JFD_CHAR_B1_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Receive 15 [ICON_GreatScientist] Great Scientist points. [ICON_TechBoosted] Eurekas provide 95% of technologies instead of 50%.'
+SET Text = 'Einzigartige französische Landeinheit der Moderne, welche den Panzer ersetzt, wenn Charles de Gaulle der Anführer ist. Besitzt +70 [ICON_Strength] Kampfstärke bei Verteidigung.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_CONS_SHIRO_DESCRIPTION';
+AND Tag = 'LOC_UNIT_JFD_CHAR_B1_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '10 extra Diplomatic policy and +10 Influence points per turn toward earning city-state [ICON_Envoy] Envoys with Political Philosophy and +1 [ICON_Envoy] with Diplomatic Service civic'
+SET Text = 'Erhält +10 [ICON_ENVOY] Gesandten und +20 [ICON_CULTURE] Kultur je Runde für jedes in der [ICON_CAPITAL] Hauptstadt erbaute Wunder. Bekommt Zugriff auf die einzigartige Landeinheit Vieux Korps sobald die Technologie Schießpulver erforscht wurde.'
 WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_CONS_STEPHANIE_DESCRIPTION';
+AND Tag = 'LOC_TRAIT_LEADER_JFD_SUN_KING_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = '+70 [ICON_STRENGTH] Kampfstärke bei Verteidigung gegen Stadtangriffe. Kann sich nach einem Angriff bewegen.'
+WHERE Language = 'de_DE'
+AND Tag = 'LOC_ABILITY_JFD_VIEUX_CITY_CENTER_COMBAT_DESC';
 
-
+UPDATE LocalizedText
+SET Text = 'Einzigartige französische Landeinheit der Renaissance unter Ludwig XIV als Herrscher. Besitzt +70 [ICON_STRENGTH] Kampfstärke bei Verteidigung gegen Stadtangriffe und kann sich nach einem Angriff bewegen. Im Vergleich zum Musketier sind die Unterhaltskosten um 2 erhöht.'
+WHERE Language = 'de_DE'
+AND Tag = 'LOC_UNIT_JFD_VIEUX_DESCRIPTION';
 
 /*
+
 UPDATE LocalizedText
 SET Text = ''
 WHERE Language = 'de_DE'

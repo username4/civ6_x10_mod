@@ -890,9 +890,7 @@ AND Tag = 'LOC_TRAIT_LEADER_CONS_STEPHANIE_DESCRIPTION';
 ---------------------------------------------------------
 
 ---------------------------------------------------------
----------------------------------------------------------
 --Gondor
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -931,9 +929,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_DISTRICT_COMBAT';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --Rohan
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -957,9 +953,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ROHIRRIM_DESCRIPTION';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_SILVAN
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -996,10 +990,9 @@ UPDATE LocalizedText
 SET Text = '+50[ICON_STRENGTH] from being in friendly territory'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
----------------------------------------------------------
+
 ---------------------------------------------------------
 --CIVILIZATION_ISENGARD
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -1023,9 +1016,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_URUKPITS_DESCRIPTION';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_MORDOR
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -1054,9 +1045,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NAZGUL_DESCRIPTION';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_GOBLINS
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -1090,9 +1079,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MARAUDER_DESCRIPTION';
 
 ---------------------------------------------------------
----------------------------------------------------------
 --CIVILIZATION_DWARVES
----------------------------------------------------------
 ---------------------------------------------------------
 
 UPDATE LocalizedText
@@ -1129,6 +1116,99 @@ UPDATE LocalizedText
 SET Text = 'Unique replacement for the Archer. More expensive and with only a one tile range, but with much higher ranged and melee strength.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_AXETHROWER_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--JFD's Leader Packs
+---------------------------------------------------------
+---------------------------------------------------------
+
+---------------------------------------------------------
+--India
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Combat units gain +50 [ICON_STRENGTH] Combat Strength near foreign cities following your Religion and receive a [ICON_GREATWORK_RELIC] Relic upon conquest of a city with a Holy Site. Shrines have a slot for 9 [ICON_GREATWORK_RELIC] Relics.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_JFD_RELICS_BLESSED_ONE_DESCRIPTION';
+
+---------------------------------------------------------
+--Germany
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = '+200% [ICON_PRODUCTION] Military Production and +10 [ICON_MOVEMENT] Movement for Units during wartime with a major civilization. Gain the Panzer unique unit when they research the Combustion technology.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_JFD_BLITZKRIEG_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'German unique Modern era unit that replaces the Tank when Hitler is their leader. Has +50 [ICON_Strength] Combat Strength when attacking and can move after attacking.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_JFD_PANZER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+50 [ICON_Strength] Combat Strength when attacking. Can move after attacking.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_JFD_PANZER_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Encampment Buildings yield 10 times [ICON_GOLD] Gold and [ICON_SCIENCE] Science equal to their intrinsic [ICON_PRODUCTION] Production output. Gain the Landwehr unique unit when they research the Rifling technology.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_JFD_NOBLE_ACADEMIES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'German unique Industrial era unit when Frederick is their leader. Is unaffected by ZOC. Has +50 [ICON_STRENGTH] Combat Strength when adjacent to another Landwehr unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_JFD_LANDWEHR_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+50 [ICON_Strength] Combat Strength when adjacent to another Landwehr. Not affected by ZOC.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_JFD_LANDWEHR_DESCRIPTION';
+
+---------------------------------------------------------
+--France
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Earns many [ICON_GREATGENERAL] Great General Points when defeating an enemy unit within their own territory and [ICON_GREATGENERAL] Great Generals have +20 [ICON_MOVEMENT] Movement. Gain the Char B1 unique unit when they research the Combustion technology.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_JFD_FREE_FRANCE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+20 [ICON_MOVEMENT] Movement for Great Generals.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_MOVES_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+100 [ICON_GREATGENERAL] Great General points for killing units in your own territory.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_POINTS_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+70 [ICON_Strength] Combat Strength when defending.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_JFD_CHAR_B1_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'French unique Modern era unit that replaces the Tank when Charles de Gaulle is their leader. Has +70 [ICON_Strength] Combat Strength when defending.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_JFD_CHAR_B1_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Receives +10 [ICON_ENVOY] Envoy and +20 [ICON_CULTURE] Culture Per Turn for each Wonder constructed in the [ICON_CAPITAL] Capital. Gain the Vieux Corps unique unit when they research the Gunpowder technology.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_JFD_SUN_KING_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+70 [ICON_STRENGTH] Combat Strength when defending vs. city attacks. Can move after attacking.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_JFD_VIEUX_CITY_CENTER_COMBAT_DESC';
+
+UPDATE LocalizedText
+SET Text = 'French unique Renaissance era unit when Louis XIV is their leader. Has +70 [ICON_STRENGTH] Combat Strength when defending vs. city attacks and can move after attacking. Costs 2 more Maintenance than the contemporary Musketman.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_JFD_VIEUX_DESCRIPTION';
 
 /*
 
