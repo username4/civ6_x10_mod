@@ -18,15 +18,7 @@ AND ModifierId = 'FILMSTUDIO_ENHANCEDLATETOURISM');
 
 --P51    
 UPDATE Units
-SET BaseMoves = 24
-WHERE UnitType = 'UNIT_AMERICAN_P51';
-
-UPDATE Units
-SET Combat = 130
-WHERE UnitType = 'UNIT_AMERICAN_P51';
-
-UPDATE Units
-SET RangedCombat = 130
+SET BaseMoves = 24 , Combat = 109, RangedCombat = 109 , Cost = 
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE ModifierArguments
@@ -37,20 +29,16 @@ WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 --LEADER Teddy
 --Corollary
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
 
 UPDATE ModifierArguments
 SET Value = 10
 WHERE ModifierId = 'TRAIT_NATIONAL_PARK_APPEAL_BONUS';
 
---rough rider as replacement for cavalry  
-UPDATE Units
-SET Combat = 112
-WHERE UnitType = 'UNIT_AMERICAN_ROUGH_RIDER';
-
+--rough rider
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'ROUGH_RIDER_BONUS_ON_HILLS';
 
 UPDATE ModifierArguments
@@ -91,17 +79,7 @@ WHERE ModifierId = 'TRAIT_RELIGIOUS_BUILDING_DISCOUNT';
 UPDATE ModifierArguments
 SET Value = 100
 WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_SCIENCE');
-
-UPDATE ModifierArguments
-SET Value = 100
-WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_FAITH');
-
-UPDATE ModifierArguments
-SET Value = 100
-WHERE (Name = 'Multiplier'
-AND ModifierId = 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_CULTURE');
+AND ModifierId LIKE 'TRAIT_RELIGIOUS_BUILDING_MULTIPLIER_%');
 
 ---------------------------------------------------------
 ---------------------------------------------------------

@@ -729,7 +729,7 @@ VALUES ('de_DE', 'LOC_POLICY_BLANK_DESCRIPTION', 'Leerer Kurs für Deutschland u
 --JFD's Leader Packs
 ---------------------------------------------------------
 ---------------------------------------------------------
-
+/*
 ---------------------------------------------------------
 --India
 ---------------------------------------------------------
@@ -816,7 +816,7 @@ UPDATE LocalizedText
 SET Text = 'Einzigartige französische Landeinheit der Renaissance unter Ludwig XIV als Herrscher. Besitzt +70 [ICON_STRENGTH] Kampfstärke bei Verteidigung gegen Stadtangriffe und kann sich nach einem Angriff bewegen. Im Vergleich zum Musketier sind die Unterhaltskosten um 2 erhöht.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_JFD_VIEUX_DESCRIPTION';
-
+*/
 /*
 
 UPDATE LocalizedText

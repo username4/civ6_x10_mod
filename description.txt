@@ -11,10 +11,10 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 [quote]
 [u]America[/u]
 -legacy bonuses ten times faster
--P51: +50 ATK, +20 Range, +500% experience
+-P51: +29 ATK, +20 Range, +500% experience
 -FilmStudio: +1000 Tourism
--Corollary: +50 Str on Home, +10 Appeal for National Park
--Rough Rider: +500% STR on home continent, +100 on hills
+-Corollary: +29 Str on Home, +10 Appeal for National Park
+-Rough Rider: +500% STR on home continent, +44 on hills
 [u]Arabia[/u]    
 -+10 science for each converted city
 -Madrasa +14 science
@@ -205,6 +205,10 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Dain: +1000% support, Axe thrower 115 STR 75 ranged
 -Thror: mountains +200% gold, +20 gold form int trade, 9 slots in moountain cities (more breaks UI)
 [/quote]
+
+Notes:
+The bonuses to combat strenght are scaled in such a way, that the difference to damage dealt is tenfold. A bonus of +5 increases damage dealt by 22%, so with the x10-mod it should increase by 220%. 
+A bonus of +5 from a vanilla then increases to +29.
 
 Please tell, if something is wrong or was not implemented correctly.
 
