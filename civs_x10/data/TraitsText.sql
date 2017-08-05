@@ -85,7 +85,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Brazilian unique Modern era unit that replaces the Battleship. Much stronger (+100 [ICON_Strength]) than the Battleship. Unlocked by Nationalism.'
+SET Text = 'Brazilian unique Modern era unit that replaces the Battleship. Much stronger (+44 [ICON_Strength]) than the Battleship. Unlocked by Nationalism.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_BRAZILIAN_MINAS_GERAES_DESCRIPTION';
 
@@ -116,12 +116,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an +40 increase to [ICON_Strength] Defense. 10 Bonus to [ICON_Gold] Gold if adjacent to other segments. 10 additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.'
+SET Text = 'Unlocks the Builder ability to construct the Great Wall, unique to China.[NEWLINE][NEWLINE]Provides an +25 increase to [ICON_Strength] Defense. 10 Bonus to [ICON_Gold] Gold if adjacent to other segments. 10 additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology Tree for adjacent segments. Must be built in a line along the borders of your empire.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Chinese unique Medieval era unit. Ranged unit with a [ICON_Range] Range of 1 and 140 [ICON_RANGED].'
+SET Text = 'Chinese unique Medieval era unit. Ranged unit with a [ICON_Range] Range of 1 and 84 [ICON_RANGED].'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
 
@@ -185,7 +185,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your [ICON_Capital] Capital''s. No disembark cost.'
+SET Text = '+44 [ICON_Strength] Combat Strength when fighting on a continent other than that of your [ICON_Capital] Capital''s. No disembark cost.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_REDCOAT_DESCRIPTION';
 
@@ -201,12 +201,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CHATEAU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'French unique Industrial era melee unit. +100  [ICON_Strength] Combat Strength when fighting on your capital''s continent. [ICON_GreatGeneral] Great General points for killing units.'
+SET Text = 'French unique Industrial era melee unit. +44  [ICON_Strength] Combat Strength when fighting on your capital''s continent. [ICON_GreatGeneral] Great General points for killing units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when on the same continent as the [ICON_Capital] Capital. +10 Great General points for kills.'
+SET Text = '+44 [ICON_Strength] Combat Strength when on the same continent as the [ICON_Capital] Capital. +10 Great General points for kills.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GARDE_DESCRIPTION';
 
@@ -237,17 +237,17 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength in Ocean combat.'
+SET Text = '+44 [ICON_Strength] Combat Strength in Ocean combat.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +10 Sight, and +100 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.'
+SET Text = 'German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +10 Sight, and +44 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '10 additional Military policy slots. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+SET Text = '10 additional Military policy slots. +36 [ICON_Strength] Combat Strength when attacking city-states.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
@@ -268,12 +268,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
+SET Text = '+44 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +100 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
+SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +44 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GREEK_HOPLITE_DESCRIPTION';
 
@@ -294,12 +294,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_STEPWELL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '-50 [ICON_Strength] Combat Strength to adjacent enemy units.'
+SET Text = '-29 [ICON_Strength] Combat Strength to adjacent enemy units.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_VARU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Expensive Indian unique Classical era unit that replaces the Horseman.  Adjacent enemy units receive -50 [ICON_STRENGTH] Combat Strength.'
+SET Text = 'Expensive Indian unique Classical era unit that replaces the Horseman.  Adjacent enemy units receive -29 [ICON_STRENGTH] Combat Strength.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_INDIAN_VARU_DESCRIPTION';
 

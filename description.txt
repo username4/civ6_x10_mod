@@ -21,18 +21,18 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Saladin: Faith purchase cost 1%, +100% output of worship buildings
 [u]Brazil[/u]
 -10 Adjecency Bonus for rainforests
--Minas Geraes: 160 Melee, 170 Ranged
+-Minas Geraes: 104 Melee, 114 Ranged
 -Carneval: Cost=1, Entertainment 11, 10 Great Person points 
 -Pedro: 90% Refund for Great People
 [u]China[/u]
 -95% Eureka and Inspiration Bunus
--Wall 40 Defense, +10 Gold and Culture
--Crouching Tiger: 140 Ranged and Cost=55
+-Wall 25 Defense, +10 Gold and Culture
+-Crouching Tiger: 84 Ranged and Cost=55
 -Qin: Builders +10 charges and complete wonders 80% 
 [u]Egypt[/u]
 -+405% to wonder and district production, if build next to river
 -Sphinx:  +10 culture, +10 faith (+20, if next to wonder), +10 appeal
--Chariot Archer: 105 Ranged
+-Chariot Archer: +12 Movement
 -Cleopatra: trade routes outgoing +40 Gold, incoming +20 gold, +20 food 
 [u]England[/u]
 -10 free melee units on other continent
@@ -44,22 +44,22 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Chateau: +20 Culture, +10 Appeal, +20 Culture, if next to wonder, +10 gold if next to lux 
 -res. wonders 90% complete
 -10 times tourism
--Imp. Guard +100 STR on home continent
+-Imp. Guard +44 STR on home continent
 -Catherine: +10 spies and +10 dipl. vis. 
 [u]Germany[/u]
 -can build +10 districs
 -Hansa: +10 Adjecency to ressource and districs, +20 to commercial hub
--U-Boot: +100 STR, +10 sight range
--Babarossa: +70 vs city states, +10 Military slots
+-U-Boot: +44 STR, +10 sight range
+-Babarossa: +36 vs city states, +10 Military slots
 [u]Greece[/u]
 +10 Wildcard slots
 -Acropolis: Cost=1, +20 Adjecency for centre
--Hoplite: +100 STR if near other Hoplite 
+-Hoplite: +44 STR if near other Hoplite 
 -Gorgo: 500% culture of defeated unit strength
 -Pericles +50% Culture per city state 
 [u]India[/u]
 -Stepwell: 20 Housing, 10 Food, +10 food if farm, +10 faith if holysite 
--Varu: -50 STR to enemies (stackable!), 1 Move, 85 STR, 12 sight, 480 cost
+-Varu: -29 STR to enemies (stackable!), 1 Move, 64 STR, 12 sight, 480 cost
 -Ghandi: 10 fold War weeariness on enemy
 -50 faith per known civ with religion 
 [u]Japan[/u]

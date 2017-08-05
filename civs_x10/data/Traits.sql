@@ -18,7 +18,7 @@ AND ModifierId = 'FILMSTUDIO_ENHANCEDLATETOURISM');
 
 --P51    
 UPDATE Units
-SET BaseMoves = 24 , Combat = 109, RangedCombat = 109 , Cost = 
+SET BaseMoves = 24 , Combat = 109, RangedCombat = 109 , Cost = 170
 WHERE UnitType = 'UNIT_AMERICAN_P51';
 
 UPDATE ModifierArguments
@@ -115,10 +115,7 @@ AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 160
-WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
-UPDATE Units
-SET RangedCombat = 170
+SET Combat = 104 , RangedCombat = 114 , AntiAirCombat = 109
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
@@ -163,7 +160,7 @@ WHERE ModifierId = 'TRAIT_TECHNOLOGY_BOOST';
 --TRAIT_CIVILIZATION_IMPROVEMENT_GREAT_WALL
 --40 Def
 UPDATE Improvements
-SET DefenseModifier = 40
+SET DefenseModifier = 25
 WHERE ImprovementType = 'IMPROVEMENT_GREAT_WALL';
 
 --adjacencies
@@ -175,9 +172,9 @@ UPDATE Adjacency_YieldChanges
 SET YieldChange = 10
 WHERE ID = 'GreatWall_Culture';
 
---"TRAIT_CIVILIZATION_UNIT_CHINESE_CROUCHING_TIGER
+--"TRAIT_CIVILIZATION_UNIT_CHINESE_CROUCHING_TIGER rangedcombat 40 + 44 
 UPDATE Units
-SET RangedCombat = 140
+SET RangedCombat = 84
 WHERE UnitType = 'UNIT_CHINESE_CROUCHING_TIGER';
 --cost reduction (exponential, 160/180^10 *180 = 55 )
 UPDATE Units
@@ -333,7 +330,7 @@ VALUES
 
 --REDCOAT 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'REDCOAT_FOREIGN_COMBAT';
 
 
@@ -372,68 +369,20 @@ AND ModifierId = 'TRAIT_WONDER_DOUBLETOURISM');
 --ress. Wonders 20% to 90%, exponential scaling
 UPDATE ModifierArguments
 SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ALHAMBRAPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_CHICHENITZAPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_FORBIDDENCITYPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_GREATZIMBABWEPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_HAGIASOPHIAPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_VENETIANARSENALPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_MONTSTMICHELPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_POTALAPALACEPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BOLSHOITHEATREPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_HERMITAGEPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_RUHRVALLEYPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_OXFORDUNIVERSITYPRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 90
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BIGBENPRODUCTION');
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_ALHAMBRAPRODUCTION'
+OR ModifierId = 'TRAIT_CHICHENITZAPRODUCTION'
+OR ModifierId = 'TRAIT_FORBIDDENCITYPRODUCTION'
+OR ModifierId = 'TRAIT_GREATZIMBABWEPRODUCTION'
+OR ModifierId = 'TRAIT_HAGIASOPHIAPRODUCTION'
+OR ModifierId = 'TRAIT_VENETIANARSENALPRODUCTION'
+OR ModifierId = 'TRAIT_MONTSTMICHELPRODUCTION'
+OR ModifierId = 'TRAIT_POTALAPALACEPRODUCTION'
+OR ModifierId = 'TRAIT_BOLSHOITHEATREPRODUCTION'
+OR ModifierId = 'TRAIT_HERMITAGEPRODUCTION'
+OR ModifierId = 'TRAIT_RUHRVALLEYPRODUCTION'
+OR ModifierId = 'TRAIT_OXFORDUNIVERSITYPRODUCTION'
+OR ModifierId = 'TRAIT_BIGBENPRODUCTION');
 
 --GARDE_IMPERIALE" combat bonus
 UPDATE ModifierArguments
@@ -477,20 +426,16 @@ WHERE ID = 'Resource_Production';
 
 --scale cost exponetially (430/480)^10*480
 UPDATE Units
-SET Cost = 160
-WHERE UnitType = 'UNIT_GERMAN_UBOAT';
-
-UPDATE Units
-SET BaseSightRange = 12
+SET Cost = 160 , BaseSightRange = 12
 WHERE UnitType = 'UNIT_GERMAN_UBOAT';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'UBOAT_OCEAN_COMBAT';
 
 --LEADER BABAROSSA
 UPDATE ModifierArguments
-SET Value = 70
+SET Value = 36
 WHERE (Name = 'Amount'
 AND ModifierId = 'COMBAT_BONUS_VS_CITY_STATES_MODIFIER');
 
@@ -585,7 +530,7 @@ WHERE ID = 'District_Culture_City_Center';
 
 --HOPLITE
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT';
 
 --gorgo
@@ -641,23 +586,11 @@ AND ModifierId = 'STEPWELL_HOUSING_WITHTECH');
 
 --Varu
 UPDATE Units
-SET BaseMoves = 1
-WHERE UnitType = 'UNIT_INDIAN_VARU';
-
-UPDATE Units
-SET Cost = 480
-WHERE UnitType = 'UNIT_INDIAN_VARU';
-
-UPDATE Units
-SET Combat = 85
-WHERE UnitType = 'UNIT_INDIAN_VARU';
-
-UPDATE Units
-SET BaseSightRange = 12
+SET BaseMoves = 1 , BaseSightRange = 12 , Combat = 64 , Cost = 480
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
 UPDATE ModifierArguments
-SET Value = -50
+SET Value = -29
 WHERE (Name = 'Amount'
 AND ModifierId = 'VARU_NEGATIVE_COMBAT_MODIFIER');
 
