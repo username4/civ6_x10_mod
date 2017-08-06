@@ -65,8 +65,8 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 [u]Japan[/u]
 -10 adjacent district bunus
 -Electronnic Factory: 13 Bunus to cities in 6 radius, 40 cuture
--Samurai: 81 STR, 63 cost
--Divine Wind: +1000% Production of holy site, encampment and theater, +50 STR on coast and shallow water
+-Samurai: 66 STR, 63 cost
+-Divine Wind: +1000% Production of holy site, encampment and theater, +29 STR on coast and shallow water
 [u]Kongo[/u]
 -10x artist and musician points, +40 Gold +20 Food, +20 Food from great works, 9 slots in palace (more breaks UI)
 -Mbanza: +40 Gold, +20 Food, Cost=1
@@ -74,31 +74,31 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -10 free apostles on mbanza and theater district build
 [u]Norway[/u]
 -Stave Church: 10 fait adjecency
--berserker:20 Movement in enimy territory, +70 when attacking, -70 when defending
+-berserker: 20 Movement in enimy territory, +36 when attacking, -36 when defending
 -Harald:
--Longship: 75 Combat, 10 coast movement 
+-Longship: 54 Combat, 10 coast movement 
 [u]Rome[/u]
 -Bath: Cost=1, Housing 20, Entertainment 10
--Legion: 76 Combat, 10 Charges, 290 cost
--Fort: 40 Def
+-Legion: 51 Combat, 10 Charges, 290 cost
+-Fort: 25 Def
 -10 Gold on traderoutes
 -Trajan: 10 free Buildings in new City
 [u]Russia[/u]
 -new cities start with 26 tiles
 -+10 faith and production on tundra
 -Lavra: Cost=1, 10 great person production
--Cossack: Cost=430, 112 STR, +50 STR in own territory
+-Cossack: Cost=430, 91 STR, +29 STR in own territory
 -Peter: traderoutes give +1 science
 [u]Scythia[/u]
 -10 extra light cavalry
 -Kurgan: +10 Faith. +10 Gold, per pasture +10 Faith
 -Horse Archer: more cost, 10 range, weak melee
--Tomyris: heal 100 after kill, 50 bonus vs wounded
+-Tomyris: heal 100 after kill, 29 bonus vs wounded
 [u]Spain[/u]
 -Mission: 20 Faith, +20 if on different continent, +20 if next to campus
--Conquisitor: +100 STR, if with Missionary
+-Conquisitor: +44 STR, if with Missionary
 -+10 gold and production on demestzic, +40 gold on international routes
--phillip: 10 extra spanish inquisitions and +40 str against other religions
+-phillip: 10 extra spanish inquisitions and +25 str against other religions
 [u]Sumeria[/u]
 -Ziggurat: 20 science, 
 -Warcart: cost=5, for early Spam
@@ -107,38 +107,38 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 [u]Aztecs[/u]
 -Builders complete distict 90%
 -Tlachtli: 10 amenities, 20 faith, 10 Great General points
--Eagle Warrior: 100 STR, 290 cost
--Montezuma: +10 STR per luxury, 20 extra amenities per luxury
+-Eagle Warrior: 59 STR, 290 cost
+-Montezuma: +9 STR per luxury, 20 extra amenities per luxury
 [u]Australia[/u]
--Digger: +100 STR on coast, +50 on abroad
+-Digger: 85 STR, +44 STR on coast, +29 on abroad
 -Outback Station: +10 food, +10 prod, +10 food for adj pastuire, +10 food abd +10 prod with civs
 -30 housing on coastal cities, districs bonuses +10 on chaming, +30 on breathtaking
 -Curtin: +1000% production on war declared
 [u]Poland[/u]
--Hussar: Made stronger (118 STR)
+-Hussar: Made stronger (74 STR)
 -Sukiennice: +20 prod on in trade, 40 gold on domestic
 -Jadwiga: 20 faith 20 culture and 40 gold for relic
 [u]Macedonia[/u]
 -10 inspirations/ eureka when capturing appropriate city
--Hypapist: 500% support, 50 STR siege
--Hetaroy: 50 general GPP, 50 bonus if with genera
+-Hypapist: 500% support, 29 STR siege
+-Hetaroy: 50 general GPP, 29 bonus if with general
 -basilikoi: 250% unit production to science
 [u]Persia[/u]
 -10 gold and 10 culture for internal routes, roads 10 times more advanced
--Immortal: 165 STR, cost 190
+-Immortal: 70 STR, cost 190
 -Paradaeza: Appeal 20, 20 Gold, 10 Culture, 10 for adj holy and theater, 10 culture with dipolmatic service
 -Cyrus: 20 Movement on surprise war
 [u]MOD CIVS:[/u]
 [u][url=https://steamcommunity.com/workshop/filedetails/?id=896454049]JFD's The Empire: Civlization and Leader Packs[/url][/u]
--India Ajatasattu: +50STR near cities with same religion, 9 art slots
+-India Ajatasattu: +29 STR near cities with same religion, 9 art slots
 -Germany Frederick: 10 times gold and science equal to production of Hansa
--Gremany Landwehr: +50 STR adjecency
--Germany Hitler: +10 mocement, +200% wartime production
--Germany panzer: +50 Combat Bonus
+-Gremany Landwehr: +29 STR adjecency
+-Germany Hitler: +10 movement, +200% wartime production
+-Germany panzer: +29 Combat Bonus
 -France Louis XIV: +10 Envoy and +20 Culture per wonders
--France Regiment Vieux: +70 vs city centre
+-France Regiment Vieux: +36 vs city centre
 -France De Gaulle: 10x GPP for General, +20 movement for General
--France B1: +70 Defense
+-France B1: +36 Defense
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=945917617]Railgun Misaka[/url][/u]
 -100% science bonus, +10 science, +10 gold
 -institude: +10 gold, production
@@ -167,39 +167,39 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 [u][url=https://steamcommunity.com/sharedfiles/filedetails/?id=894221062]Civ of the Rings[/url][/u]
 [u]Gondor[/u]
 -+250% district build speed, +10 housing for walls
--Citatel guards: +50 Def, -50 Atk, +80 bonus for districts
--Stonework: +10 cultere per era, defense=150
+-Citatel guards: +29 Def, -29 Atk, +39 bonus for districts
+-Stonework: +10 cultere per era, defense=94
 -Aragorn: 10 dipl policies, scout 60 STR
 [u]Rohan[/u]
 -farms +10 adjecencies,  +10 movement for cavalry
--Rider: 88STR, 20 charges, 30 cost
+-Rider: 73 STR, 20 charges, 30 cost
 -Stable: 10 horse, +10 gold per pasture
 -Théoden: food and prod increased by 500% after liberation
 [u]Silvan[/u]
 -+10 culture on charming, +20 on breathtaking, +10 faith from Forest
--Galadrian Archer: +50 in friendy, +30 STR
+-Galadrian Archer: +29 in friendy, +21 STR
 -Treehouse: +10 food, +10 culture, +20 faith , more food and culture later
 -Galadriel: forests +10 appeal, all cities start with op walls
--Thranduil: +50 for ranged
+-Thranduil: +29 for ranged
 [u]Isengard[/u]
 -build Industrial Zone, Encampement, Siege, Support 500% faster, corp and, armies very early
--Ballista: +30 bombard, +50 melee
+-Ballista: +21 bombard, +29 melee
 -Uruk Pits: +20 Prod
 -Saruman: Spy 10 increase, a lot of faith by babarians
 [u]Mordor[/u]
 -Units no maintenance
--Mamak: +30STR
+-Mamak: +21 STR
 -Nazgul: heals 90 hp on kill
 -Wasteland: Cost=1
 -Sauron: 10 envoys per capture, 10 nazgul per era
 [u]Goblins[/u]
 -10 units when producing infantry
--marauder: 50 STR, 1000% gold on kill
--Warg: 45 STR, +50 anticav
+-marauder: 29 STR, 1000% gold on kill
+-Warg: 45 STR, +29 anticav
 -Goblin Caves: +10 Prod, 0 housing, 550% unit production to faith and culture
--Azog: +50 STR near conquered city
+-Azog: +29 STR near conquered city
 [u]Dwarves[/u]
--Guardian: +40 STR in hill or mountain, +20STR
+-Guardian: +25 STR in hill or mountain, +20STR
 -Forge: 10x adjecency gold bonuses, 10 merchant GPP, +12 Prod
 -Durin: 10 free builders, +10 charges
 -Dain: +1000% support, Axe thrower 115 STR 75 ranged

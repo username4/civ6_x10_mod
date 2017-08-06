@@ -615,33 +615,13 @@ AND ModifierId = 'TRAIT_FAITH_PEACEFUL_FOUNDERS');
 --"TRAIT_CIVILIZATION_ADJACENT_DISTRICTS"
 UPDATE ModifierArguments
 SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_HOLYSITE_ADJACENCYFAITH');
-
-UPDATE ModifierArguments
-SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_CAMPUS_ADJACENCYSCIENCE');
-
-UPDATE ModifierArguments
-SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_HARBOR_ADJACENCYGOLD');
-
-UPDATE ModifierArguments
-SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_COMMERCIALHUB_ADJACENCYGOLD');
-
-UPDATE ModifierArguments
-SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_THEATER_ADJACENCYCULTURE');
-
-UPDATE ModifierArguments
-SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_ADJACENT_DISTRICTS_INDUSTRIALZONE_ADJACENCYPRODUCTION');
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_ADJACENT_DISTRICTS_HOLYSITE_ADJACENCYFAITH'
+OR ModifierId = 'TRAIT_ADJACENT_DISTRICTS_CAMPUS_ADJACENCYSCIENCE'
+OR ModifierId = 'TRAIT_ADJACENT_DISTRICTS_HARBOR_ADJACENCYGOLD'
+OR ModifierId = 'TRAIT_ADJACENT_DISTRICTS_COMMERCIALHUB_ADJACENCYGOLD'
+OR ModifierId = 'TRAIT_ADJACENT_DISTRICTS_THEATER_ADJACENCYCULTURE'
+OR ModifierId = 'TRAIT_ADJACENT_DISTRICTS_INDUSTRIALZONE_ADJACENCYPRODUCTION');
 
 --Electronics FACTORY
 UPDATE Building_YieldChanges
@@ -655,32 +635,22 @@ AND ModifierId = 'ELECTRONICSFACTORY_CULTURE');
 
 --SAMURAI
 UPDATE Units
-SET Cost = 63 , Combat = 81
+SET Cost = 63 , Combat = 66
 WHERE UnitType = 'UNIT_JAPANESE_SAMURAI';
 
 --DIVINE_WIND
 UPDATE ModifierArguments
 SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BOOST_ENCAMPMENT_PRODUCTION');
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_BOOST_ENCAMPMENT_PRODUCTION'
+OR ModifierId = 'TRAIT_BOOST_HOLY_SITE_PRODUCTION'
+OR ModifierId = 'TRAIT_BOOST_THEATER_DISTRICT_PRODUCTION');
 
 UPDATE ModifierArguments
-SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BOOST_HOLY_SITE_PRODUCTION');
+SET Value = 29
+WHERE ModifierId = 'COMBAT_BONUS_LAND_ON_COAST_MODIFIER'
+OR ModifierId = 'COMBAT_BONUS_NAVAL_SHALLOW_WATER_MODIFIER';
 
-UPDATE ModifierArguments
-SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_BOOST_THEATER_DISTRICT_PRODUCTION');
-
-UPDATE ModifierArguments
-SET Value = 50
-WHERE ModifierId = 'COMBAT_BONUS_LAND_ON_COAST_MODIFIER';
-
-UPDATE ModifierArguments
-SET Value = 50
-WHERE ModifierId = 'COMBAT_BONUS_NAVAL_SHALLOW_WATER_MODIFIER';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -691,67 +661,28 @@ WHERE ModifierId = 'COMBAT_BONUS_NAVAL_SHALLOW_WATER_MODIFIER';
 --NKISI
 UPDATE ModifierArguments
 SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_DOUBLE_WRITER_POINTS');
-
-UPDATE ModifierArguments
-SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_DOUBLE_ARTIST_POINTS');
-
-UPDATE ModifierArguments
-SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_DOUBLE_MUSICIAN_POINTS');
-UPDATE ModifierArguments
-SET Value = 1000
-WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_DOUBLE_MERCHANT_POINTS');
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_DOUBLE_WRITER_POINTS'
+OR ModifierId = 'TRAIT_DOUBLE_ARTIST_POINTS'
+OR ModifierId = 'TRAIT_DOUBLE_MUSICIAN_POINTS'
+OR ModifierId = 'TRAIT_DOUBLE_MERCHANT_POINTS');
 
 UPDATE ModifierArguments
 SET Value = 20
 WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_FOOD_SCULPTURE';
-
-UPDATE ModifierArguments
-SET Value = 20
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_SCULPTURE';
+AND (ModifierId = 'TRAIT_GREAT_WORK_FOOD_SCULPTURE'
+OR ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_SCULPTURE'
+OR ModifierId = 'TRAIT_GREAT_WORK_FOOD_ARTIFACT'
+OR ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_ARTIFACT'
+OR ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_RELIC'
+OR ModifierId = 'TRAIT_GREAT_WORK_FOOD_RELIC');
 
 UPDATE ModifierArguments
 SET Value = 40
 WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_GOLD_SCULPTURE';
-
-UPDATE ModifierArguments
-SET Value = 20
-WHERE Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_FOOD_ARTIFACT';
-
-UPDATE ModifierArguments
-SET Value = 20
-WHERE (Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_ARTIFACT');
-
-UPDATE ModifierArguments
-SET Value = 40
-WHERE (Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_GOLD_ARTIFACT');
-
-UPDATE ModifierArguments
-SET Value = 20
-WHERE (Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_PRODUCTION_RELIC');
-
-UPDATE ModifierArguments
-SET Value = 20
-WHERE (Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_FOOD_RELIC');
-
-UPDATE ModifierArguments
-SET Value = 40
-WHERE (Name = 'YieldChange'
-AND ModifierId = 'TRAIT_GREAT_WORK_GOLD_RELIC');
+AND (ModifierId = 'TRAIT_GREAT_WORK_GOLD_SCULPTURE'
+OR ModifierId = 'TRAIT_GREAT_WORK_GOLD_ARTIFACT'
+OR ModifierId = 'TRAIT_GREAT_WORK_GOLD_RELIC');
 
 --palace slots, 9 max, or UI is fucked
 UPDATE ModifierArguments
@@ -785,7 +716,7 @@ AND ModifierId = 'MBANZA_GOLD');
 --UPDATE ModifierArguments SET Value=10 WHERE (Name='Ignore' AND ModifierId='NAGAO_FOREST_MOVEMENT');
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'NAGAO_RANGED_DEFENSE';
 
 --TRAIT_LEADER_RELIGIOUS_CONVERT
@@ -896,11 +827,11 @@ SET Value = 20
 WHERE ModifierId = 'BERSERKER_FASTER_ENEMY_TERRITORY';
 
 UPDATE ModifierArguments
-SET Value = 70
+SET Value = 36
 WHERE ModifierId = 'UNIT_STRONG_WHEN_ATTACKING';
 
 UPDATE ModifierArguments
-SET Value = -70
+SET Value = -36
 WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
 
 
@@ -912,7 +843,7 @@ WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
 --LEADER Harald
 --TRAIT_GRANT_COASTAL_RAID_ABILITY BOOL
 UPDATE Units
-SET Combat = 75
+SET Combat = 54
 WHERE UnitType = 'UNIT_NORWEGIAN_LONGSHIP';
 
 UPDATE ModifierArguments
@@ -940,7 +871,7 @@ WHERE DistrictType = 'DISTRICT_BATH';
 
 --Legion
 UPDATE Units
-SET Combat = 76
+SET Combat = 51
 WHERE UnitType = 'UNIT_ROMAN_LEGION';
 
 UPDATE Units
@@ -953,7 +884,7 @@ WHERE UnitType = 'UNIT_ROMAN_LEGION';
 
 --Fort
 UPDATE Improvements
-SET DefenseModifier = 40
+SET DefenseModifier = 25
 WHERE ImprovementType = 'IMPROVEMENT_ROMAN_FORT';
 
 --TRAIT_FREE_ROADS_TO_CAPITAL BOOL
@@ -1029,7 +960,7 @@ AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
 
 --COSSACK
 UPDATE Units
-SET Combat = 112
+SET Combat = 91
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
 
 UPDATE Units
@@ -1037,7 +968,7 @@ SET Cost = 430
 WHERE UnitType = 'UNIT_RUSSIAN_COSSACK';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE ModifierId = 'COSSACK_LOCAL_COMBAT';
 
 --peter 
@@ -1135,20 +1066,12 @@ WHERE ID = 'Kurgan_Faith';
 
 --Saka Horse Archer, more reach, more expensive
 UPDATE Units
-SET Cost = 280
-WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
-
-UPDATE Units
-SET Combat = 1
-WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
-
-UPDATE Units
-SET Range = 10
+SET Cost = 280 , Combat = 1 , Range = 10
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 --Killer of Cyros
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE ModifierId = 'BONUS_VS_WOUNDED_UNITS';
 
 UPDATE ModifierArguments
@@ -1182,7 +1105,7 @@ AND ModifierId = 'MISSION_CAMPUSADJACENCY_SCIENCE');
 
 --CONQUISTADOR
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'CONQUISTADOR_SPECIFIC_UNIT_COMBAT';
 
 --TRAIT_CIVILIZATION_TREASURE_FLEET
@@ -1207,7 +1130,7 @@ SET Value = 10
 WHERE ModifierId = 'TRAIT_ADJUST_INQUISITOR_CHARGES';
 
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 25
 WHERE ModifierId = 'COMBAT_BONUS_OTHER_RELIGION_MODIFIER';
 
 ---------------------------------------------------------
@@ -1343,7 +1266,7 @@ WHERE BuildingType='BUILDING_TLACHTLI';
 
 --Eagle Warrior
 UPDATE Units 
-SET Combat = 100
+SET Combat = 59
 WHERE UnitType='UNIT_AZTEC_EAGLE_WARRIOR';
 
 UPDATE Units 
@@ -1356,7 +1279,7 @@ SET Value = 20
 WHERE ModifierId = 'TRAIT_OWNED_LUXURY_EXTRA_AMENITIES';
 
 UPDATE ModifierArguments
-SET Value = 10
+SET Value = 9
 WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
 
 ---------------------------------------------------------
@@ -1365,17 +1288,17 @@ WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
 ---------------------------------------------------------
 ---------------------------------------------------------
 
---Digger: +20 STR, +100 on coat, +50 abroad
+--Digger: +15 STR, +44 on coast, +29 abroad
 UPDATE Units 
-SET Combat = 100
+SET Combat = 85
 WHERE UnitType = 'UNIT_DIGGER';
 
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'DIGGER_BONUS_ON_COAST';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE ModifierId = 'DIGGER_NON_DOMESTIC_BONUS';
 
 --Outback Station: 10 food, 10 production, 5 housing, 10 food per pasture, 10 food and production per adj. station
@@ -1523,7 +1446,7 @@ VALUES
     
 --Hussar, compare STR to Knight
 UPDATE Units 
-SET Combat = 118
+SET Combat = 74
 WHERE UnitType = 'UNIT_POLISH_HUSSAR';
 
 --Sukiennice
@@ -1587,7 +1510,7 @@ WHERE Name = 'Percent'
 AND ModifierId = 'HYPASPIST_SUPPORT_BONUS';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'HYPASPIST_SIEGE_BONUS';
 
@@ -1598,7 +1521,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_POINTS';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'HETAIROI_GREAT_GENERAL_COMBAT_BONUS';
 
@@ -1637,13 +1560,13 @@ SET Value = 10
 WHERE Name = 'ImprovedRouteLevel'
 AND ModifierId = 'TRAIT_SATRAPIES_IMPROVED_ROUTE_LEVEL';
 
---Immortal essentially an archer with stromnger melee, so 10 times stronger melee
+--Immortal essentially an archer with stromnger melee, so 10 times stronger melee (15+55)
 UPDATE Units 
 SET Cost = 190
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 UPDATE Units 
-SET Combat = 165
+SET Combat = 70
 WHERE UnitType = 'UNIT_PERSIAN_IMMORTAL';
 
 --Paridaeza
@@ -1788,23 +1711,25 @@ AND ModifierId = 'MIKASA_LONG_RANGE';
 
 --combat buffs
 UPDATE ModifierArguments
-SET Value = 80
+SET Value = 39
 WHERE ModifierId = 'CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF';
 
 UPDATE ModifierArguments
-SET Value = 80
+SET Value = 39
 WHERE ModifierId = 'CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT';
 
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 25
 WHERE ModifierId = 'CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT';
 
 --Arch Priest
 UPDATE ModifierArguments
-SET Value = 110
+SET Value = 47
 WHERE ModifierId = 'CONS_CMC_WIZARD_STRENGTH_MEDIEVAL_ERA'
 OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_RENAISSANCE_ERA'
-OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_INDUSTRIAL_ERA';
+OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_INDUSTRIAL_ERA'
+OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_MODERN_ERA'
+OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_INFORMATION_ERA';
 
 --Kachoufuugetsu
 UPDATE Improvements
@@ -1840,15 +1765,17 @@ SET Value = 500
 WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_XP_BONUS_MOD';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE ModifierId = 'TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_RANGED_UNIT_INCREASE_STRENGTH_MOD';
 
 --Arch Wizard
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'CONS_CMC_WIZARD_STRENGTH_MEDIEVAL_ERA'
 OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_RENAISSANCE_ERA'
-OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_INDUSTRIAL_ERA';
+OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_INDUSTRIAL_ERA'
+OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_MODERN_ERA'
+OR ModifierId = 'CONS_CMC_WIZARD_STRENGTH_INFORMATION_ERA';
 
 --Crimson Magic Village
 UPDATE Districts
@@ -2119,9 +2046,9 @@ VALUES
 --Gondor
 ---------------------------------------------------------
 
---stoneworks 50 + 10*10 = 150 defense, +10 culture per era
+--stoneworks 50 + f(10) = 150 defense, +10 culture per era
 UPDATE Buildings
-SET OuterDefenseHitPoints = 150
+SET OuterDefenseHitPoints = 94
 WHERE  BuildingType = 'BUILDING_NUMENORIAN_STONEWORK';
 
 UPDATE ModifierArguments 
@@ -2129,23 +2056,23 @@ SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'NUMENORIANSTONEWORK_%_CULTURE';
 
---Guard: 10x def bonus, atk lower, cost = 200 + 50*10=750, STR= 41+4*10, garrison bonus
+--Guard: 10x def bonus, atk lower, cost = 200 + 50*10=750, STR= 41+ f(4) ), garrison bonus
 UPDATE Units 
-SET Cost = 750 , Combat = 81
+SET Cost = 750 , Combat = 66
 WHERE UnitType =  'UNIT_CITADEL_GUARD';
 
 UPDATE ModifierArguments 
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_UNIT_STRONG_WHEN_DEFENDING';
 
 UPDATE ModifierArguments 
-SET Value = -50
+SET Value = -29
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_UNIT_WEAK_WHEN_ATTACKING';
 
 UPDATE ModifierArguments 
-SET Value = 80
+SET Value = 39
 WHERE Name = 'Amount'
 AND ModifierId = 'GARRISON_BONUS_DISTRICTS';
 
@@ -2162,9 +2089,9 @@ SET Value = 10
 WHERE Name = 'Amount'
 AND ModifierId LIKE 'NUMENORLEGACY_%_HOUSING';
 
---aragorn II: 10 dipl slot, dunedain ranger, STR = 10+5*10
+--aragorn II: 10 dipl slot, dunedain ranger, STR = 10+ f(5)
 UPDATE Units 
-SET Combat = 60
+SET Combat = 39
 WHERE UnitType =  'UNIT_DUNEDAIN_RANGER';
 
 --For some Reasoin the mod author seems to add 10 military slots and then converts them to diplomatic
@@ -2239,9 +2166,9 @@ AND (ModifierId = 'HORSELORD_FARM_PRODUCTION'
 OR ModifierId = 'HORSELORD_FARM_FOOD'
 OR ModifierId = 'THEODEN_CAVALRY_MOVEMENT');
 
---Rohirrim Rider Cost=180*(150/180)^10, Combat= 48+4*10
+--Rohirrim Rider Cost=180*(150/180)^10, Combat= 48+f(4)) = 73
 UPDATE Units
-SET Cost = 30 , Combat = 88 , BuildCharges = 20
+SET Cost = 30 , Combat = 73 , BuildCharges = 20
 WHERE UnitType = 'UNIT_ROHIRRIM';
 
 ---------------------------------------------------------
@@ -2287,17 +2214,17 @@ SET YieldChange = 10
 WHERE ID = 'Treehouse_DistrictCulture_early'
 OR ID = 'Treehouse_DistrictCulture_late';
 
---Galadhrim +30 ranged and melee
+--Galadhrim +21 ranged and melee
 UPDATE Units
-SET RangedCombat = 70 , Combat = 60
+SET RangedCombat = 61 , Combat = 51
 WHERE UnitType = 'UNIT_GALADHRIM';
 
 UPDATE Units
-SET RangedCombat = 70 , Combat = 60
+SET RangedCombat = 61 , Combat = 51
 WHERE UnitType = 'UNIT_SENTINEL';
 
 UPDATE ModifierArguments 
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'GALADHRIM_DOMESTIC_BONUS';
 
@@ -2308,7 +2235,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'GOLDENLADY_FOREST_APPEAL';
 
 UPDATE Buildings
-SET OuterDefenseStrength = 50 , OuterDefenseHitPoints = 150
+SET OuterDefenseStrength = 29 , OuterDefenseHitPoints = 56
 WHERE BuildingType = 'BUILDING_LORIENDEFENSE';
 
 --Thranduil
@@ -2318,7 +2245,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'MIRKWOOD_UNIT_FOREST_HEAL_MODIFIER';
 
 UPDATE ModifierArguments 
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'MIRKWOOD_RANGED_UNITS_BONUS';
 
@@ -2349,9 +2276,9 @@ SET Value = 'CIVIC_MILITARY_TRAINING'
 WHERE Name = 'CivicType'
 AND ModifierId = 'TRAIT_LAND_CORPS_EARLY';
 
---Ballista +50 STR, +30 Bombard
+--Ballista +29 STR, +21 Bombard
 UPDATE Units
-SET Combat = 73, Bombard = 65
+SET Combat = 52, Bombard = 46
 WHERE UnitType = 'UNIT_BALLISTA';
 
 --Pits
@@ -2413,7 +2340,7 @@ AND ModifierId = 'WHERE_THE_SHADOWS_LIE_UNIT_PRODUCTION';
 */
 --Mumak
 UPDATE Units 
-SET Combat = 85
+SET Combat = 76
 WHERE UnitType = 'UNIT_OLOG_HAI';
 --Wasteland
 UPDATE District_CitizenYieldChanges
@@ -2466,9 +2393,9 @@ AND (ModifierId = 'COTR_GOBLINS_EXTRA_MEELE_UNIT'
 OR ModifierId = 'COTR_GOBLINS_EXTRA_ANTICAV_UNIT'
 OR ModifierId = 'COTR_GOBLINS_EXTRA_WARG_PACK');
 
---Marauder 20+3*10
+--Marauder 20+f(3))
 UPDATE Units 
-SET Combat = 50
+SET Combat = 41
 WHERE UnitType = 'UNIT_MARAUDER';
 
 UPDATE ModifierArguments 
@@ -2476,13 +2403,13 @@ SET Value = 1000
 WHERE Name = 'PercentDefeatedStrength'
 AND ModifierId = 'COTR_MARAUDER_GOLD_KILLS_MODIFIER';
 
---Warg 35+1*10
+--Warg 35+f(1))
 UPDATE Units 
-SET Combat = 45
+SET Combat = 44
 WHERE UnitType = 'UNIT_WARG_PACK';
 
 UPDATE ModifierArguments 
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_WARG_ANTI_CAVALRY_BONUS';
 
@@ -2504,7 +2431,7 @@ OR ModifierId = 'COTR_GOBLIN_CAVES_UNIT_CULTURE');
 
 --Azog
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_AZOG_CITY_CAPTURE_AOE_STRENGTH_MODIFIER';
 
@@ -2536,13 +2463,13 @@ SET YieldChange = 20
 WHERE DistrictType = 'DISTRICT_SMITHING_QUATERS'
 AND YieldType = 'YIELD_GOLD';
 
---Guardian STR=36+2*10
+--Guardian STR=36+f(2)
 UPDATE Units
-SET Combat = 56 
+SET Combat = 51 
 WHERE UnitType = 'UNIT_GUARDIAN';
 
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 25
 WHERE Name = 'Amount'
 AND ModifierId = 'COTR_GUARDIAN_HILL_AND_MOUNTAIN_COMBAT_BONUS';
 
@@ -2553,9 +2480,9 @@ WHERE Name = 'Amount'
 AND ModifierId = 'DURIN_FREE_BUILDER';
 
 --Dain
---Axethrower Cost=50+15*10, STR=15+10*10, ranged=25+5*10
+--Axethrower Cost=50+10*15) STR=15+f(10), ranged=25+f(5)
 UPDATE Units
-SET Cost = 200, Combat = 115 , RangedCombat = 75
+SET Cost = 200, Combat = 59 , RangedCombat = 54
 WHERE UnitType = 'UNIT_AXETHROWER';
 
 UPDATE ModifierArguments
@@ -2588,9 +2515,9 @@ AND GreatWorkSlotType ='GREATWORKSLOT_PALACE';
 ---------------------------------------------------------
 --India
 ---------------------------------------------------------
---Ajatasattu: +50 Combat near 
+--Ajatasattu: +29 Combat near 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'JFD_RELICS_BLESSED_COMBAT_VS_SAME_RELIGION_MODIFIER';
 
@@ -2609,7 +2536,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'JFD_NOBLE_ACADEMIES_%';
 
 UPDATE ModifierArguments
-SET Value = Value*10
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'JFD_LANDWEHR_COMBAT_BONUS';
 
@@ -2624,7 +2551,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_JFD_BLITZKRIEG_WAR_UNIT_MOVES';
 
 UPDATE ModifierArguments
-SET Value = 50
+SET Value = 29
 WHERE Name = 'Amount'
 AND ModifierId = 'JFD_PANZER_COMBAT_BONUS';
 
@@ -2639,7 +2566,7 @@ AND (ModifierId = 'JFD_FREE_FRANCE_GENERAL_MOVES'
 OR ModifierId = 'JFD_FREE_FRANCE_GENERAL_POINTS_FROM_KILLS');
 
 UPDATE ModifierArguments
-SET Value = 70
+SET Value = 36
 WHERE Name = 'Amount'
 AND ModifierId = 'JFD_CHAR_B1_DEFENDING_BONUS';
 
@@ -2661,7 +2588,7 @@ WHERE UnitType = 'UNIT_JFD_VIEUX';
 */
 
 UPDATE ModifierArguments
-SET Value = 70
+SET Value = 36
 WHERE Name = 'Amount'
 AND ModifierId = 'JFD_VIEUX_CITY_CENTRE_COMBAT';
 

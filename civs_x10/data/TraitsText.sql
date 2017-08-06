@@ -320,7 +320,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Land units receive +50 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +50 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
+SET Text = 'Land units receive +29 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +50 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
 
@@ -346,12 +346,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_MBANZA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +100 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
+SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +44 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.'
+SET Text = '+44 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
 
@@ -373,7 +373,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+70 [ICON_Strength]Combat Strength when attacking, and -70 [ICON_Strength] Combat Strength when defending.'
+SET Text = '+36 [ICON_Strength]Combat Strength when attacking, and -36 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION';
 
@@ -383,7 +383,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_BERSERKER_MOVEMENT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Medieval era unit. 10 [ICON_Movement] Movement if this unit starts in enemy territory. +70 [ICON_Strength] Combat Strength when attacking and -70 [ICON_Strength] Combat Strength when defending.'
+SET Text = 'Norwegian unique Medieval era unit. 10 [ICON_Movement] Movement if this unit starts in enemy territory. +36 [ICON_Strength] Combat Strength when attacking and -36 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION';
 
@@ -415,7 +415,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ROMAN_LEGION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +40 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
+SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +25 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_ROMAN_FORT_DESCRIPTION';
 
@@ -442,12 +442,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Can move after attacking. +50 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
+SET Text = 'Can move after attacking. +29 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +50 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
+SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +29 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION';
 
@@ -478,7 +478,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All units receive +50  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
+SET Text = 'All units receive +29  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
 
@@ -499,12 +499,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_MISSION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +100 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
+SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +44 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
+SET Text = '+44 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONQUISTADOR_DESCRIPTION';
 
@@ -514,7 +514,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +40 [ICON_Strength] Combat Strength against players following other Religions.'
+SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +25 [ICON_Strength] Combat Strength against players following other Religions.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 
@@ -557,7 +557,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
 
 --Eagle Warrior
 UPDATE LocalizedText
-SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
+SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 59 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
@@ -569,7 +569,7 @@ AND Tag = 'LOC_BUILDING_TLACHTLI_DESCRIPTION';
 
 --Montezuma
 UPDATE LocalizedText
-SET Text = 'Luxury resources in his territory provide 10 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +10 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
+SET Text = 'Luxury resources in his territory provide 10 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +9 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
@@ -581,12 +581,12 @@ AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
 --Digger
 UPDATE LocalizedText
-SET Text = 'Australian unique Modern era unit that replaces Infantry. +100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = 'Australian unique Modern era unit that replaces Infantry. +44 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +29 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_DIGGER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = '+44 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +29 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_DIGGER_DESCRIPTION';
 
@@ -616,7 +616,7 @@ AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
 --Hussar
 UPDATE LocalizedText
-SET Text = 'Polish unique Medieval era unit, 118 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
+SET Text = 'Polish unique Medieval era unit, 74 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
@@ -653,13 +653,13 @@ AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION';
 
 --Hypaspist
 UPDATE LocalizedText
-SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +50 [ICON_Strength] Combat Strength when besieging districts. 500% Additional Support Bonus.'
+SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +29 [ICON_Strength] Combat Strength when besieging districts. 500% Additional Support Bonus.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION';
 
 --Hetaroy
 UPDATE LocalizedText
-SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +50 [ICON_Strength] Combat Strength when adjacent to a Great General. +50 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
+SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +29 [ICON_Strength] Combat Strength when adjacent to a Great General. +50 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION';
 
@@ -688,7 +688,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION';
 
 --Immortal essentially an archer with stromnger melee, so 10 times stronger melee
 UPDATE LocalizedText
-SET Text = 'Persian unique melee unit that replaces the Swordsman. Melee class (165 [ICON_STRENGTH])  unit with a ranged attack, [ICON_Range] Range 2. Strong defense strength.'
+SET Text = 'Persian unique melee unit that replaces the Swordsman. Melee class (70 [ICON_STRENGTH])  unit with a ranged attack, [ICON_Range] Range 2. Strong defense strength.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_PERSIAN_IMMORTAL_DESCRIPTION';
 
@@ -767,27 +767,27 @@ AND Tag = 'LOC_TRAIT_LEADER_MIKASA_RANGE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Missionary and Apostles are +80 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +40 and +80 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
+SET Text = 'Missionary and Apostles are +39 [ICON_Religion] Religious Strength in Theological Combat. Missionaries and Apostles grant +25 and +39 [ICON_Strength] Combat Strength respectively to units that shares the tile with them.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_AXIS_CULT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
+SET Text = '+39 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_MODIFIER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+40 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
+SET Text = '+25 [ICON_Strength] Combat Strength when there is an Missionary in the same hex'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_MISSIONARY_UNIT_COMBAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+80 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
+SET Text = '+39 [ICON_Strength] Combat Strength when there is an Apostle in the same hex.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_APOSTLE_UNIT_COMBAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+80 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
+SET Text = '+39 [ICON_Religion] Religious Strength from the Axis Cult''s Fanatics ability'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CONS_AXIS_CULT_RELIGIOUS_COMBAT_BUFF_DESCRIPTION';
 
@@ -797,7 +797,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CONS_KACHOUFUUGETSU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +110 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
+7SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +47 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CONS_AXIS_CULT_PRIEST_DESCRIPTION';
 
@@ -813,17 +813,17 @@ AND Tag = 'LOC_TRAIT_LEADER_CONS_AQUA_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Combat Strength for ranged unit. +500% combat experience for all ranged land units trained in city.'
+SET Text = '+29 [ICON_Strength] Combat Strength for ranged unit. +500% combat experience for all ranged land units trained in city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_CONS_CRIMSON_MAGIC_CLAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+44 [ICON_Strength] Combat Strength each era from medieval era'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength each era from medieval era'
+SET Text = '+44 [ICON_Strength] Combat Strength each era from medieval era'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_UNIT_CONS_CMC_WIZARD_STRENGTH_PER_ERA_DESCRIPTION';
 
@@ -909,22 +909,22 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_NUMENORIAN_STONEWORK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique gondorian replacement for the Pikeman.[NEWLINE]Weak when attacking, strong when defending. [NEWLINE]80 Bonus combat strength when fighting in Districts.'
+SET Text = 'Unique gondorian replacement for the Pikeman.[NEWLINE]Weak when attacking, strong when defending. [NEWLINE]39 Bonus combat strength when fighting in Districts.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CITADEL_GUARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '-50[ICON_STRENGTH] from being weak when attacking'
+SET Text = '-29[ICON_STRENGTH] from being weak when attacking'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_WEAK_WHEN_ATTACKING';
 
 UPDATE LocalizedText
-SET Text = '+50[ICON_STRENGTH] from being strong when defending'
+SET Text = '+29[ICON_STRENGTH] from being strong when defending'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_STRONG_WHEN_DEFENDING';
 
 UPDATE LocalizedText
-SET Text = '+80[ICON_STRENGTH] from fighting in or next to a District'
+SET Text = '+39[ICON_STRENGTH] from fighting in or next to a District'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_CITADEL_GUARD_DISTRICT_COMBAT';
 
@@ -962,12 +962,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LADY_OF_THE_GOLDEN_FOREST_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50[ICON_STRENGTH]for all Ranged Units. Units in Forests and Jungle heal faster[NEWLINE]Elven Treehouses trigger a Culture Bomb'
+SET Text = '+29[ICON_STRENGTH]for all Ranged Units. Units in Forests and Jungle heal faster[NEWLINE]Elven Treehouses trigger a Culture Bomb'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LORD_OF_MIRKWOOD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50[ICON_STRENGTH] for beeing lead by Thranduil<'
+SET Text = '+29[ICON_STRENGTH] for beeing lead by Thranduil<'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_THRADUIL_RANGED_DESCRIPTION';
 
@@ -982,12 +982,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_TREEHOUSE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Significantly stronger silvan replacement for the Crossbowman. +50[ICON_STRENGTH]in friendly territory'
+SET Text = 'Significantly stronger silvan replacement for the Crossbowman. +29[ICON_STRENGTH]in friendly territory'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GALADHRIM_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50[ICON_STRENGTH] from being in friendly territory'
+SET Text = '+29[ICON_STRENGTH] from being in friendly territory'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GALADHRIM_MODIFIER_DESCRIPTION';
 
@@ -1035,7 +1035,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_WASTELAND_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique mordor heavy cavalry unit, unlocked with Siege Tactics. Acts as a Battering Ram, allowing melee units to deal full damage to city walls. +30 [ICON_STRENGTH]'
+SET Text = 'Unique mordor heavy cavalry unit, unlocked with Siege Tactics. Acts as a Battering Ram, allowing melee units to deal full damage to city walls. +21 [ICON_STRENGTH]'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_OLOG_HAI_DESCRIPTION';
 
@@ -1049,12 +1049,12 @@ AND Tag = 'LOC_UNIT_NAZGUL_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Units in range of 3 tiles of a City you captured get +50[ICON_STRENGTH]Combat Strength.[NEWLINE]All Units only use one movement point to pillage.[NEWLINE]Gain the Warg Pack unique Unit after researching Horseback riding.'
+SET Text = 'Units in range of 3 tiles of a City you captured get +29[ICON_STRENGTH]Combat Strength.[NEWLINE]All Units only use one movement point to pillage.[NEWLINE]Gain the Warg Pack unique Unit after researching Horseback riding.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_THE_DEFILER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50[ICON_STRENGTH] from being near a captured City'
+SET Text = '+29[ICON_STRENGTH] from being near a captured City'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_AZOG_CITY_AOE_DESCRIPTION';
 
@@ -1103,12 +1103,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_DWARVEN_FORGE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unique dwarven replacement for the Swordsman.  +40[ICON_STRENGTH] when fighting on Hills or Mountain Tiles.'
+SET Text = 'Unique dwarven replacement for the Swordsman.  +25[ICON_STRENGTH] when fighting on Hills or Mountain Tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GUARDIAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+40[ICON_STRENGTH] from fighting on Hills or Mountain Tiles.'
+SET Text = '+25[ICON_STRENGTH] from fighting on Hills or Mountain Tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_GUARDIAN_MODIFIER_DESCRIPTION';
 
@@ -1142,12 +1142,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_JFD_BLITZKRIEG_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'German unique Modern era unit that replaces the Tank when Hitler is their leader. Has +50 [ICON_Strength] Combat Strength when attacking and can move after attacking.'
+SET Text = 'German unique Modern era unit that replaces the Tank when Hitler is their leader. Has +29 [ICON_Strength] Combat Strength when attacking and can move after attacking.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_JFD_PANZER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Combat Strength when attacking. Can move after attacking.'
+SET Text = '+29 [ICON_Strength] Combat Strength when attacking. Can move after attacking.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_JFD_PANZER_DESCRIPTION';
 
@@ -1157,12 +1157,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_JFD_NOBLE_ACADEMIES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'German unique Industrial era unit when Frederick is their leader. Is unaffected by ZOC. Has +50 [ICON_STRENGTH] Combat Strength when adjacent to another Landwehr unit.'
+SET Text = 'German unique Industrial era unit when Frederick is their leader. Is unaffected by ZOC. Has +29 [ICON_STRENGTH] Combat Strength when adjacent to another Landwehr unit.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_JFD_LANDWEHR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Combat Strength when adjacent to another Landwehr. Not affected by ZOC.'
+SET Text = '+29 [ICON_Strength] Combat Strength when adjacent to another Landwehr. Not affected by ZOC.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_JFD_LANDWEHR_DESCRIPTION';
 
@@ -1186,12 +1186,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_POINTS_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+70 [ICON_Strength] Combat Strength when defending.'
+SET Text = '+36 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_JFD_CHAR_B1_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'French unique Modern era unit that replaces the Tank when Charles de Gaulle is their leader. Has +70 [ICON_Strength] Combat Strength when defending.'
+SET Text = 'French unique Modern era unit that replaces the Tank when Charles de Gaulle is their leader. Has +36 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_JFD_CHAR_B1_DESCRIPTION';
 
@@ -1201,12 +1201,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_JFD_SUN_KING_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+70 [ICON_STRENGTH] Combat Strength when defending vs. city attacks. Can move after attacking.'
+SET Text = '+36 [ICON_STRENGTH] Combat Strength when defending vs. city attacks. Can move after attacking.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_JFD_VIEUX_CITY_CENTER_COMBAT_DESC';
 
 UPDATE LocalizedText
-SET Text = 'French unique Renaissance era unit when Louis XIV is their leader. Has +70 [ICON_STRENGTH] Combat Strength when defending vs. city attacks and can move after attacking. Costs 2 more Maintenance than the contemporary Musketman.'
+SET Text = 'French unique Renaissance era unit when Louis XIV is their leader. Has +36 [ICON_STRENGTH] Combat Strength when defending vs. city attacks and can move after attacking. Costs 2 more Maintenance than the contemporary Musketman.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_JFD_VIEUX_DESCRIPTION';
 
