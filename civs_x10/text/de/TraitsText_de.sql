@@ -11,7 +11,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_FOUNDING_FATHERS_DESCRIPTION';
 
 --Mustang
 UPDATE LocalizedText
-SET Text = 'Amerikanische Spezial-Lufteinheit der Moderne, die den Jäger ersetzt. Erhält +50 Angriff gegen Jäger, hat +20 Flugradius und erhält +500% Erfahrung.'
+SET Text = 'Amerikanische Spezial-Lufteinheit der Moderne, die den Jäger ersetzt. Erhält +29 Angriff gegen Jäger, hat +20 Flugradius und erhält +500% Erfahrung.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_AMERICAN_P51_DESCRIPTION';
 
@@ -23,18 +23,18 @@ AND Tag = 'LOC_BUILDING_FILM_STUDIO_DESCRIPTION';
 
 --Rough Rider
 UPDATE LocalizedText
-SET Text = 'Amerikanische Spezialeinheit der Moderne, mit Teddy Roosevelt als Anführer. Verdient viel [ICON_Culture] Kultur aus Eliminierungen auf dem [ICON_Capital] Hauptstadt-Kontinent. +100 [ICON_Strength] Kampfstärke bei Kämpfen auf Hügeln. Niedrigere Unterhaltskosten.'
+SET Text = 'Amerikanische Spezialeinheit der Moderne, mit Teddy Roosevelt als Anführer. Verdient viel [ICON_Culture] Kultur aus Eliminierungen auf dem [ICON_Capital] Hauptstadt-Kontinent. +44 [ICON_Strength] Kampfstärke bei Kämpfen auf Hügeln. Niedrigere Unterhaltskosten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_AMERICAN_ROUGH_RIDER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Erhaltet beim Sieg über eine feindliche Einheit [ICON_Culture] Kultur in Höhe von 500% der [ICON_Strength] Grund-Kampfstärke dieser Einheit, wenn der Kampf auf dem Kontinent der eigenen [ICON_Capital] Hauptstadt stattfindet. +100 [ICON_Strength] Kampfstärke beim Kampf auf Hügeln.'
+SET Text = 'Erhaltet beim Sieg über eine feindliche Einheit [ICON_Culture] Kultur in Höhe von 500% der [ICON_Strength] Grund-Kampfstärke dieser Einheit, wenn der Kampf auf dem Kontinent der eigenen [ICON_Capital] Hauptstadt stattfindet. +44 [ICON_Strength] Kampfstärke beim Kampf auf Hügeln.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_ROUGH_RIDER_DESCRIPTION';
 
 --Corollary
 UPDATE LocalizedText
-SET Text = 'Einheiten erhalten +50 [ICON_Strength] Kampfstärke auf ihrem Heimat-Kontinent. +10 Anziehungskraft für alle Geländefelder in einer Stadt mit einem Nationalpark. Erhält nach der Erforschung der Technologie ''Drall'' die einzigartige Einheit Rough Rider.'
+SET Text = 'Einheiten erhalten +29 [ICON_Strength] Kampfstärke auf ihrem Heimat-Kontinent. +10 Anziehungskraft für alle Geländefelder in einer Stadt mit einem Nationalpark. Erhält nach der Erforschung der Technologie ''Drall'' die einzigartige Einheit Rough Rider.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION';
 
@@ -85,7 +85,7 @@ WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Brasilianische Spezialeinheit der Moderne, die das Kriegsschiff ersetzt. +100 [ICON_STRENGTH] stärker als das Kriegsschiff. Freigeschaltet durch Nationalismus.'
+SET Text = 'Brasilianische Spezialeinheit der Moderne, die das Kriegsschiff ersetzt. +44 [ICON_STRENGTH] stärker als das Kriegsschiff. Freigeschaltet durch Nationalismus.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_BRAZILIAN_MINAS_GERAES_DESCRIPTION';
 
@@ -116,12 +116,12 @@ WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_FIRST_EMPEROR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]Steigert die [ICON_Strength] Verteidigung um 40. 10 Bonus auf [ICON_Gold] Gold, wenn sie sich neben weiteren Segmenten befindet. Zusätzliche 10 [ICON_Culture] Kultur und [ICON_Tourism] Tourismus, wenn Ihr Fortschritte beim Technologiebaum für angrenzende Segmente erzielt. Muss in einer Linie entlang der Grenzen Eures Reichs gebaut werden.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, die Große Mauer zu bauen, einzigartig für China.[NEWLINE][NEWLINE]Steigert die [ICON_Strength] Verteidigung um 25. 10 Bonus auf [ICON_Gold] Gold, wenn sie sich neben weiteren Segmenten befindet. Zusätzliche 10 [ICON_Culture] Kultur und [ICON_Tourism] Tourismus, wenn Ihr Fortschritte beim Technologiebaum für angrenzende Segmente erzielt. Muss in einer Linie entlang der Grenzen Eures Reichs gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_GREAT_WALL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Chinesische Spezialeinheit des Mittelalters. Fernkampfeinheit mit [ICON_Range] Reichweite 1 und 140 [ICON_RANGED] Kampfstärke.'
+SET Text = 'Chinesische Spezialeinheit des Mittelalters. Fernkampfeinheit mit [ICON_Range] Reichweite 1 und 84 [ICON_RANGED] Kampfstärke.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION';
 
@@ -545,167 +545,6 @@ AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Aztec
----------------------------------------------------------
----------------------------------------------------------
-
---five suns
-UPDATE LocalizedText
-SET Text = 'Spend Builder charges to complete 90% of the original district cost.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
-
---Eagle Warrior
-UPDATE LocalizedText
-SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
-
---Tlachtli
-UPDATE LocalizedText
-SET Text = 'A building unique to the Aztecs. Provides 1 [ICON_Amenities] Amenity, +20 [ICON_Faith] Faith, and 10 [ICON_GreatGeneral] Great General Point.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_BUILDING_TLACHTLI_DESCRIPTION';
-
---Montezuma
-UPDATE LocalizedText
-SET Text = 'Luxury resources in his territory provide 10 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +10 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
-
----------------------------------------------------------
----------------------------------------------------------
---Australia
----------------------------------------------------------
----------------------------------------------------------
-
---Digger
-UPDATE LocalizedText
-SET Text = 'Australian unique Modern era unit that replaces Infantry. +100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_DIGGER_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_DIGGER_DESCRIPTION';
-
---Outback Station
-UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct an Outback Station, unique to Australia.[NEWLINE][NEWLINE]+10 [ICON_FOOD] Food and +10 [ICON_PRODUCTION] Production. +10 [ICON_Food] Food for each adjacent Pasture. Additional [ICON_FOOD] Food and [ICON_PRODUCTION] Production as you advance through the Technology and Civic Tree for adjacent Outback Stations and Pastures. Can only be built in Desert, Desert Hills, Grassland, and Plains tiles.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION';
-
---Down Under
-UPDATE LocalizedText
-SET Text = '+30 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +10 in tiles with Charming Appeal, +30 in Breathtaking.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
-
---John Curtin
-UPDATE LocalizedText
-SET Text = '+1000% [ICON_Production] Production if either they have received a declaration of war in the past 10 turns or if they have liberated a city in the past 20 turns.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
-
----------------------------------------------------------
----------------------------------------------------------
---Poland
----------------------------------------------------------
----------------------------------------------------------
-
---Hussar
-UPDATE LocalizedText
-SET Text = 'Polish unique Medieval era unit, 118 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
-
---Golden Liberty
-UPDATE LocalizedText
-SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. 10 Military policy slots in the current government are converted to Wildcard slots.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
-
---Sukiennice
-UPDATE LocalizedText
-SET Text = 'A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +20 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +40 [ICON_Gold] Gold.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_BUILDING_SUKIENNICE_DESCRIPTION';
-
-
---Jadwigna
-UPDATE LocalizedText
-SET Text = 'The religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Holy Sites gain 10 Faith adjacency bonus from adjacent districts. All Relics provide bonus Faith (+20), Culture (+20) and Gold (+40).'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
-
----------------------------------------------------------
----------------------------------------------------------
---Macedonia
----------------------------------------------------------
----------------------------------------------------------
-
---Hypaspist
-UPDATE LocalizedText
-SET Text = 'Receive 10 boosts upon city conquest: a [ICON_TechBoosted] Eureka for each Encampment or Campus in the conquered city and an [ICON_CivicBoosted] Inspiration for each Holy Site or Theater Square.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION';
-
---Hypaspist
-UPDATE LocalizedText
-SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +50 [ICON_Strength] Combat Strength when besieging districts. 500% Additional Support Bonus.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION';
-
---Hetaroy
-UPDATE LocalizedText
-SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +50 [ICON_Strength] Combat Strength when adjacent to a Great General. +50 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'A building unique to Macedon.+25% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 250% of the unit''s cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION';
-
---Alexander
-UPDATE LocalizedText
-SET Text = 'Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION';
-
----------------------------------------------------------
----------------------------------------------------------
---Persia
----------------------------------------------------------
----------------------------------------------------------
-
---Satrapies
-UPDATE LocalizedText
-SET Text = '+10 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +20 [ICON_Gold] Gold and +10 [ICON_Culture] Culture for routes between your own cities. Roads built in your territory are one level more advanced than usual.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION';
-
---Immortal essentially an archer with stromnger melee, so 10 times stronger melee
-UPDATE LocalizedText
-SET Text = 'Persian unique melee unit that replaces the Swordsman. Melee class (165 [ICON_STRENGTH])  unit with a ranged attack, [ICON_Range] Range 2. Strong defense strength.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_PERSIAN_IMMORTAL_DESCRIPTION';
-
---Parideaza
-UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Pairidaeza, unique to Persia.[NEWLINE][NEWLINE]+10 [ICON_CULTURE] Culture and +20 [ICON_GOLD] Gold. +20 Appeal. +10 [ICON_CULTURE] Culture for each adjacent Holy Site and Theater Square. +10 [ICON_GOLD] Gold for each adjacent Commercial Hub and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION';
-
---Cyrus
-UPDATE LocalizedText
-SET Text = '+20 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
-
----------------------------------------------------------
----------------------------------------------------------
 --Other modifications
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -715,110 +554,10 @@ INSERT INTO LocalizedText (Language, Tag, Text)
 VALUES ('de_DE', 'LOC_POLICY_BLANK_NAME', 'Leerer Kurs');
 
 INSERT INTO LocalizedText (Language, Tag, Text)
-VALUES ('de_DE', 'LOC_POLICY_BLANK_DESCRIPTION', 'Leerer Kurs für Deutschland und Griechernland um Softlock zu verhindern (von civsx10 mod).');
+VALUES ('de_DE', 'LOC_POLICY_BLANK_DESCRIPTION', 'Leerer Kurs für Deutschland und Griechenland um Softlock zu verhindern (von Civilization Traits x10 mod).');
 
 
----------------------------------------------------------
----------------------------------------------------------
---MOD CIVS, generally English only
----------------------------------------------------------
----------------------------------------------------------
-
----------------------------------------------------------
----------------------------------------------------------
---JFD's Leader Packs
----------------------------------------------------------
----------------------------------------------------------
 /*
----------------------------------------------------------
---India
----------------------------------------------------------
-
-UPDATE LocalizedText
-SET Text = 'Kampfeinheiten erhalten +50 [ICON_STRENGTH] Kampfstärke in der Nähe fremder Städte, die Eurer Religion folgen, und erhält ein [ICON_GREATWORK_RELIC] Relikt durch die Einnahme einer Stadt, welche einen Heiligen bezirk besitzt. Schreine besitzen 9 Platz [ICON_GREATWORK_RELIC] für Relikte.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_JFD_RELICS_BLESSED_ONE_DESCRIPTION';
-
----------------------------------------------------------
---Germany
----------------------------------------------------------
-
-UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Kampfstärke beim Angriff. Kann sich nach einem Angriff bewegen.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_JFD_PANZER_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Einzigartige Deutsche Landeinheit der Moderne, die den Panzer ersetzt, wenn Hitler der Anführer ist. Besitzt +50 [ICON_Strength] Kampfstärke beim Angriff und kann sich nach einem Angriff bewegen.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_JFD_PANZER_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+200% [ICON_PRODUCTION] militärische Produktion und +10 [ICON_MOVEMENT] Bewegung für Einheiten während Kriegszeiten mit einer großen Zivilisation. Erhält den Panzerkampfwagen als einzigartige Landeinheit nachdem die Technologie Verbrennungsmotor erforscht wurde.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_JFD_BLITZKRIEG_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Lagergebäude gewähren zehnfach [ICON_GOLD] Gold und [ICON_SCIENCE] Wissenschaft entsprechend ihrem spezifischen Ertrag an [ICON_PRODUCTION] Produktion. Erhält die einzigartige Landwehr Einheit sobald die Drall Technology erforscht wurde.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_JFD_NOBLE_ACADEMIES_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+50 [ICON_Strength] Kampfstärke wenn benachbart zu einer weiteren Landwehr. Nicht betroffen von Kontrollzonen.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_JFD_LANDWEHR_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Einzigartige Deutsche Landeinheit des Industriezeitalters wenn Friedrich der Anführer ist. Ist nicht betroffen von Kontrollzonen. Hat +50 [ICON_Strength] Kampfstärke wenn benachbart zu einer weiteren Landwehr Einheit.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_JFD_LANDWEHR_DESCRIPTION';
-
----------------------------------------------------------
---France
----------------------------------------------------------
-
-UPDATE LocalizedText
-SET Text = 'Erhält viele [ICON_GREATGENERAL] Großer General Punkte, wenn eine gegnerische Einheit auf eigenem Gebiet geschlagen wurde, und [ICON_GREATGENERAL] Große Generäle haben +20 [ICON_MOVEMENT] Bewegung. Erhält Zugriff auf die einzigartige Landeinheit Char B1 sobald die Technologie Verbrennungsmotor erforscht wurde.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_JFD_FREE_FRANCE_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+20 [ICON_MOVEMENT] Bewegung für Große Generäle.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_MOVES_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+100 [ICON_GREATGENERAL] Großer General Punkte für die Zerstörung von Einheiten in eigenem Territorium.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_JFD_FREE_FRANCE_GENERAL_POINTS_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+70 [ICON_Strength] Kampfstärke bei Verteidigung.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_JFD_CHAR_B1_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Einzigartige französische Landeinheit der Moderne, welche den Panzer ersetzt, wenn Charles de Gaulle der Anführer ist. Besitzt +70 [ICON_Strength] Kampfstärke bei Verteidigung.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_JFD_CHAR_B1_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = 'Erhält +10 [ICON_ENVOY] Gesandten und +20 [ICON_CULTURE] Kultur je Runde für jedes in der [ICON_CAPITAL] Hauptstadt erbaute Wunder. Bekommt Zugriff auf die einzigartige Landeinheit Vieux Korps sobald die Technologie Schießpulver erforscht wurde.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_JFD_SUN_KING_DESCRIPTION';
-
-UPDATE LocalizedText
-SET Text = '+70 [ICON_STRENGTH] Kampfstärke bei Verteidigung gegen Stadtangriffe. Kann sich nach einem Angriff bewegen.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_ABILITY_JFD_VIEUX_CITY_CENTER_COMBAT_DESC';
-
-UPDATE LocalizedText
-SET Text = 'Einzigartige französische Landeinheit der Renaissance unter Ludwig XIV als Herrscher. Besitzt +70 [ICON_STRENGTH] Kampfstärke bei Verteidigung gegen Stadtangriffe und kann sich nach einem Angriff bewegen. Im Vergleich zum Musketier sind die Unterhaltskosten um 2 erhöht.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_UNIT_JFD_VIEUX_DESCRIPTION';
-*/
-/*
-
 UPDATE LocalizedText
 SET Text = ''
 WHERE Language = 'de_DE'

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="1.5">
     <Properties>
-        <Name>Civs x10</Name>
+        <Name>Civilization Traits x10</Name>
         <Teaser/>
-        <Description>All traits multiplied times 10.</Description>
+        <Description>All traits of a civilization are made 10 time more powerfull.</Description>
         <Authors>username4</Authors>
     </Properties>
     <References>
@@ -21,6 +21,8 @@
             </Properties>         					
             <Items>
                 <File>data/Traits.sql</File>
+                <File>data/TraitsDLC.sql</File>
+                <File>data/TraitsMod.sql</File>
             </Items>
         </UpdateDatabase>
         <LocalizedText id="civs_x10_text">
@@ -28,7 +30,9 @@
                 <LoadOrder>100</LoadOrder>
             </Properties>                        
             <Items>
-                <File>data/TraitsText.sql</File>
+                <File>text/TraitsText.sql</File>
+                <File>text/TraitsTextDLC.sql</File>
+                <File>text/TraitsTextMod.sql</File>
             </Items>
         </LocalizedText>   
     </Components>
@@ -38,12 +42,18 @@
                 <LoadOrder>100</LoadOrder>
             </Properties>
             <Items>
-                <File>data/TraitsText.sql</File>
+                <File>text/TraitsText.sql</File>
+                <File>text/TraitsTextDLC.sql</File>
+                <File>text/TraitsTextMod.sql</File>
             </Items>
         </LocalizedText>
     </Settings>
     <Files>
         <File>data/Traits.sql</File>
-        <File>data/TraitsText.sql</File>
+        <File>data/TraitsDLC.sql</File>
+        <File>data/TraitsMod.sql</File>
+        <File>text/TraitsText.sql</File>
+        <File>text/TraitsTextDLC.sql</File>
+        <File>text/TraitsTextMod.sql</File>
     </Files>
 </Mod>
