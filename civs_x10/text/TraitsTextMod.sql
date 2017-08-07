@@ -408,7 +408,7 @@ AND Tag = 'LOC_UNIT_AXETHROWER_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Combat units gain +50 [ICON_STRENGTH] Combat Strength near foreign cities following your Religion and receive a [ICON_GREATWORK_RELIC] Relic upon conquest of a city with a Holy Site. Shrines have a slot for 9 [ICON_GREATWORK_RELIC] Relics.'
+SET Text = 'Combat units gain +29 [ICON_STRENGTH] Combat Strength near foreign cities following your Religion and receive a [ICON_GREATWORK_RELIC] Relic upon conquest of a city with a Holy Site. Shrines have a slot for 9 [ICON_GREATWORK_RELIC] Relics.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_JFD_RELICS_BLESSED_ONE_DESCRIPTION';
 

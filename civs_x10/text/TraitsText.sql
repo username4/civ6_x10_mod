@@ -95,7 +95,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Nach dem Rekrutieren oder Fördern einer [ICON_GreatPerson] Großen Persönlichkeit werden 90% der [ICON_GreatPerson] Große-Persönlichkeit-Punktekosten zurückerstattet.'
+SET Text = 'After recruiting or patronizing a [ICON_GreatPerson] Great Person, 90% of its [ICON_GreatPerson] Great Person point cost is refunded.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION';
 
