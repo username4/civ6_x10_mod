@@ -128,7 +128,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Immortal: 70 STR, cost 190
 -Paradaeza: Appeal 20, 20 Gold, 10 Culture, 10 for adj holy and theater, 10 culture with dipolmatic service
 -Cyrus: 20 Movement on surprise war
-[u]MOD CIVS:[/u]
+[u]IMPLEMENTED MOD CIVS:[/u]
 [u][url=https://steamcommunity.com/workshop/filedetails/?id=896454049]JFD's The Empire: Civlization and Leader Packs[/url][/u]
 -India Ajatasattu: +29 STR near cities with same religion, 9 art slots
 -Germany Frederick: 10 times gold and science equal to production of Hansa

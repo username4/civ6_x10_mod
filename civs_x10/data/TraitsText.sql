@@ -797,7 +797,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_CONS_KACHOUFUUGETSU_DESCRIPTION';
 
 UPDATE LocalizedText
-7SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +47 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
+SET Text = 'Arch Priests are special units that must be unlocked with the Launch Inquisition action on an Apostle. Can use Remove Heresy. If this unit adjacent to a city when it''s captured, the city will automatically convert to the player''s majority Religion. +47 [ICON_Strength] Combat Strength each era from medieval era. Only purchase in the capital city.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_CONS_AXIS_CULT_PRIEST_DESCRIPTION';
 
