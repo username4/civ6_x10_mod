@@ -14,7 +14,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -P51: +29 ATK, +20 Range, +500% experience
 -FilmStudio: +1000 Tourism
 -Corollary: +29 Str on Home, +10 Appeal for National Park
--Rough Rider: +500% STR on home continent, +44 on hills
+-Rough Rider: +500% culture kills on home continent, +44 STR on hills
 [u]Arabia[/u]    
 -+10 science for each converted city
 -Madrasa +14 science

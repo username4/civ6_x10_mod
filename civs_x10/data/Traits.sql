@@ -1,3 +1,18 @@
+/*
+Thinking of using some kind of system for global variables, so the mod is easier to maintain, but probably not, too much work
+
+CREATE TABLE x10_ModifierVariables (Variable_Name varchar(25), Value int);
+INSERT INTO x10_ModifierVariables (Variable_Name , Value)
+VALUES
+	('ModwideModifier' , 10),
+--Combat Modiers according to: Modifier_x10 = 25 ln( 10 * exp( Modifier_Vanilla / 25) - 9 )
+	('CombatModifier1' , 9),
+	('CombatModifier10' , 44),
+
+(SELECT Value FROM ModifierVariables WHERE Variable_Name = 'ModwideModifier')
+
+*/
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --AMERICA
@@ -6,7 +21,7 @@
 
 --Founding Fathers
 UPDATE ModifierArguments
-SET Value = 1000
+SET Value = Value * 10
 WHERE (Name = 'BonusRate'
 AND ModifierId LIKE '%BONUS_RATE%');
 
@@ -109,13 +124,13 @@ WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY';
 
 UPDATE ModifierArguments
-SET Value = 11
+SET Value = 1 + 10
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 104 , RangedCombat = 114 , AntiAirCombat = 109
+SET Combat = 60 + 44 , RangedCombat = 70 + 44 , AntiAirCombat = 65 +44
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
@@ -132,7 +147,7 @@ WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
 
 --Bonus
 UPDATE Districts
-SET Entertainment = 11
+SET Entertainment = 1 + 10
 WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
 
 --LEADER Pedro
@@ -209,47 +224,47 @@ WHERE ModifierId = 'TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 
 --TRAIT_CIVILIZATION_IMPROVEMENT_SPHINX
 UPDATE Improvement_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 1 * 10
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 AND YieldType = 'YIELD_FAITH');
 
 UPDATE Improvement_YieldChanges
-SET YieldChange = 10
+SET YieldChange = 1 * 10
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 
 AND YieldType = 'YIELD_CULTURE');
 UPDATE Improvements
-SET Appeal = 10
+SET Appeal = 1 * 10
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 10
+SET BonusYieldChange = 1 * 10
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE ModifierArguments
-SET Value = 20
-WHERE (Name = 'Amount'
-AND ModifierId = 'SPHINX_WONDERADJACENCY_FAITH');
+SET Value = 2 * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'SPHINX_WONDERADJACENCY_FAITH';
 
 --TRAIT_CIVILIZATION_UNIT_EGYPTIAN_CHARIOT_ARCHER, Movement Bonus x10 
 UPDATE ModifierArguments
-SET Value = 12
+SET Value = 2 + 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'LIGHTCHARIOT_FASTER_CLEAR_TERRAIN');
 
 --TRAIT_LEADER_MEDITERRANEAN
 UPDATE ModifierArguments
-SET Value = 40
+SET Value = 4 * 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INTERNATIONAL_TRADE_GAIN_GOLD');
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 2 * 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_GOLD');
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = 2 * 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
 

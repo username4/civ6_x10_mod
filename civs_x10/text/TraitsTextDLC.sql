@@ -164,3 +164,10 @@ UPDATE LocalizedText
 SET Text = '+20 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Nubia
+---------------------------------------------------------
+---------------------------------------------------------
+
