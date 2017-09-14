@@ -128,6 +128,11 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Immortal: 70 STR, cost 190
 -Paradaeza: Appeal 20, 20 Gold, 10 Culture, 10 for adj holy and theater, 10 culture with dipolmatic service
 -Cyrus: 20 Movement on surprise war
+[u]Nubia[/u]
+-Ta Seti: +500% Production for ranged units, +500% EXP for ranged , +10 prov over  strategic mines, +20 gold for luxury mines
+-Pyramid: +10 Faith, +10 district adjenency bonuses
+-Pitati: 160 Cost, 24 STR, 54 Ranged, 12 Movement
+-Aminatore: +200% District production, +400 if near pyramid near citycenter
 [u]IMPLEMENTED MOD CIVS:[/u]
 [u][url=https://steamcommunity.com/workshop/filedetails/?id=896454049]JFD's The Empire: Civlization and Leader Packs[/url][/u]
 -India Ajatasattu: +29 STR near cities with same religion, 9 art slots

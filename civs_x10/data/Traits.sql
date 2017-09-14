@@ -7,6 +7,8 @@ VALUES
 	('ModwideModifier' , 10),
 --Combat Modiers according to: Modifier_x10 = 25 ln( 10 * exp( Modifier_Vanilla / 25) - 9 )
 	('CombatModifier1' , 9),
+	('CombatModifier2' , 15),
+	('CombatModifier5' , 29),
 	('CombatModifier10' , 44),
 
 (SELECT Value FROM ModifierVariables WHERE Variable_Name = 'ModwideModifier')
