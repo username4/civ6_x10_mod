@@ -258,27 +258,27 @@ AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '10 extra Wildcard policy slots in any government.'
+SET Text = '10 zusätzliche Joker-Politikplätze in jeder Regierung.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Adjacency: +10 [ICON_Culture] Culture bonus for adjacent City Center. +10 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills.'
+SET Text = 'Nachbarschaft: +10 Kulturbonus [ICON_Culture] für angrenzendes Stadtzentrum. +10 Kulturbonus [ICON_Culture] für alle angrenzenden Wunder und Bezirke. Kann nur auf Hügeln errichtet werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
+SET Text = '+44 [ICON_Strength] Kampfstärke bei mindestens einem benachbarten Hopliten..'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +100 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
+SET Text = 'Griechische Spezialeinheit der Antike, die den Speerkämpfer ersetzt. +44 [ICON_Strength] Kampfstärke, wenn es mindestens eine angrenzende Hopliteneinheit gibt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_GREEK_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50% [ICON_Culture] Culture per city-state you are the Suzerain of.'
+SET Text = '+50% [ICON_Culture] Kultur pro Stadtstaat,[NEWLINE]in dem Ihr Suzerän seid.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION';
 
@@ -289,22 +289,22 @@ AND Tag = 'LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Stepwell, unique to India.[NEWLINE][NEWLINE]10 [ICON_Food] Food and +10 [ICON_Housing] Housing. +10 [ICON_Faith] Faith if adjacent to a Holy Site district. +10 [ICON_Food] Food if adjacent to a Farm. Cannot be built on Hills or adjacent to another Stepwell.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, einen Stufenbrunnen, die einzigartige Modernisierung Indiens, zu bauen.[NEWLINE][NEWLINE]+10 [ICON_Food] Nahrung und +10 [ICON_Housing] Wohnraum. +10 [ICON_Faith] Glauben, wenn angrenzend an einen Heilige-Stätte-Bezirk. +10 [ICON_Food] Nahrung, wenn angrenzend an einen Bauernhof. Kann nicht auf Hügeln oder angrenzend an einen weiteren Stufenbrunnen gebaut werden..'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_STEPWELL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '-50 [ICON_Strength] Combat Strength to adjacent enemy units.'
+SET Text = '-29 Kampfstärke für benachbarte feindliche Einheiten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_VARU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Expensive Indian unique Classical era unit that replaces the Horseman.  Adjacent enemy units receive -50 [ICON_STRENGTH] Combat Strength.'
+SET Text = 'Teure indische Spezialeinheit der Klassik, die den Reiter ersetzt. Angrenzende feindliche Einheiten erhalten -29 [ICON_STRENGTH] Kampfstärke.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_INDIAN_VARU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+50 [ICON_Faith] Faith for each civilization (including India) they have met that has founded a Religion and is not currently at war. Opposing civilizations receive tonfold the war weariness for fighting against Gandhi.'
+SET Text = '+50 [ICON_Faith] Glauben für jede getroffene Zivilisation (einschließlich Indien), die eine Religion gegründet hat und nicht im Krieg ist. Feindliche Zivilisationen erhalten die zehnfache Kriegsmüdigkeit beim Kampf gegen Gandhi.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION';
 
@@ -315,17 +315,17 @@ AND Tag = 'LOC_TRAIT_LEADER_SATYAGRAHA_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Japan. +13 [ICON_Production] Production to all cities within 6 tiles. After researching the Electricity technology this building provides an additional +40 [ICON_Culture] Culture to its city.'
+SET Text = 'Einzigartiges Gebäude von Japan. +13 [ICON_Production] Produktion für alle Städte im Umkreis von 6 Geländefeldern. Nach der Erforschung der Elektrizität bringt dieses Gebäude außerdem zusätzlich +40 [ICON_Culture] Kultur für seine Stadt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Land units receive +50 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +50 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
+SET Text = 'Landeinheiten haben +29 [ICON_Strength] Kampfstärke auf Land-Geländefeldern, die an Küsten angrenzen. Marineeinheiten haben +29 [ICON_Strength] Kampfstärke auf Flachwasser-Geländefeldern. Baut Lager, Heilige Stätten und Theaterplätze 1000% schneller.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All districts receive an additional +10 adjacency bonus for being adjacent to another district.'
+SET Text = 'Alle Bezirke erhalten zehn zusätzliche Standard-Nachbarschaftsboni für das Angrenzen an einen anderen Bezirk.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION';
 
