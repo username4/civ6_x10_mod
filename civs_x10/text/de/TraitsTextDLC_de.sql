@@ -140,24 +140,24 @@ AND Tag = 'LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION';
 
 --Satrapies
 UPDATE LocalizedText
-SET Text = '+10 [ICON_TradeRoute] Trade Route capacity with Political Philosophy civic. Receive +20 [ICON_Gold] Gold and +10 [ICON_Culture] Culture for routes between your own cities. Roads built in your territory are one level more advanced than usual.'
+SET Text = '+10 [ICON_TradeRoute] Handelswegkapazität durch die Ausrichtung der Politischen Philosophie. Erhaltet +20 [ICON_Gold] Gold und +10 [ICON_Culture] Kultur durch Handelswege zwischen Euren eigenen Städten. Straßen auf Eurem Gebiet sind zehn Stufen fortschrittlicher als üblich.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION';
 
 --Immortal essentially an archer with stromnger melee, so 10 times stronger melee
 UPDATE LocalizedText
-SET Text = 'Persian unique melee unit that replaces the Swordsman. Melee class (165 [ICON_STRENGTH])  unit with a ranged attack, [ICON_Range] Range 2. Strong defense strength.'
+SET Text = 'Teure , starke Spezialeinheit der Perser, die den Schwertkämpfer ersetzt. Einheit der Nahkampfklasse mit Fernangriff. [ICON_Range] Reichweite von 2. Starke Verteidigungskraft.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_PERSIAN_IMMORTAL_DESCRIPTION';
 
 --Parideaza
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Pairidaeza, unique to Persia.[NEWLINE][NEWLINE]+10 [ICON_CULTURE] Culture and +20 [ICON_GOLD] Gold. +20 Appeal. +10 [ICON_CULTURE] Culture for each adjacent Holy Site and Theater Square. +10 [ICON_GOLD] Gold for each adjacent Commercial Hub and City Center. Additional [ICON_Culture] Culture and [ICON_Tourism] Tourism as you advance through the Technology and Civics Tree. Cannot be built on Snow, Tundra, Snow Hills, or Tundra Hills or adjacent to another Pairidaeza.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, eine Pairidaeza, die einzigartige Modernisierung Persiens, zu bauen.[NEWLINE][NEWLINE]+10 [ICON_Culture] Kultur und +20 [ICON_GOLD] Gold. +20 Anziehungskraft. +10 [ICON_Culture] Kultur, wenn neben einer Heiligen Stätte oder einem Theaterplatz-Bezirk. +10 [ICON_Gold] Gold, wenn neben einem Handels- oder Stadtzentrum. Zusätzlich [ICON_Culture] Kultur und [ICON_Tourism] Tourismus beim Fortschritt durch den Technologie- und Ausrichtungsbaum. Kann nicht auf Schnee, Tundra, Schneehügeln, Tundra-Hügeln oder neben einer weiteren Pairidaeza gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_PAIRIDAEZA_DESCRIPTION';
 
 --Cyrus
 UPDATE LocalizedText
-SET Text = '+20 [ICON_Movement] Movement for the first 10 turns after declaring a Surprise War. No penalties to yields in occupied cities. Declaring a Surprise War only counts as a Formal War for the purpose of warmongering and war weariness.'
+SET Text = '+20 [ICON_Movement] Fortbewegung für die ersten 10 Runden nach der Erklärung eines Überraschungskriegs gegen eine große Zivilisation. Keine Malusse für Erträge in besetzten Städten. Das Erklären eines Überraschungskriegs zählt nur bezüglich Kriegstreiberei und Kriegsmüdigkeit als formeller Krieg.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
