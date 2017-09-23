@@ -77,26 +77,26 @@ AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
 --Hussar
 UPDATE LocalizedText
-SET Text = 'Polish unique Medieval era unit, 118 [ICON_STRENGTH]. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.'
+SET Text = 'Einzigartige Einheit Polens des Mittelalters (74 [ICON_STRENGTH]). Drängt verteidigende feindliche Einheiten zurück von ihrem Geländefeld in jedem Kampf, bei dem sie mehr Schaden nehmen. Verteidiger, die sich nicht zurückziehen können, erleiden zusätzlichen Schaden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_POLISH_HUSSAR_DESCRIPTION';
 
 --Golden Liberty
 UPDATE LocalizedText
-SET Text = 'Culture Bomb adjacent tiles when completing an Encampment or Fort inside friendly territory. 10 Military policy slots in the current government are converted to Wildcard slots.'
+SET Text = 'Kulturschock auf angrenzenden Geländefeldern bei Fertigstellung eines Lagers oder einer Festung innerhalb freundlich gesinnten Gebiets. Zehn Militärpolitik-Plätze in der aktuellen Regierung wird in einen Joker-Platz umgewandelt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION';
 
 --Sukiennice
 UPDATE LocalizedText
-SET Text = 'A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +20 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +40 [ICON_Gold] Gold.'
+SET Text = 'Einzigartiges Gebäude von Polen. Internationale [ICON_TradeRoute] Handelswege von dieser Stadt erhalten +20 [ICON_Production] Produktion; inländische [ICON_TradeRoute] Handelswege erhalten +40 [ICON_Gold] Gold.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_BUILDING_SUKIENNICE_DESCRIPTION';
 
 
 --Jadwigna
 UPDATE LocalizedText
-SET Text = 'The religion founded by Poland becomes the majority in an adjacent city that loses a tile to a Polish Culture Bomb. Holy Sites gain 10 Faith adjacency bonus from adjacent districts. All Relics provide bonus Faith (+20), Culture (+20) and Gold (+40).'
+SET Text = 'Die von Polen gegründete Religion wird zur Mehrheitsreligion in einer angrenzenden Stadt, die ein Geländefeld durch einen polnischen Kulturschock verliert. Heilige Stätten erhalten den normalen Glauben-Nachbarschaftsbonus von angrenzenden Bezirken. Alle Relikte gewähren einen Bonus auf Glauben (+20), Kultur (+20) und Gold (+40).'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
 
