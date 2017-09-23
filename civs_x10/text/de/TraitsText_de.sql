@@ -246,7 +246,7 @@ SET Text = 'Deutsche Spezial-Marineeinheit der Moderne, die das Unterseeboot ers
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
-UPDATE LocailzedText
+UPDATE LocalizedText
 SET Text = '10 zusätzliche Militärregierung-Plätze. +36 [ICON_Strength] Kampfstärke beim Angriff auf Stadtstaaten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
