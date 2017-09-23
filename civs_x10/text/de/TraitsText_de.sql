@@ -404,29 +404,29 @@ AND Tag = 'LOC_ABILITY_LONGSHIP_MOVEMENT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A district unique to Rome for city growth. Replaces the Aqueduct district.[NEWLINE][NEWLINE]It provides this city with a source of fresh water from an adjacent River, Lake, Oasis, or Mountain. Cities that do not yet have existing fresh water receive up to 6 [ICON_Housing] Housing. Cities that already have existing fresh water will instead get +2 [ICON_Housing] Housing. Must be built adjacent to the City Center. In either case, the Bath provides an additional bonus of +20 [ICON_Housing] Housing and +10 [ICON_Amenities] Amenity. Must be built adjacent to the City Center.'
+SET Text = 'Ein Bezirk, der das Wachstum der Stadt fördert. Steht nur Rom zur Verfügung. Ersetzt das Aquädukt.[NEWLINE][NEWLINE]Versorgt Eure Stadt mit Süßwasser von einem angrenzenden Fluss, See, Berg oder einer angrenzenden Oase. Städte ohne Süßwasserquelle, erhalten bis zu 6 [ICON_Housing] Wohnraum. Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_Housing] Wohnraum. Muss ans Stadtzentrum angrenzen. In beiden Fällen bietet ein Bad einen zusätzlichen Bonus von +20 [ICON_Housing] Wohnraum und +10 [ICON_Amenities] Annehmlichkeit.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_DISTRICT_BATH_DESCRIPTION';
 
 --Legion
 UPDATE LocalizedText
-SET Text = 'Roman unique Classical era melee unit that replaces the Swordsman. Can build 10 Roman Forts.'
+SET Text = 'Spezial-Nahkampfeinheit der Römer der Klassik, die den Schwertkämpfer ersetzt. Kann zehn Römische Militärlager bauen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_ROMAN_LEGION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.[NEWLINE][NEWLINE]Occupying unit receives +40 [ICON_Strength] Defense Strength, and automatically gains 2 turns of fortification.'
+SET Text = 'Schaltet die Fähigkeit der römischen Legion frei, ein römisches Militärlager, die einzigartige Modernisierung Roms, zu bauen.[NEWLINE][NEWLINE]Besetzende Einheit erhält +25 [ICON_Strength] Verteidigungsstärke und automatisch 2 Runden Befestigung.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_ROMAN_FORT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All cities you found or conquer start with a Trading Post. If in [ICON_TradeRoute] Trade Route range of your [ICON_Capital] Capital, they also start with a road to it. Your [ICON_TradeRoute] Trade Routes earn +10 [ICON_Gold] Gold for passing through Trading Posts in your own cities.'
+SET Text = 'Städte, die Ihr gründet oder einnehmt, starten mit einem Handelsposten. Städte in [ICON_TradeRoute] Handelsweg-Reichweite Eurer [ICON_Capital] Hauptstadt, starten auch mit einer Straße. Eure [ICON_TradeRoute] Handelswege bringen +10 [ICON_Gold] Gold für das Passieren von Handelsposten in Euren eigenen Städten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION';
 
 
 UPDATE LocalizedText
-SET Text = 'All cities start with up to 10 additional City Center buildings. (Starts with a Monument building in the Ancient era).'
+SET Text = 'Alle Städte starten mit bis zu 10 zusätzlichen Stadtzentrum-Gebäuden (in der Antike mit einem Monument).'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION';
 
