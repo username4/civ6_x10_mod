@@ -282,6 +282,11 @@ SET Text = '+50% [ICON_Culture] Kultur pro Stadtstaat,[NEWLINE]in dem Ihr Suzer�
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_SURROUNDED_BY_GLORY_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'Kampfsiege bringen [ICON_Culture] Kultur in Höhe von 500% der [ICON_Strength] Kampfstärke der besiegten Einheit.'
+WHERE Language = 'de_DE'
+AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --India
@@ -437,22 +442,22 @@ AND Tag = 'LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Extra territory upon founding cities. +10 [ICON_Faith] Faith and +10 [ICON_Production] Production from Tundra.'
+SET Text = 'Zusätzliches Territorium bei Stadtgründung. +10 [ICON_Faith] Glauben und +10 [ICON_Production] Produktion durch Tundra.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Can move after attacking. +50 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
+SET Text = 'Kann sich nach dem Angriff bewegen. +29 [ICON_Strength] Kampfstärke in eigenem Gebiet oder auf angrenzenden Geländefeldern..'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Russian unique Industrial era unit that replaces Cavalry. Stronger than Cavalry, and gains +50 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if [ICON_Movement] Movement points remain.'
+SET Text = 'Russische Spezialeinheit des Industriezeitalters, die die Kavallerie ersetzt. Stärker als Kavallerie und erhält +29 [ICON_Strength] Kampfstärke bei Kämpfen auf oder neben eigenem Gebiet. Kann sich nach dem Angriff fortbewegen, wenn noch [ICON_Movement] Fortbewegungspunkte übrig sind.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Receives [ICON_Science] Science or [ICON_Culture] Culture from [ICON_TradeRoute] Trade Routes to civilizations that are more advanced than Russia (+1 per 3 technologies or civics ahead).'
+SET Text = 'Erhält [ICON_Science] Wissenschaft oder [ICON_Culture] Kultur durch [ICON_TradeRoute] Handelswege zu Zivilisationen, die fortschrittlicher sind als Russland (+1 pro 3 Technologien oder Ausrichtungen voraus).'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION';
 
@@ -463,29 +468,25 @@ AND Tag = 'LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Kurgan, unique to Scythia.[NEWLINE][NEWLINE]+10 [ICON_Faith] Faith. +10 [ICON_Gold] Gold. +10 [ICON_Faith] Faith for each adjacent Pasture. Cannot be built on Hills.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, einen Kurgan, die einzigartige Modernisierung Skythiens, zu bauen.[NEWLINE][NEWLINE]+10 [ICON_Faith] Glauben. +10 [ICON_Gold] Gold. +10 [ICON_Faith] Glauben für jede angrenzende Weide. Kann nicht auf Hügeln gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_KURGAN_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Receive 10 cavalry units or Saka Horse Archers each time you train a light cavalry unit or Saka Horse Archer.'
+SET Text = 'Erhaltet jedes Mal zehn Leichte Kavallerieeinheiten oder zehn berittene Saken-Bogenschützen, wenn eine Leichte Kavallerieeinheit oder ein berittener Saken-Bogenschütze ausgebildet wird.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Expensive Scythian unique Classical era unit. Ranged unit with 4 [ICON_Movement] Movement with a [ICON_Range] Range of 10.'
+SET Text = 'Teure Skythische Spezialeinheit der Klassik. Fernkampfeinheit mit 4 [ICON_Movement] Fortbewegung, mit einer [ICON_Range] Reichweite von 10.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'All units receive +50  [ICON_Strength] Combat Strength when attacking wounded units. When they eliminate a unit, they heal up to 100 hit points.'
+SET Text = 'Alle Einheiten erhalten +29 [ICON_Strength] Kampfstärke beim Angriff auf verwundete Einheiten. Wenn sie eine Einheit ausschalten, werden bis zu 100 Trefferpunkte geheilt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
 
-UPDATE LocalizedText
-SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -494,27 +495,27 @@ AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Mission, unique to Spain.[NEWLINE][NEWLINE]+20 [ICON_Faith] Faith. 20 [ICON_Faith] Faith if on a different continent than your [ICON_Capital] Capital. +10 [ICON_Science] Science if built next to a Campus district.'
+SET Text = 'Erlaubt Handwerkern eine Mission, die einzigartige Modernisierung Spaniens, zu bauen.[NEWLINE][NEWLINE]+20 [ICON_Faith] Glauben. +20 [ICON_Faith] Glauben, wenn auf einem anderen Kontinent als Eure [ICON_Capital] Hauptstadt. +20 [ICON_Science] Wissenschaft, wenn neben einem Campus-Bezirk.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_MISSION_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Spanish unique Renaissance era unit that replaces the Musketman. +100 [ICON_Strength] Combat Strength when there is a Missionary, Inquisitor, or Apostle in the same hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player''s Religion as the dominant Religion.'
+SET Text = 'Spanische Spezialeinheit der Renaissance. Ersetzt den Musketier. +44 [ICON_Strength] Kampfstärke mit religiösen Einheiten auf demselben Geländefeld. Nimmt diese Einheit eine Stadt ein, oder ist neben einer Stadt, während diese eingenommen wird, wird die Religion des Konquistador-Spielers automatisch als vorherrschende Religion eingeführt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when there is an Apostle, Inquisitor, or Missionary in the same hex. If this unit captures a city or is adjacent to a city when it''s captured, the city will automatically convert to the Conquistador player''s majority Religion.'
+SET Text = '+44 [ICON_Strength] Kampfstärke, wenn sich ein Apostel, Inquisitor oder Missionar auf demselben Geländefeld befindet. Wenn diese Einheit eine Stadt erobert oder an eine Stadt angrenzend steht, während diese erobert wird, übernimmt die Stadt automatisch die größte Religion des Spielers, dem der Konquistador gehört..'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_CONQUISTADOR_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'May form Fleets and Armadas earlier than usual (Mercantilism). [ICON_TradeRoute] Trade Routes between multiple continents receiv0 bonus +40 [ICON_Gold] Gold for routes to other civilizations, and bonus +10 [ICON_Food] Food and [ICON_Production] Production for routes between your own cities.'
+SET Text = 'Erstellt Flotten und Armadas aus Marineeinheiten früher als normal (Merkantilismus). Kontinente verbindende [ICON_TradeRoute] Handelswege erhalten einen +10 [ICON_Gold] Gold-Bonus zu anderen Zivilisationen und +10 [ICON_Food] Nahrungs- und +10 [ICON_Production] Produktions-Bonusse zu Euren eigenen Städten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Inquisitors can Remove Heresy 10 extra time. Combat units have a bonus of +40 [ICON_Strength] Combat Strength against players following other Religions.'
+SET Text = 'Inquisitoren können zusätzlich 10 Mal Ketzerei entfernen. Kampfeinheiten haben einen Bonus von +25 [ICON_Strength] Kampfstärke gegen Spieler, die anderen Religionen folgen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 
@@ -526,19 +527,19 @@ AND Tag = 'LOC_TRAIT_LEADER_EL_ESCORIAL_DESCRIPTION';
 
 --First Civilization
 UPDATE LocalizedText
-SET Text = 'When you capture a Barbarian Outpost, receive a Tribal Village reward in addition to the usual [ICON_Gold] Gold. Pay 1% the usual cost to levy city-state units.'
+SET Text = 'Beim Einnehmen eines Barbaren-Außenpostens eine Stammesdorf-Belohnung zusätzlich zum üblichen [ICON_Gold] Gold erhalten. Ihr zahlt nur noch 1% der Kosten, um Stadtstaat-Einheiten auszuheben.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION';
 
 --Ziggurat
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Ziggurat, unique to Sumeria.[NEWLINE][NEWLINE]+20 [ICON_Science] Science. +10 [ICON_Culture] Culture if next to River. Cannot be built on Hills.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, eine Zikkurat, die einzigartige Modernisierung Sumers zu bauen.[NEWLINE][NEWLINE]+20 [ICON_Science] Wissenschaft. +10 [ICON_Culture] Kultur, wenn neben einem Fluss. Kann nicht auf Hügeln gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_ZIGGURAT_DESCRIPTION';
 
 --Gilgamesh
 UPDATE LocalizedText
-SET Text = 'May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 50 tiles.'
+SET Text = 'Kann ohne Kriegstreiber-Malus gegen jeden den Krieg erklären, der im Krieg mit Verbündeten ist. Wenn man gegen einen gemeinsamen Feind im Krieg ist, werden die Belohnungen beim Plündern und die gewonnene Kampferfahrung innerhalb von 50 Geländefeldern geteilt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION';
 

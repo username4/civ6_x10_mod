@@ -12,13 +12,13 @@
 
 --five suns
 UPDATE LocalizedText
-SET Text = 'Spend Builder charges to complete 90% of the original district cost.'
+SET Text = 'Gebt Handwerker-Ladungen aus, um 90 % der ursprünglichen Bezirkskosten abzuschließen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION';
 
 --Eagle Warrior
 UPDATE LocalizedText
-SET Text = 'Expensive Aztec unique Ancient era unit that replaces the Warrior, with 100 [ICON_STRENGTH].  Has a chance to capture other civilization''s military units by turning them into Builders.'
+SET Text = 'Starker aztekische Spezialeinheit der Antike, die den Krieger ersetzt. Hat eine Chance, Militäreinheiten anderer Zivilisationen gefangen zu nehmen, indem sie diese zu Handwerkern umwandelt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
