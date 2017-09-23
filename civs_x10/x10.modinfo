@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="1.6">
+<Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="1.7">
     <Properties>
         <Name>Civilization Traits x10</Name>
         <Teaser/>
@@ -33,6 +33,8 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
+                <File>text/de/TraitsText_de.sql</File>
+                <File>text/de/TraitsTextDLC_de.sql</File                
             </Items>
         </LocalizedText>   
     </Components>
@@ -45,6 +47,8 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
+                <File>text/de/TraitsText_de.sql</File>
+                <File>text/de/TraitsTextDLC_de.sql</File
             </Items>
         </LocalizedText>
     </Settings>
@@ -55,5 +59,7 @@
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
+        <File>text/de/TraitsText_de.sql</File>
+        <File>text/de/TraitsTextDLC_de.sql</File>
     </Files>
 </Mod>
