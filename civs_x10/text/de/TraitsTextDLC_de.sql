@@ -108,32 +108,29 @@ AND Tag = 'LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION';
 
 --Hypaspist
 UPDATE LocalizedText
-SET Text = 'Receive 10 boosts upon city conquest: a [ICON_TechBoosted] Eureka for each Encampment or Campus in the conquered city and an [ICON_CivicBoosted] Inspiration for each Holy Site or Theater Square.'
+SET Text = 'Erhaltet 10 Bonusse bei Stadt-Eroberungen: ein [ICON_TechBoosted] Heureka für jedes Lager oder jeden Campus in der eroberten Stadt und eine [ICON_CivicBoosted] Eingebung für jede Heilige Stätte oder jeden Theaterplatz.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION';
 
 --Hypaspist
 UPDATE LocalizedText
-SET Text = 'Macedonian unique melee unit that replaces the Swordsman. +50 [ICON_Strength] Combat Strength when besieging districts. 500% Additional Support Bonus.'
+SET Text = 'Einzigartige Nahkampf-Spezialeinheit der Makedonier, die den Schwertkämpfer ersetzt. +29 [ICON_Strength] Kampfstärke bei der Belagerung von Bezirken. 500 % zusätzlicher Unterstützungsbonus.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION';
 
 --Hetaroy
 UPDATE LocalizedText
-SET Text = 'Macedonian unique heavy cavalry unit that replaces the Horseman. Additional +50 [ICON_Strength] Combat Strength when adjacent to a Great General. +50 Great General points when killing an enemy unit. Starts with 1 free Promotion.'
+SET Text = 'Spezielle Schwere Kavallerie der Makedonier, die den Reiter ersetzt. Zusätzlich +29 [ICON_Strength] Kampfstärke angrenzend an einen Großen General. +50 Großer General-Punkte für Ausschaltung einer feindlichen Einheit. Startet mit einer kostenlosen Beförderung.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Macedon.+25% combat experience for all melee, ranged land units, and Hetairoi trained in this city. Gain [ICON_SCIENCE] Science equal to 250% of the unit''s cost when a non civilian unit is created in this city.[NEWLINE][NEWLINE]May not be built in an Encampment district that already has a Stable.'
+SET Text = 'Einzigartiges Gebäude von Makedonien. +250 % Kampferfahrung für alle Landnahkampf- und -Fernkampfeinheiten, und Hetairoi, die in dieser Stadt ausgebildet werden. Erhalt von +250 % [ICON_SCIENCE] Wissenschaft gemessen an den Kosten der Einheit, wenn in dieser Stadt eine militärische Einheit erschaffen wird.[NEWLINE][NEWLINE]Kann nicht in einem Lagerbezirk gebaut werden, in dem bereits Stallungen sind.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_BUILDING_BASILIKOI_PAIDES_DESCRIPTION';
 
 --Alexander
-UPDATE LocalizedText
-SET Text = 'Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.'
-WHERE Language = 'de_DE'
-AND Tag = 'LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION';
+
 
 ---------------------------------------------------------
 ---------------------------------------------------------
