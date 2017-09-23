@@ -24,13 +24,13 @@ AND Tag = 'LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION';
 
 --Tlachtli
 UPDATE LocalizedText
-SET Text = 'A building unique to the Aztecs. Provides 1 [ICON_Amenities] Amenity, +20 [ICON_Faith] Faith, and 10 [ICON_GreatGeneral] Great General Point.'
+SET Text = 'Ein einzigartiges Gebäude der Azteken. Gewährt eine [ICON_Amenities] Annehmlichkeit, +20 [ICON_Faith] Glauben und 10 [ICON_GreatGeneral] Großer-General-Punkte.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_BUILDING_TLACHTLI_DESCRIPTION';
 
 --Montezuma
 UPDATE LocalizedText
-SET Text = 'Luxury resources in his territory provide 10 [ICON_Amenities] Amenity to 2 extra cities. Military units receive +10 [ICON_Strength] Combat Strength for each different Luxury resource improved in Aztec lands.'
+SET Text = 'Luxusgüter im eigenen Territorium bringen eine Annehmlichkeit für 2 zusätzliche Städte. +9 [ICON_Strength] Kampfstärke für jedes unterschiedliche Luxusgut, das im Azteken-Gebiet modernisiert wurde.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
