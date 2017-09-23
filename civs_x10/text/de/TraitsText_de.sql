@@ -336,27 +336,27 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = '+20 [ICON_Food] Food, +20 [ICON_Production] Production, and +40 [ICON_Gold] Gold from each [ICON_GreatWork_Relic] Relic, [ICON_GreatWork_Artifact] Artifact, and Sculpture [ICON_GreatWork_Sculpture] Great Work of Art in addition to the usual [ICON_Culture] Culture. Receive 20x [ICON_GreatWriter] Great Writer, [ICON_GreatArtist] Great Artist, [ICON_GreatMusician] Great Musician, and [ICON_GreatMerchant] Great Merchant points. Palace has slots for 9 Great Works.'
+SET Text = '+20 [ICON_Food] Nahrung, +20 [ICON_Production] Produktion und +40 [ICON_Gold] Gold durch jede [ICON_GreatWork_Relic] Reliquie, jedes [ICON_GreatWork_Artifact] Artefakt und jedes [ICON_GreatWork_Sculpture] Große Skulpturwerk zusätzlich zur üblichen [ICON_Culture] Kultur. 500% mehr für [ICON_GreatWriter] Große Schriftsteller, [ICON_GreatArtist] Große Künstler, [ICON_GreatMusician] Große Musiker und [ICON_GreatMerchant] Große Händler. Der Palast hat Plätze für 9 Große Werke.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A district unique to Kongo that can only be constructed in Rainforest or Woods. Replaces the Neighborhood district but is available earlier. Provides +50 [ICON_Housing] Housing , +20 [ICON_Food] Food, and +40 [ICON_Gold] Gold, regardless of Appeal.'
+SET Text = 'Ein Bezirk, der nur auf Regenwald- oder Wald-Geländefeldern errichtet werden kann. Kann nur vom Kongo gebaut werden. Ersetzt das Wohnviertel, ist aber früher verfügbar. Gewährt +5 [ICON_Housing] Wohnraum, +20 [ICON_Food] Nahrung und +40 [ICON_Gold] Gold, unabhängig von der Anziehungskraft.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_DISTRICT_MBANZA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Kongo unique Classical era unit that replaces the Swordsman. +100 [ICON_Strength] Combat Strength when defending against ranged attacks. Can move and see through Woods and Rainforest.'
+SET Text = 'Kongolesische Spezialeinheit der Klassik. Ersetzt den Schwertkämpfer. +44 [ICON_Strength] Kampfstärke bei Verteidigung gegen Fernangriffe. Kann durch Wald und Regenwald sehen und gehen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when defending against ranged units, can see through features, and can move through Woods and Rainforest without [ICON_Movement] Movement penalty.'
+SET Text = '+44 [ICON_Strength] Kampfstärke bei Verteidigung gegen Fernkampfeinheiten. Kann durch Geländearten sehen. Kann sich ohne [ICON_Movement] Fortbewegungsmalus durch Wald und Regenwald bewegen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_NAGAO_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'May not build Holy Site districts, gain Great Prophets, or found Religions. Gains all Beliefs of any Religion that has established itself in a majority of his cities. Receives ten Apostles each time he finishes a M''banza or Theater Square district (of that city''s majority Religion).'
+SET Text = 'Kann keine Heilige-Stätte-Bezirke bauen, Große Propheten erhalten oder Religionen gründen. Erhält alle Glaubenssätze der Religion, der die meisten seiner Städte folgen. Erhält immer zehn Apostel, wenn ein M''banza oder Theaterplatz-Bezirk vollendet wird (von der Mehrheitsreligion der jeweiligen Stadt).'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
 
@@ -368,32 +368,32 @@ AND Tag = 'LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'A building unique to Norway. Required to purchase Apostles and Inquisitors with [ICON_Faith] Faith. Holy Site districts get 10 additional adjacency bonus from Woods.'
+SET Text = 'Einzigartiges Gebäude von Norwegen. Erforderlich für den Erwerb von Aposteln und Inquisitoren mit [ICON_Faith] Glauben. Heilige-Stätte-Bezirke erhalten einen zusätzlichen Nachbarschaftsbonus durch Wald. +10 [ICON_PRODUCTION] Produktion für jedes Küstenressourcen-Geländefeld in dieser Stadt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+70 [ICON_Strength]Combat Strength when attacking, and -70 [ICON_Strength] Combat Strength when defending.'
+SET Text = '+36 [ICON_Strength] Kampfstärke beim Angriff und -36 [ICON_Strength] Kampfstärker beim Verteidigen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+9 [ICON_Movement] Movement if this unit starts in enemy territory.'
+SET Text = '+20 [ICON_Movement] Fortbewegung, wenn diese Einheit in feindlichem Gebiet startet.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_BERSERKER_MOVEMENT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Medieval era unit. 10 [ICON_Movement] Movement if this unit starts in enemy territory. +70 [ICON_Strength] Combat Strength when attacking and -70 [ICON_Strength] Combat Strength when defending.'
+SET Text = 'Norwegische Spezialeinheit des Mittelalters. 24 [ICON_Movement] Fortbewegungspunkte bei Start in feindlichem Gebiet. +36 [ICON_Strength] Kampfstärke beim Angreifen und -36 [ICON_Strength] Kampfstärke beim Verteidigen.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 10 [ICON_Movement] Movement while in coastal waters.'
+SET Text = 'Norwegische Spezial-Marineeinheit der Antike. Ersetzt die Galeere. Kann feindliche Küstengebiete plündern und Zivilisten auf angrenzenden Feldern gefangen nehmen. 12 [ICON_Movement] Fortbewegungspunkte in Küstengewässern.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+10 [ICON_Movement] Movement while in coastal waters.'
+SET Text = '+10 [ICON_Movement] Fortbewegung in Küstengewässern.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_LONGSHIP_MOVEMENT_DESCRIPTION';
 
