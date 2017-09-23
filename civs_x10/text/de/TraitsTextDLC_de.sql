@@ -42,30 +42,30 @@ AND Tag = 'LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION';
 
 --Digger
 UPDATE LocalizedText
-SET Text = 'Australian unique Modern era unit that replaces Infantry. +100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = 'Australische Spezialeinheit der Moderne, welche die Infanterie ersetzt. +44 [ICON_Strength] Kampfstärke beim Kampf auf Küsten-Geländefeldern. +29 [ICON_Strength] Kampfstärke beim Kampf auf neutralem oder fremdem Gebiet.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_DIGGER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on Coastal tiles. +50 [ICON_Strength] Combat Strength when fighting on Neutral or Foreign Territory.'
+SET Text = '+44 [ICON_Strength] Kampfstärke beim Kampf auf Geländefeldern mit Küste. +29 [ICON_Strength] Kampfstärke beim Kampf in neutralem oder fremdem Territorium.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_DIGGER_DESCRIPTION';
 
 --Outback Station
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct an Outback Station, unique to Australia.[NEWLINE][NEWLINE]+10 [ICON_FOOD] Food and +10 [ICON_PRODUCTION] Production. +10 [ICON_Food] Food for each adjacent Pasture. Additional [ICON_FOOD] Food and [ICON_PRODUCTION] Production as you advance through the Technology and Civic Tree for adjacent Outback Stations and Pastures. Can only be built in Desert, Desert Hills, Grassland, and Plains tiles.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit zum Bau einer Outback-Station frei, die einzigartig für Australien ist.[NEWLINE][NEWLINE]+10 [ICON_FOOD] Nahrung und +10 [ICON_PRODUCTION] Produktion. +10 [ICON_Food] Nahrung für jede angrenzende Weide. Zusätzliche [ICON_FOOD] Nahrung und [ICON_PRODUCTION] Produktion beim Fortschritt im Technologie- und Ausrichtungsbaum für angrenzende Outback-Stationen und Weiden. Kann nur auf Geländefeldern mit Wüste, Wüstenhügeln, Grasland und Steppe gebaut werden..'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION';
 
 --Down Under
 UPDATE LocalizedText
-SET Text = '+30 [ICON_Housing] Housing in coastal cities. Pastures trigger a Culture Bomb. Yields from Campuses, Commercial Hubs, Holy Sites and Theater Squares are +10 in tiles with Charming Appeal, +30 in Breathtaking.'
+SET Text = '+30 [ICON_Housing] Wohnraum in Küstenstädten. Weiden lösen einen Kulturschock aus. Erträge von Campussen, Handelszentren, Heiligen Stätten und Theaterplätzen erhöhen sich um +10 auf Geländefeldern mit der Anziehungskraft ''Bezaubernd'', oder um +30 auf Feldern mit der Anziehungskraft ''Atemberaubend''.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION';
 
 --John Curtin
 UPDATE LocalizedText
-SET Text = '+1000% [ICON_Production] Production if either they have received a declaration of war in the past 10 turns or if they have liberated a city in the past 20 turns.'
+SET Text = '+1000% [ICON_Production] Produktion, wenn Ihr entweder in den letzten 10 Runden eine Kriegserklärung erhaltet, oder in den letzten 20 Runden eine Stadt befreit habt.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_DESCRIPTION';
 
