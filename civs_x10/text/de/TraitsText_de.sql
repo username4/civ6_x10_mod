@@ -160,32 +160,32 @@ AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'All found or conquered cities on a continent other than your home continent receive 10 free melee units. Gain the Redcoat unique unit when the Military Science technology is researched.'
+SET Text = 'Alle gegründeten oder eingenommenen Städte auf einem anderen Kontinent erhalten zehn kostenlose Nahkampfeinheiten. Erhält nach der Erforschung der Militärwissenschaft die einzigartige Einheit Rotrock.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_PAX_BRITANNICA_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'A district unique to England for naval activity in your city. Replaces the Harbor district. Also removes the [ICON_Movement] Movement penalty for embarking and disembarking to and from this tile. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+10 [ICON_Movement] Movement for all naval units built in Dockyard[NEWLINE]+20 [ICON_Gold] Gold when built on a foreign continent[NEWLINE]+10 [ICON_TradeRoute] Trade Route capacity.'
+SET Text = 'Ein Bezirk, der ausschließlich England für die Seefahrt zur Verfügung steht. Ersetzt den Hafenbezirk. Kein [ICON_Movement] Fortbewegungsmalus für das Wassern und Ausschiffen von und zu diesem Geländefeld. Muss an Küste oder See-Geländefeldern neben Land gebaut werden.[NEWLINE][NEWLINE]+10 [ICON_Movement] Fortbewegung für hier gebaute Marine-Einheiten[NEWLINE]+20 [ICON_Gold] Gold bei Errichtung auf einem fremden Kontinent[NEWLINE]+10 [ICON_TradeRoute] Handelswegkapazität.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Each Archaeological Museum holds 9 [ICON_GreatWork_Artifact] Artifacts instead of 3, and can support 3 Archaeologists at once. Archaeological Museums are automatically themed when they have 6 [ICON_GreatWork_Artifact] Artifacts.'
+SET Text = 'Archäologische Museen haben 9 [ICON_GreatWork_Artifact] Artefakt-Plätze statt 3 und bis zu 3 Archäologen. Museen haben automatisch ein Thema, wenn sich 6 [ICON_GreatWork_Artifact] Artefakte darin befinden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_DOUBLE_ARCHAEOLOGY_SLOTS_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Very fast English unique Renaissance era naval unit that replaces the Privateer. Can capture enemy ships. Cannot be seen unless adjacent to it.'
+SET Text = 'Sehr schnelle englische Spezial-Marineeinheit der Renaissance, die den Freibeuter ersetzt. Kann feindliche Schiffe gefangen nehmen. Kann nur von benachbarten Geländefeldern gesehen werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_ENGLISH_SEADOG_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'English unique Industrial era unit when Victoria is their leader. +100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
+SET Text = 'Englische Spezialeinheit des Industriezeitalters mit Victoria. +44 [ICON_Strength] Kampfstärke auf anderen Kontinenten als dem Hauptstadt-Kontinent. Keine Ausschiffungs-Kosten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your [ICON_Capital] Capital''s. No disembark cost.'
+SET Text = '+44 [ICON_Strength] Kampfstärke beim Kampf auf einem Kontinent, auf dem sich nicht die eigene [ICON_Capital] Hauptstadt befindet. Keine Ausschiffungs-Kosten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_REDCOAT_DESCRIPTION';
 
@@ -196,27 +196,27 @@ AND Tag = 'LOC_ABILITY_REDCOAT_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Unlocks the Builder ability to construct a Chateau, unique to France.[NEWLINE][NEWLINE]+20 [ICON_Culture] Culture. +10 Appeal. +20 [ICON_Culture] Culture if next to a wonder. +10 [ICON_Gold] Gold if next to a Luxury resource. Can only be built adjacent to Rivers.'
+SET Text = 'Schaltet die Handwerker-Fähigkeit frei, ein Chateau, die einzigartige Modernisierung Frankreichs, zu bauen.[NEWLINE][NEWLINE]+20 [ICON_Culture] Kultur. +10 Anziehungskraft. +20 [ICON_Culture] Kultur, wenn neben einem Wunder. +10 [ICON_Gold] Gold, wenn neben einem Luxusgut. Kann nur an Flüsse angrenzend gebaut werden.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_IMPROVEMENT_CHATEAU_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'French unique Industrial era melee unit. +100  [ICON_Strength] Combat Strength when fighting on your capital''s continent. [ICON_GreatGeneral] Great General points for killing units.'
+SET Text = 'Französische Spezial-Nahkampfeinheit des Industriezeitalters. +44 [ICON_Strength] Kampfstärke auf dem Kontinent Eurer Hauptstadt. [ICON_GreatGeneral] Großer-General-Punkte für das Eliminieren von Einheiten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength when on the same continent as the [ICON_Capital] Capital. +10 Great General points for kills.'
+SET Text = '+44 [ICON_Strength] Kampfstärke auf dem Kontinent, auf dem sich die eigene [ICON_Capital] Hauptstadt befindet. +10 Großer-General-Punkte für Siege.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_GARDE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+90% [ICON_Production] Production toward Medieval, Renaissance, and Industrial era wonders. [ICON_Tourism] Tourism from wonders of any era is tenfolded.'
+SET Text = '+90 % [ICON_Production] Produktion für Wunder des Mittelalters, der Renaissance und des Industriezeitalters. [ICON_Tourism] Tourismus durch Wunder eines Zeitalters wird verzehnfacht.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Has 10 level of [ICON_VisLimited] Diplomatic Visibility greater than normal with every civilization that she''s met. Receives capacity to build 10 extra Spies with the Castles technology.'
+SET Text = 'Hat 10 Stufen [ICON_VisLimited] diplomatische Sichtbarkeit mehr als normal bei jeder Zivilisation, die sie getroffen hat. Erhält mit der Schloss-Technologie einen kostenlosen Spion (und die Kapazität für einen zusätzlichen Spion). Alle Spione starten als Agenten mit einer kostenlosen Beförderung.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION';
 
@@ -227,27 +227,27 @@ AND Tag = 'LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION';
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Each city can build 10 districts more than usual (exceeding the normal limit based on [ICON_Citizen] Population).'
+SET Text = 'Jede Stadt kann 10 Bezirke mehr als normal bauen (und dabei das normale Limit auf [ICON_Citizen] Bevölkerungsbasis überschreiten).'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Adjacency: +20 [ICON_Production] Production bonus if adjacent to a Commercial Hub district. +10 [ICON_Production] Production bonus for each adjacent resource. +10 [ICON_Production] Production bonus for adjacent district tiles.'
+SET Text = 'Nachbarschaft: +20 Produktionsbonus [ICON_Production] für ein angrenzendes Handelszentrum. +10-Produktionsbonus [ICON_Production] für alle angrenzenden Ressourcen. +10 Produktionsbonus [ICON_Production] für angrenzende Bezirke.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+100 [ICON_Strength] Combat Strength in Ocean combat.'
+SET Text = '+44 [ICON_Strength] Kampfstärke beim Seekampf.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_ABILITY_UBOAT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +10 Sight, and +100 [ICON_Strength] Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.'
+SET Text = 'Deutsche Spezial-Marineeinheit der Moderne, die das Unterseeboot ersetzt. Günstiger in der Produktion, +10 Sicht und +44 [ICON_Strength] Kampfstärke auf Ozean-Geländefeldern. Kann andere getarnte Einheiten aufdecken.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_UNIT_GERMAN_UBOAT_DESCRIPTION';
 
-UPDATE LocalizedText
-SET Text = '10 additional Military policy slots. +70 [ICON_Strength] Combat Strength when attacking city-states.'
+UPDATE LocailzedText
+SET Text = '10 zusätzliche Militärregierung-Plätze. +36 [ICON_Strength] Kampfstärke beim Angriff auf Stadtstaaten.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION';
 
