@@ -25,6 +25,7 @@
                 <File>data/TraitsMod.sql</File>
             </Items>
         </UpdateDatabase>
+        
         <LocalizedText id="civs_x10_text">
             <Properties>
                 <LoadOrder>100</LoadOrder>
@@ -34,9 +35,10 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
-                <File>text/de/TraitsTextDLC_de.sql</File                
+                <File>text/de/TraitsTextDLC_de.sql</File>                
             </Items>
         </LocalizedText>   
+       
     </Components>
     <Settings>
         <LocalizedText id="civs_x10_text_menu">
@@ -48,7 +50,7 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
-                <File>text/de/TraitsTextDLC_de.sql</File
+                <File>text/de/TraitsTextDLC_de.sql</File>
             </Items>
         </LocalizedText>
     </Settings>
