@@ -161,6 +161,7 @@ UPDATE LocalizedText
 SET Text = '+20 [ICON_Movement] Fortbewegung für die ersten 10 Runden nach der Erklärung eines Überraschungskriegs gegen eine große Zivilisation. Keine Malusse für Erträge in besetzten Städten. Das Erklären eines Überraschungskriegs zählt nur bezüglich Kriegstreiberei und Kriegsmüdigkeit als formeller Krieg.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Nubia
