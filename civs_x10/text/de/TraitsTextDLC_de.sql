@@ -161,3 +161,32 @@ UPDATE LocalizedText
 SET Text = '+20 [ICON_Movement] Fortbewegung für die ersten 10 Runden nach der Erklärung eines Überraschungskriegs gegen eine große Zivilisation. Keine Malusse für Erträge in besetzten Städten. Das Erklären eines Überraschungskriegs zählt nur bezüglich Kriegstreiberei und Kriegsmüdigkeit als formeller Krieg.'
 WHERE Language = 'de_DE'
 AND Tag = 'LOC_TRAIT_LEADER_FALL_BABYLON_DESCRIPTION';
+---------------------------------------------------------
+---------------------------------------------------------
+--Nubia
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Ta Seti
+UPDATE LocalizedText
+SET Text = '+500% [ICON_Production] Produktion für Fernkampfeinheiten. Alle Fernkampfeinheiten erhalten +500% Kampferfahrung. Minen auf strategischen Ressourcen liefern +10 [ICON_Production] Produktion. Minen auf Bonus-Ressourcen und Luxusgütern liefern +20 [ICON_Gold] Gold.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION';
+
+--Pyramid
+UPDATE LocalizedText
+SET Text = 'Modernisierung, die durch Steinmetzkunst freigeschaltet wird und auf Wüste, Wüstenhügeln oder Schwemmland gebaut werden muss. +10 [ICON_Faith] Glauben. Erhält zusätzliche Erträge durch angrenzende Bezirke. +10 [ICON_Food] Nahrung, wenn angrenzend an ein Stadtzentrum. Für alle anderen Bezirke, die Nachbarschaftsbonusse gewähren: +10 für den entsprechenden Ertrag, wenn der Bezirk angrenzt.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_PYRAMID_DESCRIPTION';
+
+--UU Pitati
+UPDATE LocalizedText
+SET Text = 'Teure nubische Spezialeinheit der Antike, die den Bogenschützen ersetzt. Viel Stärker als der Bogenschütze mit zusätzlicher 10 [ICON_Movement] Fortbewegung.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_NUBIAN_PITATI_DESCRIPTION';
+
+--Aminatore
+UPDATE LocalizedText
+SET Text = '+200% [ICON_Production] Produktion für alle Bezirke oder +400%, wenn eine Nubische Pyramide an das Stadtzentrum angrenzt'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_KANDAKE_OF_MEROE_DESCRIPTION';
