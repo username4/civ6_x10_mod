@@ -735,7 +735,7 @@ WHERE DistrictType = 'DISTRICT_WASTELAND';
 
 --nazgul (1-0,8^10 heal)
 UPDATE ModifierArguments 
-SET Value = Value*3
+SET Value = Value*10
 WHERE Name = 'Amount'
 AND (ModifierId = 'DARK_LIEUTENANT_AOE_BUFF_MODIFIER'
 OR ModifierId = 'NAZGUL_BLACK_BREATH_AOE_NO_HEAL_1'

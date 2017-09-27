@@ -23,7 +23,7 @@ VALUES
 
 --Founding Fathers
 UPDATE ModifierArguments
-SET Value = Value * 10
+SET Value = 1000
 WHERE (Name = 'BonusRate'
 AND ModifierId LIKE '%BONUS_RATE%');
 
@@ -126,7 +126,7 @@ WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_CAMPUS_ADJACENCY';
 
 UPDATE ModifierArguments
-SET Value = 1 + 10
+SET Value = 11
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
@@ -226,21 +226,21 @@ WHERE ModifierId = 'TRAIT_RIVER_FASTER_BUILDTIME_WONDER';
 
 --TRAIT_CIVILIZATION_IMPROVEMENT_SPHINX
 UPDATE Improvement_YieldChanges
-SET YieldChange = 1 * 10
+SET YieldChange = 10
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 AND YieldType = 'YIELD_FAITH');
 
 UPDATE Improvement_YieldChanges
-SET YieldChange = 1 * 10
+SET YieldChange = 10
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 
 AND YieldType = 'YIELD_CULTURE');
 UPDATE Improvements
-SET Appeal = 1 * 10
+SET Appeal = 10
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE Improvement_BonusYieldChanges
-SET BonusYieldChange = 1 * 10
+SET BonusYieldChange = 10
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE ModifierArguments
@@ -414,8 +414,9 @@ AND ModifierId = 'UNIQUE_LEADER_ADD_VISIBILITY');
 
 UPDATE ModifierArguments
 SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'UNIQUE_LEADER_ADD_SPY');
+WHERE Name = 'Amount'
+AND (ModifierId = 'UNIQUE_LEADER_ADD_SPY_CAPACITY'
+OR ModifierId = 'UNIQUE_LEADER_ADD_SPY_UNIT');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -835,8 +836,9 @@ VALUES
 --TRAIT_CIVILIZATION_BUILDING_STAVE_CHURCH
 UPDATE ModifierArguments
 SET Value = 10
-WHERE (Name = 'Amount'
-AND ModifierId = 'STAVE_CHURCH_FAITHWOODSADJACENCY');
+WHERE Name = 'Amount'
+AND (ModifierId = 'STAVE_CHURCH_FAITHWOODSADJACENCY'
+OR ModifierId = 'STAVECHURCH_SEARESOURCE_PRODUCTION');
 
 --"TRAIT_CIVILIZATION_UNIT_NORWEGIAN_BERSERKER"
 UPDATE ModifierArguments
