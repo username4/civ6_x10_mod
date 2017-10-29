@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="1.7">
+<Mod id="895050b9-b0f7-49e8-a599-67a7b19d2cf8" version="17">
     <Properties>
         <Name>Civilization Traits x10</Name>
         <Teaser/>
         <Description>All traits of a civilization are made 10 times more powerfull.</Description>
         <Authors>username4</Authors>
     </Properties>
-    <References>
-		<Mod id="98fa6e61-b517-47c6-8e06-ad10fffa3d02" title="Konosuba Aqua" />
-		<Mod id="fed27596-6eb3-40cd-b604-f8c725367bbf" title="Konosuba Megumin" />
-		<Mod id="b0a36ce9-ec00-4d95-9a15-1b7f712c2070" title="Misaka Mikoto" />
-	</References>    
-	<Blocks>
-		<Mod id="0556b023-070e-4342-9714-30b650cb7efd" title="civs x3" />
-	</Blocks>    
+
     <Components>
         <UpdateDatabase id="civs_x10">
             <Properties>
