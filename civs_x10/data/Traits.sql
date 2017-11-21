@@ -546,10 +546,12 @@ UPDATE Adjacency_YieldChanges
 SET YieldChange = 20
 WHERE ID = 'District_Culture_City_Center';
 
---HOPLITE
+--HOPLITE crashes on windows
+/*
 UPDATE ModifierArguments
 SET Value = 44
 WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT';
+*/
 
 --gorgo
 UPDATE ModifierArguments

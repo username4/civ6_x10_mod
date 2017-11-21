@@ -268,12 +268,12 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+44 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
+SET Text = '+10 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent. (no x10, because crashes.)'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +44 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit..'
+SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +10 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit. (no x10, because crashes.)'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GREEK_HOPLITE_DESCRIPTION';
 
