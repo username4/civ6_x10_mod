@@ -548,10 +548,11 @@ WHERE ID = 'District_Culture_City_Center';
 
 --HOPLITE
 
-UPDATE ModifierArguments
+--Only does change, if platform already has the fall-update. Mac, linux stay playable, but bonus is not applied. Remove when update released.
+UPDATE ModifierArguments 
 SET Value = 44
-WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER';
-
+WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER'
+AND EXISTS (SELECT * FROM ModifierArguments WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER');
 
 --gorgo
 UPDATE ModifierArguments
