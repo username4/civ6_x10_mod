@@ -1349,11 +1349,11 @@ WHERE ModifierId LIKE 'TRAIT_NUSANTARA_COAST%' AND Name = 'Amount';
 
 UPDATE ModifierArguments
 SET Value = Value * 10
-WHERE ModifierId = 'TRAIT_FAITH_CITY_CENTER';
+WHERE ModifierId = 'TRAIT_FAITH_CITY_CENTER' AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Indonesia
+--Khmer
 ---------------------------------------------------------
 ---------------------------------------------------------
 
