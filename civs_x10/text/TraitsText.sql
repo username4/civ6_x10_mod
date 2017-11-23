@@ -268,12 +268,17 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
 
 UPDATE LocalizedText
-SET Text = '+10 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent. (no x10, because crashes.)'
+SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 500% of the [ICON_Strength] Combat Strength of the defeated unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+44 [ICON_Strength] Combat Strength if there is at least one Hoplite adjacent.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_HOPLITE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +10 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit. (no x10, because crashes.)'
+SET Text = 'Greek unique Ancient era unit that replaces the Spearman. +44 [ICON_Strength] Combat Strength if there is at least one adjacent Hoplite unit.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_GREEK_HOPLITE_DESCRIPTION';
 
@@ -482,11 +487,6 @@ SET Text = 'All units receive +29  [ICON_Strength] Combat Strength when attackin
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION';
 
-UPDATE LocalizedText
-SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 50% of the [ICON_Strength] Combat Strength of the defeated unit.'
-WHERE Language = 'en_US'
-AND Tag = 'LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION';
-
 ---------------------------------------------------------
 ---------------------------------------------------------
 --SPAIN
@@ -563,3 +563,56 @@ SET Text = ''
 WHERE Language = 'en_US'
 AND Tag = '';
 */
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Indonesia
+---------------------------------------------------------
+---------------------------------------------------------
+
+-- UI
+
+UPDATE LocalizedText
+SET Text = 'Unlocks the Builder ability to construct a Kampung, unique to Indonesia.[NEWLINE][NEWLINE]+10 [ICON_PRODUCTION] Production and +10 [ICON_Housing] Housing.+10 [ICON_FOOD] Food for each adjacent Fishing Boat. Additional [ICON_PRODUCTION] Production, [ICON_Housing] Housing, and  [ICON_TOURISM] Tourism as you advance through the Technology and Civics Tree. Must be placed on a Coast or Lake tile adjacent to a sea resource.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_KAMPUNG_DESCRIPTION';
+
+-- UU
+
+UPDATE LocalizedText
+SET Text = 'Indonesian unique Medieval era naval unit that replaces the Frigate. Formation units all inherit escort''s [ICON_Movement] Movement speed and +29 [ICON_Strength] Combat Strength when in a formation.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_INDONESIAN_JONG_DESCRIPTION';
+
+-- UCA
+
+UPDATE LocalizedText
+SET Text = 'Coast and Lake tiles provide a large adjacency bonus for Holy Site, Campus, Industrial Zone, and Theater Square districts. +10 [ICON_AMENITIES] Amenity from entertainment to each Entertainment Complex adjacent to a Coast or Lake tile.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION';
+
+-- ULA
+
+UPDATE LocalizedText
+SET Text = 'Naval units can be purchased with [ICON_FAITH] Faith. Religious units pay no movement to embark or disembark. +20[ICON_FAITH] Faith to City Centers that are adjacent to Coast or Lake tiles.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Indonesia
+---------------------------------------------------------
+---------------------------------------------------------
+
+-- UCA
+UPDATE LocalizedText
+SET Text = '+30 [ICON_FAITH] Faith and +10 [ICON_AMENITIES] Amenity from entertainment to each city with an Aqueduct. Farms provide +20 [ICON_FOOD] Food if adjacent to an Aqueduct.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_DESCRIPTION';
+
+-- ULA
+
+UPDATE LocalizedText
+SET Text = 'Holy Sites provide +20 [ICON_FOOD] Food and +10 [ICON_HOUSING] Housing if placed on a river. Holy Sites trigger a culture bomb.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_MONASTERIES_KING_DESCRIPTION';
