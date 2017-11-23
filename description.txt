@@ -133,6 +133,16 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Pyramid: +10 Faith, +10 district adjenency bonuses
 -Pitati: 160 Cost, 24 STR, 54 Ranged, 12 Movement
 -Aminatore: +200% District production, +400 if near pyramid near citycenter
+[u]Indonesia[/u]
+-Coast and lake provide +10 bonus for adjacent districs.
+-Jong: 14 move and +29 strenth when in formation
+-Gitarja: +20 to city center if adjacent to lake and coast.
+-Kampung: +10 production and housing. +10 food for each adjacent fish boat. +10 production, housing and tourism for future tech researched.
+[u]Khmer[/u]
+-+30 faith and amenities for city with aqueduct. Farms provide +20 food if adjacent to aqueduct.
+-Jayavarman VII: Holy site +20 food and 10 housing if on river. 
+-Dormey: Considered as better catapult. 67 melee strenth and 79 bombard strenth.
+-Prasat: +9 relic slots.
 [u]IMPLEMENTED MOD CIVS:[/u]
 [u][url=https://steamcommunity.com/workshop/filedetails/?id=896454049]JFD's The Empire: Civlization and Leader Packs[/url][/u]
 -India Ajatasattu: +29 STR near cities with same religion, 9 art slots
