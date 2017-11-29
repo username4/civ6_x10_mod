@@ -984,7 +984,227 @@ SET Value = 36
 WHERE Name = 'Amount'
 AND ModifierId = 'JFD_VIEUX_CITY_CENTRE_COMBAT';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--Minecraft
+---------------------------------------------------------
+---------------------------------------------------------	
+	
+--Enchantment table
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount' 
+AND ModifierId = 'ETABLE_TRAINED_LAND_UNIT_XP_MODIFIER';
 
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount' 
+AND ModifierId = 'ETABLE_TRAINED_SEA_UNIT_XP_MODIFIER';
+
+UPDATE ModifierArguments 
+SET Value = 100
+WHERE Name = 'Amount' 
+AND ModifierId = 'ETABLE_TRAINED_AIRCRAFT_XP_MODIFIER';
+
+--Beacon Disabled, due to platform incompatibility, table does not exist prior fall-update. Correct, when updated
+/* 
+UPDATE Building_YieldsPerEra
+SET YieldChange = 10
+WHERE BuildingType = 'BUILDING_BEACON';
+*/
+
+/* Possible workaround? Too scetchy for my taste
+CREATE TABLE IF NOT EXISTS Building_YieldsPerEra
+	(	BuildingType TEXT,
+		YieldChange TEXT);
+
+UPDATE Building_YieldsPerEra
+SET YieldChange = 10
+WHERE BuildingType = 'BUILDING_BEACON';
+*/
+
+--Minecraft
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_ORE_PRODUCTION_BONUS';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_ORE_SCIENCE_BONUS';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_ORE_PRODUCTION_LUXURY';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_ORE_SCIENCE_LUXURY';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_ORE_PRODUCTION_STRATEGIC';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_ORE_SCIENCE_STRATEGIC';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_QUARRY_PRODUCTION';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'MC_QUARRY_SCIENCE';
+
+--Snow Golem
+UPDATE ModifierArguments
+SET Value = 29
+WHERE Name = 'Amount' 
+AND ModifierId = 'SNOWGOLEM_COLD_BUFF';
+
+UPDATE ModifierArguments
+SET Value = -29
+WHERE Name = 'Amount' 
+AND ModifierId = 'SNOWGOLEM_HOT_DEBUFF';
+
+--Iron Golem
+UPDATE Units
+SET Combat = 78
+WHERE UnitType = 'UNIT_IRONGOLEM';
+
+--Elytra
+UPDATE Units
+SET Combat = 75
+WHERE UnitType = 'UNIT_ELYTRA';
+
+UPDATE Units
+SET RangedCombat = 70
+WHERE UnitType = 'UNIT_ELYTRA';
+
+UPDATE Units
+SET BaseMoves = 13
+WHERE UnitType = 'UNIT_ELYTRA';
+
+UPDATE Units
+SET Range = 13
+WHERE UnitType = 'UNIT_ELYTRA';
+
+
+--Steve
+UPDATE ModifierArguments
+SET Value = 29
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_OUTERDEFENSE';
+
+UPDATE ModifierArguments
+SET Value = 29
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_RANGEDSTRIKE';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_TUNDRA_FOOD';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_TUNDRA_HILLS_FOOD';
+	
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_DESERT_FOOD';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_DESERT_HILLS_FOOD';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_JUNGLE_PRODUCTION';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'STEVE_COASTAL_HOUSING';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Saber
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Arthurian Castle
+UPDATE Buildings
+SET OuterDefenseHitPoints = 300
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Buildings
+SET OuterDefenseStrength = 27
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Building_GreatWorks
+SET NumSlots = 9
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Building_YieldChanges
+SET YieldChange = 40
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Buildings
+SET Housing = 10
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Buildings
+SET Cost = 1
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Buildings
+SET RegionalRange = 60
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Buildings
+SET Maintenance = 20
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE Building_GreatPersonPoints
+SET PointsPerTurn = 10
+WHERE BuildingType = 'BUILDING_ARTHURIAN_CASTLE';
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'BUILDING_ARTHURIAN_CASTLE_MODIFIER';
+
+--Round Table
+UPDATE Units
+SET Combat = 84
+WHERE UnitType = 'UNIT_ROUND_TABLE';
+
+--I don't know how to reasonably add costs so I didn't
+UPDATE ModifierArguments
+SET Value = 100
+WHERE Name = 'Amount' 
+AND ModifierId = 'ARTURIA_HEAL_AFTER_DEFEATING_UNIT';
+
+--Chivalry Community
+UPDATE ModifierArguments
+SET Value = 44
+WHERE Name = 'Amount' 
+AND ModifierId = 'ARTURIA_BARBARIANCOMBAT';
+
+--Also refer Saber's UA ARTURIA_RECOVER to the Mamluk todo heal?
 
 ---------------------------------------------------------
 ---------------------------------------------------------

@@ -490,3 +490,75 @@ SET Text = 'French unique Renaissance era unit when Louis XIV is their leader. H
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_JFD_VIEUX_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+--Minecraft
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'Can see [ICON_RESOURCE_IRON] Iron and [ICON_RESOURCE_COAL] Coal resource from the start. All mines and quarries provide +20 [ICON_Production] Production and +10 [ICON_Science] Science.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_MINING_AND_CRAFTING_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A building unique to Minecraft.+2 [ICON_CULTURE] Culture, +10 additional [ICON_CULTURE] for each era since constructed or last repaired.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_BUILDING_BEACON_DESCRIPTION';
+
+--No x10, due to platform compatibiliy, correct, when updated
+UPDATE LocalizedText
+SET Text = 'A building unique to Minecraft. Replaces Monument. +2 [ICON_CULTURE] Culture, +1 additional [ICON_CULTURE] for each era since constructed or last repaired.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_BEACON_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A building unique to Minecraft. +100% combat experience for land, naval and air units trained in this city.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_BUILDING_ETABLE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A building unique to Minecraft. Replaces library. +100% combat experience for land, naval and air units trained in this city.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_ETABLE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A unique ranged unit of the Minecraft civilization. +29 [ICON_STRENGTH] Combat on tundra or snow, -29 [ICON_STRENGTH] Combat on desert or in jungle.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_SNOWGOLEM_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '+29 [ICON_STRENGTH] Combat in cold area'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_SNOWGOLEM_COLD_BUFF_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = '-29 [ICON_STRENGTH] Combat in hot area'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_SNOWGOLEM_HOT_DEBUFF_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Saber
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = 'All units can heal after move if the plot is a farm, a fort or a district.[NEWLINE]All units +44 [ICON_Strength] strength against barbarians.[NEWLINE]All cities can train relative units with one piece of strategic resource.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_CIVILIZATION_CHIVALRY_COMMUNITY_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Replace knight.Cost more[ICON_Production]production(220). Can be bought by [ICON_Faith] faith. [NEWLINE] Much higher combat[ICON_Strength]strength. Can heal to full after killing a unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_UNIT_ROUND_TABLE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Can heal to full after killing a unit.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_ABILITY_ROUND_TABLE_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'Replace castle and unlocked by "Divine Right". Cost 1 [ICON_Production] production, 20 [ICON_Gold] maintainance. [NEWLINE]Better Function. [NEWLINE]Yield +40 Culture and radiate to cities in 60 plots. [NEWLINE]Yield +10[ICON_GreatGeneral]great general points.[NEWLINE]9 [ICON_GreatWork_Relic] relic slot and 10 [ICON_Housing] housing. [NEWLINE]Every Arturian Castle increasing the rate of [ICON_CivicBoosted] civic boost by 20%.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_ARTHURIAN_CASTLE_DESCRIPTION';
