@@ -53,7 +53,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Babarossa: +36 vs city states, +10 Military slots
 [u]Greece[/u]
 +10 Wildcard slots
--Acropolis: Cost=1, +20 Adjecency for centre
+-Acropolis: Cost=1, +20 Adjecency for centre, 10 envoys on completion
 -Hoplite: +44 STR if near other Hoplite 
 -Gorgo: 500% culture of defeated unit strength
 -Pericles +50% Culture per city state 
@@ -68,14 +68,14 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Samurai: 66 STR, 63 cost
 -Divine Wind: +1000% Production of holy site, encampment and theater, +29 STR on coast and shallow water
 [u]Kongo[/u]
--10x artist and musician points, +40 Gold +20 Food, +20 Food from great works, 9 slots in palace (more breaks UI)
+-5x artist and musician points, +40 Gold +20 Food, +20 Food from great works, 9 slots in palace (more breaks UI)
 -Mbanza: +40 Gold, +20 Food, Cost=1
 -Nagao: 100 ranged defense
 -10 free apostles on mbanza and theater district build
 [u]Norway[/u]
--Stave Church: 10 fait adjecency
+-Stave Church: 10 fait adjecency, 10 production per coastal ressource
 -berserker: 20 Movement in enimy territory, +36 when attacking, -36 when defending
--Harald:
+-Harald: +500% naval production
 -Longship: 54 Combat, 10 coast movement 
 [u]Rome[/u]
 -Bath: Cost=1, Housing 20, Entertainment 10
@@ -97,7 +97,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 [u]Spain[/u]
 -Mission: 20 Faith, +20 if on different continent, +20 if next to campus
 -Conquisitor: +44 STR, if with Missionary
--+10 gold and production on demestzic, +40 gold on international routes
+-+10 gold and production on demestzic, +60 gold on international routes
 -phillip: 10 extra spanish inquisitions and +25 str against other religions
 [u]Sumeria[/u]
 -Ziggurat: 20 science, 
