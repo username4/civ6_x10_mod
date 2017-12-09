@@ -546,6 +546,16 @@ UPDATE Adjacency_YieldChanges
 SET YieldChange = 20
 WHERE ID = 'District_Culture_City_Center';
 
+UPDATE DistrictModifiers
+SET ModifierID = 'CIVIC_AWARD_TEN_INFLUENCE_TOKEN'
+WHERE DistrictType = 'DISTRICT_ACROPOLIS';
+
+INSERT INTO Modifiers (ModifierId, ModifierType)
+VALUES ('CIVIC_AWARD_TEN_INFLUENCE_TOKEN', 'MODIFIER_PLAYER_GRANT_INFLUENCE_TOKEN');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES ('CIVIC_AWARD_TEN_INFLUENCE_TOKEN', 'Amount', 10);
+
 --HOPLITE
 
 --Only does change, if platform already has the fall-update. Mac, linux stay playable, but bonus is not applied. Remove when update released.
@@ -565,6 +575,8 @@ UPDATE ModifierArguments
 SET Value = 50
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_CULTURE_PER_CITY_STATE_TRIBUTARY');
+
+
 
 ---------------------------------------------------------
 ---------------------------------------------------------
