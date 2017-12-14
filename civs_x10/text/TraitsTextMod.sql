@@ -537,6 +537,11 @@ SET Text = '-29 [ICON_STRENGTH] Combat in hot area'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_SNOWGOLEM_HOT_DEBUFF_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = 'City defend or attack +29 [ICON_STRENGTH] Combat Strength. +10 [ICON_Food] Food from Tundra and Desert, +10 [ICON_Production] Production from Jungle, +20 [ICON_Housing] Housing in coastal cities.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_CREATION_OF_GOD_DESCRIPTION';
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Saber
