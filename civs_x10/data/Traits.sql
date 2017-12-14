@@ -233,8 +233,8 @@ AND YieldType = 'YIELD_FAITH');
 UPDATE Improvement_YieldChanges
 SET YieldChange = 10
 WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
-
 AND YieldType = 'YIELD_CULTURE');
+
 UPDATE Improvements
 SET Appeal = 10
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
@@ -268,7 +268,7 @@ AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_GOLD');
 UPDATE ModifierArguments
 SET Value = 2 * 10
 WHERE (Name = 'Amount'
-AND ModifierId = 'TRAIT_INCOMING_TRADE_GAIN_FOOD');
+AND ModifierId = 'TRAIT_INCOMING_TRADE_OFFER_FOOD');
 
 
 ---------------------------------------------------------
