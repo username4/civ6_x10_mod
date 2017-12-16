@@ -989,7 +989,7 @@ AND GreatPersonClassType = 'GREAT_PERSON_CLASS_ARTIST');
 UPDATE District_GreatPersonPoints
 SET PointsPerTurn = 10
 WHERE (DistrictType = 'DISTRICT_LAVRA'
-AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
+AND GreatPersonClassType = 'GREAT_PERSON_CLASS_MUSICIAN');
 
 
 --COSSACK
