@@ -463,7 +463,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Receives [ICON_Science] Science or [ICON_Culture] Culture from [ICON_TradeRoute] Trade Routes to civilizations that are more advanced than Russia (+1 per technology or civic ahead).'
+SET Text = 'Receives [ICON_Science] Science or [ICON_Culture] Culture from [ICON_TradeRoute] Trade Routes to civilizations that are more advanced than Russia (+1 per 0 technologies or civics ahead).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION';
 
