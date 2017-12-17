@@ -403,8 +403,14 @@ OR ModifierId = 'TRAIT_BIGBENPRODUCTION');
 
 --GARDE_IMPERIALE" combat bonus
 UPDATE ModifierArguments
-SET Value = 100
+SET Value = 44
 WHERE ModifierId = 'GARDE_CONTINENT_COMBAT';
+
+UPDATE ModifierArguments
+SET Value = 100
+WHERE Name = 'Amount'
+AND ModifierId = 'GARDE_GREAT_GENERAL_POINTS';
+
 
 --"FLYING_SQUADRON_TRAIT", 10 spy and 10 vis
 UPDATE ModifierArguments
@@ -989,7 +995,7 @@ AND GreatPersonClassType = 'GREAT_PERSON_CLASS_ARTIST');
 UPDATE District_GreatPersonPoints
 SET PointsPerTurn = 10
 WHERE (DistrictType = 'DISTRICT_LAVRA'
-AND GreatPersonClassType = 'GREAT_PERSON_CLASS_WRITER');
+AND GreatPersonClassType = 'GREAT_PERSON_CLASS_MUSICIAN');
 
 
 --COSSACK
