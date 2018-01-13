@@ -1006,22 +1006,10 @@ SET Value = 100
 WHERE Name = 'Amount' 
 AND ModifierId = 'ETABLE_TRAINED_AIRCRAFT_XP_MODIFIER';
 
---Beacon Disabled, due to platform incompatibility, table does not exist prior fall-update. Correct, when updated
-/* 
-UPDATE Building_YieldsPerEra
-SET YieldChange = 10
-WHERE BuildingType = 'BUILDING_BEACON';
-*/
-
-/* Possible workaround? Too scetchy for my taste
-CREATE TABLE IF NOT EXISTS Building_YieldsPerEra
-	(	BuildingType TEXT,
-		YieldChange TEXT);
 
 UPDATE Building_YieldsPerEra
 SET YieldChange = 10
 WHERE BuildingType = 'BUILDING_BEACON';
-*/
 
 --Minecraft
 UPDATE ModifierArguments
