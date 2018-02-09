@@ -1012,7 +1012,7 @@ WHERE ModifierId = 'COSSACK_LOCAL_COMBAT';
 --peter 
 --Grand Embassy, Siuwa's suggested solution
 UPDATE ModifierArguments
-SET Value = 0.3
+SET Value = 1
 WHERE (Name = 'TechCivicsPerYield'
 AND ModifierId = 'TRAIT_ADJUST_PROGRESS_DIFF_TRADE_BONUS');
 
