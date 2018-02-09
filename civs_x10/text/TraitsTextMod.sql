@@ -506,9 +506,8 @@ SET Text = 'A building unique to Minecraft.+2 [ICON_CULTURE] Culture, +10 additi
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_BUILDING_BEACON_DESCRIPTION';
 
---No x10, due to platform compatibiliy, correct, when updated
 UPDATE LocalizedText
-SET Text = 'A building unique to Minecraft. Replaces Monument. +2 [ICON_CULTURE] Culture, +1 additional [ICON_CULTURE] for each era since constructed or last repaired.'
+SET Text = 'A building unique to Minecraft. Replaces Monument. +2 [ICON_CULTURE] Culture, +10 additional [ICON_CULTURE] for each era since constructed or last repaired.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_BEACON_DESCRIPTION';
 

@@ -21,7 +21,7 @@ I also made a [url=https://steamcommunity.com/sharedfiles/filedetails/?id=957164
 -Saladin: Faith purchase cost 1%, +100% output of worship buildings
 [u]Brazil[/u]
 -10 Adjecency Bonus for rainforests
--Minas Geraes: 104 Melee, 114 Ranged
+-Minas Geraes: 104 Melee, 114 Ranged, 119 AA
 -Carneval: Cost=1, Entertainment 11, 10 Great Person points 
 -Pedro: 90% Refund for Great People
 [u]China[/u]

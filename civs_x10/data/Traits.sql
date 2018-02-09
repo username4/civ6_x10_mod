@@ -132,7 +132,7 @@ AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 60 + 44 , RangedCombat = 70 + 44 , AntiAirCombat = 65 +44
+SET Combat = 60 + 44 , RangedCombat = 70 + 44 , AntiAirCombat = 70 +44
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
@@ -142,7 +142,7 @@ UPDATE Project_GreatPersonPoints
 SET Points = Points * 10
 WHERE ProjectType = 'PROJECT_CARNIVAL';
 
---cost 0.5^10 *60 =~ 0
+--cost 0.5^10 *57 =~ 0
 UPDATE Districts
 SET Cost = 1
 WHERE DistrictType = 'DISTRICT_STREET_CARNIVAL';
@@ -564,11 +564,9 @@ VALUES ('CIVIC_AWARD_TEN_INFLUENCE_TOKEN', 'Amount', 10);
 
 --HOPLITE
 
---Only does change, if platform already has the fall-update. Mac, linux stay playable, but bonus is not applied. Remove when update released.
 UPDATE ModifierArguments 
 SET Value = 44
-WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER'
-AND EXISTS (SELECT * FROM ModifierArguments WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER');
+WHERE ModifierId = 'HOPLITE_NEIGHBOR_COMBAT_MODIFIER';
 
 --gorgo
 UPDATE ModifierArguments
