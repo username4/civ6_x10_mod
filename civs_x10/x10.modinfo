@@ -16,6 +16,7 @@
                 <File>data/Traits.sql</File>
                 <File>data/TraitsDLC.sql</File>
                 <File>data/TraitsMod.sql</File>
+                <File>data/TraitsR&F.sql</File>
             </Items>
         </UpdateDatabase>
         
@@ -51,6 +52,7 @@
         <File>data/Traits.sql</File>
         <File>data/TraitsDLC.sql</File>
         <File>data/TraitsMod.sql</File>
+        <File>data/TraitsR&F.sql</File>
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
