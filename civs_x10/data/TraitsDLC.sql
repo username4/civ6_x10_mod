@@ -74,8 +74,12 @@ UPDATE Adjacency_YieldChanges
 SET YieldChange = 10
 WHERE ID = 'Pasture_Outback_Production';
 
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 5, TilesRequired = 1
+WHERE ID LIKE 'Outback_Outback_%';
+
 UPDATE Improvements
-SET Housing = 5
+SET Housing = 10
 WHERE ImprovementType = 'IMPROVEMENT_OUTBACK_STATION';
 
 --Down Under: 30 Housing on Coast, +10 district bonus for Charming, +30 for breathtaking
