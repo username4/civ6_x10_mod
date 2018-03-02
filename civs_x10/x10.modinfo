@@ -28,6 +28,7 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
+                <File>text/TraitsTextR&F.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>                
             </Items>
@@ -43,6 +44,7 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
+                <File>text/TraitsTextR&F.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>
             </Items>
@@ -56,6 +58,7 @@
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
+        <File>text/TraitsTextR&F.sql</File>
         <File>text/de/TraitsText_de.sql</File>
         <File>text/de/TraitsTextDLC_de.sql</File>
     </Files>
