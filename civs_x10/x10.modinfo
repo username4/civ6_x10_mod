@@ -16,7 +16,7 @@
                 <File>data/Traits.sql</File>
                 <File>data/TraitsDLC.sql</File>
                 <File>data/TraitsMod.sql</File>
-                <File>data/TraitsR&F.sql</File>
+                <File>data/TraitsRaF.sql</File>
             </Items>
         </UpdateDatabase>
         
@@ -28,7 +28,7 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
-                <File>text/TraitsTextR&F.sql</File>
+                <File>text/TraitsTextRaF.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>                
             </Items>
@@ -44,7 +44,7 @@
                 <File>text/TraitsText.sql</File>
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
-                <File>text/TraitsTextR&F.sql</File>
+                <File>text/TraitsTextRaF.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>
             </Items>
@@ -54,11 +54,11 @@
         <File>data/Traits.sql</File>
         <File>data/TraitsDLC.sql</File>
         <File>data/TraitsMod.sql</File>
-        <File>data/TraitsR&F.sql</File>
+        <File>data/TraitsRaF.sql</File>
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
-        <File>text/TraitsTextR&F.sql</File>
+        <File>text/TraitsTextRaF.sql</File>
         <File>text/de/TraitsText_de.sql</File>
         <File>text/de/TraitsTextDLC_de.sql</File>
     </Files>
