@@ -221,7 +221,7 @@ AND ModifierId = 'SUKIENNICE_INTERNATIONALPRODUCTION';
 
 UPDATE ModifierArguments
 SET Value = 40
-WHERE Name = 'YieldChange'
+WHERE Name = 'Amount'
 AND ModifierId = 'SUKIENNICE_DOMESTICGOLD';
 
 --Lithuanian Union
