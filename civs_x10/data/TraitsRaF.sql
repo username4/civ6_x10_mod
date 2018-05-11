@@ -42,8 +42,12 @@ SET YieldChange = YieldChange * 5, TilesRequired = 1
 WHERE ID = 'Mekewap_FirstBonusAdjacency';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = YieldChange * 10
-WHERE ID = ('Mekewap_SecondBonusAdjacency' OR 'Mekewap_ThirdBonusAdjacency');
+SET YieldChange = 10
+WHERE ID = 'Mekewap_SecondBonusAdjacency';
+            
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 20
+WHERE ID = 'Mekewap_ThirdBonusAdjacency';
 
 UPDATE ModifierArguments
 SET Value = 10
@@ -68,7 +72,7 @@ AND Name = 'Amount';
 --Grote Rivieren
 UPDATE ModifierArguments
 SET Value = Value * 10
-WHERE (ModifierId LIKE 'TRAIT_%_RIVER_ADJACENCY')
+WHERE ModifierId LIKE 'TRAIT_%_RIVER_ADJACENCY'
 AND Name = 'Amount';
 
 --De Zeven Provinciën
@@ -84,7 +88,16 @@ WHERE ModifierId = 'ZEVEN_PROVINCIEN_BONUS_VS_DEF_DISTRICTS';
 UPDATE Improvement_YieldChanges
 SET YieldChange = 10
 WHERE ImprovementType = 'IMPROVEMENT_POLDER'
-AND YieldType = ('YIELD_FOOD' OR 'YIELD_PRODUCTION');
+AND YieldType = 'YIELD_FOOD';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = 10
+WHERE ImprovementType = 'IMPROVEMENT_POLDER'
+AND YieldType = 'YIELD_PRODUCTION';
+
+UPDATE Improvements
+SET Housing = 10
+WHERE ImprovementType = 'IMPROVEMENT_POLDER';
 
 UPDATE Adjacency_YieldChanges
 SET YieldChange = YieldChange * 10
@@ -102,7 +115,12 @@ AND Name = 'Amount';
 
 UPDATE ModifierArguments
 SET Value = 10
-WHERE ModifierId = ('TRAIT_IDENTITY_FROM_DOMESTIC_TRADE_ROUTES' OR 'TRAIT_CULTURE_FROM_INTERNATIONAL_TRADE_ROUTES')
+WHERE ModifierId = 'TRAIT_CULTURE_FROM_INCOMING_TRADE_ROUTES'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE ModifierId = 'TRAIT_CULTURE_FROM_INTERNATIONAL_TRADE_ROUTES'
 AND Name = 'Amount';
 
 ---------------------------------------------------------
@@ -120,8 +138,8 @@ AND Name = 'Amount';
 
 --Khevsur, treated as a stronger swordsman
 UPDATE Units
-SET Combat = 36 + 25
-WHERE UnitType = 'UNIT_DE_ZEVEN_PROVINCIEN';
+SET Combat = 36 + 42
+WHERE UnitType = 'UNIT_GEORGIAN_KHEVSURETI';
 
 UPDATE ModifierArguments
 SET Value = 36
@@ -159,7 +177,7 @@ AND Name = 'Amount';
 
 UPDATE ModifierArguments
 SET Value = 20
-WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_COMBAT'
+WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_MOVEMENT'
 AND Name = 'Amount';
 
 ---------------------------------------------------------
@@ -198,8 +216,8 @@ WHERE ID = 'NegativeDistrict_Science';
 
 --Seondeok
 UPDATE ModifierArguments
-SET Value = 100
-WHERE (ModifierId LIKE 'TRAIT_ADJUST_CITY_%_MODIFIER')
+SET Value = 30
+WHERE ModifierId LIKE 'TRAIT_ADJUST_CITY_%_PER_GOVERNOR_TITLE_MODIFIER'
 AND Name = 'Amount';
 
 ---------------------------------------------------------
@@ -235,7 +253,13 @@ WHERE ImprovementType = 'IMPROVEMENT_CHEMAMULL';
 --Lautaro, exponential loyalty decrease
 UPDATE ModifierArguments
 SET Value = 90
-WHERE ModifierId = 'TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY';
+WHERE ModifierId = 'TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = -40
+WHERE ModifierId = 'TRAIT_PILLAGE_DIMINISH_LOYALTY_IN_ENEMY_CITY'
+AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -276,9 +300,28 @@ WHERE ModifierId = 'TRAIT_COMBAT_BONUS_FOR_CAVALRY';
 ---------------------------------------------------------
 --Scottish Enlightenment
 UPDATE ModifierArguments
-SET Value = Value * 10
-WHERE ModifierId LIKE ('TRAIT_%_ECSTATIC' OR 'TRAIT_%_HAPPY')
-AND Name = 'Amount';
+SET Value = 50
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_SCIENCE_HAPPY'
+OR 'TRAIT_PRODUCTION_HAPPY');
+
+UPDATE ModifierArguments
+SET Value = 100
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_SCIENCE_ECSTATIC' 
+OR 'TRAIT_PRODUCTION_ECSTATIC');
+
+UPDATE ModifierArguments
+SET Value = 10
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_SCIENTIST_HAPPY'
+OR 'TRAIT_ENGINEER_HAPPY');
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_SCIENTIST_ECSTATIC'
+OR 'TRAIT_ENGINEER_ECSTATIC');
 
 --Highlander
 UPDATE Units
