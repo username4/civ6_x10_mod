@@ -232,6 +232,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'A district unique to Germany for industrial activity. Replaces the Industrial Zone district. Alot of Adjecency bonuses.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_HANSA_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = 'Adjacency: +20 [ICON_Production] Production bonus if adjacent to a Commercial Hub district. +10 [ICON_Production] Production bonus for each adjacent resource. +10 [ICON_Production] Production bonus for adjacent district tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_HANSA_DESCRIPTION_ADJACENCY';
@@ -266,6 +271,11 @@ UPDATE LocalizedText
 SET Text = 'Adjacency: +10 [ICON_Culture] Culture bonus for adjacent City Center. +10 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills. +10 Envoys.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
+
+UPDATE LocalizedText
+SET Text = 'A district unique to Greece for cultural sites. Replaces the Theater Square district. Awards 10 [ICON_Envoy] Envoy when completed. +10 [ICON_Culture] Adjecencies.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION';
 
 UPDATE LocalizedText
 SET Text = 'Combat victories provide [ICON_Culture] Culture equal to 500% of the [ICON_Strength] Combat Strength of the defeated unit.'
@@ -451,6 +461,12 @@ UPDATE LocalizedText
 SET Text = 'Extra territory upon founding cities. +10 [ICON_Faith] Faith and +10 [ICON_Production] Production from Tundra.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_DESCRIPTION';
+
+UPDATE LocalizedText
+SET Text = 'A district unique to Russia for religious activity. Replaces the Holy Site district.[NEWLINE][NEWLINE]Your city border grows by one tile each time a Great Person is expended in this city. +10 [ICON_GreatPerson].'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_LAVRA_DESCRIPTION';
+
 
 UPDATE LocalizedText
 SET Text = 'Can move after attacking. +29 [ICON_Strength] Combat Strength in your territory or adjacent to your territory.'
