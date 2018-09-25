@@ -1196,6 +1196,64 @@ AND ModifierId = 'ARTURIA_BARBARIANCOMBAT';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
+--Holo
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Traveller Guild
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Resource_Gold';
+
+--Future Transaction
+UPDATE ModifierArguments
+SET Value = 1
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_TRADER_DISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_CASH_DISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = -98
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_PLOTPURCHASECOST';
+
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_UNITUPGRADEDISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_PATRONAGE_GOLD_DISCOUNT';
+
+--Wolf Knight
+UPDATE Units
+SET Combat = 48 + 15, Cost = 55
+WHERE UnitType = 'UNIT_FLAC_WOLFRIDER';
+
+UPDATE ModifierArguments
+SET Value = 44
+WHERE Name = 'Amount' 
+AND ModifierId = 'WOLF_FORESTS_BONUS';
+
+--Wise Wolf
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND (ModifierId LIKE 'WISE_WOLF_%_%_BONUS');
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_IMPROVE_ROUTE_CAPACITY';
+
+---------------------------------------------------------
+---------------------------------------------------------
 --Other modifications
 ---------------------------------------------------------
 ---------------------------------------------------------
