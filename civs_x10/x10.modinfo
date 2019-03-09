@@ -50,6 +50,7 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextRaF.sql</File>
+                <File>text/TraitsTextGS.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>
                 <File>text/de/TraitsTextRaF_de.sql</File>
