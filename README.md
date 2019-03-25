@@ -8,7 +8,7 @@ Move the civs_x10 folder from the unpacked archive into your Civilization 6 mod 
 
 linux: "~/.local/share/aspyr-media/Sid Meier's Civilization VI/Mods/"
 
-Win: "C:\Users\(USER)\Documents\My Games\Sid Meier's Civilization VI\DLC"
+Win: "C:\Users\(USER)\Documents\My Games\Sid Meier's Civilization VI\Mods"
 
 UNISTALL:
 Delete the folder

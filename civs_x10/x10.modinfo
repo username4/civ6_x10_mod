@@ -4,7 +4,8 @@
         <Name>Civilization Traits x10</Name>
         <Teaser/>
         <Description>All traits of a civilization are made 10 times more powerfull.</Description>
-        <Authors>username4</Authors>
+        <Authors>username4, Siuwa</Authors>
+        <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
 
     <Components>
@@ -17,6 +18,7 @@
                 <File>data/TraitsDLC.sql</File>
                 <File>data/TraitsMod.sql</File>
                 <File>data/TraitsRaF.sql</File>
+                <File>data/TraitsGS.sql</File>
             </Items>
         </UpdateDatabase>
         
@@ -29,8 +31,11 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextRaF.sql</File>
+                <File>text/TraitsTextGS.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
-                <File>text/de/TraitsTextDLC_de.sql</File>                
+                <File>text/de/TraitsTextDLC_de.sql</File>
+                <File>text/de/TraitsTextRaF_de.sql</File> 
+                <File>text/de/TraitsTextGS_de.sql</File>                 
             </Items>
         </LocalizedText>   
        
@@ -45,8 +50,11 @@
                 <File>text/TraitsTextDLC.sql</File>
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextRaF.sql</File>
+                <File>text/TraitsTextGS.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>
+                <File>text/de/TraitsTextRaF_de.sql</File>
+                <File>text/de/TraitsTextGS_de.sql</File> 
             </Items>
         </LocalizedText>
     </Settings>
@@ -55,11 +63,17 @@
         <File>data/TraitsDLC.sql</File>
         <File>data/TraitsMod.sql</File>
         <File>data/TraitsRaF.sql</File>
+        <File>data/TraitsGS.sql</File>
+        
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
         <File>text/TraitsTextRaF.sql</File>
+        <File>text/TraitsTextGS.sql</File>
+        
         <File>text/de/TraitsText_de.sql</File>
         <File>text/de/TraitsTextDLC_de.sql</File>
+        <File>text/de/TraitsTextRaF_de.sql</File>
+        <File>text/de/TraitsTextGS_de.sql</File> 
     </Files>
 </Mod>
