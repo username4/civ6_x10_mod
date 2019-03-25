@@ -44,7 +44,7 @@ UPDATE Adjacency_YieldChanges
 SET YieldChange = YieldChange * 10
 WHERE ID LIKE 'Hockey_%Adjacency';
 
-UPDATE Adjacency_YieldChanges
+UPDATE Improvement_BonusYieldChanges
 SET BonusYieldChange = BonusYieldChange * 10
 WHERE ImprovementType = 'IMPROVEMENT_ICE_HOCKEY_RINK';
 
@@ -150,7 +150,7 @@ AND Name = 'Amount';
 UPDATE Units
 SET Cost = 150 + 150, Combat = 30 + 44
 WHERE UnitType = 'UNIT_INCA_WARAKAQ';
-
+/*
 INSERT INTO Types (Type, Kind)
 VALUES 
     ('ABILITY_WARAKAQ_MARKSMAN', 'KIND_ABILITY');
@@ -170,7 +170,7 @@ VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
     ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 9);
-	
+*/	
 --Terrace Farm
 UPDATE Improvements
 SET Housing = 5, TilesRequired = 1
@@ -218,13 +218,13 @@ AND Name = 'PercentDefeatedStrength';
 
 UPDATE RequirementArguments
 SET Value = Value * 10
-WHERE ModifierId = 'TRADER_IS_WITHIN_FOUR_REQUIREMENT'
+WHERE RequirementId = 'TRADER_IS_WITHIN_FOUR_REQUIREMENT'
 AND Name = 'MaxDistance';
 
 --Suguba
 UPDATE Districts
 SET Cost = 1
-WHERE UnitType = 'DISTRICT_SUGUBA';
+WHERE DistrictType = 'DISTRICT_SUGUBA';
 
 UPDATE Adjacency_YieldChanges
 SET YieldChange = YieldChange * 10
@@ -396,7 +396,7 @@ WHERE UnitType = 'UNIT_PHOENICIA_BIREME';
 --Cothon
 UPDATE Districts
 SET Cost = 1
-WHERE UnitType = 'DISTRICT_SUGUBA';
+WHERE DistrictType = 'DISTRICT_COTHON';
 
 UPDATE ModifierArguments
 SET Value = Value * 10
