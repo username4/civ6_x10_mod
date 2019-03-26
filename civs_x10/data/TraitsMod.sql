@@ -1196,6 +1196,143 @@ AND ModifierId = 'ARTURIA_BARBARIANCOMBAT';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
+--Holo
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Traveller Guild
+UPDATE Adjacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Resource_Gold';
+
+--Future Transaction
+UPDATE ModifierArguments
+SET Value = 1
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_TRADER_DISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_CASH_DISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = -98
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_PLOTPURCHASECOST';
+
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_UNITUPGRADEDISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = 99
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_PATRONAGE_GOLD_DISCOUNT';
+
+--Wolf Knight
+UPDATE Units
+SET Combat = 48 + 15, Cost = 55
+WHERE UnitType = 'UNIT_FLAC_WOLFRIDER';
+
+UPDATE ModifierArguments
+SET Value = 44
+WHERE Name = 'Amount' 
+AND ModifierId = 'WOLF_FORESTS_BONUS';
+
+--Wise Wolf
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND (ModifierId LIKE 'WISE_WOLF_%_%_BONUS');
+
+UPDATE ModifierArguments
+SET Value = 20
+WHERE Name = 'Amount' 
+AND ModifierId = 'FUTURES_TRANSACTION_IMPROVE_ROUTE_CAPACITY';
+
+---------------------------------------------------------
+---------------------------------------------------------
+--Isabelle of Spain
+---------------------------------------------------------
+---------------------------------------------------------
+
+--Seven Cities of Gold
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount' 
+AND ModifierId LIKE 'CV_ADJACENT_TO_%_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount' 
+AND ModifierId LIKE 'CV_PLOT_IS_%_MODIFIER';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount' 
+AND ModifierId LIKE 'TRAIT_LEADER_SEVEN_CITIES_OF_GOLD_TORRES_DEL_PAINE_%_MODIFIER';
+
+--Tercio (compare against musketman)
+UPDATE Units
+SET Combat = 55 + 29, Cost = 240 + 100
+WHERE UnitType = 'UNIT_CV_ISABELLA_TERCIO';
+
+INSERT INTO Types (Type, Kind)
+VALUES 
+    ('ABILITY_TERCIO_CAVALRY', 'KIND_ABILITY');
+
+CREATE TRIGGER Tercio
+AFTER INSERT ON Units
+WHEN NEW.UnitType = 'UNIT_CV_ISABELLA_TERCIO'
+BEGIN	
+INSERT INTO Tags (Tag, Vocabulary)
+VALUES 
+    ('CLASS_CV_ISABELLA_TERCIO_10', 'ABILITY_CLASS');
+	
+INSERT INTO TypeTags (Type, Tag)
+VALUES 
+    ('ABILITY_TERCIO_CAVALRY', 'CLASS_CV_ISABELLA_TERCIO_10'),
+	('UNIT_CV_ISABELLA_TERCIO', 'CLASS_CV_ISABELLA_TERCIO_10');	
+END;	
+
+INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
+VALUES 
+    ('ABILITY_TERCIO_CAVALRY', 'LOC_PLACEHOLDER', 'LOC_PLACEHOLDER_DESC');
+
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
+VALUES 
+    ('ABILITY_TERCIO_CAVALRY', 'TERCIO_ANTI_CAVALRY');
+	
+INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
+VALUES 
+    ('TERCIO_ANTI_CAVALRY', 'MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH', 'ANTI_CAVALRY_OPPONENT_REQUIREMENTS');
+	
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('TERCIO_ANTI_CAVALRY', 'Amount', 34);
+	
+--Mission(Isa ver)
+UPDATE Improvement_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ImprovementType = 'IMPROVEMENT_CV_ISABELLA_MISSION';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Isabella_Mission_Culture';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = 10
+WHERE ID = 'Isabella_Mission_Science';
+
+--Conquistador (Isa ver) (compare against Musketman)
+UPDATE Units
+SET Combat = 55 - 29, Cost = 1, BaseMoves = 2 + 20, BaseSightRange = 2 + 10, Maintenance = 0
+WHERE UnitType = 'UNIT_CV_ISABELLA_CONQUISTADOR';
+
+---------------------------------------------------------
+---------------------------------------------------------
 --Other modifications
 ---------------------------------------------------------
 ---------------------------------------------------------

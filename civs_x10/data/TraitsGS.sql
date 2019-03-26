@@ -154,6 +154,10 @@ WHERE UnitType = 'UNIT_INCA_WARAKAQ';
 INSERT INTO Types (Type, Kind)
 VALUES 
     ('ABILITY_WARAKAQ_MARKSMAN', 'KIND_ABILITY');
+    
+INSERT INTO TypeTags (Type, Tag)
+VALUES 
+    ('ABILITY_WARAKAQ_MARKSMAN', 'CLASS_WARAKAQ');    
 
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
 VALUES 
@@ -170,7 +174,7 @@ VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
     ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 9);
-*/	
+*/
 --Terrace Farm
 UPDATE Improvements
 SET Housing = 5, TilesRequired = 1
