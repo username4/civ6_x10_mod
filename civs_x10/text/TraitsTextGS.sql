@@ -175,7 +175,7 @@ AND Tag = 'LOC_IMPROVEMENT_MAORI_PA_DESCRIPTION';
 ---------------------------------------------------------
 --Great Turkish Bombard
 UPDATE LocalizedText
-SET Text = '+50% [ICON_Production] Production toward siege units. All siege units gain +5 [ICON_Strength] Combat Strength against district defenses. Conquered cities do not lose [ICON_Citizen] Population. Cities not founded by the Ottomans gain +1 [ICON_AMENITIES] Amenity and +4 Loyalty per turn.'
+SET Text = '+500% [ICON_Production] Production toward siege units. All siege units gain +21 [ICON_Strength] Combat Strength against district defenses. Conquered cities do not lose [ICON_Citizen] Population. Cities not founded by the Ottomans gain +10 [ICON_AMENITIES] Amenity and +40 Loyalty per turn.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD_DESCRIPTION';
 
@@ -269,21 +269,6 @@ SET Text = 'Great Works in Eleanor’s cities each cause -10 Loyalty per turn in
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_ELEANOR_LOYALTY_DESCRIPTION';
 
-UPDATE LocalizedText
-SET Text = ''
-WHERE Language = 'en_US'
-AND Tag = '';
-
-UPDATE LocalizedText
-SET Text = ''
-WHERE Language = 'en_US'
-AND Tag = '';
-
-
-UPDATE LocalizedText
-SET Text = ''
-WHERE Language = 'en_US'
-AND Tag = '';
 
 
 /*
