@@ -359,12 +359,12 @@ WHERE ModifierId = 'GOLFCOURSE_HOUSING_WITHGLOBLIZATION';
 UPDATE ModifierArguments
 SET Value = 1000
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_PRODUCTION'
-AND Name = 'Amount';
+AND (Name = 'Amount' OR Name = 'TurnsActive');
 
 UPDATE ModifierArguments
 SET Value = 20
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_MOVEMENT'
-AND Name = 'Amount';
+AND (Name = 'Amount' OR Name = 'TurnsActive');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
