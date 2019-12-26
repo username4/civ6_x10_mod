@@ -79,6 +79,25 @@ SET Value = Value * 10
 WHERE ModifierId LIKE 'TUNDRA%MINES_PRODUCTION'
 AND Name = 'Amount';
 
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TUNDRA%CAMPS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'SNOW%CAMPS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TUNDRA%LUMBER_MILLS_PRODUCTION'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'SNOW%LUMBER_MILLS_PRODUCTION'
+AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -164,9 +183,9 @@ AND Name = 'Amount';
 
 --Warakaq (compare against skirmisher)
 UPDATE Units
-SET Cost = 150 + 150, Combat = 30 + 44
+SET Cost = 150 + 150, RangedCombat = 30 + 44
 WHERE UnitType = 'UNIT_INCA_WARAKAQ';
-/*
+
 INSERT INTO Types (Type, Kind)
 VALUES 
     ('ABILITY_WARAKAQ_MARKSMAN', 'KIND_ABILITY');
@@ -177,11 +196,7 @@ VALUES
 
 INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
 VALUES 
-    ('ABILITY_WARAKAQ_MARKSMAN', 'LOC_PLACEHOLDER', 'LOC_PLACEHOLDER_DESC');
-
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
-VALUES 
-    ('ABILITY_WARAKAQ_MARKSMAN', 'WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK');
+    ('ABILITY_WARAKAQ_MARKSMAN', 'LOC_PROMOTION_EXPERT_MARKSMAN_NAME', 'LOC_ABILITY_EXPERT_MARKSMAN_DESCRIPTION');
 	
 INSERT INTO Modifiers (ModifierId, ModifierType)
 VALUES 
@@ -190,7 +205,11 @@ VALUES
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
     ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 9);
-*/
+
+INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
+VALUES 
+    ('ABILITY_WARAKAQ_MARKSMAN', 'WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK');
+
 --Terrace Farm
 UPDATE Improvements
 SET Housing = 5, TilesRequired = 1
@@ -229,7 +248,7 @@ AND Name = 'Amount';
 --Mandekalu Cavalry (compare against knight)
 UPDATE Units
 SET Combat = 48 + 9
-WHERE UnitType = 'UNIT_INCA_WARAKAQ';
+WHERE UnitType = 'UNIT_MALI_MANDEKALU_CAVALRY';
 
 UPDATE ModifierArguments
 SET Value = Value * 10
@@ -498,6 +517,21 @@ SET Value = Value * 10
 WHERE ModifierId LIKE 'TRAIT_ACCUMULATE_MORE_%'
 AND Name = 'Amount';
 
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TRAIT_ADJUST_MILITARY_ENGINEER_%'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId = 'TRAIT_ADJUST_INDUSTRIAL_ZONE_BUILDINGS_PRODUCTION'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TRAIT_ADJUST_%_STOCKPILE_CAP'
+AND Name = 'Amount';
+
 --Court of Love
 UPDATE ModifierArguments
 SET Value = Value * 10
@@ -506,7 +540,7 @@ AND Name = 'Amount';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
---Antarctic Late Summer
+--Antarctic Late Summer and more
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Great Wall
@@ -558,7 +592,38 @@ SET Maintenance = 0
 WHERE UnitType = 'UNIT_INDIAN_VARU';
 
 --Spain
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ID LIKE 'Mission_Science_%';
+
+--Netherlands
 UPDATE ModifierArguments
 SET Value = Value * 10
-WHERE ModifierId = 'MISSION_NEWCONTINENT_%'
-AND Name LIKE 'Amount';
+WHERE ModifierId = 'TRAIT_FLOOD_BARRIER_PRODUCTION'
+AND Name = 'Amount';
+
+--Japan
+UPDATE Building_YieldChangesBonusWithPower
+SET YieldChange = 23
+WHERE BuildingType = 'BUILDING_ELECTRONICS_FACTORY';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TRAIT_HURRICANE_DOUBLE_DAMAGE_CAT%'
+AND Name = 'Amount';
+
+--Russia
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TRAIT_BLIZZARD_DOUBLE_DAMAGE%'
+AND Name = 'Amount';
+
+--Georgia
+--Looking into using inner join
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND (ModifierId = 'TRAIT_WALLS_PRODUCTION'
+OR ModifierId = 'TRAIT_CASTLE_PRODUCTION'
+OR ModifierId = 'TRAIT_TSIKHE_PRODUCTION'
+OR ModifierId = 'TRAIT_STAR_FORT_PRODUCTION');

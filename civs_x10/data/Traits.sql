@@ -132,7 +132,7 @@ AND ModifierId = 'TRAIT_AMAZON_RAINFOREST_EXTRA_APPEAL';
 
 --MINAS_GERAES
 UPDATE Units
-SET Combat = 60 + 44 , RangedCombat = 70 + 44 , AntiAirCombat = 70 +44
+SET Combat = 60 + 44 , RangedCombat = 70 + 44 , AntiAirCombat = 70 + 44
 WHERE UnitType = 'UNIT_BRAZILIAN_MINAS_GERAES';
 
 
@@ -993,7 +993,7 @@ WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TUNDRA_HILLS_PRODUCTION');
 
 UPDATE ModifierArguments
-SET Value = 26
+SET Value = 80
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_INCREASED_TILES');
 
@@ -1076,7 +1076,7 @@ WHERE ID = 'Kurgan_Faith';
 
 --Saka Horse Archer, more reach, more expensive
 UPDATE Units
-SET Cost = 280 , Combat = 1 , Range = 10
+SET Cost = 260 , Combat = 1 , Range = 10
 WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 
 --Killer of Cyros
@@ -1104,9 +1104,9 @@ SET BonusYieldChange = 20
 WHERE ImprovementType = 'IMPROVEMENT_MISSION';
 
 UPDATE ModifierArguments
-SET Value = 20
-WHERE (Name = 'Amount'
-AND ModifierId = 'MISSION_NEWCONTINENT_FAITH');
+SET Value = Value * 10
+WHERE ModifierId = 'MISSION_NEWCONTINENT_%'
+AND Name LIKE 'Amount';
 
 UPDATE ModifierArguments
 SET Value = 10
@@ -1243,8 +1243,9 @@ WHERE Name = 'Amount'
 AND ModifierId = 'ZIGGURAT_RIVERADJACENCY_CULTURE';
 
 --TRAIT_CIVILIZATION_UNIT_SUMERIAN_WAR_CART Rush early, so reduced cost for 10x the early rush
+--Siuwa: Changed to compare against Heavy Chariot
 UPDATE Units
-SET Cost = 5
+SET Cost = 1, Combat = 28 + 15, BaseMoves = 2 + 10
 WHERE UnitType = 'UNIT_SUMERIAN_WAR_CART';
 
 --LEADER Gilgamesh
