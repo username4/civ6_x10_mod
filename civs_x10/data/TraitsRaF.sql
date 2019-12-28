@@ -156,9 +156,9 @@ WHERE BuildingType = 'BUILDING_TSIKHE';
 
 --Tamar
 UPDATE ModifierArguments
-SET Value = 1000
+SET Value = Value * 10
 WHERE ModifierId = 'TRAIT_PROTECTORATE_WAR_FAITH'
-AND Name = 'Amount';
+AND (Name = 'Amount' OR Name = 'TurnsActive');
 
 UPDATE ModifierArguments
 SET Value = 10
@@ -176,9 +176,9 @@ WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_COMBAT'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = 20
+SET Value = Value * 10
 WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_MOVEMENT'
-AND Name = 'Amount';
+AND (Name = 'Amount' OR Name = 'TurnsActive');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -198,7 +198,7 @@ AND Name = 'Amount';
 
 --Hwacha
 UPDATE Units
-SET Cost = 20, Maintenance = 1
+SET Cost = 20, Maintenance = 0, Combat = 50 - 29
 WHERE UnitType = 'UNIT_KOREAN_HWACHA';
 
 --Seowon
@@ -237,8 +237,9 @@ WHERE ModifierId = 'TRAIT_TOQUI_COMBAT_BONUS_VS_GOLDEN_AGE_CIV'
 AND Name = 'Amount';
 
 --Malón Raider
+--Compare against Musketman
 UPDATE Units
-SET Cost = 20, Maintenance = 1
+SET Cost = 350, Maintenance = 1, BaseMoves = 2 + 20
 WHERE UnitType = 'UNIT_MAPUCHE_MALON_RAIDER';
 
 UPDATE ModifierArguments
@@ -252,7 +253,7 @@ WHERE ImprovementType = 'IMPROVEMENT_CHEMAMULL';
 
 --Lautaro, exponential loyalty decrease
 UPDATE ModifierArguments
-SET Value = 90
+SET Value = -90
 WHERE ModifierId = 'TRAIT_DIMINISH_LOYALTY_IN_ENEMY_CITY'
 AND Name = 'Amount';
 
@@ -303,25 +304,25 @@ UPDATE ModifierArguments
 SET Value = 50
 WHERE Name = 'Amount'
 AND (ModifierId = 'TRAIT_SCIENCE_HAPPY'
-OR 'TRAIT_PRODUCTION_HAPPY');
+OR ModifierId = 'TRAIT_PRODUCTION_HAPPY');
 
 UPDATE ModifierArguments
 SET Value = 100
 WHERE Name = 'Amount'
 AND (ModifierId = 'TRAIT_SCIENCE_ECSTATIC' 
-OR 'TRAIT_PRODUCTION_ECSTATIC');
+OR ModifierId = 'TRAIT_PRODUCTION_ECSTATIC');
 
 UPDATE ModifierArguments
 SET Value = 10
 WHERE Name = 'Amount'
 AND (ModifierId = 'TRAIT_SCIENTIST_HAPPY'
-OR 'TRAIT_ENGINEER_HAPPY');
+OR ModifierId = 'TRAIT_ENGINEER_HAPPY');
 
 UPDATE ModifierArguments
 SET Value = 20
 WHERE Name = 'Amount'
 AND (ModifierId = 'TRAIT_SCIENTIST_ECSTATIC'
-OR 'TRAIT_ENGINEER_ECSTATIC');
+OR ModifierId = 'TRAIT_ENGINEER_ECSTATIC');
 
 --Highlander
 UPDATE Units
@@ -358,12 +359,12 @@ WHERE ModifierId = 'GOLFCOURSE_HOUSING_WITHGLOBLIZATION';
 UPDATE ModifierArguments
 SET Value = 1000
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_PRODUCTION'
-AND Name = 'Amount';
+AND (Name = 'Amount' OR Name = 'TurnsActive');
 
 UPDATE ModifierArguments
 SET Value = 20
 WHERE ModifierId = 'TRAIT_LIBERATION_WAR_MOVEMENT'
-AND Name = 'Amount';
+AND (Name = 'Amount' OR Name = 'TurnsActive');
 
 ---------------------------------------------------------
 ---------------------------------------------------------
