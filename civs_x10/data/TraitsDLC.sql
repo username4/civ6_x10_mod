@@ -40,7 +40,7 @@ WHERE ModifierId = 'TRAIT_OWNED_LUXURY_EXTRA_AMENITIES';
 
 UPDATE ModifierArguments
 SET Value = 9
-WHERE ModifierId = 'TRAIT_COMBAT_BONUS_PER_LUXURY';
+WHERE ModifierId = 'MONTEZUMA_COMBAT_BONUS_PER_LUXURY';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -129,14 +129,9 @@ WHERE ModifierId = 'TRAIT_COASTAL_HOUSING';
 
 --Citadel of Civ +1000% Production
 UPDATE ModifierArguments
-SET Value = 1000
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CITADELCIVILIZATION_LIBERATION_PRODUCTION';
-
-UPDATE ModifierArguments
-SET Value = 1000
-WHERE Name = 'Amount'
-AND ModifierId = 'TRAIT_CITADELCIVILIZATION_DEFENSIVE_PRODUCTION';
+SET Value = Value * 10
+WHERE (Name = 'Amount' OR Name = 'TurnsActive')
+AND ModifierId LIKE 'TRAIT_CITADELCIVILIZATION_%_PRODUCTION';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -372,7 +367,7 @@ AND ImprovementType= 'IMPROVEMENT_PAIRIDAEZA';
 
 UPDATE ModifierArguments
 SET Value = 20
-WHERE Name = 'Amount'
+WHERE (Name = 'Amount' OR Name = 'TurnsActive')
 AND ModifierId = 'TRAIT_FALLBABYLON_SURPRISE_MOVEMENT';
 
 ---------------------------------------------------------
@@ -403,7 +398,7 @@ WHERE ID LIKE 'Pyramid_%Adjacency';
 
 --Pitati
 UPDATE Units
-SET Cost = 60 + (10 * 10) , Combat = 15 + 9 , RangedCombat = 25 + 29 , BaseMoves = 2 + 10 , MandatoryObsoleteTech = NULL
+SET Cost = 60 + (10 * 10) , Combat = 15 + 15 , RangedCombat = 25 + 29 , BaseMoves = 2 + 10 , MandatoryObsoleteTech = NULL
 WHERE UnitType = 'UNIT_NUBIAN_PITATI';
 
 --Aminatore
