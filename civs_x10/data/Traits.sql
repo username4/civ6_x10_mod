@@ -76,13 +76,17 @@ SET Value = 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION');
 
-INSERT INTO Buildings (BuildingType, Name, Cost, MaxPlayerInstances, Description, TraitType, RequiresReligion)
+INSERT INTO Types (Type, Kind)
+VALUES 
+    ('BUILDING_CLAIM_PROPHETS', 'KIND_BUILDING');
+
+INSERT INTO Buildings (BuildingType, Name, PrereqDistrict, Cost, MaxPlayerInstances, Description, TraitType, RequiresReligion)
 VALUES
-	('BUILDING_CLAIM_PROPHETS', 'LOC_CLAIM_PROPHETS_NAME', 1, 1, 'LOC_CLAIM_PROPHETS_DESC', 'TRAIT_CIVILIZATION_LAST_PROPHET', 1)
+	('BUILDING_CLAIM_PROPHETS', 'LOC_CLAIM_PROPHETS_NAME', 'DISTRICT_CITY_CENTER', 1, 1, 'LOC_CLAIM_PROPHETS_DESC', 'TRAIT_CIVILIZATION_LAST_PROPHET', 1);
 	
 INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent)
 VALUES
-	('LAST_NINE_PRHOPHETS', 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 1, 1)
+	('LAST_NINE_PRHOPHETS', 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 1, 1);
 	
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
@@ -101,22 +105,6 @@ VALUES
 UPDATE Building_YieldChanges
 SET YieldChange = 14
 WHERE BuildingType = 'BUILDING_MADRASA';
-
-INSERT INTO Modifiers (ModifierId, ModifierType, SubjectRequirementSetId)
-VALUES 
-    ('MADRASA_x10_FAITH', 'MODIFIER_PLAYER_DISTRICTS_ADJUST_YIELD_MODIFIER', 'DISTRICT_IS_CAMPUS');
-	
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-VALUES 
-    ('MADRASA_x10_FAITH', 'YieldType', 'YIELD_FAITH');
-
-INSERT INTO ModifierArguments (ModifierId, Name, Value)
-VALUES 
-    ('MADRASA_x10_FAITH', 'Amount', 900);
-	
-INSERT INTO BuildingModifiers (BuildingType, ModifierId)
-VALUES 
-    ('BUILDING_MADRASA', 'MADRASA_x10_FAITH');
 
 --Mamluk
 --TODO some better heal, for now give medic trait

@@ -18,22 +18,6 @@ AND Name = 'Amount';
 UPDATE Units
 SET Cost = 150 + 150, RangedCombat = 30 + 44
 WHERE UnitType = 'UNIT_INCA_WARAKAQ';
-
-INSERT INTO Types (Type, Kind)
-VALUES 
-    ('ABILITY_WARAKAQ_MARKSMAN', 'KIND_ABILITY');
-	
-INSERT INTO Tags (Tag, Vocabulary)	
-VALUES
-	('CLASS_WARAKAQ', 'ABILITY_CLASS') ON CONFLICT DO NOTHING;
-    
-INSERT INTO TypeTags (Type, Tag)
-VALUES 
-    ('ABILITY_WARAKAQ_MARKSMAN', 'CLASS_WARAKAQ');    
-
-INSERT INTO UnitAbilities (UnitAbilityType, Name, Description)
-VALUES 
-    ('ABILITY_WARAKAQ_MARKSMAN', 'LOC_PROMOTION_EXPERT_MARKSMAN_NAME', 'LOC_ABILITY_EXPERT_MARKSMAN_DESCRIPTION');
 	
 INSERT INTO Modifiers (ModifierId, ModifierType)
 VALUES 
@@ -41,11 +25,11 @@ VALUES
 	
 INSERT INTO ModifierArguments (ModifierId, Name, Value)
 VALUES 
-    ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 9);
+    ('WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK', 'Amount', 10);
 
-INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
-VALUES 
-    ('ABILITY_WARAKAQ_MARKSMAN', 'WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK');
+UPDATE UnitAbilityModifiers (UnitAbilityType, ModifierId)
+SET ModifierId = 'WARAKAQ_MARKSMAN_ADDITIONAL_ATTACK'
+WHERE UnitAbilityType = 'ABILITY_EXPERT_MARKSMAN';
 
 --Terrace Farm
 UPDATE Improvements
