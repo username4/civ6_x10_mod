@@ -76,6 +76,30 @@ SET Value = 10
 WHERE (Name = 'Amount'
 AND ModifierId = 'TRAIT_SCIENCE_PER_FOREIGN_CITY_FOLLOWING_RELIGION');
 
+INSERT INTO Types (Type, Kind)
+VALUES 
+    ('BUILDING_CLAIM_PROPHETS', 'KIND_BUILDING');
+
+INSERT INTO Buildings (BuildingType, Name, PrereqDistrict, Cost, MaxPlayerInstances, Description, TraitType, RequiresReligion)
+VALUES
+	('BUILDING_CLAIM_PROPHETS', 'LOC_CLAIM_PROPHETS_NAME', 'DISTRICT_CITY_CENTER', 1, 1, 'LOC_CLAIM_PROPHETS_DESC', 'TRAIT_CIVILIZATION_LAST_PROPHET', 1);
+	
+INSERT INTO Modifiers (ModifierId, ModifierType, RunOnce, Permanent)
+VALUES
+	('LAST_NINE_PRHOPHETS', 'MODIFIER_SINGLE_CITY_GRANT_UNIT_IN_CITY', 1, 1);
+	
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('LAST_NINE_PRHOPHETS', 'UnitType', 'UNIT_APOSTLE');
+
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('LAST_NINE_PRHOPHETS', 'Amount', 9);
+	
+INSERT INTO BuildingModifiers (BuildingType, ModifierId)
+VALUES 
+    ('BUILDING_CLAIM_PROPHETS', 'LAST_NINE_PRHOPHETS');
+	
 --Madrasa
 --TODO faith bonus
 UPDATE Building_YieldChanges
@@ -85,7 +109,19 @@ WHERE BuildingType = 'BUILDING_MADRASA';
 --Mamluk
 --TODO some better heal, for now give medic trait
 INSERT INTO UnitAbilityModifiers (UnitAbilityType, ModifierId)
-VALUES ('ABILITY_MAMLUK', 'MEDIC_INCREASE_HEAL_RATE');
+VALUES ('ABILITY_MAMLUK', 'MAMLUK_INCREASE_HEAL_RATE');
+
+INSERT INTO Modifiers (ModifierId, ModifierType)
+VALUES 
+    ('MAMLUK_INCREASE_HEAL_RATE', 'MODIFIER_PLAYER_UNIT_ADJUST_HEAL_PER_TURN');
+	
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('MAMLUK_INCREASE_HEAL_RATE', 'Amount', 100);
+	
+INSERT INTO ModifierArguments (ModifierId, Name, Value)
+VALUES 
+    ('MAMLUK_INCREASE_HEAL_RATE', 'Type', 'ALL');
 
 
 --LEADER Saladin
@@ -488,7 +524,7 @@ WHERE ModifierId = 'UBOAT_OCEAN_COMBAT';
 UPDATE ModifierArguments
 SET Value = 36
 WHERE (Name = 'Amount'
-AND ModifierId = 'COMBAT_BONUS_VS_CITY_STATES_MODIFIER');
+AND ModifierId = 'BARBAROSSA_COMBAT_BONUS_VS_CITY_STATES');
 
 --Militatry slots
 INSERT INTO TraitModifiers (TraitType, ModifierId)

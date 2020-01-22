@@ -19,6 +19,7 @@
                 <File>data/TraitsMod.sql</File>
                 <File>data/TraitsRaF.sql</File>
                 <File>data/TraitsGS.sql</File>
+				<File>data/TraitsInca.sql</File>
             </Items>
         </UpdateDatabase>
         
@@ -64,6 +65,7 @@
         <File>data/TraitsMod.sql</File>
         <File>data/TraitsRaF.sql</File>
         <File>data/TraitsGS.sql</File>
+		<File>data/TraitsInca.sql</File>
         
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
