@@ -45,13 +45,14 @@ WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 
 --LEADER Teddy
 --Corollary
-UPDATE ModifierArguments
-SET Value = 29
-WHERE ModifierId = 'COMBAT_BONUS_HOME_CONTINENT_MODIFIER';
 
 UPDATE ModifierArguments
 SET Value = 10
 WHERE ModifierId = 'TRAIT_NATIONAL_PARK_APPEAL_BONUS';
+
+UPDATE ModifierArguments
+SET Value = 29
+WHERE ModifierId = 'ROOSEVELT_COMBAT_BONUS_HOME_CONTINENT';
 
 --rough rider
 UPDATE ModifierArguments
