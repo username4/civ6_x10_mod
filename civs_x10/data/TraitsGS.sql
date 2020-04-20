@@ -55,12 +55,12 @@ AND Name = 'Amount';
 
 --Wilfrid
 UPDATE ModifierArguments
-SET Value = -100
+SET Value = -99
 WHERE ModifierId LIKE '%_PLOT_COST'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = -100
+SET Value = -99
 WHERE ModifierId LIKE '%_PLOT_COST'
 AND Name = 'Amount';
 

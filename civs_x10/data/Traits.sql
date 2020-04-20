@@ -749,8 +749,8 @@ OR ModifierId = 'TRAIT_BOOST_THEATER_DISTRICT_PRODUCTION');
 
 UPDATE ModifierArguments
 SET Value = 29
-WHERE ModifierId = 'COMBAT_BONUS_LAND_ON_COAST_MODIFIER'
-OR ModifierId = 'COMBAT_BONUS_NAVAL_SHALLOW_WATER_MODIFIER';
+WHERE ModifierId = 'TRAIT_COMBAT_BONUS_LAND_ON_COAST'
+OR ModifierId = 'HOJO_TOKIMUNE_SHALLOW_WATER_COMBAT_BONUS';
 
 
 ---------------------------------------------------------
@@ -1119,11 +1119,11 @@ WHERE UnitType = 'UNIT_SCYTHIAN_HORSE_ARCHER';
 --Killer of Cyros
 UPDATE ModifierArguments
 SET Value = 29
-WHERE ModifierId = 'BONUS_VS_WOUNDED_UNITS';
+WHERE ModifierId = 'TOMYRIS_BONUS_VS_WOUNDED_UNITS';
 
 UPDATE ModifierArguments
 SET Value = 100
-WHERE ModifierId = 'HEAL_AFTER_DEFEATING_UNIT';
+WHERE ModifierId = 'TOMYRIS_HEAL_AFTER_DEFEATING_UNIT';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
