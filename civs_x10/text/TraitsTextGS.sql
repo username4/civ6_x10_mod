@@ -30,7 +30,7 @@ AND Tag = 'LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION';
 
 --Best West
 UPDATE LocalizedText
-SET Text = 'Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. Reduces the cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles by 100%. +100% extraction rate of accumulated resources on Snow, Snow Hills, Tundra Hills and Tundra tiles.'
+SET Text = 'Allows Farms to be built on Tundra terrain. After Civil Engineering is unlocked Farms can be built on Tundra Hills. Reduces the cost of purchasing Snow, Snow Hills, Tundra Hills and Tundra tiles by 99%. +100% extraction rate of accumulated resources on Snow, Snow Hills, Tundra Hills and Tundra tiles.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION';
 
