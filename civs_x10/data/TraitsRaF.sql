@@ -402,10 +402,15 @@ AND Name = 'Amount';
 --Shaka
 UPDATE ModifierArguments
 SET Value = 29
-WHERE ModifierId = ('TRAIT_LAND_ARMIES_COMBAT_STRENGTH' OR 'TRAIT_LAND_ARMIES_COMBAT_STRENGTH')
+WHERE ModifierId IN ('TRAIT_LAND_ARMIES_COMBAT_STRENGTH', 'TRAIT_LAND_CORPS_COMBAT_STRENGTH')
 AND Name = 'Amount';
 
 ---/*Vanilla Civs*/---
+--England
+UPDATE ModifierArguments
+SET Value = 40
+WHERE ModifierId = 'ROYAL_NAVY_DOCKYARD_IDENTITY_PER_TURN_MODIFIER';
+
 --Brazil
 UPDATE Districts
 SET Cost = 1, Entertainment = 11
