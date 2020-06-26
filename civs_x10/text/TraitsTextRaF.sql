@@ -131,7 +131,7 @@ AND Tag = 'LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY';
 
 --Seondeok
 UPDATE LocalizedText
-SET Text = '[ICON_Governor] Governors established in a city provide +3% [ICON_Culture] Culture and [ICON_Science] Science for each Promotion they have earned, including their first.'
+SET Text = '[ICON_Governor] Governors established in a city provide +30% [ICON_Culture] Culture and [ICON_Science] Science for each Promotion they have earned, including their first.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HWARANG_DESCRIPTION';
 
