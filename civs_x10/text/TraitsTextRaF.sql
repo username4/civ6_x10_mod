@@ -131,7 +131,7 @@ AND Tag = 'LOC_DISTRICT_SEOWON_DESCRIPTION_ADJACENCY';
 
 --Seondeok
 UPDATE LocalizedText
-SET Text = '+100% [ICON_Culture] Culture and +100% [ICON_Science] Science in all cities with an established [ICON_Governor] Governor.'
+SET Text = '[ICON_Governor] Governors established in a city provide +3% [ICON_Culture] Culture and [ICON_Science] Science for each Promotion they have earned, including their first.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_HWARANG_DESCRIPTION';
 
@@ -215,7 +215,7 @@ AND Tag = 'LOC_UNIT_SCOTTISH_HIGHLANDER_DESCRIPTION';
 
 --Golf Course
 UPDATE LocalizedText
-SET Text = "Scottish unique Industrial Era unit that replaces the Ranger. Strong reconnaissance unit. +29 [ICON_Strength] Combat Strength bonus when fighting in Hill and Forest terrain."
+SET Text = "Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+10 [ICON_AMENITIES] Amenity and +20 [ICON_GOLD] Gold. +10 [ICON_CULTURE] Culture if adjacent to a City Center district and +10 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_TOURISM] Tourism and [ICON_HOUSING] Housing as you advance through the Civics and Technology Tree. Cannot be placed on Desert or Desert Hills. One per city. Tiles with Golf Courses cannot be swapped. +10 Appeal."
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION';
 
