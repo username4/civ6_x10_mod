@@ -42,7 +42,6 @@ UPDATE ModifierArguments
 SET Value = 500
 WHERE ModifierId = 'MUSTANG_MORE_EXPERIENCE';
 
-
 --LEADER Teddy
 --Corollary
 
@@ -179,6 +178,10 @@ UPDATE Project_GreatPersonPoints
 SET Points = Points * 10
 WHERE ProjectType = 'PROJECT_CARNIVAL';
 
+UPDATE Projects
+SET AmenitiesWhileActive = AmenitiesWhileActive*10
+WHERE ProjectType="PROJECT_CARNIVAL";
+
 --cost 0.5^10 *57 =~ 0
 UPDATE Districts
 SET Cost = 1
@@ -273,7 +276,7 @@ WHERE (ImprovementType = 'IMPROVEMENT_SPHINX'
 AND YieldType = 'YIELD_CULTURE');
 
 UPDATE Improvements
-SET Appeal = 10
+SET Appeal = Appeal * 10
 WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
 
 UPDATE Improvement_BonusYieldChanges
@@ -613,7 +616,11 @@ SET Cost = 1
 WHERE DistrictType = 'DISTRICT_ACROPOLIS';
 
 UPDATE Adjacency_YieldChanges
-SET YieldChange = 20
+SET YieldChange = (YieldChange-0.5)*10+1
+WHERE ID = 'District_Culture_Standard';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = (YieldChange-1)*10+1
 WHERE ID = 'District_Culture_City_Center';
 
 UPDATE DistrictModifiers
@@ -932,9 +939,10 @@ UPDATE ModifierArguments
 SET Value = 44
 WHERE ModifierId = 'UNIT_STRONG_WHEN_ATTACKING';
 
-UPDATE ModifierArguments
-SET Value = -29
-WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
+-- debuff should not be enhanced
+-- UPDATE ModifierArguments
+-- SET Value = -29
+-- WHERE ModifierId = 'UNIT_WEAK_WHEN_DEFENDING';
 
 --LEADER Harald
 --Thunderbolt

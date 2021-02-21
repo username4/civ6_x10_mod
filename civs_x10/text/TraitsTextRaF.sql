@@ -50,7 +50,7 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION';
 UPDATE LocalizedText
 SET Text = 'Netherlands unique Renaissance Era unit. +36 [ICON_Strength] Combat Strength when attacking defensible districts.'
 WHERE Language = 'en_US'
-AND Tag = 'LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_DESCRIPTION';
+AND Tag = 'LOC_UNIT_DE_ZEVEN_PROVINCIEN_DESCRIPTION';
 
 --Polder
 UPDATE LocalizedText
@@ -78,13 +78,13 @@ AND Tag = 'LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION';
 
 --Tsikhe
 UPDATE LocalizedText
-SET Text = 'A building unique to Georgia. Lower [ICON_Production] Production cost than Renaissance Walls. Raises the strength of your outer defenses to the highest possible level. Provides 3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides 3 [ICON_Faith] Faith.'
+SET Text = 'A building unique to Georgia. Lower [ICON_Production] Production cost than Renaissance Walls. Raises the strength of your outer defenses to the highest possible level. Provides 3 [ICON_TOURISM] Tourism after advancing to the Conservation Civic. Provides 30 [ICON_Faith] Faith.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_TSIKHE_DESCRIPTION';
 
 --Tamar
 UPDATE LocalizedText
-SET Text = '+100% [ICON_FAITH] Faith for 10 turns after declaring a Protectorate War. Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as two [ICON_ENVOY] Envoys. (Must have a majority Religion).'
+SET Text = '+1000% [ICON_FAITH] Faith for 100 turns after declaring a Protectorate War. Each [ICON_ENVOY] Envoy you send to a city-state of your majority Religion counts as 10 [ICON_ENVOY] Envoys. (Must have a majority Religion).'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION';
 
@@ -96,7 +96,7 @@ AND Tag = 'LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION';
 
 --Chandragupta
 UPDATE LocalizedText
-SET Text = 'Can declare a War of Territorial Expansion after gaining the Military Training Civic.  +20 [ICON_Movement] Movement and +29 [ICON_Strength] Combat Strength for the first 10 turns after declaring a War of Territorial Expansion.'
+SET Text = 'Can declare a War of Territorial Expansion after gaining the Military Training Civic.  +20 [ICON_Movement] Movement and +29 [ICON_Strength] Combat Strength for the first 100 turns after declaring a War of Territorial Expansion.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION';
 
@@ -161,7 +161,7 @@ AND Tag = 'LOC_IMPROVEMENT_CHEMAMULL_DESCRIPTION';
 
 --Lautaro
 UPDATE LocalizedText
-SET Text = 'If a Mapuche Unit defeats an enemy unit within the borders of the enemy city, that city loses 90 Loyalty.'
+SET Text = 'If a Mapuche Unit defeats an enemy unit within the borders of the enemy city, that city loses 90 Loyalty. Pillaging a plot in an enemy city causes it to lose 40 loyalty.'
 WHERE Language = 'en_US'
 AND Tag LIKE 'LOC_TRAIT_LEADER_LAUTARO_ABILITY_DESCRIPTION%';
 
@@ -219,9 +219,14 @@ SET Text = "Unlocks the Builder ability to construct a Golf Course, unique to Sc
 WHERE Language = 'en_US'
 AND Tag = 'LOC_IMPROVEMENT_GOLF_COURSE_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = "Unlocks the Builder ability to construct a Golf Course, unique to Scotland.[NEWLINE][NEWLINE]+20 [ICON_AMENITIES] Amenity and +20 [ICON_GOLD] Gold. +10 [ICON_CULTURE] Culture if adjacent to a City Center district and +10 [ICON_CULTURE] Culture if adjacent to an Entertainment Complex district. Additional [ICON_TOURISM] Tourism and [ICON_HOUSING] Housing as you advance through the Civics and Technology Tree. Cannot be placed on Desert or Desert Hills. One per city. Tiles with Golf Courses cannot be swapped. +10 Appeal."
+WHERE Language = 'en_US'
+AND Tag = 'LOC_IMPROVEMENT_GOLF_COURSE_XP2_DESCRIPTION';
+
 --Robert the Bruce
 UPDATE LocalizedText
-SET Text = "Can declare a War of Liberation after gaining the Defensive Tactics Civic.  +1000% [ICON_Production] Production and +20 [ICON_Movement] Movement for the first 10 turns after declaring a War of Liberation."
+SET Text = "Can declare a War of Liberation after gaining the Defensive Tactics Civic.  +1000% [ICON_Production] Production and +20 [ICON_Movement] Movement for the first 100 turns after declaring a War of Liberation."
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION';
 
@@ -239,9 +244,9 @@ AND Tag = 'LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION';
 
 --Impi
 UPDATE LocalizedText
-SET Text = "Scottish unique Industrial Era unit that replaces the Ranger. Strong reconnaissance unit. +29 [ICON_Strength] Combat Strength bonus when fighting in Hill and Forest terrain."
+SET Text = "Zulu unique Medieval Era unit that replaces the Pikeman. Increased Flanking bonus, low cost and low maintenance. Earns XP faster."
 WHERE Language = 'en_US'
-AND Tag = 'LOC_UNIT_SCOTTISH_HIGHLANDER_DESCRIPTION';
+AND Tag = 'LOC_UNIT_ZULU_IMPI_DESCRIPTION';
 
 --Ikanda
 UPDATE LocalizedText
@@ -258,13 +263,18 @@ AND Tag = 'LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION';
 ---/*Vanilla Civs*/---
 --Brazil
 UPDATE LocalizedText
-SET Text = "Brazilian unique project which provides +11 [ICON_Amenities] Amenity when active and [ICON_GreatPerson] Great Person Points for [ICON_GreatEngineer] Great Engineers, [ICON_GreatMerchant] Great Merchants, [ICON_GreatWriter] Great Writers, [ICON_GreatArtist] Great Artists, and [ICON_GreatMusician] Great Musicians once finished."
+SET Text = "Brazilian unique project which provides +10 [ICON_Amenities] Amenity when active and [ICON_GreatPerson] Great Person Points for [ICON_GreatEngineer] Great Engineers, [ICON_GreatMerchant] Great Merchants, [ICON_GreatWriter] Great Writers, [ICON_GreatArtist] Great Artists, and [ICON_GreatMusician] Great Musicians once finished."
 WHERE Language = 'en_US'
 AND Tag = 'LOC_PROJECT_WATER_CARNIVAL_DESCRIPTION';
 
+UPDATE LocalizedText
+SET Text = "A district unique to Brazil. Replaces the Water Park district, and provides +11 [ICON_Amenities] Amenities. Also unlocks the Carnival project, which grants an additional +10 [ICON_Amenities] Amenity when underway and a variety of [ICON_GreatPerson] Great People points once completed. Cannot be built in a city with a Street Carnival. Cannot be built on Reef."
+WHERE Language = 'en_US'
+AND Tag = 'LOC_DISTRICT_WATER_STREET_CARNIVAL_DESCRIPTION';
+
 --Egypt
 UPDATE LocalizedText
-SET Text = "Your [ICON_TradeRoute] Trade Routes to other civilizations provide +40 [ICON_Gold] Gold for Egypt. Other civilizations' [ICON_TradeRoute] Trade Routes to Egypt provide +20 [ICON_Food] Food for them and +20 [ICON_Gold] Gold for Egypt.  Trading with Allies earns 10 bonus Alliance Points."
+SET Text = "Your [ICON_TradeRoute] Trade Routes to other civilizations provide +40 [ICON_Gold] Gold for Egypt. Other civilizations' [ICON_TradeRoute] Trade Routes to Egypt provide +20 [ICON_Food] Food for them and +20 [ICON_Gold] Gold for Egypt.  Trading with Allies earns 10 times more bonus Alliance Points."
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MEDITERRANEAN_EXPANSION1_DESCRIPTION';
 
@@ -285,3 +295,15 @@ UPDATE LocalizedText
 SET Text = "May declare war on anyone at war with their allies without warmonger penalties. When at war with a common foe, they and their allies share pillage rewards and share combat experience gains if within 50 tiles.  Their Alliances gain 20 Alliance Points for being at war with a common foe."
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION';
+
+--Macedonia
+UPDATE LocalizedText
+SET Text = "When conquering a city that is not a Free City receive ten [ICON_TechBoosted] Eurekas for each Encampment or Campus in the conquered city and ten [ICON_CivicBoosted] Inspirations for each Holy Site or Theater Square."
+WHERE Language = 'en_US'
+AND Tag = 'LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION';
+
+--Polish
+UPDATE LocalizedText
+SET Text = "A building unique to Poland. International [ICON_TradeRoute] Trade Routes from this city gain +20 [ICON_Production] Production; domestic [ICON_TradeRoute] Trade Routes gain +40 [ICON_Gold] Gold. +1 [ICON_TradeRoute] Trade Route capacity, if this city does not yet have a Lighthouse building."
+WHERE Language = 'en_US'
+AND Tag = 'LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION';

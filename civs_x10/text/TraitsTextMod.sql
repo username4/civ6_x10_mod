@@ -566,3 +566,27 @@ UPDATE LocalizedText
 SET Text = 'Replace castle and unlocked by "Divine Right". Cost 1 [ICON_Production] production, 20 [ICON_Gold] maintainance. [NEWLINE]Better Function. [NEWLINE]Yield +40 Culture and radiate to cities in 60 plots. [NEWLINE]Yield +10[ICON_GreatGeneral]great general points.[NEWLINE]9 [ICON_GreatWork_Relic] relic slot and 10 [ICON_Housing] housing. [NEWLINE]Every Arturian Castle increasing the rate of [ICON_CivicBoosted] civic boost by 20%.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ARTHURIAN_CASTLE_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ms. Human from Humanity has Declined
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text="The fairies are very productive when they're energetic. +200% [ICON_Production] production when constructing buildings, districts and wonders. When building wonders and districts you may spend Builder charges to complete 200% of the original wonder cost (Only for ancient and classical era wonders. But fairies stays on a wonder under construction will be spend on accelerating with all its charges before next turn, amount of acceleration is not greater than 200% of the prodction cost of the most expensive classic era wonder). However, anything built quickly is very unstable, and the exterior garrison health of all cities is reduced by 100 points, and -10 [ICON_Strength] city strength. After finishing {LOC_TECH_SAILING_NAME}, automatically grants {LOC_TECH_SHIPBUILDING_NAME}."
+WHERE Language = 'en_US' AND Tag="LOC_TRAIT_ONE_NIGHT_CITY_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text="The place where Ms. Human makes delicious desserts, replacing the Granary. Depending on the ingredients of each place only local unique desserts can be made. The first six established dessert house will offer 10 copies of one of six dessert luxuries, which +6 [ICON_Amenities] amenities."
+WHERE Language = 'en_US' AND Tag="LOC_BUILDING_DESSERT_HOUSE_DESCRIPTION";
+
+
+UPDATE LocalizedText
+SET Text="Statues the fairies made for Ms. Human. Replace Monument. Provides +20 extra [ICON_Faith] faith."
+WHERE Language = 'en_US' AND Tag="LOC_BUILDING_GODDESS_STATUE_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text="Inside her pretty looking, Ms. Human has a harakuro character. Fortunately she don't do bad things with it. She is just able to see through people's real thoughts underneath the facade. +20 [ICON_VisLimited] Diplomatic visibility."
+WHERE Language = 'en_US' AND Tag="LOC_TRAIT_INSIDE_PINK_ITS_ALL_BLACK_DESCRIPTION";
