@@ -1331,6 +1331,82 @@ UPDATE Units
 SET Combat = 55 - 29, Cost = 1, BaseMoves = 2 + 20, BaseSightRange = 2 + 10, Maintenance = 0
 WHERE UnitType = 'UNIT_CV_ISABELLA_CONQUISTADOR';
 
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ms. Human from Humanity has Declined
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE Buildings
+SET Cost = 1
+WHERE BuildingType='BUILDING_DESSERT_HOUSE';
+
+UPDATE Districts
+SET Cost = 1
+WHERE DistrictType="DISTRICT_FAIRYCO";
+
+UPDATE Building_YieldChanges
+SET YieldChange=YieldChange*10
+WHERE BuildingType="BUILDING_GODDESS_STATUE" AND YieldType="YIELD_FAITH";
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId LIKE "BUILDING_DESSERT_HOUSE_DESSERT_%";
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId LIKE "TRAIT_FAIRY_WONDER%";
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId LIKE "TRAIT_FAIRY_DISTRICT%";
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId = "TRAIT_FAIRY_BUILDING_PRODUCTION";
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId LIKE "FAIRYCO_EXTRA%";
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange*10
+WHERE ID="Mine_Food";
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange*10
+WHERE ID="Quarry_Food";
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange*10
+WHERE ID="District_Food";
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange*10
+WHERE ID="FairyCo_CityCenter_Production";
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange*10
+WHERE ID="FairyCo_CityCenter_Food";
+
+UPDATE District_TradeRouteYields
+SET  YieldChangeAsOrigin=YieldChangeAsOrigin*10, YieldChangeAsDomesticDestination=(YieldChangeAsDomesticDestination-1)*10
+WHERE DistrictType="DISTRICT_FAIRYCO" AND YieldType="YIELD_PRODUCTION" ;
+
+
+UPDATE District_TradeRouteYields
+SET  YieldChangeAsOrigin=YieldChangeAsOrigin*10, YieldChangeAsDomesticDestination=YieldChangeAsDomesticDestination*10
+WHERE DistrictType="DISTRICT_FAIRYCO" AND YieldType="YIELD_FOOD" ;
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId = "MSHUMAN_ADD_VISIBILITY";
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId LIKE "PROJECT_FINISH_THE_FAIRIES_ADD_CHARGE%";
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Other modifications

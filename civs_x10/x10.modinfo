@@ -3,7 +3,7 @@
     <Properties>
         <Name>Civilization Traits x10</Name>
         <Teaser/>
-        <Description>All traits of a civilization are made 10 times more powerfull.</Description>
+        <Description>All traits of a civilization are made 10 times more powerful.</Description>
         <Authors>username4, Siuwa</Authors>
         <CompatibleVersions>2.0</CompatibleVersions>
     </Properties>
@@ -20,6 +20,7 @@
                 <File>data/TraitsRaF.sql</File>
                 <File>data/TraitsGS.sql</File>
 				<File>data/TraitsInca.sql</File>
+				<File>data/TraitsSeasonPass.sql</File>
             </Items>
         </UpdateDatabase>
         
@@ -33,12 +34,19 @@
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextRaF.sql</File>
                 <File>text/TraitsTextGS.sql</File>
+				<File>text/TraitsTextSeasonPass.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>
                 <File>text/de/TraitsTextRaF_de.sql</File> 
-                <File>text/de/TraitsTextGS_de.sql</File>                 
+                <File>text/de/TraitsTextGS_de.sql</File>    
+				<File>text/zh_Hans_CN/TraitTexts_DLC_zh_Hans_CN.sql</File> 
+				<File>text/zh_Hans_CN/TraitTexts_Mods_zh_Hans_CN.sql</File> 
+				<File>text/zh_Hans_CN/TraitTexts_zh_Hans_CN.sql</File>              
             </Items>
         </LocalizedText>   
+		<AddGameplayScripts id="civ_x10_Script">
+		  <File>data/TraitsScript.lua</File>
+		</AddGameplayScripts>
        
     </Components>
     <Settings>
@@ -52,10 +60,14 @@
                 <File>text/TraitsTextMod.sql</File>
                 <File>text/TraitsTextRaF.sql</File>
                 <File>text/TraitsTextGS.sql</File>
+				<File>text/TraitsTextSeasonPass.sql</File>
                 <File>text/de/TraitsText_de.sql</File>
                 <File>text/de/TraitsTextDLC_de.sql</File>
                 <File>text/de/TraitsTextRaF_de.sql</File>
                 <File>text/de/TraitsTextGS_de.sql</File> 
+				<File>text/zh_Hans_CN/TraitTexts_DLC_zh_Hans_CN.sql</File> 
+				<File>text/zh_Hans_CN/TraitTexts_Mods_zh_Hans_CN.sql</File> 
+				<File>text/zh_Hans_CN/TraitTexts_zh_Hans_CN.sql</File> 
             </Items>
         </LocalizedText>
     </Settings>
@@ -66,16 +78,23 @@
         <File>data/TraitsRaF.sql</File>
         <File>data/TraitsGS.sql</File>
 		<File>data/TraitsInca.sql</File>
-        
+		<File>data/TraitsSeasonPass.sql</File>
+        <File>data/TraitsScript.lua</File>
+		
         <File>text/TraitsText.sql</File>
         <File>text/TraitsTextDLC.sql</File>
         <File>text/TraitsTextMod.sql</File>
         <File>text/TraitsTextRaF.sql</File>
         <File>text/TraitsTextGS.sql</File>
+        <File>text/TraitsTextSeasonPass.sql</File>
         
         <File>text/de/TraitsText_de.sql</File>
         <File>text/de/TraitsTextDLC_de.sql</File>
         <File>text/de/TraitsTextRaF_de.sql</File>
         <File>text/de/TraitsTextGS_de.sql</File> 
+		
+        <File>text/zh_Hans_CN/TraitTexts_DLC_zh_Hans_CN.sql</File> 
+        <File>text/zh_Hans_CN/TraitTexts_Mods_zh_Hans_CN.sql</File> 
+        <File>text/zh_Hans_CN/TraitTexts_zh_Hans_CN.sql</File> 
     </Files>
 </Mod>
