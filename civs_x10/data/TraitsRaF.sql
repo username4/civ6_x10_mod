@@ -188,6 +188,11 @@ AND Name = 'Amount';
 
 UPDATE ModifierArguments
 SET Value = Value * 10
+WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_COMBAT'
+AND Name = 'TurnsActive';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
 WHERE ModifierId = 'TRAIT_TERRITORIAL_WAR_MOVEMENT'
 AND (Name = 'Amount' OR Name = 'TurnsActive');
 

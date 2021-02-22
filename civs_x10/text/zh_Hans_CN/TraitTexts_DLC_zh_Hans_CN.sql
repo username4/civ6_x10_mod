@@ -1202,12 +1202,12 @@ WHERE Language = 'zh_Hans_CN'
 AND Tag = 'LOC_DISTRICT_OBSERVATORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '[ICON_Capital] 首都6个单元格范围内的非首都城市所有产出+100%。其他非首都城市所有产出-15%。[ICON_Capital] 首都6个单元格范围内的单位+29 [ICON_Strength] 战斗力。'
+SET Text = '[ICON_Capital] 首都60个单元格范围内的非首都城市所有产出+100%。其他非首都城市所有产出-15%。[ICON_Capital] 首都60个单元格范围内的单位+29 [ICON_Strength] 战斗力。'
 WHERE Language = 'zh_Hans_CN'
 AND Tag = 'LOC_TRAIT_LEADER_MUTAL_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '[ICON_Capital] 首都6个单元格内的单位+29 [ICON_Strength] 战斗力（穆塔尔忠烈之女）'
+SET Text = '[ICON_Capital] 首都60个单元格内的单位+29 [ICON_Strength] 战斗力（穆塔尔忠烈之女）'
 WHERE Language = 'zh_Hans_CN'
 AND Tag = 'LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION';
 
