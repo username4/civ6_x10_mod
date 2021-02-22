@@ -680,11 +680,21 @@ VALUES("TRAIT_ADD_AMENITY_PER_ADJACENT_LUXURY1","AddAmenity","True"),
 ("TRAIT_ADD_AMENITY_PER_ADJACENT_LUXURY9","AddAmenity","True");
 
 -- Ix Mutal Ajaw
+
+UPDATE RequirementArguments
+SET Value = Value*10
+WHERE Name = "MaxDistance"
+AND RequirementId IN ("REQUIRES_OBJECT_6_TILES_FROM_CAPITAL", "REQUIRES_OBJECT_6_TILES_FROM_CAPITAL");
+
+UPDATE RequirementArguments
+SET Value = (Value-1)*10+1
+WHERE Name = "MinDistance"
+AND RequirementId = "REQUIRES_OBJECT_7_OR_MORE_TILES_FROM_CAPITAL";
+
 UPDATE ModifierArguments
 SET Value = Value*10
 WHERE Name = 'Amount'
 AND ModifierId = 'TRAIT_LEADER_NEARBY_CITIES_GAIN_YIELDS';
-
 
 UPDATE ModifierArguments
 SET Value = 29

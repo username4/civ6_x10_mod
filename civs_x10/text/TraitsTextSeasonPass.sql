@@ -6,7 +6,7 @@
 ---------------------------------------------------------
 
 UPDATE LocalizedText
-SET Text = 'Babylonian unique Ancient era melee unit. +59 [ICON_Strength] Combat Strength against Heavy and Light Cavalry promotion class units. This unit has 3 [ICON_Movement] Movement and sight.'
+SET Text = 'Babylonian unique Ancient era melee unit. +59 [ICON_Strength] Combat Strength against Heavy and Light Cavalry promotion class units. This unit has 12 [ICON_Movement] Movement and sight.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_BABYLONIAN_SABUM_KIBITTUM_DESCRIPTION';
 
@@ -218,13 +218,13 @@ AND Tag = "LOC_DISTRICT_OBSERVATORY_DESCRIPTION";
 
 
 UPDATE LocalizedText
-SET Text = "Non capital cities within 6 tiles of the [ICON_Capital] Capital gain +100% to all yields. Other non capital cities receive -15% to all yields. +29 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_Capital] Capital."
+SET Text = "Non capital cities within 60 tiles of the [ICON_Capital] Capital gain +100% to all yields. Other non capital cities receive -15% to all yields. +29 [ICON_Strength] Combat Strength to units within 60 tiles of the [ICON_Capital] Capital."
 WHERE Language = "en_US"
 AND Tag = "LOC_TRAIT_LEADER_MUTAL_DESCRIPTION";
 
 
 UPDATE LocalizedText
-SET Text = "+29 [ICON_Strength] Combat Strength to units within 6 tiles of the [ICON_Capital] Capital (Ix Mutal Ajaw)"
+SET Text = "+29 [ICON_Strength] Combat Strength to units within 60 tiles of the [ICON_Capital] Capital (Ix Mutal Ajaw)"
 WHERE Language = "en_US"
 AND Tag = "LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION";
 
