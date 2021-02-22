@@ -1364,7 +1364,7 @@ WHERE Name="Amount" AND ModifierId LIKE "TRAIT_FAIRY_DISTRICT%";
 
 UPDATE ModifierArguments
 SET Value=Value*10
-WHERE Name="Amount" AND ModifierId = "TRAIT_FAIRY_BUILDING_PRODUCTION";
+WHERE Name="Amount" AND ModifierId LIKE "TRAIT_FAIRY_BUILDING_PRODUCTION%";
 
 UPDATE ModifierArguments
 SET Value=Value*10

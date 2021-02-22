@@ -49,7 +49,7 @@ function OnHammurabiDistrictFinish(iPlayer, iDistrictType, iX, iY)
 				hCity:GetBuildQueue():CreateBuilding(BuildingTypeList.BUILDING_WORKSHOP)
 			elseif iDistrictType == DistrictsTypeList.DISTRICT_WATER_ENTERTAINMENT_COMPLEX then
 				hCity:GetBuildQueue():CreateBuilding(BuildingTypeList.BUILDING_FERRIS_WHEEL)
-			elseif iDistrictType ~= DistrictsTypeList.DISTRICT_CITY_CENTER and iDistrictType ~= DistrictsTypeList.DISTRICT_WONDER
+			elseif iDistrictType ~= DistrictsTypeList.DISTRICT_CITY_CENTER and iDistrictType ~= DistrictsTypeList.DISTRICT_WONDER then
 				Players[iPlayer]:GetInfluence():ChangeTokensToGive(nPowerMultiplier)
 			end
 		end
