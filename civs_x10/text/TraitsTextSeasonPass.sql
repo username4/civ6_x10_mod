@@ -312,7 +312,6 @@ AND Tag = "LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION";
 ---------------------------------------------------------
 ---------------------------------------------------------
 
-
 UPDATE LocalizedText
 SET Text = "Improved Luxury resources adjacent to Theater Square districts or Châteaux receive +20 [ICON_CULTURE] Culture. May initiate the Court Festival project in any city with a Theater Square district."
 WHERE Language = "en_US"
@@ -324,3 +323,43 @@ SET Text = "When complete, this project awards 500 [ICON_CULTURE] Culture and 50
 WHERE Language = "en_US"
 AND Tag = "LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION";
 
+---------------------------------------------------------
+---------------------------------------------------------
+-- Portuguese 
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "A building unique to Portugal. +250% [ICON_PRODUCTION] Production towards naval units in this city. +10 [ICON_SCiENCE] Science for every two coast or lake tiles in this city. +10 [ICON_GreatAdmiral] Great Admiral points."
+WHERE Language = "en_US"
+AND Tag = "LOC_BUILDING_NAVIGATION_SCHOOL_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "International [ICON_TradeRoute] Trade Routes can only reach cities on the coast or with a Harbor, but receive +500% towards all yields. Trader units have +500% range over water, and can embark as soon as they are unlocked."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "Unlocks the Nau ability to construct a Feitoria, unique to Portugal.[NEWLINE][NEWLINE]Provides +40 [ICON_Gold] Gold and +10 [ICON_Production] Production. Trade routes sent to this city from Portugal gain +40 [ICON_GOLD] Gold and +10 [ICON_PRODUCTION] Production. Can only be built adjacent to Luxury or Bonus resources in territory belonging to other Civilizations or City-States that you have Open Borders with. Must be built on a Coast or Lake tile adjacent to land and not adjacent to another Feitoria. Feitorias cannot be removed. "
+WHERE Language = "en_US"
+AND Tag = "LOC_IMPROVEMENT_FEITORIA_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "All units receive +10 sight. +10 [ICON_TradeRoute] Trade Route capacity when a civilization is met. Open Borders with all city-states."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "+10 Sight from the Porta do Cerco trait."
+WHERE Language = "en_US"
+AND Tag = "LOC_ABILITY_PORTA_DO_CERCO_EXTRA_SIGHT_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "Starts with 10 free promotions."
+WHERE Language = "en_US"
+AND Tag = "LOC_ABILITY_NAU_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "Portuguese unique naval melee unit that replaces the Caravel. Starts with 10 free Promotion and is less maintenance. Has twenty charges to build Feitorias."
+WHERE Language = "en_US"
+AND Tag = "LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION";

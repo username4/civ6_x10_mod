@@ -1295,7 +1295,41 @@ SET Text = '此项目完成时，将根据法国所拥有多余奢侈品资源�
 WHERE Language = 'zh_Hans_CN'
 AND Tag = 'LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION';
 
+---------------------------------------------------------
+---------------------------------------------------------
+-- Portuguese 
+---------------------------------------------------------
+---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = "葡萄牙特色建筑。在此城中生产海军单位时+250%生产力。此城中每拥有2个海岸或湖泊单元格，则+10 [ICON_SCiENCE] 科技值。+10 [ICON_GreatAdmiral] 大将军点数。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_BUILDING_NAVIGATION_SCHOOL_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "国际 [ICON_TradeRoute] 贸易路线只能通往处在海岸上或拥有港口的城市，但所有产出+500%。商人单位在水域中的行动范围+500%，且解锁之后可立即在水域中行动。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "解锁克拉克帆船建造葡萄牙特色建筑“商站”的能力。[NEWLINE][NEWLINE]提供+40 [ICON_Gold] 金币、+10 [ICON_Production] 生产力。从葡萄牙通往此城的贸易路线提供的 [ICON_GOLD] 金币+40、[ICON_PRODUCTION] 生产力+10。仅能建造在其他文明或城邦领土（已与其开放边境）上的奢侈品或加成资源旁。必须建造在与陆地相邻的海岸或湖泊单元格上，且无法与另一个商站相邻。无法移除商站。 "
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_IMPROVEMENT_FEITORIA_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "所有单位+10视野。与10个文明相遇便+10 [ICON_TradeRoute] 贸易路线容量。对所有城邦开放边界。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "关闸特质+10视野。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_ABILITY_PORTA_DO_CERCO_EXTRA_SIGHT_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "初始便拥有10次免费升级。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_ABILITY_NAU_DESCRIPTION";
 
 
 
