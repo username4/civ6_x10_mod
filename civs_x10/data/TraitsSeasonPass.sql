@@ -852,3 +852,57 @@ SET Value = Value * 10
 WHERE Name="Amount"
 AND ModifierId LIKE 'PROJECT_COMPLETION_GRANT_%_BASED_ON_EXCESS_LUXURIES';
 
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Portuguese 
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId = 'TRAIT_INTERNATIONAL_TRADE_GAIN_ALL_YIELDS';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId = 'TRAIT_WATER_TRADE_ROUTE_RANGE';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId = 'TRAIT_JOAO_TRADE_ROUTE_ON_MEET';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId = 'PORTA_DO_CERCO_EXTRA_SIGHT';
+
+UPDATE Units
+SET Maintenance = 1, BuildCharges = 20
+WHERE UnitType="UNIT_PORTUGUESE_NAU";
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ImprovementType="IMPROVEMENT_FEITORIA";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId LIKE 'TRADE_%_FROM_FEITORIA';
+
+UPDATE Building_GreatPersonPoints
+SET PointsPerTurn = PointsPerTurn * 10
+WHERE BuildingType = "BUILDING_NAVIGATION_SCHOOL" 
+AND GreatPersonClassType = "GREAT_PERSON_CLASS_ADMIRAL";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId = 'NAVIGATION_SCHOOL_NAVAL_UNIT_PRODUCTION';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount"
+AND ModifierId = 'NAVIGATION_SCHOOL_NAVAL_COAST_SCIENCE';
