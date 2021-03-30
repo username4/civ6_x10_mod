@@ -1317,7 +1317,7 @@ WHERE Language = "zh_Hans_CN"
 AND Tag = "LOC_IMPROVEMENT_FEITORIA_DESCRIPTION";
 
 UPDATE LocalizedText
-SET Text = "所有单位+10视野。与10个文明相遇便+10 [ICON_TradeRoute] 贸易路线容量。对所有城邦开放边界。"
+SET Text = "所有单位+10视野。与1个文明相遇便+10 [ICON_TradeRoute] 贸易路线容量。对所有城邦开放边界。"
 WHERE Language = "zh_Hans_CN"
 AND Tag = "LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION";
 

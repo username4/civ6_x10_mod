@@ -860,7 +860,7 @@ AND ModifierId LIKE 'PROJECT_COMPLETION_GRANT_%_BASED_ON_EXCESS_LUXURIES';
 ---------------------------------------------------------
 
 UPDATE ModifierArguments
-SET Value = Value * 10
+SET Value = '500, 500, 500, 500, 500, 500'
 WHERE Name="Amount"
 AND ModifierId = 'TRAIT_INTERNATIONAL_TRADE_GAIN_ALL_YIELDS';
 

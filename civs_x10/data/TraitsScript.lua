@@ -3,6 +3,9 @@ local BuildingTypeList = {}
 local nPowerMultiplier = 10
 
 
+-- How many extra promotions are given to nau
+local EXTRA_PROMOTION_COUNT = 9
+local UnitExtraUpgrades = {}
 
 function init()
 	for DistrictInfo in GameInfo.Districts() do
@@ -15,6 +18,10 @@ function init()
 
 	ExposedMembers.nFairiesmultiplier = nPowerMultiplier -- for Ms. Human from Humanity has Declined
 	GameEvents.OnDistrictConstructed.Add(OnHammurabiDistrictFinish)
+	Events.UnitPromoted.Add(NauOnUnitPromoted)
+	Events.UnitUpgraded.Add(NauOnUnitUpgraded)
+	Events.UnitAddedToMap.Add(NauOnUnitAddedToMap)
+	
 end
 
 
@@ -56,6 +63,33 @@ function OnHammurabiDistrictFinish(iPlayer, iDistrictType, iX, iY)
 	end
 	
 end
+
+
+function NauOnUnitPromoted(iPlayer, iUnit)
+	local UnitInfo = UnitManager.GetUnit(iPlayer, iUnit)
+	local ExpInfo = UnitInfo:GetExperience()
+	if UnitExtraUpgrades[iPlayer] and UnitExtraUpgrades[iPlayer][iUnit] and UnitExtraUpgrades[iPlayer][iUnit] > 0 then
+		UnitExtraUpgrades[iPlayer][iUnit] = UnitExtraUpgrades[iPlayer][iUnit]-1;
+		ExpInfo:ChangeExperience(ExpInfo:GetExperienceForNextLevel()-ExpInfo:GetExperiencePoints())
+		UnitManager.RestoreMovement(UnitInfo)
+	end
+
+end
+
+function NauOnUnitUpgraded(iPlayer, iUnit)
+	if UnitManager.GetUnit(iPlayer, iUnit):GetName() == "LOC_UNIT_PORTUGUESE_NAU_NAME" then
+		UnitExtraUpgrades[iPlayer] = UnitExtraUpgrades[iPlayer] or {}
+		UnitExtraUpgrades[iPlayer][iUnit] = EXTRA_PROMOTION_COUNT
+	end
+end
+
+function NauOnUnitAddedToMap(iPlayer, iUnit)
+	if UnitManager.GetUnit(iPlayer, iUnit):GetName() == "LOC_UNIT_PORTUGUESE_NAU_NAME" then
+		UnitExtraUpgrades[iPlayer] = UnitExtraUpgrades[iPlayer] or {}
+		UnitExtraUpgrades[iPlayer][iUnit] = EXTRA_PROMOTION_COUNT
+	end
+end
+
 
 init()
 print("civ x 10 load finished")
