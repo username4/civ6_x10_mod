@@ -11,7 +11,7 @@
     <Components>
         <UpdateDatabase id="civs_x10">
             <Properties>
-                <LoadOrder>100</LoadOrder>
+                <LoadOrder>10000000</LoadOrder>
             </Properties>         					
             <Items>
                 <File>data/Traits.sql</File>
@@ -26,7 +26,7 @@
         
         <LocalizedText id="civs_x10_text">
             <Properties>
-                <LoadOrder>100</LoadOrder>
+                <LoadOrder>10000000</LoadOrder>
             </Properties>                        
             <Items>
                 <File>text/TraitsText.sql</File>
@@ -52,7 +52,7 @@
     <Settings>
         <LocalizedText id="civs_x10_text_menu">
             <Properties>
-                <LoadOrder>100</LoadOrder>
+                <LoadOrder>10000000</LoadOrder>
             </Properties>
             <Items>
                 <File>text/TraitsText.sql</File>
