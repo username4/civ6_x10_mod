@@ -91,6 +91,16 @@ AND Name = 'Amount';
 
 UPDATE ModifierArguments
 SET Value = Value * 10
+WHERE ModifierId LIKE 'TUNDRA%FARMS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'SNOW%FARMS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
 WHERE ModifierId LIKE 'TUNDRA%LUMBER_MILLS_PRODUCTION'
 AND Name = 'Amount';
 

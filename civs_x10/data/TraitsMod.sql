@@ -1407,6 +1407,346 @@ UPDATE ModifierArguments
 SET Value=Value*10
 WHERE Name="Amount" AND ModifierId LIKE "PROJECT_FINISH_THE_FAIRIES_ADD_CHARGE%";
 
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Alice Margatroid
+---------------------------------------------------------
+---------------------------------------------------------
+UPDATE Building_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE BuildingType="BUILDING_KUNS_DOLLS_WORKSHOP" AND YieldType="YIELD_CULTURE";
+
+UPDATE Building_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE BuildingType="BUILDING_KUNS_DOLLS_WORKSHOP" AND YieldType="YIELD_SCIENCE";
+
+UPDATE Building_YieldChanges
+SET YieldChange = (YieldChange - 3) * 10 +3
+WHERE BuildingType="BUILDING_KUNS_DOLLS_WORKSHOP" AND YieldType="YIELD_PRODUCTION";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name="Amount" AND
+ModifierId in ("MODIFIER_KUNS_THREE_DOLLS_ADD_MOVEMENT",
+"MODIFIER_KUNS_ALICE_CTRL_CITY_STATES_ADD_PRODUCTION",
+"MODIFIER_KUNS_ALICE_EXTRA_IDENTITY",
+"MODIFIER_KUNS_ALICE_CAMPUS_POP_SCIENCE",
+"MODIFIER_KUNS_ALICE_LIBRARY_POP_SCIENCE",
+"MODIFIER_KUNS_ALICE_UNIVERSITY_POP_SCIENCE",
+"MODIFIER_KUNS_ALICE_RESEARCH_LAB_POP_SCIENCE",
+"MODIFIER_KUNS_ALICE_THEATER_POP_CULTURE",
+"MODIFIER_KUNS_ALICE_AMPHITHEATER_POP_CULTURE",
+"MODIFIER_KUNS_ALICE_ART_MUSEUM_POP_CULTURE",
+"MODIFIER_KUNS_ALICE_ARTIFACT_MUSEUM_POP_CULTURE",
+"MODIFIER_KUNS_ALICE_BROADCAST_CENTER_POP_CULTURE",
+"MODIFIER_KUNS_ALICE_INZONE_POP_PRODUCTION",
+"MODIFIER_KUNS_ALICE_DOLLS_WORKSHOP_POP_PRODUCTION",
+"MODIFIER_KUNS_ALICE_DOLLS_COMMERCIAL_HUB_POP_GOLD",
+"MODIFIER_KUNS_ALICE_DOLLS_MARKET_POP_GOLD",
+"MODIFIER_KUNS_ALICE_DOLLS_BANK_POP_GOLD",
+"MODIFIER_KUNS_ALICE_DOLLS_STOCK_EX_POP_GOLD",
+"MODIFIER_ALICE_PER_POPULATION_ADD_SCIENCE",
+"MODIFIER_ALICE_PER_POPULATION_ADD_CULTURE",
+"MODIFIER_ALICE_DOLLS_ADD_YIELD_SCIENCE",
+"MODIFIER_ALICE_DOLLS_ADD_YIELD_CULTURE",
+"MODIFIER_ALICE_GAIN_A_GDR",
+"MODIFIER_ALICE_GAIN_FREE_U235_238",
+"MODIFIER_KUNS_ALICE_DOLLS_WORKSHOP_HIGH_POP_EXTRA_PRODUCTION",
+"MODIFIER_PROJECT_ZUN_MAKE_TH05_GRANT_RESOURCE",
+"MODIFIER_PROJECT_ZUN_MAKE_TH07_GRANT_RESOURCE",
+"GREATPERSON_KUNS_ALICE_GRANT_YIELD_SCIENCE",
+"GREATPERSON_KUNS_ALICE_GRANT_YIELD_CULTURE",
+"GREATPERSON_KUNS_ALICE_GRANT_YIELD_PRODUCTION",
+"ABILITY_ALICE_DOLLS_ADJ_ALICE_ADD_MOVEMENT_MODIFIER",
+"MODIFIER_GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_MARGATROID_GRANT_SINGLE_CITY_EXTRA_PRODUCTION",
+"GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_MARGATROID_SINGLE_CITY_IZ_PRODUCTION",
+"GREATPERSON_KUNS_ALICE_MARGATROID_BUILDING_DOLLS_WORKSHOP_REDUCE_CONSTRUCTION_PRODUCTION");
+
+UPDATE RequirementArguments
+SET Value = Value * 10
+WHERE RequirementId = "REQ_KUNS_GREAT_ALICE_MARGATROID_UNITS_ADJ_WITHIN_2_TILES"
+AND Name = "MaxDistance";
+
+--from 8
+UPDATE ModifierArguments
+SET Value = 39
+WHERE Name = "Amount" 
+AND ModifierId = "MODIFIER_SHANGHAI_ROW_ATTACK_COMBAT";
+
+-- compare to musketman, which is also in renaissance era
+-- 55+25 ln( 10 * exp( 35 / 25) - 9 )
+UPDATE Units
+Set Combat=141
+WHERE UnitType="UNIT_KUNS_GOLIATH";
+
+
+-- compare to musketman, which is also in renaissance era
+--(200/240)^10*240
+UPDATE Units
+Set Cost=39
+WHERE UnitType="UNIT_KUNS_PENGLAI";
+
+--20*(10/20)^10
+UPDATE Units_XP2
+SET ResourceCost=1
+WHERE UnitType="UNIT_KUNS_PENGLAI";
+
+--compare to pikeman, which is also in medival era 
+
+-- (150/180)^10*180
+-- from 41+25 ln( 10 * exp( 3 / 25) - 9 )
+UPDATE Units
+Set Cost=29, Combat = 61, BuildCharges = 10
+WHERE UnitType="UNIT_KUNS_SHANGHAI";
+
+UPDATE GreatPersonIndividuals
+Set ActionCharges = ActionCharges * 10
+WHERE GreatPersonIndividualType IN ("GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_MARGATROID", "GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_GREATPEOPLE");
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- A Certain Scientific Railgun 1659762978
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = "Amount" 
+AND ModifierId LIKE "MODIFIER_ACADEMY%";
+
+UPDATE Districts
+Set Cost = Cost*0.001953125
+WHERE DistrictType='DISTRICT_FLAC_POWER_LAB';
+
+UPDATE District_CitizenYieldChanges
+SET YieldChange = YieldChange*10
+WHERE DistrictType="DISTRICT_FLAC_POWER_LAB" 
+AND YieldType In ('YIELD_FOOD', 'YIELD_PRODUCTION');
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = "Amount" 
+AND ModifierId = "MODIFIER_POWER_LAB_BOOST";
+
+UPDATE Units
+Set Combat = Combat - 5 + 29, BaseMoves = BaseMoves+9, BaseSightRange = BaseSightRange+9, RangedCombat = 44
+WHERE UnitType = "UNIT_FLAC_JUDGEMENT";
+
+UPDATE Units
+Set Cost = Cost*0.075, Maintenance = 0 -- 0.75^9
+WHERE UnitType = "UNIT_FLAC_MISAKA_SISTERS";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = "Amount" 
+AND ModifierId LIKE "MODIFIER_MIKOTO_%";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = "Amount" 
+AND ModifierId = "MODIFIER_MISAKI_ADD_VISIBILITY";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = "Amount" 
+AND ModifierId = "MODIFIER_MISAKI_LESS_GRIEVANCE";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = "InitialValue" 
+AND ModifierId = "MODIFIER_AGENDA_EVERYONE_LOVE_MISAKI";
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Holo 1659570672
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'MODIFIER_SPICEWOLF_IMPROVE_ROUTE_CAPACITY';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'MODIFIER_SPICEWOLF_CASH_DISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'MODIFIER_SPICEWOLF_UNITUPGRADEDISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'MODIFIER_SPICEWOLF_PATRONAGE_GOLD_DISCOUNT';
+
+UPDATE ModifierArguments
+SET Value = -95
+WHERE Name = 'Amount'
+AND ModifierId = 'MODIFIER_SPICEWOLF_PLOTPURCHASECOST';
+
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId LIKE 'MODIFIER_HOLO%';
+
+UPDATE Districts
+Set Cost = Cost*0.001953125, CostProgressionParam1 = CostProgressionParam1*0.07508468627
+WHERE DistrictType="DISTRICT_FLAC_TRAVELLER_GUILD";
+
+UPDATE Adjacency_YieldChanges
+Set YieldChange = YieldChange * 10
+WHERE ID="FLAC_TG_Resource_Gold";
+
+UPDATE District_GreatPersonPoints
+Set PointsPerTurn = (PointsPerTurn-1) * 10+1
+WHERE DistrictType="DISTRICT_FLAC_TRAVELLER_GUILD";
+
+
+UPDATE District_TradeRouteYields
+SET  YieldChangeAsOrigin=YieldChangeAsOrigin*10, YieldChangeAsDomesticDestination=(YieldChangeAsDomesticDestination-1)*10+1
+WHERE DistrictType="DISTRICT_FLAC_TRAVELLER_GUILD" AND YieldType="YIELD_PRODUCTION" ;
+
+
+UPDATE District_TradeRouteYields
+SET  YieldChangeAsOrigin=YieldChangeAsOrigin*10, YieldChangeAsDomesticDestination=YieldChangeAsDomesticDestination*10
+WHERE DistrictType="DISTRICT_FLAC_TRAVELLER_GUILD" AND YieldType="YIELD_FOOD" ;
+
+
+UPDATE Units
+SET Cost = Cost *0.07508468627, Maintenance = Maintenance-9, Combat = Combat+17 
+WHERE UnitType = "UNIT_FLAC_WOLFRIDER";
+
+
+UPDATE ModifierArguments
+SET Value = 44
+WHERE Name = 'Amount'
+AND ModifierId = 'MODIFIER_WOLFRIDER_IN_FOREST';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Palace of Earth Spirits 2095199648
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE Building_YieldChanges
+Set YieldChange = YieldChange * 10
+Where BuildingType="BUILDING_KOISHI_MARY_PHONE";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'SHA_KOISHI_ADD_SPY_CAPACITY';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'SHA_KOISHI_ADD_SPY_UNIT';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'Koishi_Increase_Spy_Level';
+
+UPDATE Building_YieldChanges
+Set YieldChange = YieldChange * 10
+WHERE BuildingType Like "BUILDING_KOMEIJI_%";
+
+Update Building_GreatPersonPoints
+Set PointsPerTurn = PointsPerTurn * 10
+WHERE BuildingType Like "BUILDING_KOMEIJI_%";
+
+UPDATE District_CitizenYieldChanges
+Set YieldChange = (YieldChange-2) * 10 + 2
+Where DistrictType="DISTRICT_HELL_OF_BLAZING_FIRES";
+
+Update District_GreatPersonPoints
+Set PointsPerTurn = PointsPerTurn*10
+Where DistrictType="DISTRICT_HELL_OF_BLAZING_FIRES" and GreatPersonClassType="GREAT_PERSON_CLASS_SCIENTIST";
+
+Update Improvements
+Set Appeal = Appeal*10
+Where ImprovementType="IMPROVEMENT_GEYSER";
+
+Update Improvement_YieldChanges
+Set YieldChange = YieldChange*10
+Where ImprovementType="IMPROVEMENT_GEYSER";
+
+Update Adjacency_YieldChanges
+Set YieldChange = YieldChange*10
+Where ID="Geyser_Science";
+
+Update ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+And ModifierId in ("Geyser_Amenity", "Komeiji_Resourse_Center_Additional_Iron", "Komeiji_Project_Create_Nuclear_Device", "Komeiji_Project_Create_Thermonuclear_Device");
+
+
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId like 'Komeiji_Resourse_Center_Additional%';
+
+Update Units
+Set Range = (Range-2)*10+2
+Where UnitType="UNIT_OKUU_ROD_MASTER";
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId like 'Okuu_Build%';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId like 'SHA_OKUU_INDUSTRIAL_ZONE%';
+
+UPDATE ModifierArguments
+SET Value = 72
+WHERE Name = 'Amount'
+AND ModifierId like 'SHA_OKUU_UNIT_GRANT_COMBAT%';
+
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'SHA_OKUU_UNIT_GRANT_MOVEMENT';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'Satori_Animal_Production_Bonus';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId = 'Satori_Add_Visibility';
+
+Update ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+And ModifierId in ("SHA_ORIN_CITY_EMEMY_GRANT_DAMAGE","SHA_ORIN_CITY_ENEMY_GRANT_MOVEMENT_DEBUFF_MODIFIER","SHA_ORIN_ENGINEER_GRANT_MOVEMENT","SHA_ORIN_ENGINEER_GRANT_CHARGES");
+
+Update ModifierArguments
+Set Value = 44
+WHERE Name = 'Amount'
+AND ModifierId = 'SHA_ORIN_GRANT_COMBAT_ATTACK_WOUNDED_UNIT_MODIFIER';
+
+Update ModifierArguments
+Set Value = 15
+WHERE Name = 'Amount'
+AND ModifierId = 'SHA_ORIN_GRANT_COMBAT_FROM_MOVEMENT_MODIFIER';
+
+
+
 ---------------------------------------------------------
 ---------------------------------------------------------
 --Other modifications
@@ -1437,3 +1777,67 @@ VALUES
     ('POLICY_BLANK_DIPL_7', 'KIND_POLICY'),
     ('POLICY_BLANK_DIPL_8', 'KIND_POLICY'),
     ('POLICY_BLANK_DIPL_9', 'KIND_POLICY');
+
+------------------------------------------
+-- 2541605955
+------------------------------------------
+
+
+-- Update ModifierArguments
+-- Set Value = Value * 10
+-- WHERE Name = 'Amount'
+-- AND ModifierId IN ('MODIFIER_SERVICE_CLUB_UA_PRODUCTION', 
+-- 'MODIFIER_ADD_HOUSES_SERVICE_CLUB_UB',
+-- 'MODIFIER_ADDITIONAL_BUILD_SERVICE_CLUB_UU',
+-- 'MODIFIER_ADDITIONAL_MOVEMENT_SERVICE_CLUB_UU',
+-- 'MODIFIER_HACHIMAN_DARK_AGE_INCREASED_YIELDS_FOOD',
+-- 'MODIFIER_HACHIMAN_DARK_AGE_INCREASED_YIELDS_GOLD',
+-- 'MODIFIER_HACHIMAN_DARK_AGE_INCREASED_YIELDS_PRODUCTION', 
+-- 'MODIFIER_HACHIMAN_DARK_AGE_INCREASED_YIELDS_SCIENCE', 
+-- 'MODIFIER_HACHIMAN_DARK_AGE_INCREASED_YIELDS_CULTURE', 
+-- 'MODIFIER_HACHIMAN_DARK_AGE_INCREASED_YIELDS_FAITH', 
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_YIELDS_MODIFIER_FOOD',
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_YIELDS_MODIFIER_PRODUCTION',
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_YIELDS_MODIFIER_GOLD', 
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_YIELDS_MODIFIER_CULTURE',
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_YIELDS_MODIFIER_SCIENCE',
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_YIELDS_MODIFIER_FAITH',
+-- 'MODIFIER_YUI_CITY_DEFENSE_INNER',  
+-- 'MODIFIER_YUI_CITY_DEFENSE_OUTER',
+-- 'MODIFIER_YUI_ADJUST_TRADE_ROUTE_TOURISM', 
+-- 'MODIFIER_HEAL_UNITS_IN_CITY_SERVICE_CLUB_UB');
+
+
+
+-- 2794126753
+
+
+UPDATE ModifierArguments
+SET Value = Value*10
+WHERE Name = 'Amount'
+AND ModifierId like 'TRAIT_LEADER_KAWASIRO_NITORI_TANSHOU_DIS_ADD_PRODUCTION%';
+
+UPDATE ModifierArguments
+SET Value = Value*10
+WHERE Name = 'Amount'
+AND ModifierId like 'TRAIT_CIVILIZATION_THE_KAWASIRO_NITORI_TANSHOU_ABILITY%';
+
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = YieldChange  * 10
+WHERE ID like 'DISTRICT_KAWASIRO_NITORI_TANSHOU_AUTO_FACTORY_ADJ%';
+
+UPDATE AdJacency_YieldChanges
+SET YieldChange = YieldChange  * 10
+WHERE ID = 'IMPROVEMENT_RESEARCH_KAWASIRO_NITORI_TANSHOU_S_01';
+
+
+Update Improvement_YieldChanges
+Set YieldChange = YieldChange*10
+Where ImprovementType="IMPROVEMENT_RESEARCH_KAWASIRO_NITORI_TANSHOU";
+
+
+
+UPDATE Improvement_BonusYieldChanges
+SET BonusYieldChange = BonusYieldChange  * 10 
+WHERE ImprovementType = 'IMPROVEMENT_RESEARCH_KAWASIRO_NITORI_TANSHOU';

@@ -583,7 +583,7 @@ AND Tag = 'LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION';
 
 --Best West
 UPDATE LocalizedText
-SET Text = '可在冻土地貌上建造农场。解锁“土木工程”后，可在冻土丘陵上建造农场。在雪地、冻土、雪地丘陵和冻土丘陵上的所有矿山提供的 [ICON_PRODUCTION] 生产力+10、伐木场提供的 [ICON_PRODUCTION] 生产力+10、营地提供的 [ICON_FOOD] 食物+10、战略资源积累速度+1000%。这些地貌上的单元格购买费用降低99%。'
+SET Text = '可在冻土地貌上建造农场。解锁“土木工程”后，可在冻土丘陵上建造农场。在雪地、冻土、雪地丘陵和冻土丘陵上的所有矿山提供的 [ICON_PRODUCTION] 生产力+20、伐木场提供的 [ICON_PRODUCTION] 生产力+20、农场、营地提供的 [ICON_FOOD] 食物+20、战略资源积累速度+1000%。这些地貌上的单元格购买费用降低99%。'
 WHERE Language = 'zh_Hans_CN'
 AND Tag = 'LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION';
 
