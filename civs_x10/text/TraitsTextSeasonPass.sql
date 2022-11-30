@@ -363,3 +363,54 @@ UPDATE LocalizedText
 SET Text = "Portuguese unique naval melee unit that replaces the Caravel. Starts with 10 free Promotion and is less maintenance. Has twenty charges to build Feitorias."
 WHERE Language = "en_US"
 AND Tag = "LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION";
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Caesar 
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "+2000 [ICON_GOLD] Gold whenever you conquer a city for the first time or +1000 [ICON_GOLD] Gold when you earn [ICON_GOLD] Gold from a Barbarian Outpost. The [ICON_GOLD] Gold amount granted for both becomes +5000 [ICON_GOLD] Gold after you research Steel (on Standard Speed)."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_CAESAR_DESCRIPTION";
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Abraham Lincoln 
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "Industrial Zones give +30 Loyalty per turn but your Plantations give -2 Loyalty per turn. Receive a free Melee unit after constructing Industrial Zones and their buildings. The free unit does not require resources when created or to maintain and receives +29 [ICON_Strength] Combat Strength."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_LINCOLN_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "+13 [ICON_Strength] Combat Strength and this unit does not require resources when created or to maintain. (Abraham Lincoln)"
+WHERE Language = "en_US"
+AND Tag = "LOC_ABILITY_LINCOLN_MELEE_UNITS_DESCRIPTION";
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Nzinga Mbande
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "Cities receive +100% Yields if on the same continent as your [ICON_Capital] Capital (Including your  [ICON_Capital] Capital), -15% if on another continent."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_NZINGA_MBANDE_DESCRIPTION";
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Saladin Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "+1000% Flanking and Support Bonus to all Combat and Religious units."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_SALADIN_ALT_DESCRIPTION";
