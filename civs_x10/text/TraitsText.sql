@@ -95,6 +95,11 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_STREET_CARNIVAL_DESCRIPTION';
 
 UPDATE LocalizedText
+SET Text = 'Brazilian unique project which provides +10 [ICON_Amenities] Amenity when active and [ICON_GreatPerson] Great Person Points for [ICON_GreatEngineer] Great Engineers, [ICON_GreatMerchant] Great Merchants, [ICON_GreatWriter] Great Writers, [ICON_GreatArtist] Great Artists, and [ICON_GreatMusician] Great Musicians once finished.'
+WHERE Language = 'en_US'
+AND Tag = 'LOC_PROJECT_CARNIVAL_DESCRIPTION';
+
+UPDATE LocalizedText
 SET Text = 'After recruiting or patronizing a [ICON_GreatPerson] Great Person, 90% of its [ICON_GreatPerson] Great Person point cost is refunded.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION';
@@ -180,7 +185,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ENGLISH_SEADOG_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'English unique Industrial era unit when Victoria is their leader. +100 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
+SET Text = 'English unique Industrial era unit when Victoria is their leader. +44 [ICON_Strength] Combat Strength when fighting on a continent other than that of your capital''s. No disembark cost.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION';
 
@@ -268,7 +273,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Adjacency: +10 [ICON_Culture] Culture bonus for adjacent City Center. +10 [ICON_Culture] Culture bonus for each adjacent wonder and district. Can only be built on Hills. +10 Envoys.'
+SET Text = 'Adjacency: +11 [ICON_Culture] Culture bonus for adjacent City Center. +5.5 [ICON_Culture] Culture bonus for each adjacent district, +2 [ICON_Culture] Culture for each adjacent wonder. Can only be built on Hills. +10 Envoys.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY';
 
@@ -335,7 +340,7 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ELECTRONICS_FACTORY_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Land units receive +29 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +50 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
+SET Text = 'Land units receive +29 [ICON_Strength] Combat Strength in land tiles adjacent to Coast; naval units receive +29 [ICON_Strength] Combat Strength in shallow water tiles. Builds Encampment, Holy Site and Theater Square districts 10 time faster.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_TRAIT_LEADER_DIVINE_WIND_DESCRIPTION';
 
@@ -388,22 +393,22 @@ WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_STAVE_CHURCH_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+36 [ICON_Strength]Combat Strength when attacking, and -36 [ICON_Strength] Combat Strength when defending.'
+SET Text = '+44 [ICON_Strength]Combat Strength when attacking, and -5 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_BERSERKER_RAGE_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = '+9 [ICON_Movement] Movement if this unit starts in enemy territory.'
+SET Text = '+20 [ICON_Movement] Movement if this unit starts in enemy territory.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_ABILITY_BERSERKER_MOVEMENT_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Medieval era unit. 10 [ICON_Movement] Movement if this unit starts in enemy territory. +36 [ICON_Strength] Combat Strength when attacking and -36 [ICON_Strength] Combat Strength when defending.'
+SET Text = 'Norwegian unique Medieval era unit. 22 [ICON_Movement] Movement if this unit starts in enemy territory. +44 [ICON_Strength] Combat Strength when attacking and -29 [ICON_Strength] Combat Strength when defending.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION';
 
 UPDATE LocalizedText
-SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 10 [ICON_Movement] Movement while in coastal waters.'
+SET Text = 'Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. +10 [ICON_Movement] Movement while in coastal waters.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION';
 

@@ -55,12 +55,12 @@ AND Name = 'Amount';
 
 --Wilfrid
 UPDATE ModifierArguments
-SET Value = -100
+SET Value = -99
 WHERE ModifierId LIKE '%_PLOT_COST'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
-SET Value = -100
+SET Value = -99
 WHERE ModifierId LIKE '%_PLOT_COST'
 AND Name = 'Amount';
 
@@ -87,6 +87,16 @@ AND Name = 'Amount';
 UPDATE ModifierArguments
 SET Value = Value * 10
 WHERE ModifierId LIKE 'SNOW%CAMPS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'TUNDRA%FARMS_FOOD'
+AND Name = 'Amount';
+
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId LIKE 'SNOW%FARMS_FOOD'
 AND Name = 'Amount';
 
 UPDATE ModifierArguments
@@ -346,13 +356,8 @@ AND Name = 'Score';
 
 --Janissary
 UPDATE Units
-SET Cost = 1, Combat = 55 + 29, PrereqPopulation = 1 + 10
+SET Cost = 1, Combat = 55 + 29
 WHERE UnitType = 'UNIT_SULEIMAN_JANISSARY';
-
-UPDATE ModifierArguments
-SET Value = Value * 10
-WHERE ModifierId = 'JANISSARY_LOSE_POPULATION_IN_FOUNDED_CITIES'
-AND Name = 'Score';
 
 ---------------------------------------------------------
 ---------------------------------------------------------
@@ -481,24 +486,18 @@ AND Name = 'Amount';
 --Antarctic Late Summer and more
 ---------------------------------------------------------
 ---------------------------------------------------------
+-- Founding Father
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE ModifierId = 'TRAIT_WILD_CARD_FAVOR'
+AND Name = 'Amount';
+
 --Great Wall
 UPDATE Improvement_YieldChanges
 SET YieldChange = YieldChange * 10
 WHERE ImprovementType = 'IMPROVEMENT_GREAT_WALL';
 
-UPDATE Adjacency_YieldChanges
-SET YieldChange = YieldChange * 10
-WHERE ID = 'GreatWall_Gold';
-
-UPDATE Adjacency_YieldChanges
-SET YieldChange = YieldChange * 10
-WHERE ID = 'GreatWall_Culture';
-
 --Sphinx
-UPDATE Improvements
-SET Appeal = 20
-WHERE ImprovementType = 'IMPROVEMENT_SPHINX';
-
 UPDATE ModifierArguments
 SET Value = Value * 10
 WHERE ModifierId = 'SPHINX_FLOODPLAINS_CULTURE'
@@ -565,3 +564,9 @@ AND (ModifierId = 'TRAIT_WALLS_PRODUCTION'
 OR ModifierId = 'TRAIT_CASTLE_PRODUCTION'
 OR ModifierId = 'TRAIT_TSIKHE_PRODUCTION'
 OR ModifierId = 'TRAIT_STAR_FORT_PRODUCTION');
+
+-- Norway
+UPDATE ModifierArguments
+SET Value = Value * 10
+WHERE Name = 'Amount'
+AND ModifierId LIKE "TRAIT_LEADER_PILLAGE%"

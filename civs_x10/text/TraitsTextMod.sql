@@ -566,3 +566,187 @@ UPDATE LocalizedText
 SET Text = 'Replace castle and unlocked by "Divine Right". Cost 1 [ICON_Production] production, 20 [ICON_Gold] maintainance. [NEWLINE]Better Function. [NEWLINE]Yield +40 Culture and radiate to cities in 60 plots. [NEWLINE]Yield +10[ICON_GreatGeneral]great general points.[NEWLINE]9 [ICON_GreatWork_Relic] relic slot and 10 [ICON_Housing] housing. [NEWLINE]Every Arturian Castle increasing the rate of [ICON_CivicBoosted] civic boost by 20%.'
 WHERE Language = 'en_US'
 AND Tag = 'LOC_BUILDING_ARTHURIAN_CASTLE_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ms. Human from Humanity has Declined
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text="The fairies are very productive when they're energetic. +300% [ICON_Production] production when constructing buildings. When building wonders and districts you may spend Builder charges to complete 200% of the original wonder cost (Only for ancient and classical era wonders. But fairies stays on a wonder under construction will be spend on accelerating with all its charges before next turn, amount of acceleration is not greater than 200% of the prodction cost of the most expensive classic era wonder). However, anything built quickly is very unstable, and the exterior garrison health of all cities is reduced by 100 points, and -10 [ICON_Strength] city strength. After finishing {LOC_TECH_SAILING_NAME}, automatically grants {LOC_TECH_SHIPBUILDING_NAME}."
+WHERE Language = 'en_US' AND Tag="LOC_TRAIT_ONE_NIGHT_CITY_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text="The place where Ms. Human makes delicious desserts, replacing the Granary. Depending on the ingredients of each place only local unique desserts can be made. The first six established dessert house will offer 10 copies of one of six dessert luxuries, which +6 [ICON_Amenities] amenities."
+WHERE Language = 'en_US' AND Tag="LOC_BUILDING_DESSERT_HOUSE_DESCRIPTION";
+
+
+UPDATE LocalizedText
+SET Text="Statues the fairies made for Ms. Human. Replace Monument. Provides +20 extra [ICON_Faith] faith."
+WHERE Language = 'en_US' AND Tag="LOC_BUILDING_GODDESS_STATUE_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text="Inside her pretty looking, Ms. Human has a harakuro character. Fortunately she don't do bad things with it. She is just able to see through people's real thoughts underneath the facade. +20 [ICON_VisLimited] Diplomatic visibility."
+WHERE Language = 'en_US' AND Tag="LOC_TRAIT_INSIDE_PINK_ITS_ALL_BLACK_DESCRIPTION";
+
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Alice Margatroid
+---------------------------------------------------------
+---------------------------------------------------------
+
+
+update LocalizedText
+set Text = replace(Text,'0.5','1.5')
+where Tag = 'LOC_TRAIT_CIVILIZATION_BUILDING_KUNS_DOLLS_WORKSHOP_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'2%','20%')
+where Tag = 'LOC_TRAIT_CIVILIZATION_LONGRANGE_CTRL_DOLLS_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'25','250')
+where Tag = 'LOC_TRAIT_CIVILIZATION_LONGRANGE_CTRL_DOLLS_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'1','10')
+where Tag in( 'LOC_TRAIT_CIVILIZATION_LONGRANGE_CTRL_DOLLS_DESCRIPTION',
+'LOC_TRAIT_CIVILIZATION_UNIT_KUNS_SHANGHAI_DESCRIPTION','');
+
+update LocalizedText
+set Text = replace(Text,'8','39')
+where Tag IN ('LOC_TRAIT_CIVILIZATION_UNIT_KUNS_SHANGHAI_DESCRIPTION', 'LOC_ABILITY_SHANGHAI_ROW_ATTACK_DESCRIPTION');
+
+
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag IN ('LOC_TRAIT_LEADER_ALICE_FROM_UNBELIEVEABLE_KINGDOM_DESCRIPTION', 'LOC_ABILITY_ALICE_DOLLS_GAIN_SCIENCE_DESCRIPTION', 'LOC_ABILITY_ALICE_DOLLS_GAIN_CULTURE_DESCRIPTION');
+
+update LocalizedText
+set Text = replace(Text,'+1','+10')
+where Tag = 'LOC_GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_MARGATROID_BIRTH_ABILITY_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'+5','+50')
+where Tag = 'LOC_GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_MARGATROID_BIRTH_ABILITY_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'+15','+150')
+where Tag = 'LOC_GREAT_PERSON_INDIVIDUAL_KUNS_ALICE_MARGATROID_BIRTH_ABILITY_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'5','50')
+where Tag = 'LOC_GREATPERSON_ACTION_NAME_KUNS_ALICE_MARGATROID_BUILDING_DOLLS_WORKSHOP_ACTIVE';
+
+update LocalizedText
+set Text = replace(Text,'30','300')
+where Tag = 'LOC_GREATPERSON_ACTION_NAME_KUNS_ALICE_GRIMOIRE_OF_ALICE_ACTIVE';
+
+update LocalizedText
+set Text = replace(Text,'20','200')
+where Tag = 'LOC_GREATPERSON_ACTION_NAME_KUNS_ALICE_GRIMOIRE_OF_ALICE_ACTIVE';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- A Certain Scientific Railgun 1659762978
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = replace(Text,'+15%','+150%')
+where Tag = 'LOC_TRAIT_CIVILIZATION_FLAC_ACADEMY_DESCRIPTION';
+
+
+update LocalizedText
+set Text = replace(Text,'+1 ','+10 ')
+where Tag = 'LOC_TRAIT_CIVILIZATION_FLAC_ACADEMY_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag = 'LOC_DISTRICT_FLAC_POWER_LAB_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'a','ten')
+where Tag = 'LOC_DISTRICT_FLAC_POWER_LAB_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'Eureka','Eurekas')
+where Tag = 'LOC_DISTRICT_FLAC_POWER_LAB_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'一','十')
+where Tag = 'LOC_DISTRICT_FLAC_POWER_LAB_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'1','10')
+where Tag = 'LOC_TRAIT_LEADER_FLAC_MIKOTO_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'4','40')
+where Tag = 'LOC_TRAIT_LEADER_FLAC_MIKOTO_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'6','60')
+where Tag = 'LOC_TRAIT_LEADER_FLAC_MIKOTO_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'5','50')
+where Tag = 'LOC_TRAIT_LEADER_FLAC_MISAKI_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'20','200')
+where Tag = 'LOC_TRAIT_LEADER_FLAC_MISAKI_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Holo 1659570672
+---------------------------------------------------------
+---------------------------------------------------------
+update LocalizedText
+set Text = replace(Text,'1','10')
+where Tag = 'LOC_TRAIT_LEADER_FLAC_HOLO_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'35','350')
+where Tag = 'LOC_TRAIT_CIVILIZATION_FLAC_SPICEWOLF_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag = 'LOC_TRAIT_CIVILIZATION_FLAC_SPICEWOLF_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'10','44')
+where Tag = 'LOC_UNIT_FLAC_WOLFRIDER_DESCRIPTION';
+
+update LocalizedText
+set Text = replace(Text,'10','44')
+where Tag = 'LOC_ABILITY_FLAC_WOLFRIDER_DESCRIPTION';
+
+-- 2794126753
+
+update LocalizedText
+set Text = replace(Text,'+1','+10')
+where Tag in  ('LOC_TRAIT_CIVILIZATION_THE_KAWASIRO_NITORI_TANSHOU_ABILITY_ALL_DESCRIPTION',
+'LOC_DISTRICT_KAWASIRO_NITORI_TANSHOU_AUTO_FACTORY_DESCRIPTION',
+'LOC_IMPROVEMENT_RESEARCH_KAWASIRO_NITORI_TANSHOU_DESCRIPTION');
+
+
+
+update LocalizedText
+set Text = replace(Text,'3','30')
+where Tag = 'LOC_TRAIT_LEADER_KAWASIRO_NITORI_TANSHOU_ALL_DESCRIPTION';
+
+
+update LocalizedText
+set Text = replace(Text,'60','600')
+where Tag = 'LOC_TRAIT_LEADER_KAWASIRO_NITORI_TANSHOU_ALL_DESCRIPTION';
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag = 'LOC_BUILDING_KAWASIRO_NITORI_PLANETARIUM_TANSHOU_DESCRIPTION';
+
