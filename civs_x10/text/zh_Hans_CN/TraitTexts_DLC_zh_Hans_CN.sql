@@ -1332,9 +1332,55 @@ WHERE Language = "zh_Hans_CN"
 AND Tag = "LOC_ABILITY_NAU_DESCRIPTION";
 
 
+---------------------------------------------------------
+---------------------------------------------------------
+-- Caesar
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = '首次征服一座城市时+2000 [ICON_GOLD] 金币，或从蛮族哨站获得 [ICON_GOLD] 金币时+1000 [ICON_GOLD] 金币。研究完“钢铁”之后，两者提供的 [ICON_GOLD] 金币数量变为+5000 [ICON_GOLD] 金币（标准速度下）。'
+WHERE Language = 'zh_Hans_CN'
+AND Tag = 'LOC_TRAIT_LEADER_CAESAR_DESCRIPTION';
 
 
+---------------------------------------------------------
+---------------------------------------------------------
+-- Abraham Lincoln 
+---------------------------------------------------------
+---------------------------------------------------------
 
+UPDATE LocalizedText
+SET Text = "工业区每回合提供的忠诚度+30，但种植园每回合提供的忠诚度-2。建造工业区和其建筑后获得1个免费近战单位。免费单位的生成或维护不需要资源，并且+29 [ICON_Strength] 战斗力。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_TRAIT_LEADER_LINCOLN_EXPANSION_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "+29 [ICON_Strength] 战斗力，此单位创建和维护时不需要资源。（亚伯拉罕·林肯）"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_ABILITY_LINCOLN_MELEE_UNITS_DESCRIPTION";
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Nzinga Mbande
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "和你的 [ICON_Capital] 首都处于同一大陆的城市+100%产出（其中包括 [ICON_Capital] 首都）；如果出在不同大陆，则-15%产出。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_TRAIT_LEADER_NZINGA_MBANDE_DESCRIPTION";
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Saladin Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "为所有战斗和宗教单位+1000%夹击和支援加成。"
+WHERE Language = "zh_Hans_CN"
+AND Tag = "LOC_TRAIT_LEADER_SALADIN_ALT_DESCRIPTION";
 
 
 

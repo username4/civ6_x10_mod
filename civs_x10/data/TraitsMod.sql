@@ -1437,3 +1437,363 @@ VALUES
     ('POLICY_BLANK_DIPL_7', 'KIND_POLICY'),
     ('POLICY_BLANK_DIPL_8', 'KIND_POLICY'),
     ('POLICY_BLANK_DIPL_9', 'KIND_POLICY');
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Touhou: Palace of Earth Spirits 2095199648
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE Building_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE BuildingType IN ('BUILDING_KOISHI_MARY_PHONE', 'BUILDING_KOMEIJI_RESOURSE_CENTER', 'BUILDING_KOMEIJI_NUCLEAR_FURNACE','BUILDING_KOMEIJI_POWER_CENTER');
+
+
+UPDATE Building_GreatPersonPoints
+SET PointsPerTurn = 10
+WHERE BuildingType IN ('BUILDING_KOMEIJI_RESOURSE_CENTER', 'BUILDING_KOMEIJI_NUCLEAR_FURNACE','BUILDING_KOMEIJI_POWER_CENTER');
+
+UPDATE ModifierArguments
+SET Value = 72
+WHERE Name="Amount" AND ModifierId LIKE "SHA_OKUU_UNIT_GRANT_COMBAT%";
+
+UPDATE ModifierArguments
+SET Value = 44
+WHERE Name="Amount" AND ModifierId LIKE "SHA_ORIN_GRANT_COMBAT_ATTACK_WOUNDED_UNIT_MODIFIER";
+
+UPDATE ModifierArguments
+SET Value = 15
+WHERE Name="Amount" AND ModifierId LIKE "SHA_ORIN_GRANT_COMBAT_FROM_MOVEMENT_MODIFIER";
+
+
+
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId IN ('Koishi_Increase_Spy_Level',
+'SHA_KOISHI_ADD_SPY_UNIT',
+'SHA_KOISHI_ADD_SPY_CAPACITY',
+'Geyser_Amenity',
+'Komeiji_Resourse_Center_Additional_Iron',
+'Komeiji_Resourse_Center_Additional_Niter',
+'Komeiji_Resourse_Center_Additional_Coal',
+'Komeiji_Resourse_Center_Additional_Oil',
+'Komeiji_Resourse_Center_Additional_Uranium',
+'Komeiji_Resourse_Center_Grant_Mineral_Sakura',
+'Komeiji_Project_Create_Nuclear_Device',
+'Komeiji_Project_Create_Thermonuclear_Device',
+'SHA_OKUU_INDUSTRIAL_ZONE_BUILDING_PRODUCTION',
+'SHA_OKUU_INDUSTRIAL_ZONE_PRODUCTION',
+'Okuu_Build_Komeiji_NUCLEAR_Device_Faster',
+'Okuu_Build_NUCLEAR_Device_Faster',
+'Okuu_Build_Komeiji_Thermonuclear_Device_Faster',
+'Okuu_Build_Thermonuclear_Device_Faster',
+'SHA_OKUU_UNIT_GRANT_MOVEMENT',
+'Satori_Add_Visibility',
+'Satori_Animal_Production_Bonus',
+'SHA_ORIN_CITY_EMEMY_GRANT_DAMAGE',
+'SHA_ORIN_CITY_ENEMY_GRANT_MOVEMENT_DEBUFF_MODIFIER',
+'SHA_ORIN_ENGINEER_GRANT_MOVEMENT',
+'SHA_ORIN_ENGINEER_GRANT_CHARGES',
+"SHA_KOMEIJI_ENGINEER_MORE_CHARGES"-- imba patch
+"SHA_KOMEIJI_PLOT_GRANT_PRODUCTION",
+"SHA_KOMEIJI_PLOT_GRANT_SCIENCE",
+"SHA_KOMEIJI_PLOT_GRANT_GOLD",
+"SHA_ORIN_UNITS_GRANT_MOVEMENT_MODIFIER",
+"SHA_ORIN_HEAVY_CAVALRY_GRANT_MOVEMENT",
+"SHA_ORIN_BUILDER_GRANT_CHARGES"
+); 
+
+UPDATE Units 
+SET Range = 42, BaseMoves = (BaseMoves-2)*10+2
+Where UnitType = 'UNIT_OKUU_ROD_MASTER';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ImprovementType = 'IMPROVEMENT_GEYSER';
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ID = 'Geyser_Science';
+
+UPDATE District_CitizenYieldChanges
+SET YieldChange = 42
+WHERE DistrictType = 'DISTRICT_HELL_OF_BLAZING_FIRES';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- 2677539335 Garden of the sun
+---------------------------------------------------------
+---------------------------------------------------------
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name="Amount" AND ModifierId IN ('GARDEN_OF_THE_SUN_ABILITY01',
+'TRAIT_LEADER_KAZAMI_YUKA_ABILITY03',
+'TRAIT_LEADER_KAZAMI_YUKA_ABILITY04',
+'TRAIT_LEADER_KAZAMI_YUKA_ABILITY05',
+'LEADER_KAZAMI_YUKA_ABILITY01',
+'LEADER_KAZAMI_YUKA_ABILITY02',
+'LEADER_KAZAMI_YUKA_ABILITY03',
+'PROJECT_COMPLEATE_THREE_01',
+'PROJECT_COMPLEATE_THREE_02',
+'PROJECT_COMPLEATE_THREE_03',
+'PROJECT_ONE_FLOWER_S_LIAVABILITY_MF',
+'PROJECT_ONE_PRODUCTION_OF_FIELDE_MF',
+'PROJECT_ONE_PRODUCTION_OF_FIELDE_MF_02',
+'PROJECT_ONE_MOV_ADD_MF',
+'PROJECT_TWO_STR_ADD_MF',
+'PROJECT_HEALTH_PER_TURN_ADD_MF',
+'PROJECT_THREE_TRUE_WEAPON_MF',
+'PROJECT_THREE_PEOPLE_S_DREAM_MF'
+);
+
+UPDATE ModifierArguments
+Set Value = 36
+WHERE Name="Amount" AND ModifierId = 'GARDEN_OF_THE_SUN_ABILITY03';
+
+UPDATE ModifierArguments
+Set Value = 80
+WHERE Name="Amount" AND ModifierId = 'PROJECT_THREE_TRUE_WEAPON_MF';
+
+UPDATE ModifierArguments
+Set Value = 39
+WHERE Name="Amount" AND ModifierId = 'PROJECT_TWO_STR_ADD_MF';
+
+UPDATE Buildings
+SET Cost = 12, Housing = Housing * 10, Entertainment = Entertainment * 10, RegionalRange = RegionalRange * 10
+WHERE BuildingType = 'BUILDING_THE_SEA_OF_FLOWER';
+
+
+UPDATE Building_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE BuildingType IN ('BUILDING_THE_SEA_OF_FLOWER', 'BUILDING_HALF_POWER', 'BUILDING_FULL_POWER');
+
+UPDATE Adjacency_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ID LIKE 'POWER_INSTITUTE_%' or ID = 'POWER_IMPROVEMENT_FLOWER_FIELD_Faith' or ID LIKE 'IMPROVEMENT_FLOWER_FIELD_%';
+
+UPDATE District_TradeRouteYields
+SET  YieldChangeAsOrigin=YieldChangeAsOrigin*10, YieldChangeAsDomesticDestination=YieldChangeAsDomesticDestination*10
+WHERE DistrictType="DISTRICT_THE_POWER_INSTITUTE";
+
+UPDATE District_CitizenYieldChanges
+SET YieldChange = YieldChange * 10
+WHERE DistrictType = 'DISTRICT_THE_POWER_INSTITUTE';
+
+UPDATE District_GreatPersonPoints
+SET PointsPerTurn = 10
+WHERE DistrictType = 'DISTRICT_THE_POWER_INSTITUTE';
+
+UPDATE Improvement_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE ImprovementType = 'IMPROVEMENT_FLOWER_FIELD';
+
+UPDATE Improvements
+Set Housing = Housing * 10
+WHERE ImprovementType = 'IMPROVEMENT_FLOWER_FIELD';
+
+UPDATE Units
+SET Cost = 0.3 , BaseMoves = 12 , BaseSightRange = 12, BuildCharges = 13
+WHERE UnitType = 'UNIT_FLOWERMAKER';
+
+-- INSERT INTO Modifiers (ModifierId, ModifierType, Permanent, SubjectRequirementSetId)
+-- VALUES
+-- 	('PROJECT_TWO_INT_ADD_MF_1' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_2' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_3' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_4' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_5' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_6' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_7' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_8' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL'),
+-- 	('PROJECT_TWO_INT_ADD_MF_9' , 'MODIFIER_PLAYER_CULTURE_ADJUST_GOVERNMENT_SLOTS_GOTS_PROJECT01', 1, 'REQ_LEADER_TYHT_FILL');
+	
+
+-- INSERT INTO ModifierArguments (ModifierId, Name, Value)
+-- VALUES
+-- 	('PROJECT_TWO_INT_ADD_MF_1' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_2' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_3' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_4' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_5' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_6' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_7' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_8' , 'GovernmentSlotType' , 'SLOT_WILDCARD' ),
+-- 	('PROJECT_TWO_INT_ADD_MF_9' , 'GovernmentSlotType' , 'SLOT_WILDCARD' );
+
+-- insert into ProjectCompletionModifiers (ProjectType,ModifierId)
+-- VALUES
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_1'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_2'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_3'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_4'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_5'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_6'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_7'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_8'),
+-- 	(PROJECT_TWO_INT_ADD_01, 'PROJECT_TWO_INT_ADD_MF_9'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_1'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_2'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_3'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_4'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_5'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_6'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_7'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_8'),
+-- 	(PROJECT_TWO_INT_ADD_02, 'PROJECT_TWO_INT_ADD_MF_9');
+
+	
+---------------------------------------------------------
+---------------------------------------------------------
+-- 2694815642 WA2
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name IN ("Amount","ScalingFactor") AND ModifierId IN (
+	"MODIFIER_KAZUSA_TUNDRA_CULTURE",
+	"MODIFIER_KAZUSA_MUSIC_SLOT",
+	"MODIFIER_KAZUSA_MUSIC_BONUS",
+	"MODIFIER_KAZUSA_CITY_MUSICIAN",
+	"MODIFIER_KAZUSA_MUSIC_TOURISM",
+	"MODIFIER_KAZUSA_AMPHITHEATER",
+	"MODIFIER_KAZUSA_APPEAL",
+	"MODIFIER_WA2_CAMPUS_CULTURE1",
+	"MODIFIER_WA2_CAMPUS_CULTURE2",
+	"MODIFIER_WA2_CAMPUS_CULTURE3",
+	"MODIFIER_WA2_THEATER_SCIENCE1",
+	"MODIFIER_WA2_THEATER_SCIENCE2",
+	"MODIFIER_WA2_THEATER_SCIENCE3",
+	"MODIFIER_WA2_THEATER_SCIENCE4",
+	"MODIFIER_WA2_ADD_TRADE_ROUTE",
+	"MODIFIER_WA2_TEST",
+	"MODIFIER_WA2_TEST1",
+	"MODIFIER_WA2_TUNDRA_FOOD1",
+	"MODIFIER_WA2_TUNDRA_FOOD2",
+	"MODIFIER_WA2_TUNDRA_PRODUCTION1",
+	"MODIFIER_WA2_TUNDRA_ADJCENCY1",
+	"MODIFIER_WA2_TUNDRA_ADJCENCY2",
+	"MODIFIER_WA2_FRANCE_ABILITY1",
+	"MODIFIER_WA2_FRANCE_ABILITY2",
+	"MODIFIER_WA2_FRANCE_ABILITY3",
+	"MODIFIER_WA2_FRANCE_ABILITY4",
+	"MODIFIER_SETSUNA_TUNDRA_FAITH",
+	"MODIFIER_SETSUNA_SPREAD_RELIGION",
+	"MODIFIER_SETSUNA_RELIGION_CHATGES",
+	"MODIFIER_SETSUNA_RELIGION_PRODUCTION",
+	"MODIFIER_SETSUNA_REDUCE_GRIEVANCE",
+	"MODIFIER_SETSUNA_LOYALTY1",
+	"MODIFIER_SETSUNA_LOYALTY2",
+	"MODIFIER_SETSUNA_LOYALTY3",
+	"MODIFIER_SETSUNA_CITY_PROPHET",
+	"MODIFIER_SETSUNA_SHRINE",
+	"MODIFIER_SETSUNA_RELIC_SLOT",
+	"MODIFIER_COLD_STREET_ENVOY",
+	"MODIFIER_COLD_STREET_TOURISM",
+	"MODIFIER_COLD_STREET_TOURISM_CLASSIC",
+	"MODIFIER_COLD_STREET_TOURISM_ANCIENT",
+	"MODIFIER_COLD_STREET_TOURISM_MEDIUM",
+	"MODIFIER_COLD_STREET_TOURISM_MODERN",
+	"MODIFIER_COLD_STREET_TOURISM_RENAISSANCE",
+	"MODIFIER_COLD_STREET_TOURISM_INDUSTRIAL",
+	"MODIFIER_COLD_STREET_TOURISM_ATOMIC",
+	"MODIFIER_COLD_STREET_TOURISM_INFORMATION",
+	"MODIFIER_COLD_STREET_TOURISM_FUTURE",
+	"MODIFIER_HOTEL_TUNDRA_GOLD",
+	"MODIFIER_HOTEL_POPULATION_GOLD",
+	"MODIFIER_FENGCHENG_MISS_TOURISM",
+	"MODIFIER_HOTEL_GRAND_FAITH"
+);
+
+UPDATE ModifierArguments
+SET Value=Value*10
+WHERE Name IN ("Amount","ScalingFactor") AND ModifierId LIKE "MODIFIER_HARUKI%" AND ModifierId <> "MODIFIER_HARUKI_CRAZY";
+
+UPDATE Buildings
+SET  Housing = Housing * 10
+WHERE BuildingType = 'BUILDING_THE_SEA_OF_FLOWER';
+
+UPDATE Adjacency_YieldChanges
+SET  YieldChange = YieldChange * 10
+WHERE ID LIKE 'Tundra_Science%';
+
+UPDATE District_GreatPersonPoints
+SET PointsPerTurn = 10
+WHERE DistrictType = 'DISTRICT_FENGCHENG' AND GreatPersonClassType IN ("GREAT_PERSON_CLASS_ARTIST","GREAT_PERSON_CLASS_PROPHET");
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- 2113314311 Reisen Inaba
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE Building_YieldChanges
+SET YieldChange = 11
+WHERE BuildingType IN ( 'BUILDING_RABBIT_LAB', 'BUILDING_TANK_LAB') and YieldType="YIELD_PRODUCTION" ;
+
+UPDATE Building_YieldChanges
+SET YieldChange = YieldChange * 10
+WHERE BuildingType IN ( 'BUILDING_RABBIT_LAB', 'BUILDING_TANK_LAB') and YieldType="YIELD_SCIENCE" ;
+
+update Districts
+set Cost = 0.052734375, Entertainment="10"
+where DistrictType="DISTRICT_UDONGEIN";
+
+update Adjacency_YieldChanges
+set YieldChange = YieldChange * 10
+where ID in ("UNaturalWonder_Culture", "UWonder_Faith", "UWonder_Culture", "UCampus_Faith", "UU_Faith");
+
+update Adjacency_YieldChanges
+set YieldChange = 31, TilesRequired="2"
+where ID in ("UForest_Faith");
+
+update District_GreatPersonPoints
+set PointsPerTurn = PointsPerTurn*10
+where  DistrictType="DISTRICT_UDONGEIN" and GreatPersonClassType in ("GREAT_PERSON_CLASS_ARTIST", "GREAT_PERSON_CLASS_MUSICIAN");
+
+update District_CitizenYieldChanges
+set YieldChange=YieldChange*10
+where DistrictType="DISTRICT_UDONGEIN" and YieldType="YIELD_CULTURE";
+
+update District_CitizenYieldChanges
+set YieldChange=12
+where DistrictType="DISTRICT_UDONGEIN" and YieldType="YIELD_FAITH";
+
+update District_TradeRouteYields
+set YieldChangeAsDomesticDestination = YieldChangeAsDomesticDestination *10
+where DistrictType="DISTRICT_UDONGEIN" and  YieldType in ("YIELD_PRODUCTION", "YIELD_FAITH");
+
+update ModifierArguments
+set Value = Value*10
+WHERE Name = 'Amount'
+AND ModifierId = 'BAMBOOFOREST_ADJ%';
+
+
+update ModifierArguments
+set Value = Value*10
+WHERE Name = 'Amount'
+AND ModifierId in ("INABA_REACH_MOON_BOOST", 
+"RABBIT_LAB_ADJUST_MOVEMENT",
+"KUNS_INABA_JUNYING_PROBUFF");
+
+update ModifierArguments
+set Value = 25
+WHERE Name = 'Amount' and ModifierId = "TANK_LAB_ADJUST_MORE_COMBAT";
+
+update ModifierArguments
+set Value = -29
+WHERE Name = 'Amount' and ModifierId = "REISEN_INABA_LOW_ENEMY_COMBAT_MODIFIER";
+
+
+update ModifierArguments
+set Value = 33
+WHERE Name = 'Amount' and ModifierId = "INABA_ALL_UNITS_MORE_COMBAT_WHEN_ATTACKING";
+
+
+update Units
+set BaseMoves=12,Maintenance = 0,Cost=41
+WHERE UnitType="UNIT_LUNATIC_MOONRABBIT";
