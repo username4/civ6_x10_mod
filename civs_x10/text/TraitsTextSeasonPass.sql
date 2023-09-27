@@ -363,3 +363,271 @@ UPDATE LocalizedText
 SET Text = "Portuguese unique naval melee unit that replaces the Caravel. Starts with 10 free Promotion and is less maintenance. Has twenty charges to build Feitorias."
 WHERE Language = "en_US"
 AND Tag = "LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION";
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Caesar 
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "+3000 [ICON_GOLD] Gold whenever you conquer a city for the first time or when you earn [ICON_GOLD] Gold from a Barbarian Outpost. The [ICON_GOLD] Gold becomes 5000 after researching Metal Casting and 7000 after Steel (on Standard Speed). When targeting Barbarians receive +29 [ICON_Strength] Combat Strength and always earn normal XP."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_CAESAR_DESCRIPTION";
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Abraham Lincoln 
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "Industrial Zones give +20 [ICON_Amenities] Amenities. Receive ten free Melee units after constructing Industrial Zones and their buildings. The free unit does not require resources when created or to maintain and receives +29 [ICON_Strength] Combat Strength."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_LINCOLN_DESCRIPTION";
+
+UPDATE LocalizedText
+SET Text = "+13 [ICON_Strength] Combat Strength and this unit does not require resources when created or to maintain. (Abraham Lincoln)"
+WHERE Language = "en_US"
+AND Tag = "LOC_ABILITY_LINCOLN_MELEE_UNITS_DESCRIPTION";
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Nzinga Mbande
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "Cities receive +100% Yields if on the same continent as your [ICON_Capital] Capital (Including your  [ICON_Capital] Capital), -15% if on another continent."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_NZINGA_MBANDE_DESCRIPTION";
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Saladin Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+UPDATE LocalizedText
+SET Text = "+1000% Flanking and Support Bonus to all Combat and Religious units."
+WHERE Language = "en_US"
+AND Tag = "LOC_TRAIT_LEADER_SALADIN_ALT_DESCRIPTION";
+
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Tokugawa
+---------------------------------------------------------
+---------------------------------------------------------
+update LocalizedText
+set Text = 'International [ICON_TradeRoute] Trade Routes receive -25% Yield and [ICON_Tourism] Tourism, but Domestic [ICON_TradeRoute] Trade Routes provide +10 [ICON_Culture] Culture, +10 [ICON_Science] Science, and +20 [ICON_Gold] Gold for every Specialty District at the Destination. Cities within 60 tiles of Japan''s [ICON_Capital] Capital receive +40 [ICON_Amenities] Amenities and after researching Flight receive +10 [ICON_Tourism] Tourism for every District. '
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_TOKUGAWA_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Nader Shah
+---------------------------------------------------------
+---------------------------------------------------------
+update LocalizedText
+set Text = '+29 [ICON_Strength] Combat Strength when attacking full Health Units. Cities not founded by Nader Shah receive +20 [Icon_Faith] Faith and +30 [Icon_Gold] Gold on Domestic [ICON_TradeRoute] Trade Routes.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_NADER_SHAH_DESCRIPTION';
+
+update LocalizedText
+set Text = '+29 [ICON_Strength] Combat Strength when attacking full Health Units. (Nader Shah)'
+where Language = 'en_US'
+and Tag = 'LOC_ABILITY_NADER_SHAH_COMBAT_DESCRIPTION';
+---------------------------------------------------------
+---------------------------------------------------------
+-- Suleiman Alt
+---------------------------------------------------------
+---------------------------------------------------------
+update LocalizedText
+set Text = '+150% [ICON_Science] Science and [ICON_Culture] Culture when in a [ICON_GLORY_GOLDEN_AGE] Golden Age or Heroic Age. +25 [ICON_Strength] Combat Strength when not in a [ICON_GLORY_GOLDEN_AGE] Golden Age or Heroic Age against Civilizations who are also not in a [ICON_GLORY_GOLDEN_AGE] Golden Age or Heroic Age.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_SULEIMAN_ALT_DESCRIPTION';
+
+
+update LocalizedText
+set Text = '+25 [ICON_Strength] Combat Strength when not in a [ICON_GLORY_GOLDEN_AGE] Golden Age against units who are also not in a [ICON_GLORY_GOLDEN_AGE] Golden Age. (Suleiman)'
+where Language = 'en_US'
+and Tag = 'LOC_ABILITY_SULEIMAN_COMBAT_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- YongLe
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'Project which provides [ICON_Faith] Faith every turn equal to 500% of this city''s production.'
+where Language = 'en_US'
+and Tag = 'LOC_PROJECT_LIJIA_FAITH_DESCRIPTION';
+
+update LocalizedText
+set Text = 'Project which provides [ICON_Food] Food every turn equal to 500% of this city''s production.'
+where Language = 'en_US'
+and Tag = 'LOC_PROJECT_LIJIA_FOOD_DESCRIPTION';
+
+update LocalizedText
+set Text = 'Project which provides [ICON_Gold] Gold every turn equal to 1000% of this city''s production.'
+where Language = 'en_US'
+and Tag = 'LOC_PROJECT_LIJIA_GOLD_DESCRIPTION';
+
+update LocalizedText
+set Text = 'All Cities receive Projects where they can convert 500% of their [Icon_Production] Production into [Icon_Food] Food,  [Icon_Faith] Faith, or 1000% if it is [Icon_GOLD] Gold. Cities with 10 or more Population receive +20 [Icon_Gold] Gold, +10 [Icon_Science] Science, and +10 [Icon_Culture] Culture per turn for each Population in the city.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_YONGLE_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Qin (Mandate of Heaven)
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'Melee units receive the Convert Barbarians action. This action converts Barbarian units into your units, but it removes the melee unit after 10 conversions.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_QIN_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Wu Zetian
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'All offensive Spies operate at 10 level higher. Whenever an offensive spy mission is successful, you also gain 1000% of the [ICON_Faith] Faith, [ICON_Culture] Culture, and [ICON_SCIENCE] Science that the targeted city earned that turn. Receive ten free spies (and extra spy capacitys) after discovering Defensive Tactics. Can purchase Spies with [ICON_Faith] Faith.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_WU_ZETIAN_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ramesses II
+---------------------------------------------------------
+---------------------------------------------------------
+update LocalizedText
+set Text = 'Gain [ICON_CULTURE] Culture equal to 150% of the construction cost when finishing Buildings and 300% when completing Wonders.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_RAMSES_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Cleopatra Alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'Resources along Floodplains receive +10 [ICON_FOOD] Food and +10 [ICON_CULTURE] Culture. Owned Floodplains tiles grant +10 Appeal to adjacent tiles instead of usual -1.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_CLEOPATRA_ALT_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Sundiata Keita
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'It costs 200% less [ICON_GOLD] Gold to recruit Great People and the Market gains 20 [ICON_GreatWork_WRITING] Great Writing slots in Cities founded by Mali. [ICON_GreatWork_WRITING] Great Works of Writing receive +40[ICON_GOLD] Gold and +20 [ICON_PRODUCTION] Production.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_SUNDIATA_KEITA_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Sejong
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'When you complete your first Technology from a new Era, receive 20-folds your [ICON_SCIENCE] Science per turn as [ICON_CULTURE] Culture.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_SEJONG_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Ludwig
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'Wonders, even if not finished, receive +20 [ICON_CULTURE] Culture for every adjacent District. This [ICON_CULTURE]Culture is displayed in the City Yields. All  [ICON_CULTURE] Culture adjacencies provide [ICON_TOURISM] Tourism after discovering Castles.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_LUDWIG_DESCRIPTION';
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Theodora
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = 'Holy Sites provide [ICON_CULTURE] Culture equal to 10 fold of their adjacency bonus. Farms provide a [ICON_FAITH] Faith adjacency to Hippodromes and Holy Sites.'
+where Language = 'en_US'
+and Tag = 'LOC_TRAIT_LEADER_THEODORA_DESCRIPTION';
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Elizabeth
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag = 'LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION' ;
+
+update LocalizedText
+set Text = replace(Text,'3','30')
+where Tag = 'LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION' ;
+
+update LocalizedText
+set Text = replace(Text,'100','1000')
+where Tag = 'LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION' ;
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Harald alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag = 'LOC_TRAIT_LEADER_HARALD_ALT_DESCRIPTION' ;
+
+update LocalizedText
+set Text = replace(Text,'50','500')
+where Tag = 'LOC_TRAIT_LEADER_HARALD_ALT_DESCRIPTION' ;
+
+
+update LocalizedText
+set Text = replace(Text,'75','750')
+where Tag = 'LOC_TRAIT_LEADER_HARALD_ALT_DESCRIPTION' ;
+
+update LocalizedText
+set Text = replace(Text,'1','10')
+where Tag = 'LOC_TRAIT_LEADER_HARALD_ALT_DESCRIPTION' ;
+
+---------------------------------------------------------
+---------------------------------------------------------
+-- Victoria alt
+---------------------------------------------------------
+---------------------------------------------------------
+
+update LocalizedText
+set Text = replace(Text,'1','10')
+where Tag = 'LOC_TRAIT_LEADER_VICTORIA_ALT_DESCRIPTION' ;
+
+update LocalizedText
+set Text = replace(Text,'2','20')
+where Tag = 'LOC_TRAIT_LEADER_VICTORIA_ALT_DESCRIPTION' ;
